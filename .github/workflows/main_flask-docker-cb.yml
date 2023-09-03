@@ -23,14 +23,14 @@ jobs:
       uses: docker/login-action@v2
       with:
         registry: https://index.docker.io/v1/
-        username: ${{ secrets.AzureAppService_ContainerUsername_125cdd8c05c3439982adb9d348a2b561 }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_47e50942fb434631a36f0401259dc2ee }}
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_125cdd8c05c3439982adb9d348a2b561 }}/minimal-flask:${{ github.sha }}
+        tags: index.docker.io/${{ secrets.DOCKERHUB_USERNAME }}/minimal-flask:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -48,4 +48,4 @@ jobs:
         app-name: 'flask-docker-cb'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_d6556f45e8ec4866b5364b264cf3095f }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_125cdd8c05c3439982adb9d348a2b561 }}/minimal-flask:${{ github.sha }}'
+        images: 'index.docker.io/${{ secrets.DOCKERHUB_USERNAME }}/minimal-flask:${{ github.sha }}'
