@@ -32,13 +32,16 @@ def health():
 
 
 def template_path():
+    print("template path")
     base = os.getcwd()
-    path = os.path.join(base, 'app', 'jinja', 'templates')
+    print("base")
+    print(base)
+    path = os.path.join(base, 'jinja', 'templates')
     return path
 
 def stylesheet_path(stylesheet):
     base = os.getcwd()
-    path = os.path.join(base, 'app', 'includes', 'stylesheet', stylesheet)
+    path = os.path.join(base, 'includes', 'stylesheet', stylesheet)
     return path
 
 @app.route('/marks')
@@ -48,6 +51,11 @@ def marks():
     print("running marks")
     loader = jinja2.FileSystemLoader(searchpath=template_path())
     env = jinja2.Environment(loader=loader)
+
+    print("env")
+    print(env)
+
+    print("here's jinja")
 
     options = {
         'ne':"Course ABC",
@@ -65,14 +73,23 @@ def marks():
         'comment_a':"Comment A"
     }
 
+    print("before template")
     template = env.get_template('feedback_marks.html')
+
+
+    print("before stylesheet")
     stylesheet = stylesheet_path(options['stylesheet'])
 
+    print("before try")
+
     try:
+        print("during try")
         html_out = template.render(options=options,
                                    record=record)
         pdf_out = HTML(string=html_out).write_pdf(stylesheets=[stylesheet])
     except Exception:
+        print("during except")
         print("test")
 
+    print("before return")
     return Response(pdf_out, mimetype="application/pdf")

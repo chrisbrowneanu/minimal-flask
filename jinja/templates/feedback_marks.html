@@ -1,0 +1,14 @@
+{% extends "pdf.html" %}
+{% block title %}{{ record.title|replace("_", " ") }}{% endblock %}
+{% block author %}{{ record.author }}{% endblock %}
+{% block date %}{{ record.date }}{% endblock %}"/>
+{% block assignment_title %}{{ record.assignment_title }}{% endblock %}"/>
+{% block content %}
+    <h1>{{ options.h1_text}}
+        {{ record.name|replace("_", " ") }}
+        {% if record.user %}({{ record.user }}){% endif %}
+    </h1>
+    <p>{{ options.p_text}}</p>
+    <h2>{{ options.h2_text}}</h2>
+        {{ record.comment_a }}
+{% endblock %}
