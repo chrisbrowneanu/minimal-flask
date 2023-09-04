@@ -1,4 +1,9 @@
 from flask import Flask, Response, jsonify, request
+from weasyprint import HTML
+import jinja2
+import os
+from flask import Response
+
 
 from .errors import errors
 
@@ -26,6 +31,16 @@ def custom():
 def health():
     return Response("OK", status=200)
 
+
+def template_path():
+    base = os.getcwd()
+    path = os.path.join(base, 'app', 'jinja', 'templates')
+    return path
+
+def stylesheet_path(stylesheet):
+    base = os.getcwd()
+    path = os.path.join(base, 'app', 'includes', 'stylesheet', stylesheet)
+    return path
 
 @app.route('/marks')
 def marks():
