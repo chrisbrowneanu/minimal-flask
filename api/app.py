@@ -2,7 +2,6 @@ from flask import Flask, Response, jsonify, request
 from weasyprint import HTML
 import jinja2
 import os
-from flask import Response
 
 
 from .errors import errors
@@ -46,6 +45,7 @@ def stylesheet_path(stylesheet):
 def marks():
     '''turns the marks json into stylesheet feedback'''
 
+    print("running marks")
     loader = jinja2.FileSystemLoader(searchpath=template_path())
     env = jinja2.Environment(loader=loader)
 

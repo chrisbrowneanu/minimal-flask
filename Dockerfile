@@ -1,4 +1,8 @@
-FROM python:3.7.8-slim
+FROM python:3.11
+
+RUN apt update && apt upgrade -y
+
+RUN apt install git build-essential python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info -y
 
 COPY requirements/common.txt requirements/common.txt
 RUN pip install -U pip && pip install -r requirements/common.txt
