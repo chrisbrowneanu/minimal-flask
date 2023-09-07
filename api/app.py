@@ -11,7 +11,7 @@ app.register_blueprint(errors, flush=True)
 
 @app.route("/")
 def index():
-    return Response("Hello, it's running even better now!", status=200)
+    return Response("Hello, it's running even better now with html_out!", status=200)
 
 
 @app.route("/custom", methods=["POST"])
