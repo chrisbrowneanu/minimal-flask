@@ -1,15 +1,16 @@
+import logging
+import os
+
+import jinja2
 from flask import Flask, Response, jsonify, request
 from weasyprint import HTML
-import jinja2
-import os
-import logging
-
 
 from .errors import errors
 
 app = Flask(__name__)
 app.register_blueprint(errors, flush=True)
 logger = logging.getLogger(__name__)
+
 
 @app.route("/")
 def index():
@@ -38,17 +39,19 @@ def template_path():
     base = os.getcwd()
     print("base", flush=True)
     print(base, flush=True)
-    path = os.path.join(base, 'jinja', 'templates')
+    path = os.path.join(base, "jinja", "templates")
     return path
+
 
 def stylesheet_path(stylesheet):
     base = os.getcwd()
-    path = os.path.join(base, 'includes', 'stylesheet', stylesheet)
+    path = os.path.join(base, "includes", "stylesheet", stylesheet)
     return path
 
-@app.route('/marks')
+
+@app.route("/marks")
 def marks():
-    '''turns the marks json into stylesheet feedback'''
+    """turns the marks json into stylesheet feedback"""
     logger.warning(f"running marks")
     print("running marks", flush=True)
     loader = jinja2.FileSystemLoader(searchpath=template_path())
@@ -60,34 +63,32 @@ def marks():
     print("here's jinja", flush=True)
 
     options = {
-        'ne':"Course ABC",
-        'nw':"XYZ",
-        'h1_text':"Feedback for",
-        'h2_text':"General comments",
-        'p_text':"Feedback against criteria",
-        'stylesheet':'single.css'
+        "ne": "Course ABC",
+        "nw": "XYZ",
+        "h1_text": "Feedback for",
+        "h2_text": "General comments",
+        "p_text": "Feedback against criteria",
+        "stylesheet": "single.css",
     }
 
     record = {
-        'title':"Record Title",
-        'name':"Record Name",
-        'user':"Record User",
-        'comment_a':"Comment A"
+        "title": "Record Title",
+        "name": "Record Name",
+        "user": "Record User",
+        "comment_a": "Comment A",
     }
 
     print("before template", flush=True)
-    template = env.get_template('feedback_marks.html')
-
+    template = env.get_template("feedback_marks.html")
 
     print("before stylesheet", flush=True)
-    stylesheet = stylesheet_path(options['stylesheet'])
+    stylesheet = stylesheet_path(options["stylesheet"])
 
     print("before try", flush=True)
 
     try:
         print("during try", flush=True)
-        html_out = template.render(options=options,
-                                   record=record)
+        html_out = template.render(options=options, record=record)
         pdf_out = HTML(string=html_out).write_pdf(stylesheets=[stylesheet])
     except Exception:
         print("during except", flush=True)
