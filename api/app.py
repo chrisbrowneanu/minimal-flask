@@ -1,6 +1,4 @@
-import logging
 import os
-
 import jinja2
 from flask import Flask, Response, jsonify, request
 from weasyprint import HTML
@@ -9,7 +7,6 @@ from .errors import errors
 
 app = Flask(__name__)
 app.register_blueprint(errors, flush=True)
-logger = logging.getLogger(__name__)
 
 
 @app.route("/")
@@ -52,7 +49,6 @@ def stylesheet_path(stylesheet):
 @app.route("/marks")
 def marks():
     """turns the marks json into stylesheet feedback"""
-    logger.warning(f"running marks")
     print("running marks", flush=True)
     loader = jinja2.FileSystemLoader(searchpath=template_path())
     env = jinja2.Environment(loader=loader)
