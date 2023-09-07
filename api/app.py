@@ -1,5 +1,5 @@
 from flask import Flask, Response, jsonify, request
-from weasyprint import HTM, flush=TrueL
+from weasyprint import HTML
 import jinja2
 import os
 
