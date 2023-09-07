@@ -82,13 +82,15 @@ def marks():
 
     print("before try", flush=True)
 
-    try:
-        print("during try", flush=True)
-        html_out = template.render(options=options, record=record)
-        # pdf_out = HTML(string=html_out).write_pdf(stylesheets=[stylesheet])
-    except Exception:
-        print("during except", flush=True)
-        print("test", flush=True)
+    # try:
+    #     print("during try", flush=True)
+    #     html_out = template.render(options=options, record=record)
+    #     pdf_out = HTML(string=html_out).write_pdf(stylesheets=[stylesheet])
+    # except Exception:
+    #     print("during except", flush=True)
+    #     print("test", flush=True)
 
     print("before return", flush=True)
-    return Response(html_out, mimetype="application/pdf")
+
+    return Response("trying marks...!", status=200)
+    # return Response(html_out, mimetype="application/pdf")
