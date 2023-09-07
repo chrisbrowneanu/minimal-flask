@@ -2,4 +2,3 @@ flask
 gunicorn
 Jinja2
 weasyprint
-opencensus-ext-azure
