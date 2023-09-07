@@ -85,10 +85,10 @@ def marks():
     try:
         print("during try", flush=True)
         html_out = template.render(options=options, record=record)
-        pdf_out = HTML(string=html_out).write_pdf(stylesheets=[stylesheet])
+        # pdf_out = HTML(string=html_out).write_pdf(stylesheets=[stylesheet])
     except Exception:
         print("during except", flush=True)
         print("test", flush=True)
 
     print("before return", flush=True)
-    return Response(pdf_out, mimetype="application/pdf")
+    return Response(html_out, mimetype="application/pdf")
