@@ -11,6 +11,11 @@ app.register_blueprint(errors, flush=True)
 
 @app.route("/")
 def index():
+    app.logger.debug('this is a DEBUG message')
+    app.logger.info('this is an INFO message')
+    app.logger.warning('this is a WARNING message')
+    app.logger.error('this is an ERROR message')
+    app.logger.critical('this is a CRITICAL message')
     return Response("Hello, it's running even better now with html_out!", status=200)
 
 
