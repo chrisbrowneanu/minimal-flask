@@ -47,6 +47,8 @@ def template_path():
     print("base", flush=True)
     print(base, flush=True)
     path = os.path.join(base, "jinja", "templates")
+    print("path")
+    print(path, flush=True)
     return path
 
 
