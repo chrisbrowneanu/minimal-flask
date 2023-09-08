@@ -3,6 +3,8 @@ import jinja2
 from flask import Flask, Response, jsonify, request
 from weasyprint import HTML
 import logging
+from os import walk
+
 
 
 from .errors import errors
@@ -49,6 +51,7 @@ def template_path():
     path = os.path.join(base, "jinja", "templates")
     print("path")
     print(path, flush=True)
+    print (os.listdir(path))
     return path
 
 
