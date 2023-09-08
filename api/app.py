@@ -2,12 +2,19 @@ import os
 import jinja2
 from flask import Flask, Response, jsonify, request
 from weasyprint import HTML
+import logging
+
 
 from .errors import errors
 
 app = Flask(__name__)
 app.register_blueprint(errors, flush=True)
 
+
+if __name__ != '__main__':
+    gunicorn_logger = logging.getLogger('gunicorn.error')
+    app.logger.handlers = gunicorn_logger.handlers
+    app.logger.setLevel(gunicorn_logger.level)
 
 @app.route("/")
 def index():
