@@ -59,14 +59,14 @@ def stylesheet_path(stylesheet):
 @app.route("/marks")
 def marks():
     """turns the marks json into stylesheet feedback"""
-    print("running marks", flush=True)
+    app.logger.debug("running marks")
     loader = jinja2.FileSystemLoader(searchpath=template_path())
     env = jinja2.Environment(loader=loader)
 
-    print("env", flush=True)
-    print(env, flush=True)
+    app.logger.debug("env")
+    app.logger.debug(env)
 
-    print("here's jinja", flush=True)
+    app.logger.debug("here's jinja")
 
     options = {
         "ne": "Course ABC",
@@ -84,23 +84,23 @@ def marks():
         "comment_a": "Comment A",
     }
 
-    print("before template", flush=True)
+    app.logger.debug("before template")
     template = env.get_template("feedback_marks.html")
 
-    print("before stylesheet", flush=True)
+    app.logger.debug("before stylesheet")
     stylesheet = stylesheet_path(options["stylesheet"])
 
-    print("before try", flush=True)
+    app.logger.debug("before try")
 
-    # try:
-    #     print("during try", flush=True)
-    #     html_out = template.render(options=options, record=record)
-    #     pdf_out = HTML(string=html_out).write_pdf(stylesheets=[stylesheet])
-    # except Exception:
-    #     print("during except", flush=True)
-    #     print("test", flush=True)
+    try:
+        app.logger.debug("during try")
+        html_out = template.render(options=options, record=record)
+        pdf_out = HTML(string=html_out).write_pdf(stylesheets=[stylesheet])
+    except Exception:
+        app.logger.debug("during except")
+        print("test", flush=True)
 
-    print("before return", flush=True)
+    app.logger.debug("before return")
 
-    return Response("trying marks...!", status=200)
-    # return Response(html_out, mimetype="application/pdf")
+    # return Response("trying marks...!", status=200)
+    return Response(html_out, mimetype="application/pdf")
