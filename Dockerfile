@@ -17,7 +17,8 @@ WORKDIR /app
 RUN useradd demo
 USER demo
 
-RUN fc-cache -f -v
+RUN fc-list
+#RUN fc-cache -f -v
 
 
 EXPOSE 8080
