@@ -2,10 +2,10 @@ FROM ubuntu:latest
 
 RUN apt update && apt upgrade -y
 
-RUN apt install git build-essential python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info fontconfig -y
+RUN apt install python3-pip git build-essential python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info fontconfig -y
 
 COPY requirements/common.txt requirements/common.txt
-RUN pip install -U pip && pip install -r requirements/common.txt
+RUN pip3 install -U pip && pip3 install -r requirements/common.txt
 
 COPY ./api /app/api
 COPY ./bin /app/bin
