@@ -17,8 +17,8 @@ WORKDIR /app
 RUN useradd demo
 USER demo
 
-ENV OSFONTDIR=/usr/share/fonts
-RUN fc-cache --really-force --verbose
+#ENV OSFONTDIR=/usr/share/fonts
+#RUN fc-cache --really-force --verbose
 
 
 EXPOSE 8080
