@@ -44,17 +44,17 @@ def health():
 
 
 def template_path():
-    print("template path", flush=True)
+    app.logger.debug("template path")
     base = os.getcwd()
-    print("base", flush=True)
-    print(base, flush=True)
+    app.logger.debug("base")
+    app.logger.debug(base)
     path = os.path.join(base, "jinja", "templates")
-    print("path")
-    print(path, flush=True)
-    print("listdir")
-    print(os.listdir())
-    print("listdir-path")
-    print (os.listdir(path))
+    app.logger.debug("path")
+    app.logger.debug(path)
+    app.logger.debug("listdir")
+    app.logger.debug(os.listdir())
+    app.logger.debug("listdir-path")
+    app.logger.debug(os.listdir(path))
     return path
 
 
