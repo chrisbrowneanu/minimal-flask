@@ -2,7 +2,7 @@ FROM python:3.11
 
 RUN apt update && apt upgrade -y
 
-RUN apt install git build-essential python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info -y
+RUN apt install git build-essential python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info fontconfig -y
 
 COPY requirements/common.txt requirements/common.txt
 RUN pip install -U pip && pip install -r requirements/common.txt
@@ -18,8 +18,7 @@ RUN useradd demo
 USER demo
 
 ENV OSFONTDIR=/usr/share/fonts
-RUN chmod -R o+w /opt/texlive/texdir/texmf-var \
-  && fc-cache --really-force --verbose
+RUN fc-cache --really-force --verbose
 
 
 EXPOSE 8080
