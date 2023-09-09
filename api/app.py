@@ -23,7 +23,7 @@ def index():
     app.logger.warning('this is a WARNING message')
     app.logger.error('this is an ERROR message')
     app.logger.critical('this is a CRITICAL message')
-    return Response("Hello, it's running even better now with html_out!", status=200)
+    return Response("Hello, Ubuntu!", status=200)
 
 
 @app.route("/custom", methods=["POST"])
