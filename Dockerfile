@@ -17,6 +17,8 @@ WORKDIR /app
 RUN useradd demo
 USER demo
 
+RUN export FONTCONFIG_PATH=/app/includes/fonts
+
 EXPOSE 8080
 
 ENTRYPOINT ["bash", "/app/bin/run.sh"]
