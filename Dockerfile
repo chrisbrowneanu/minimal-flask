@@ -9,6 +9,8 @@ RUN pip install -U pip && pip install -r requirements/common.txt
 
 COPY ./api /app/api
 COPY ./bin /app/bin
+COPY ./jinja /app/jinja
+COPY ./includes /app/includes
 COPY wsgi.py /app/wsgi.py
 WORKDIR /app
 
