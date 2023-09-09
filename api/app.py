@@ -111,4 +111,5 @@ def marks():
     app.logger.debug("before return")
 
     # return Response("trying marks...!", status=200)
-    return Response(pdf_out, mimetype="application/pdf")
+    # return Response(pdf_out, mimetype="application/pdf")
+    return Response(html_out, status=200)
