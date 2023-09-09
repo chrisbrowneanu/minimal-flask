@@ -17,8 +17,9 @@ WORKDIR /app
 RUN useradd demo
 USER demo
 
-RUN fc-list
-#RUN fc-cache -f -v
+ENV OSFONTDIR=/usr/share/fonts
+RUN chmod -R o+w /opt/texlive/texdir/texmf-var \
+  && fc-cache --really-force --verbose
 
 
 EXPOSE 8080
