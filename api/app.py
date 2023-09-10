@@ -102,9 +102,8 @@ def marks():
 
     try:
         app.logger.debug("during try")
-        html_out = template.render(options=options, record=record)
+        html_out = template.render(options=options, record=record, stylesheet=stylesheet)
         pdf_out = HTML(string=html_out).write_pdf()
-        # pdf_out = HTML(string=html_out).write_pdf(stylesheets=[stylesheet])
     except Exception:
         app.logger.debug("during except")
         print("test", flush=True)

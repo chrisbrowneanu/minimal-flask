@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+@font-face {
+        font-family: "Public Sans";
+        src: url(/app/includes/fonts/PublicSans-Regular.ttf);
+    }
 
 @page {
 margin-left: 1cm;
@@ -126,7 +130,7 @@ position: relative;
 
 html {
   color: #000000;
-  font-family: sans-serif;
+  font-family: 'Public Sans','Roboto', sans-serif;
   font-size: 11pt;
   font-weight: 300;
   line-height: 1.3; }
