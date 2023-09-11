@@ -7,10 +7,10 @@
     <link rel="stylesheet" type="text/css" href="/static/css/single.css">
 </head>
 <body>
-<header id="nw">{% block nw %}{% if options.nw %}{{ options.nw }}{% endif %}{% endblock %}</header>
-<header id="ne">{% block ne %}{% if options.ne %}{{ options.ne }}{% endif %}{% endblock %}</header>
-<footer id="sw">{% block sw %}{% if options.sw %}{{ options.sw }}{% endif %}{% endblock %}</footer>
-<footer id="se">{% block se %}{% if options.se %}{{ options.se }}{% endif %}{% endblock %}</footer>
+<header id="nw">{% block nw %}{% if variables.pdf_nw %}{{ variables.pdf_nw }}{% endif %}{% endblock %}</header>
+<header id="ne">{% block ne %}{% if variables.pdf_ne %}{{ variables.pdf_ne }}{% endif %}{% endblock %}</header>
+<footer id="sw">{% block sw %}{% if variables.pdf_sw %}{{ variables.pdf_sw }}{% endif %}{% endblock %}</footer>
+<footer id="se">{% block se %}{% if variables.pdf_se %}{{ variables.pdf_se }}{% endif %}{% endblock %}</footer>
 {% block content %}{% endblock %}
 </body>
 </html>

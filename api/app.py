@@ -20,7 +20,7 @@ app.logger.setLevel(gunicorn_logger.level)
 def index():
     app.logger.debug('DEBUG logging')
     app.logger.info('INFO logging')
-    return Response("VirtuousLoop is running! This_info", status=200)
+    return Response("VirtuousLoop is running! That info", status=200)
 
 
 @app.route("/custom", methods=["POST"])
@@ -58,31 +58,24 @@ def marks():
     loader = jinja2.FileSystemLoader(searchpath=template_path())
     env = jinja2.Environment(loader=loader)
 
-    default_options = {
-        "ne": "Course ABC",
-        "nw": "XYZ",
-        "h1_text": "Feedback for",
-        "h2_text": "General comments",
-        "p_text": "Feedback against criteria",
-        "stylesheet": "single.css",
+    variables = {
+        "pdf_ne": request.args.get(pdf_ne, "Course ABC"),
+        "pdf_nw": request.args.get(pdf_nw, "XYZ"),
+        "pdf_h1_text": request.args.get(pdf_h1_text, "Feedback for"),
+        "pdf_h2_text": request.args.get(pdf_h2_text, "General comments"),
+        "pdf_p_text": request.args.get(pdf_p_text, "Feedback against criteria"),
+        "pdf_stylesheet": request.args.get(pdf_stylesheet, "single.css"),
+        "record_title": request.args.get(record_title, "Record Title"),
+        "record_name": request.args.get(record_name, "Record Name"),
+        "record_user": request.args.get(record_user, "Record User"),
+        "record_comment_a": request.args.get(record_comment_a, "Comment A"),
     }
-
-    default_record = {
-        "title": "Record Title",
-        "name": "Record Name",
-        "user": "Record User",
-        "comment_a": "Comment A",
-    }
-
-    options = request.args.get('options', default_options)
-    record = request.args.get('record', default_record)
-    this_info = request.get_json()
 
     template = env.get_template("feedback_marks.html")
-    stylesheet = stylesheet_path(options["stylesheet"])
+    stylesheet = stylesheet_path(variables["pdf_stylesheet"])
 
     try:
-        html_out = template.render(options=options, record=record, this_info=this_info)
+        html_out = template.render(variables=variables)
         pdf_out = HTML(string=html_out).write_pdf(stylesheets=[stylesheet])
     except Exception:
         app.logger.debug("Exception on pdf_out")

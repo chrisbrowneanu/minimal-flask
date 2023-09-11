@@ -1,15 +1,15 @@
 {% extends "pdf.html" %}
-{% block title %}{{ record.title|replace("_", " ") }}{% endblock %}
-{% block author %}{{ record.author }}{% endblock %}
-{% block date %}{{ record.date }}{% endblock %}"/>
-{% block assignment_title %}{{ record.assignment_title }}{% endblock %}"/>
+{% block title %}{{ variables.record_title|replace("_", " ") }}{% endblock %}
+{% block author %}{{ variables.record_author }}{% endblock %}
+{% block date %}{{ variables.record_date }}{% endblock %}"/>
+{% block assignment_title %}{{ variables.record_assignment_title }}{% endblock %}"/>
 {% block content %}
-    <h1>{{ options.h1_text}}
-        {{ record.name|replace("_", " ") }}
-        {% if record.user %}({{ record.user }}){% endif %}
+    <h1>{{ variables.pdf_h1_text}}
+        {{ variables.record_name|replace("_", " ") }}
+        {% if variables.record_user %}({{ variables.record_user }}){% endif %}
     </h1>
-    <p>{{ options.p_text}}</p>
-    <h2>{{ options.h2_text}}</h2>
-        {{ record.comment_a }}
+    <p>{{ variables.pdf_p_text}}</p>
+    <h2>{{ variables.pdf_h2_text}}</h2>
+        {{ variables.record_comment_a }}
         {{ this_info }}
 {% endblock %}
