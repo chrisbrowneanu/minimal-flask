@@ -20,7 +20,7 @@ app.logger.setLevel(gunicorn_logger.level)
 def index():
     app.logger.debug('DEBUG logging')
     app.logger.info('INFO logging')
-    return Response("VirtuousLoop is running!", status=200)
+    return Response("VirtuousLoop is running! This_info", status=200)
 
 
 @app.route("/custom", methods=["POST"])
@@ -76,12 +76,13 @@ def marks():
 
     options = request.args.get('options', default_options)
     record = request.args.get('record', default_record)
+    this_info = request.get_json()
 
     template = env.get_template("feedback_marks.html")
     stylesheet = stylesheet_path(options["stylesheet"])
 
     try:
-        html_out = template.render(options=options, record=record)
+        html_out = template.render(options=options, record=record, this_info=this_info)
         pdf_out = HTML(string=html_out).write_pdf(stylesheets=[stylesheet])
     except Exception:
         app.logger.debug("Exception on pdf_out")
