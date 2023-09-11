@@ -26,3 +26,6 @@ test:
 
 load-test:
 	@locust -f tests/load/locustfiles/api.py
+
+test-run:
+	@bash bin/test.sh

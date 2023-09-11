@@ -44,37 +44,23 @@ def health():
 
 
 def template_path():
-    app.logger.debug("template path")
     base = os.getcwd()
-    app.logger.debug("base")
-    app.logger.debug(base)
     path = os.path.join(base, "jinja", "templates")
-    app.logger.debug("path")
-    app.logger.debug(path)
-    app.logger.debug("listdir")
-    app.logger.debug(os.listdir())
-    app.logger.debug("listdir-path")
-    app.logger.debug(os.listdir(path))
     return path
 
 
 def stylesheet_path(stylesheet):
     base = os.getcwd()
-    path = os.path.join(base, "includes", "stylesheet", stylesheet)
+    path = os.path.join(base, "static", "css", stylesheet)
     return path
 
 
 @app.route("/marks")
 def marks():
-    """turns the marks json into stylesheet feedback"""
+    """turns the marks json into css feedback"""
     app.logger.debug("running marks")
     loader = jinja2.FileSystemLoader(searchpath=template_path())
     env = jinja2.Environment(loader=loader)
-
-    app.logger.debug("env")
-    app.logger.debug(env)
-
-    app.logger.debug("here's jinja")
 
     options = {
         "ne": "Course ABC",
@@ -97,12 +83,14 @@ def marks():
 
     app.logger.debug("before stylesheet")
     stylesheet = stylesheet_path(options["stylesheet"])
+    print(stylesheet)
 
     app.logger.debug("before try")
 
     try:
         app.logger.debug("during try")
-        html_out = template.render(options=options, record=record, stylesheet=stylesheet)
+        html_out = template.render(options=options, record=record)
+        pdf_out = HTML(string=html_out).write_pdf(stylesheets=[stylesheet])
         # pdf_out = HTML(string=html_out).write_pdf()
     except Exception:
         app.logger.debug("during except")
@@ -111,5 +99,5 @@ def marks():
     app.logger.debug("before return")
 
     # return Response("trying marks...!", status=200)
-    # return Response(pdf_out, mimetype="application/pdf")
-    return Response(html_out, status=200)
+    return Response(pdf_out, mimetype="application/pdf")
+    # return Response(html_out, status=200)

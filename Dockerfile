@@ -10,8 +10,9 @@ RUN pip3 install -U pip && pip3 install -r requirements/common.txt
 COPY ./api /app/api
 COPY ./bin /app/bin
 COPY ./jinja /app/jinja
-COPY ./includes /app/includes
+COPY ./static /app/static
 COPY wsgi.py /app/wsgi.py
+
 WORKDIR /app
 
 RUN useradd demo
