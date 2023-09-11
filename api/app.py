@@ -18,12 +18,9 @@ app.logger.setLevel(gunicorn_logger.level)
 
 @app.route("/")
 def index():
-    app.logger.debug('this is a DEBUG message')
-    app.logger.info('this is an INFO message')
-    app.logger.warning('this is a WARNING message')
-    app.logger.error('this is an ERROR message')
-    app.logger.critical('this is a CRITICAL message')
-    return Response("Hello, Ubuntu!", status=200)
+    app.logger.debug('DEBUG logging')
+    app.logger.info('INFO logging')
+    return Response("VirtuousLoop is running!", status=200)
 
 
 @app.route("/custom", methods=["POST"])
@@ -55,14 +52,13 @@ def stylesheet_path(stylesheet):
     return path
 
 
-@app.route("/marks")
+@app.route("/marks", methods=["PUT"])
 def marks():
     """turns the marks json into css feedback"""
-    app.logger.debug("running marks")
     loader = jinja2.FileSystemLoader(searchpath=template_path())
     env = jinja2.Environment(loader=loader)
 
-    options = {
+    default_options = {
         "ne": "Course ABC",
         "nw": "XYZ",
         "h1_text": "Feedback for",
@@ -71,33 +67,23 @@ def marks():
         "stylesheet": "single.css",
     }
 
-    record = {
+    default_record = {
         "title": "Record Title",
         "name": "Record Name",
         "user": "Record User",
         "comment_a": "Comment A",
     }
 
-    app.logger.debug("before template")
+    options = request.args.get('options', default_options)
+    record = request.args.get('record', default_record)
+
     template = env.get_template("feedback_marks.html")
-
-    app.logger.debug("before stylesheet")
     stylesheet = stylesheet_path(options["stylesheet"])
-    print(stylesheet)
-
-    app.logger.debug("before try")
 
     try:
-        app.logger.debug("during try")
         html_out = template.render(options=options, record=record)
         pdf_out = HTML(string=html_out).write_pdf(stylesheets=[stylesheet])
-        # pdf_out = HTML(string=html_out).write_pdf()
     except Exception:
-        app.logger.debug("during except")
-        print("test", flush=True)
+        app.logger.debug("Exception on pdf_out")
 
-    app.logger.debug("before return")
-
-    # return Response("trying marks...!", status=200)
     return Response(pdf_out, mimetype="application/pdf")
-    # return Response(html_out, status=200)
