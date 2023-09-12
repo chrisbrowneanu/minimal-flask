@@ -58,7 +58,7 @@ def default_var():
         "pdf_h1_text": 'pdf_h1_text',
         "pdf_h2_text": 'pdf_h2_text',
         "pdf_p_text": 'pdf_p_text',
-        "pdf_stylesheet": 'styles.css',
+        "pdf_stylesheet": 'single.css',
         "record_title": 'record_title',
         "record_name": 'record_name',
         "record_user": 'record_user',
@@ -75,6 +75,7 @@ def marks():
     data_received = request.get_json()
     default_variables = default_var()
     variables =  default_variables | data_received
+    print(variables)
 
     template = env.get_template("feedback_marks.html")
     stylesheet = stylesheet_path(variables["pdf_stylesheet"])
