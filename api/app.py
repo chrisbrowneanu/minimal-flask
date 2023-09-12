@@ -81,7 +81,8 @@ def marks():
 
     try:
         html_out = template.render(variables=variables)
-        pdf_out = HTML(string=html_out).write_pdf(stylesheets=[stylesheet])
+        # pdf_out = HTML(string=html_out).write_pdf(stylesheets=[stylesheet])
+        pdf_out = HTML(string=html_out).write_pdf()
     except Exception:
         app.logger.debug("Exception on pdf_out")
 
