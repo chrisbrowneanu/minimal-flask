@@ -58,7 +58,7 @@ def default_var():
         "pdf_h1_text": 'pdf_h1_text',
         "pdf_h2_text": 'pdf_h2_text',
         "pdf_p_text": 'pdf_p_text',
-        "pdf_stylesheet": 'pdf_stylesheet',
+        "pdf_stylesheet": 'styles.css',
         "record_title": 'record_title',
         "record_name": 'record_name',
         "record_user": 'record_user',
@@ -81,8 +81,7 @@ def marks():
 
     try:
         html_out = template.render(variables=variables)
-        # pdf_out = HTML(string=html_out).write_pdf(stylesheets=[stylesheet])
-        pdf_out = HTML(string=html_out).write_pdf()
+        pdf_out = HTML(string=html_out).write_pdf(stylesheets=[stylesheet])
     except Exception:
         app.logger.debug("Exception on pdf_out")
 
