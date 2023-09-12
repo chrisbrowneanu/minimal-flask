@@ -20,7 +20,7 @@ app.logger.setLevel(gunicorn_logger.level)
 def index():
     app.logger.debug('DEBUG logging')
     app.logger.info('INFO logging')
-    return Response("VirtuousLoop is running! That info", status=200)
+    return Response("VirtuousLoop is running! Still trying", status=200)
 
 
 @app.route("/custom", methods=["POST"])
