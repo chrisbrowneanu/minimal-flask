@@ -51,25 +51,34 @@ def stylesheet_path(stylesheet):
     path = os.path.join(base, "static", "css", stylesheet)
     return path
 
+def default_var():
+    d = {
+        "pdf_ne": 'pdf_ne',
+        "pdf_nw": 'pdf_nw',
+        "pdf_h1_text": 'pdf_h1_text',
+        "pdf_h2_text": 'pdf_h2_text',
+        "pdf_p_text": 'pdf_p_text',
+        "pdf_stylesheet": 'pdf_stylesheet',
+        "record_title": 'record_title',
+        "record_name": 'record_name',
+        "record_user": 'record_user',
+        "record_comment_a": 'record_comment_a'
+    }
+    return d
 
-@app.route("/marks", methods=["PUT"])
+@app.route("/marks", methods = ['POST'])
 def marks():
     """turns the marks json into css feedback"""
     loader = jinja2.FileSystemLoader(searchpath=template_path())
     env = jinja2.Environment(loader=loader)
 
-    variables = {
-        "pdf_ne": request.args.get(pdf_ne, "Course ABC"),
-        "pdf_nw": request.args.get(pdf_nw, "XYZ"),
-        "pdf_h1_text": request.args.get(pdf_h1_text, "Feedback for"),
-        "pdf_h2_text": request.args.get(pdf_h2_text, "General comments"),
-        "pdf_p_text": request.args.get(pdf_p_text, "Feedback against criteria"),
-        "pdf_stylesheet": request.args.get(pdf_stylesheet, "single.css"),
-        "record_title": request.args.get(record_title, "Record Title"),
-        "record_name": request.args.get(record_name, "Record Name"),
-        "record_user": request.args.get(record_user, "Record User"),
-        "record_comment_a": request.args.get(record_comment_a, "Comment A"),
-    }
+    data_received = request.get_json()
+
+    default_variables = default_var()
+
+    variables =  default_variables | data_received
+    print(variables)
+
 
     template = env.get_template("feedback_marks.html")
     stylesheet = stylesheet_path(variables["pdf_stylesheet"])
