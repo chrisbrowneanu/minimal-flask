@@ -73,12 +73,8 @@ def marks():
     env = jinja2.Environment(loader=loader)
 
     data_received = request.get_json()
-
     default_variables = default_var()
-
     variables =  default_variables | data_received
-    print(variables)
-
 
     template = env.get_template("feedback_marks.html")
     stylesheet = stylesheet_path(variables["pdf_stylesheet"])
