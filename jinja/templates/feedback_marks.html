@@ -1,15 +1,10 @@
 {% extends "pdf.html" %}
-{% block title %}{{ variables.record_title|replace("_", " ") }}{% endblock %}
-{% block author %}{{ variables.record_author }}{% endblock %}
-{% block date %}{{ variables.record_date }}{% endblock %}"/>
-{% block assignment_title %}{{ variables.record_assignment_title }}{% endblock %}"/>
 {% block content %}
-    <h1>{{ variables.pdf_h1_text}}
-        {{ variables.record_name|replace("_", " ") }}
+    <h1>{% if variables.pdf_header_1 %}{{ variables.pdf_header_1}}{% endif %}
+        {% if variables.record_name %}{{ variables.record_name|replace("_", " ") }}{% endif %}
         {% if variables.record_user %}({{ variables.record_user }}){% endif %}
     </h1>
-    <p>{{ variables.pdf_p_text}}</p>
-    <h2>{{ variables.pdf_h2_text}}</h2>
-        {{ variables.record_comment_a }}
-        {{ this_info }}
+    {% if variables.pdf_description_text %}<p>{{ variables.pdf_description_text}}</p>{% endif %}
+    {% if variables.pdf_header_2 %}<h2>{{ variables.pdf_header_2}}</h2>{% endif %}
+    {% if variables.record_main_text %}{{ variables.record_main_text }}{% endif %}
 {% endblock %}

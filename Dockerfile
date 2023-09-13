@@ -15,8 +15,8 @@ COPY wsgi.py /app/wsgi.py
 
 WORKDIR /app
 
-RUN useradd demo
-USER demo
+#RUN useradd demo
+#USER demo
 
 #ENV OSFONTDIR=/usr/share/fonts
 #RUN fc-cache --really-force --verbose
