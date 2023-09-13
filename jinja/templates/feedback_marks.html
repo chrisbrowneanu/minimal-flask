@@ -1,10 +1,13 @@
 {% extends "pdf.html" %}
 {% block content %}
-    <h1>{% if variables.pdf_header_1 %}{{ variables.pdf_header_1}}{% endif %}
-        {% if variables.record_name %}{{ variables.record_name|replace("_", " ") }}{% endif %}
-        {% if variables.record_user %}({{ variables.record_user }}){% endif %}
+    <h1>{% if variables.pdf_header %}{{ variables.pdf_header}}{% endif %}
+        {% if variables.record_header %}{{ variables.record_header|replace("_", " ") }}{% endif %}
     </h1>
-    {% if variables.pdf_description_text %}<p>{{ variables.pdf_description_text}}</p>{% endif %}
-    {% if variables.pdf_header_2 %}<h2>{{ variables.pdf_header_2}}</h2>{% endif %}
-    {% if variables.record_main_text %}{{ variables.record_main_text }}{% endif %}
+    {% if variables.pdf_description %}<p>{{ variables.pdf_description}}</p>{% endif %}
+    {% if variables.pdf_header_a %}<h2>{{ variables.pdf_header_a}}</h2>{% endif %}
+    {% if variables.record_text_a %}<p>{{ variables.record_text_a }}</p>{% endif %}
+    {% if variables.pdf_header_b %}<h2>{{ variables.pdf_header_b}}</h2>{% endif %}
+    {% if variables.record_text_b %}<p>{{ variables.record_text_b }}</p>{% endif %}
+    {% if variables.pdf_header_c %}<h2>{{ variables.pdf_header_c}}</h2>{% endif %}
+    {% if variables.record_text_c %}<p>{{ variables.record_text_c }}</p>{% endif %}
 {% endblock %}
