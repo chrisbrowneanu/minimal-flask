@@ -1,0 +1,529 @@
+academic-plan,learning-outcomes-id,learning-outcomes
+4050FDD,0,nil
+4350FDD,0,nil
+4750FDD,0,nil
+AACOM,1,"Define and analyse complex problems, and design, implement and evaluate solutions that demonstrate an understanding of the systems context in which software is developed and operated including economic, social, historical, sustainability and ethical aspects."
+AACOM,2,"Demonstrate an operational and theoretical understanding of the foundations of computer science including programming, algorithms, logic, architectures and data structures."
+AACOM,3,"Recognise connections and recurring themes, including abstraction and complexity, across the discipline."
+AACOM,4,"Adapt to new environments and technologies, and to innovate."
+AACOM,5,Demonstrate an understanding of deep knowledge in at least one area of computer science.
+AACOM,6,Communicate complex concepts effectively with diverse audiences using a range of modalities.
+AACOM,7,Work effectively within teams in order to achieve a common goal.
+AACOM,8,"Demonstrate commitment to professional conduct and development that recognises the social, legal and ethical implications of their work, to work independently, and self- and peer-assess performance."
+AACOM,9,"Demonstrate an understanding of the fundamentals of research methodologies, including defining research problems, background reading and literature review, designing experiments, and effectively communicating results."
+AACOM,10,Apply research methods to the solution of contemporary research problems in computer science.
+AACRD,1,"Define and analyse complex problems, and design, implement and evaluate solutions that demonstrate an understanding of the systems context in which software is developed and operated including economic, social, historical, sustainability and ethical aspects"
+AACRD,2,"Demonstrate an operational and theoretical understanding of the foundations of computer science including programming, algorithms, logic, architectures and data structures"
+AACRD,3,"Recognise connections and recurring themes, including abstraction and complexity, across the discipline"
+AACRD,4,"Adapt to new environments and technologies, and to innovate"
+AACRD,5,Demonstrate an understanding of deep knowledge in at least one area of computer science
+AACRD,6,Communicate complex concepts effectively with diverse audiences using a range of modalities
+AACRD,7,Work effectively within teams in order to achieve a common goal
+AACRD,8,"Demonstrate commitment to professional conduct and development that recognises the social, legal and ethical implications of their work, to work independently, and self- and peer-assess performance"
+AACRD,9,"Demonstrate a deep understanding of the fundamentals of research methodologies, including defining research problems, background reading and literature review, designing experiments, and effectively communicating results"
+AACRD,10,"Proficiently apply research methods to the solution of contemporary research problems in computer science, and"
+AACRD,11,"Demonstrate an understanding of research processes including research proposals, article reviewing and ethics clearance."
+AENGI,1,Apply systematic engineering methods professionally to design optimised and sustainable solutions to complex and multi-disciplinary engineering problems.
+AENGI,2,"Construct and evaluate solutions to engineering problems by selecting and applying theoretical principles and methods from the underpinning physical, mathematical and information sciences, and broader transdisciplinary knowledge."
+AENGI,3,Demonstrate advanced technical knowledge and the application of appropriate tools in at least one field of engineering specialisation.
+AENGI,4,Compare current developments and emerging trends in at least one field of engineering specialisation.
+AENGI,5,"Understand the contextual factors that influence professional engineering practice, such as interpersonal, organizational, institutional, technological, physical, environmental, political and societal factors, and assess the potential societal, cultural, health, legal and environmental impact of engineering activities."
+AENGI,6,"Communicate and incorporate perspectives across disciplines effectively with colleagues, other engineering professionals and the broader community employing a range of communication media and tools."
+AENGI,7,"Engage in independent research through the application of research-based knowledge and research methods, including searching, analysing and evaluating information sources within and beyond their engineering discipline."
+AENGI,8,Engage responsibly in critical reflection on self-competence to practice ethically and independent learning to continue practicing at the forefront of the discipline.
+AENGI,9,"Work effectively and proactively within cross-cultural, multi-disciplinary teams, demonstrating autonomy, ethical conduct, well-developed judgement, adaptability and responsibility to achieve engineering outcomes at a high standard."
+AENRD,1,Apply systematic engineering methods professionally to design optimised and sustainable solutions to complex and multi-disciplinary engineering problems.
+AENRD,2,"Construct and evaluate solutions to engineering problems by selecting and applying theoretical principles and methods from the underpinning physical, mathematical and information sciences, and broader transdisciplinary knowledge."
+AENRD,3,Demonstrate advanced technical knowledge at the leading edge of the discipline and the application of appropriate tools in at least one field of engineering specialisation.
+AENRD,4,Compare current developments and emerging trends in at least one field of engineering specialisation.
+AENRD,5,"Understand the contextual factors that influence professional engineering practice, such as interpersonal, organizational, institutional, technological, physical, environmental, political and societal factors, and assess the potential societal, cultural, health, legal and environmental impact of engineering activities."
+AENRD,6,"Communicate and incorporate perspectives across disciplines effectively with colleagues, other engineering professionals and the broader community employing a range of communication media and tools."
+AENRD,7,"Engage in independent research at the leading edge of the discipline, via the completion of multiple individual research projects, through the application and synthesis of research-based knowledge and research methods."
+AENRD,8,Engage responsibly in critical reflection on self-competence to practice ethically and independent learning to continue practicing at the forefront of the discipline.
+AENRD,9,"Work effectively and proactively within cross-cultural, multi-disciplinary teams, demonstrating autonomy, ethical conduct, well-developed judgement, adaptability and responsibility to achieve engineering outcomes at a high standard."
+AENSE,1,"Professionally apply systematic engineering methods to design optimised and sustainable solutions to complex, multi-disciplinary real-world engineering problems."
+AENSE,2,"Formulate and evaluate solutions to software engineering problems by selecting and applying theoretical principles and methods from the underpinning mathematical, information and computer sciences."
+AENSE,3,Proficiently apply advanced technical knowledge and appropriate tools in software engineering practices.
+AENSE,4,Identify and critically evaluate current developments and emerging trends in the software engineering discipline.
+AENSE,5,"Understand the contextual factors that influence professional engineering practice, and identify the potential societal, ethical, and environmental impact of engineering activities."
+AENSE,6,"Communicate effectively with colleagues, other engineering professionals and the broader community employing a range of communication media and tools."
+AENSE,7,"Engage in independent research and investigation through the application of research-based knowledge and research methods, including searching, analysing and evaluating information sources within and beyond the software engineering discipline."
+AENSE,8,Engage effectively in critical reflection and independent learning to continue practicing at the forefront of the software engineering discipline.
+AENSE,9,"Work effectively and proactively within cross-cultural, multi-disciplinary teams, demonstrating autonomy, ethical conduct, well-developed judgement, adaptability and responsibility to achieve engineering outcomes at a high standard."
+AENSU,1,"Systematically evaluate current understandings of environmental science, natural resource management and sustainability, and of a range of response strategies for sustainable resource management and development."
+AENSU,2,"Integrate knowledge from relevant scientific areas and from policy approaches across disciplines into approaches designed to address complex contemporary environment and sustainability issues, in global, national and local contexts."
+AENSU,3,Plan and engage in an independent and sustained critical investigation of a research topic relevant to environment and sustainability to generate new knowledge in this field.
+AENSU,4,"Collect, analyse and interpret original research data using appropriate methodologies and methods to draw evidence-based conclusions."
+AENSU,5,"Apply a range of written, oral and visual communication skills to effectively convey and discuss complex concepts about environmental science, sustainable development and resource management decisions and relevant policies across disciplines."
+AENSU,6,"Engage with and inform ongoing debates on environmental science, resource management and sustainability issues, recognising the importance of biophysical and socio-political and cultural contexts."
+AENSU,7,"Appreciate and apply, where appropriate, personal, professional and social responsibility as a global citizen."
+AFEST,1,Determine which financial models should be utilised to analyse and price financial assets.
+AFEST,2,Demonstrate their understanding of the economic foundations of financial assets as claims on resources in various market and corporate settings to design financial instruments and strategies.
+AFEST,3,Employ and adapt time series statistics to critically evaluate the results of empirical analysis.
+AFEST,4,Demonstrate the skills necessary to critically engage with and evaluate financial economic problems.
+AFEST,5,"Evaluate key research questions as demonstrated through a process of planning, developing and executing a body of research work."
+AHUSS,1,"Engage professionally and respectfully with Asia, the Pacific, and the world using sophisticated concepts and methods from the humanities and social sciences."
+AHUSS,2,Critically analyse the research literature from both specialist and interdisciplinary perspectives.
+AHUSS,3,"Create new interdisciplinary knowledge that helps to build an integrated understanding of complex social, cultural, political and/or linguistic issues at an Asia-Pacific regional or global scale."
+AHUSS,4,Convey professional and disciplinary knowledge to diverse audiences in a clear and convincing manner.
+AHUSS,5,"Collaborate with peers to identify and solve problems in business, politics, and the academy."
+AHUSS,6,"Conceptualise new research projects considering their practical application, academic contributions, and ethical implications."
+AHUSS,7,"Undertake independent research drawing on high level project management, analysis, and writing skills, as well as professional connections."
+AHUSS,8,"Exercise personal, professional and social responsibility as a global citizen."
+ALLB,1,"Review, analyse, and synthesise knowledge from primary and secondary legal sources to identify and provide solutions to complex legal and justice problems."
+ALLB,2,"Interpret and critically evaluate the nature of law and its social and ethical impact on society, at a local, national, and international level."
+ALLB,3,"Undertake technical legal research to access a range of legal materials, literature databases, and other online sources, and apply legal or interdisciplinary research methodologies to evaluate and synthesise findings."
+ALLB,4,Communicate to a variety of legal and non-legal audiences in a range of oral and written formats.
+ALLB,5,Develop insight into Aboriginal and Torres Strait Islander Peoples’ diverse perspectives on laws and society and evaluate their relationship and importance to contemporary Australian law and society.
+ALLB,6,"Work both independently and collaboratively as required, and evaluate and reflect on feedback to develop personal, professional and ethical capability across a range of legal disciplines."
+APHSC,1,"Develop, apply, integrate and generate knowledge in educational and professional contexts;"
+APHSC,2,
+APHSC,3,"Develop and use a range of skills and methods to identify, analyse and respond to complex problems and issues;"
+APHSC,4,"Identify and apply various research concepts, methodologies and methods;"
+APHSC,5,
+APHSC,6,Work and learn in both independent and collaborative ways with others to encompass diverse abilities and perspectives;
+APHSC,7,
+APHSC,8,"Negotiate research projects considering their academic relevance, possible academic contributions, and ethical implications;"
+APHSC,9,
+APHSC,10,Source and critically analyse research literature related to their topics of interest and research;
+APHSC,11,
+APHSC,12,Appraise concepts and arguments related to their topics of interest and research;
+APHSC,13,
+APHSC,14,Convey and relate professional and disciplinary information and ideas to diverse audiences in effective and appropriate ways;
+APHSC,15,
+APHSC,16,Develop high level project management skills as support for independent study; and
+APHSC,17,
+APHSC,18,"Exercise personal, professional and social responsibility as a global citizen."
+APNSC,1,"Develop, apply, integrate and generate scientific knowledge in educational and professional contexts;"
+APNSC,2,"Develop and use a range of skills and methods to identify, analyse and respond to complex problems and issues;"
+APNSC,3,"Identify and apply various research concepts, methodologies and methods"
+APNSC,4,Work and learn in both independent and collaborative ways with others to encompass diverse abilities and perspectives;
+APNSC,5,"Negotiate research projects considering their academic relevance, possible academic contributions, and ethical implications;"
+APNSC,6,Source and critically analyse research literature related to their topics of interest and research;
+APNSC,7,Appraise concepts and arguments related to their topics of interest and research;
+APNSC,8,Convey and relate professional and disciplinary information and ideas to diverse audiences in effective and appropriate ways;
+APNSC,9,Develop high level project management skills as support for independent study; and
+APNSC,10,"Exercise personal, professional and social responsibility as a global citizen."
+APNSN,1,"Develop, apply, integrate and generate scientific knowledge in educational and professional contexts;"
+APNSN,2,"Develop and use a range of skills and methods to identify, analyse and respond to complex problems and issues;"
+APNSN,3,"Identify and apply various research concepts, methodologies and methods"
+APNSN,4,Work and learn in both independent and collaborative ways with others to encompass diverse abilities and perspectives;
+APNSN,5,"Negotiate research projects considering their academic relevance, possible academic contributions, and ethical implications;"
+APNSN,6,Source and critically analyse research literature related to their topics of interest and research;
+APNSN,7,Appraise concepts and arguments related to their topics of interest and research;
+APNSN,8,Convey and relate professional and disciplinary information and ideas to diverse audiences in effective and appropriate ways;
+APNSN,9,Develop high level project management skills as support for independent study; and
+APNSN,10,"Exercise personal, professional and social responsibility as a global citizen."
+APSYC,1,"Develop, apply, integrate and generate knowledge in educational and professional contexts"
+APSYC,2,"Develop and use a range of skills and methods to identify, analyse and respond to complex problems and issues."
+APSYC,3,Work and learn in both independent and collaborative ways with others to encompass diverse abilities and perspectives.
+APSYC,4,Plan and engage in an independent and sustained critical investigation of a chosen research topic to generate new knowledge.
+APSYC,5,"Systematically evaluate relevant theory and concepts, relate these to appropriate methodologies and evidence and draw appropriate conclusions."
+APSYC,6,Analyse and interpret original research data with statistical or other evaluative processes where appropriate.
+APSYC,7,Demonstrate sufficient mastery to understand and apply relevant experimental techniques and methods to collect original research data.
+APSYC,8,Communicate and justify complex concepts and results clearly and effectively to a variety of audiences.
+APSYC,9,"Exercise personal, professional and social responsibility as a global citizen."
+ASCAD,1,"Develop, apply, integrate and generate knowledge in educational and professional contexts."
+ASCAD,2,"Develop and use a range of skills and methods to identify, analyse and respond to complex problems and issues."
+ASCAD,3,Work and learn in both independent and collaborative ways with others to encompass diverse abilities and perspectives.
+ASCAD,4,Plan and engage in an independent and sustained critical investigation of a chosen research topic to generate new knowledge.
+ASCAD,5,"Systematically evaluate relevant theory and concepts, relate these to appropriate methodologies and evidence and draw appropriate conclusions."
+ASCAD,6,Analyse and interpret original research data with statistical or other evaluative processes where appropriate.
+ASCAD,7,Demonstrate sufficient mastery to understand and apply relevant experimental techniques and methods to collect original research data.
+ASCAD,8,Communicate and justify complex concepts and results clearly and effectively to a variety of audiences.
+ASCAD,9,"Exercise personal, professional and social responsibility as a global citizen."
+ASSAN,0,nil
+BACCT,1,Integrate theoretical and technical accounting knowledge in a business context.
+BACCT,2,"Exercise judgement under supervision to provide possible solutions to routine accounting problems in straightforward contexts using where appropriate social, ethical, economic, regulatory, sustainability, governance and/or global perspectives."
+BACCT,3,Critically apply theoretical and technical accounting knowledge and skills to provide possible solutions to routine accounting problems.
+BACCT,4,Justify and communicate accounting advice and ideas to both specialists and non-specialists.
+BACTS,1,"utilise concepts in financial mathematics, including the time value of money, annuities, bond and loan calculations"
+BACTS,2,interpret the accounts and financial statements of companies and financial institutions.
+BACTS,3,describe the fundamental concepts of micro and macroeconomics.
+BACTS,4,"apply mathematical statistics, regression modeling and other statistical techniques to actuarial problems"
+BACTS,5,"describe and apply stochastic processes, survival models and their application in actuarial contexts"
+BACTS,6,"model and value cashflows dependent on death, survival, illness, retirement, and other contingencies"
+BACTS,7,apply risk modelling techniques across a variety of financial contexts
+BADAN,1,"Select, adapt, apply, and communicate advanced data analytics methods and techniques;"
+BADAN,2,"Apply data analytics to decision making about policy, business and service delivery;"
+BADAN,3,Examine current issues in data analytics using leading-edge research and practices in the field;
+BADAN,4,"Demonstrate strong cognitive, technical, and communication skills to work independently and collaboratively to collect, process, interpret and communicate the outcomes of data analytics problems; and"
+BADAN,5,Communicate complex data analytics outcomes to diverse audiences.
+BAHCR,1,"identify and critique the historical, social, cultural and political contexts of art;"
+BAHCR,2,"understand the relationship between art history, art theory and curatorial practices;"
+BAHCR,3,evaluate and investigate the structures and practices of public cultural institutions through active engagement with museums and galleries; and
+BAHCR,4,demonstrate practical knowledge of the processes associated with caring for collections and developing exhibitions.
+BAPAF,1,"Demonstrate a thorough knowledge of the historical and contemporary dimensions of politics and government, international relations and security, conflict and peacebuilding, and history and cultural identity in the Asia-Pacific region"
+BAPAF,2,"Use concepts and methods from the social sciences and humanities to develop, review, analyse, and synthesise knowledge about the Asia-Pacific region and its roles in the world"
+BAPAF,3,"Reflect critically on the principal factors that determine the major political, security, diplomatic, and historical issues in the Asia-Pacific region"
+BAPAF,4,Engage with the Asia-Pacific region’s diversity in meaningful ways
+BAPAF,5,Critically apply theoretical frameworks and research techniques to understanding key issues in the Asia-Pacific region
+BAPAR,1,"Demonstrate a thorough knowledge of the historical and contemporary dimensions of politics and government, international relations and security, conflict and peacebuilding, and history and cultural identity in the Asia-Pacific region"
+BAPAR,2,"Use concepts and methods from the social sciences and humanities to develop, review, analyse, and synthesise knowledge about the Asia-Pacific region and its roles in the world"
+BAPAR,3,"Reflect critically on the principal factors that determine the major political, security, diplomatic, and historical issues in the Asia-Pacific region"
+BAPAR,4,Engage with the Asia-Pacific region’s diversity in meaningful ways
+BAPAR,5,Critically apply theoretical frameworks and research techniques to understanding key issues in the Asia-Pacific region
+BARTS,1,critically apply theoretical frameworks and research techniques to understanding national and international issues and problems;
+BARTS,2,"identify, including through interrogation of databases, relevant sources of information from across a variety of media (print and digital, written and audio-visual) and judge the importance and reliability of those sources;"
+BARTS,3,"evaluate ideas and develop creative solutions to problems, including through independent pursuit of knowledge and making connections between different disciplinary approaches and methods;"
+BARTS,4,"communicate and debate both orally and in writing, and work with others, using a variety of media; and"
+BARTS,5,"understand the ethical implications of ideas, communications, and actions."
+BARTY,1,Critically apply theoretical frameworks and research techniques to understanding national and international issues and problems;
+BARTY,2,"identify, including through interrogation of databases, relevant sources of information from across a variety of media (print and digital, written and audio-visual) and judge the importance and reliability of those sources"
+BARTY,3,"Evaluate ideas and develop creative solutions to problems, including through independent pursuit of knowledge and making connections between different disciplinary approaches and methods, including in the target Asian language;"
+BARTY,4,"Communicate and debate both orally and in writing, and work with others, using a variety of media; and"
+BARTY,5,"Understand the ethical implications of ideas, communications, and action"
+BARTY,6,Communicate in the target language with fluency and spontaneity making it possible for the student to interact with native speakers in the target language with minimum strain for either party.
+BARTY,7,Accurately understand and summarise the central ideas of texts on both concrete and abstract topics familiar to the student in the target language
+BARTY,8,Confidently discuss abstract and concrete issues related to their disciplinary focus in an academic setting in the target language.
+BARTY,9,"Identify, critically analyse and discuss diverse issues relevant to one's study and life with their classmates and beyond in their target language"
+BASIA,1,Critically apply theoretical frameworks and research techniques to understand the global significance of Asia as a region and as a composite of diverse societies and cultures;
+BASIA,2,Demonstrate a nuanced understanding of the regional diversity of the societies and cultures that make up Asia;
+BASIA,3,"Exercise critical thinking and judgment in identifying and solving problems, individually and in groups."
+BASY,1,Critically apply theoretical frameworks and research techniques to understand the global significance of Asia as a region and as a composite of diverse societies and cultures;
+BASY,2,"Demonstrate an understanding of different disciplinary approaches and methods drawn from the humanities and social sciences, to synthesise knowledge about Asia, its regions, and its place in the world;"
+BASY,3,Demonstrate a nuanced understanding of the regional diversity of the societies and cultures that make up Asia;
+BASY,4,"Evaluate ideas and debate issues using academic and applied styles, in both English and an Asian language;"
+BASY,5,"Exercise critical thinking and judgment in identifying and solving problems, individually and in groups."
+BASY,6,Communicate in the target language with fluency and spontaneity making it possible for the student to interact with native speakers in the target language with minimum strain for either party.
+BASY,7,Accurately understand and summarise the central ideas of texts on both concrete and abstract topics familiar to the student in the target language
+BASY,8,Confidently discuss abstract and concrete issues related to their disciplinary focus in an academic setting in the target language
+BASY,9,"Identify, critically analyse and discuss diverse issues relevant to one's study and life with their classmates and beyond in their target language"
+BBIOT,1,understand and evaluate the significance of biotechnological discoveries in educational and professional contexts;
+BBIOT,2,apply a range of technological skills and laboratory techniques to addressing specific problems in the field of biological research;
+BBIOT,3,use a range of analytical techniques for the interpretation of biological data to address specific hypotheses;
+BBIOT,4,convey and relate professional and disciplinary information and ideas to diverse audiences in effective and appropriate ways;
+BBIOT,5,function in public and professional situations as an interpreter of biotechnological information in the public domain;
+BBIOT,6,"exercise personal, professional and social responsibility as a global citizen."
+BBUSA,1,"review, analyse, consolidate and synthesise organisational knowledge"
+BBUSA,2,demonstrate a broad understanding of management and leadership knowledge with depth in some areas
+BBUSA,3,exercise critical thinking and judgement in identifying and solving problems with intellectual independence
+BBUSA,4,"present a clear, coherent and independent exposition of management knowledge and ideas"
+BBUSA,5,"demonstrate initiative and judgement in planning, problem solving and decision making in professional practice and/or scholarship"
+BBUSA,6,adapt knowledge and skills in diverse business contexts
+BBUSA,7,demonstrate responsibility and accountability for own learning and professional practice and in collaboration with others within broad parameters
+BCOMM,0,nil
+BCRIM,1,"better understand the social conditions, forces and relations influencing crime and deviance, criminal justice system processes, and crime control interventions;"
+BCRIM,2,develop sophisticated analytical techniques and research skills for applied use in the field of criminology and in social research more generally;
+BCRIM,3,"critically evaluate theories, concepts and methodological approaches relating to all aspects of contemporary criminological inquiry; and"
+BCRIM,4,"critically assess criminal justice policies and other social, cultural and legal responses to criminality and crime control from an informed interdisciplinary perspective."
+BDESN,1,"demonstrate skills and knowledge of the practices, languages, forms, materials and technologies in their relevant discipline;"
+BDESN,2,"research, develop and evaluate design concepts and processes by thinking creatively, critically and reflectively;"
+BDESN,3,"apply skills and knowledge to the creation, visualisation and production of design projects;"
+BDESN,4,work independently and collaboratively on design projects and respond to project demands;
+BDESN,5,"interpret, communicate and present ideas, problems and arguments in modes suited to a range of audiences; and"
+BDESN,6,"recognise and reflect on social, cultural technological, environmental and ethical issues of creative practice and design considering local and international perspectives."
+BDEVY,1,Identify the theory and principles of development
+BDEVY,2,"Analyse the practice of development through multilateral, bilateral, government and non-government agencies."
+BDEVY,3,Recall critical development issues in particular regions of the South
+BDEVY,4,Engage in one of the social science disciplines or a language other than English
+BDEVY,5,Communicate in the target language with fluency and spontaneity making it possible for the student to interact with native speakers in the target language with minimum strain for either party.
+BDEVY,6,Accurately understand and summarise the central ideas of texts on both concrete and abstract topics familiar to the student in the target language
+BDEVY,7,Confidently discuss abstract and concrete issues related to their disciplinary focus in an academic setting in the target language.
+BDEVY,8,"Identify, critically analyse and discuss diverse issues relevant to one's study and life with their classmates and beyond in their target language"
+BECON,1,solve economic problems using analytical reasoning;
+BECON,2,apply economic analysis to a wide variety of economic issues;
+BECON,3,use basic empirical estimation techniques to test economic predictions;
+BECON,4,"provide insight into the way that households and individuals make decisions and interact, and the role of government in providing public goods and regulating the market sector;"
+BECON,5,learn how to communicate rigorous economic analysis in a coherent way
+BENSU,1,"Evaluate current understandings of environmental science, natural resource management and sustainability, and of a range of response strategies for sustainable resource management and development."
+BENSU,2,"Integrate knowledge from relevant scientific areas and from policy approaches across disciplines into approaches designed to address complex contemporary environment and sustainability issues, in global, national and local contexts."
+BENSU,3,"Apply a range of written, oral and visual communication skills to effectively convey and discuss information about environmental science, sustainable development and resource management decisions and relevant policies across discipline"
+BENSU,4,"Engage with ongoing debates on environmental science, resource management and sustainability issues, recognising the importance of biophysical and socio-political and cultural contexts."
+BFINN,1,"Recognise the important role of investment and financing decisions, equities, bonds and derivatives in the financial markets."
+BGENE,1,understand and evaluate the significance of genetic information and discoveries in educational and professional contexts;
+BGENE,2,apply a range of skills and laboratory genetic techniques to addressing specific problems in the field of genetic research;
+BGENE,3,use a range of analytical techniques for the interpretation of genetic data to address specific hypotheses;
+BGENE,4,convey and relate professional and disciplinary information and ideas to diverse audiences in effective and appropriate ways;
+BGENE,5,"exercise personal, professional and social responsibility by acting as an interpreter of genetic information in the public domain."
+BHLTH,1,Understand the biomedical sciences underpinning the functioning of the healthy body.
+BHLTH,2,"Understand the determinants of good and poor health including biological, social and economical factors as they apply to Australian and global contexts."
+BHLTH,3,"Demonstrate an understanding and a commitment to professional ethics, social accountability, and cultural competency."
+BHLTH,4,"Search, analyse and synthesise information and to propose research questions relevant to biomedical science, population health and public health policy."
+BHLTH,5,Succeed in leading and participating in teams to deliver successful health outcomes.
+BINBS,1,"review, analyse, consolidate and synthesise knowledge"
+BINBS,2,demonstrate a broad understanding of international business knowledge with depth in some areas
+BINBS,3,"present a clear, coherent and independent exposition of international business knowledge and ideas"
+BINBS,4,exercise critical thinking and judgement in identifying and solving problems with intellectual independence
+BINBS,5,"demonstrate initiative and judgement in planning, problem solving and decision making in professional practice and/or scholarship"
+BINBS,6,adapt knowledge and skills in diverse international business contexts
+BINBS,7,demonstrate responsibility and accountability for own learning and professional practice and in collaboration with others within broad parameters
+BINSS,1,"Identify and explain the key concepts, ideas and principal actors in international security."
+BINSS,2,Evaluate the major theoretical frameworks for understanding the complexities of contemporary international security challenges.
+BINSS,3,"• Demonstrate a thorough knowledge of the historical and contemporary dimensions of international, internal and transnational security, especially in the Asia-Pacific region."
+BINSS,4,Analyse the key challenges facing Australian security and defence policy in the ‘Asian Century’.
+BINSS,5,Reflect critically on the principal factors that determine the security policies of Australia and the major Asia-Pacific powers
+BINSS,6,"Employ communication and presentation skills (oral, written and electronic)"
+BINSS,7,Demonstrate teamwork and interpersonal skills
+BINSS,8,Exhibit the ability to write for both academic and professional audience
+BINSY,1,"Identify and explain the key concepts, ideas and principal actors in international security."
+BINSY,2,Evaluate the major theoretical frameworks for understanding the complexities of contemporary international security challenges.
+BINSY,3,"Demonstrate a thorough knowledge of the historical and contemporary dimensions of international, internal and transnational security, especially in the Asia-Pacific region"
+BINSY,4,Analyse the key challenges facing Australian security and defence policy in the ‘Asian Century’
+BINSY,5,Reflect critically on the principal factors that determine the security policies of Australia and the major Asia-Pacific powers.
+BINSY,6,"Employ communication and presentation skills (oral, written and electronic)."
+BINSY,7,Demonstrate teamwork and interpersonal skills.
+BINSY,8,Exhibit the ability to write for both academic and professional audience
+BINSY,9,Communicate in the target language with fluency and spontaneity making it possible for the student to interact with native speakers in the target language with minimum strain for either party.
+BINSY,10,Accurately understand and summarise the central ideas of texts on both concrete and abstract topics familiar to the student in the target language
+BINSY,11,Confidently discuss abstract and concrete issues related to their disciplinary focus in an academic setting in the target language.
+BINSY,12,"Identify, critically analyse and discuss diverse issues relevant to one's study and life with their classmates and beyond in their target language"
+BIR,1,"identify the principal theoretical approaches to the study of international relations, and the relationships between them;"
+BIR,2,have a thorough understanding of the historical development of the global system;
+BIR,3,demonstrate an understanding of the principal actors in contemporary global politics and the challenges they face;
+BIR,4,understand the principal factors that determine the foreign policies of major powers and of Australia; and
+BIR,5,reflect critically on the knowledge and skills developed in their study of International Relations.
+BIRY,1,"Identify the principal theoretical approaches to the study of international relations, and the relationships between them;"
+BIRY,2,Have a thorough understanding of the historical development of the global system;
+BIRY,3,Demonstrate an understanding of the principal actors in contemporary global politics and the challenges they face;
+BIRY,4,Understand the principal factors that determine the foreign policies of major powers and of Australia;
+BIRY,5,Reflect critically on the knowledge and skills developed in their study of International Relations
+BIRY,6,Communicate in the target language with fluency and spontaneity making it possible for the student to interact with native speakers in the target language with minimum strain for either party.
+BIRY,7,Accurately understand and summarise the central ideas of texts on both concrete and abstract topics familiar to the student in the target language
+BIRY,8,Confidently discuss abstract and concrete issues related to their disciplinary focus in an academic setting in the target language.
+BIRY,9,"Identify, critically analyse and discuss diverse issues relevant to one's study and life with their classmates and beyond in their target language"
+BIT,1,"Analyse well defined problems, and design, implement and evaluate solutions that demonstrate an understanding of the systems context in which software is developed and operated including economic, social, historical, sustainability and ethical aspects."
+BIT,2,"Recognise connections and recurring themes, including abstraction and complexity, across the discipline."
+BIT,3,"Adapt to new environments and technologies, and to innovate."
+BIT,4,"Demonstrate an operational understanding of the foundations of computer science including programming, algorithms, logic, architectures and data structures."
+BIT,5,Communicate complex concepts effectively with diverse audiences using a range of modalities.
+BIT,6,Work effectively within a team in order to achieve a common goal.
+BIT,7,"Demonstrate commitment to professional conduct and development that recognises the social, legal and ethical implications of their work, to work independently, and self- and peer-assess performance."
+BLANG,1,communicate proficiently and confidently in at least one language
+BLANG,2,identify the structure and uses of languages studied
+BLANG,3,"recognise and contrast the societies and cultures of the languages chosen, and their socio-historical context"
+BLANG,4,"construct a global schema of the connections between the languages studied and their geographical, social and cultural origins"
+BLANG,5,recognise the importance and value of intercultural communication.
+BLANY,1,Communicate proficiently and confidently in at least one language
+BLANY,2,Identify the structure and uses of languages studied
+BLANY,3,"Recognise and contrast the societies and cultures of the languages chosen, and their socio-historical context"
+BLANY,4,"Construct a global schema of the connections between the languages studied and their geographical, social and cultural origins"
+BLANY,5,Recognise the importance and value of intercultural communication.
+BLANY,6,Communicate in the target language with fluency and spontaneity making it possible for the student to interact with native speakers in the target language with minimum strain for either party.
+BLANY,7,Accurately understand and summarise the central ideas of texts on both concrete and abstract topics familiar to the student in the target language
+BLANY,8,Confidently discuss abstract and concrete issues related to their disciplinary focus in an academic setting in the target language.
+BLANY,9,"Identify, critically analyse and discuss diverse issues relevant to one's study and life with their classmates and beyond in their target language"
+BMASC,1,"Think clearly, sequentially and logically, as demonstrated by the critical analysis of quantitative problems, such as the ability to read, understand and write mathematical proofs."
+BMASC,2,Demonstrate mastery of the concepts and techniques of Advanced Mathematics.
+BMASC,3,Communicate concepts and results clearly and effectively both in writing and orally.
+BMASC,4,"Systematically identify relevant theory and concepts, relate these to appropriate methodologies and evidence, and draw appropriate conclusions."
+BMASC,5,Engage in critical review of appropriate and relevant information sources.
+BMASC,6,Work and learn in both independent and collaborative ways with others to encompass diverse abilities and perspectives.
+BMEDS,1,"develop, apply, integrate and generate scientific knowledge in educational and professional contexts;"
+BMEDS,2,"use a range of skills and methods to identify, analyse and respond to problems and issues;"
+BMEDS,3,convey and relate professional and disciplinary information and ideas to diverse audiences in effective and appropriate ways;
+BMEDS,4,work in both independent and collaborative ways with others to encompass diverse abilities and perspectives; and
+BMEDS,5,"exercise personal, professional and social responsibility as a global citizen."
+BMUSI,1,"understand the practices, languages, forms, materials, technologies and techniques of a broad range of musics;"
+BMUSI,2,"demonstrate deep knowledge of and proficiency in one or more areas of musical performance, composition arranging and sound design, musicology, or music technology by applying specialist cognitive and technical skills;"
+BMUSI,3,"evaluate and interpret musical ideas and concepts by engaging with relevant research of others, and thinking creatively, critically, ethically, and independently to solve research questions through words and/or creative practice such as performance or composition;"
+BMUSI,4,"communicate ideas, problems and arguments to do with music and the arts, through words and/or creative practice such as performance or composition, clearly and coherently in modes suited to a range of audiences; and"
+BMUSI,5,work independently and collaboratively in response to authentic music project demands.
+BPAST,1,"Critically apply theoretical frameworks and research techniques to understand the global significance of Oceania as a region of diverse societies, cultures and languages;"
+BPAST,2,"Demonstrate an understanding of diverse disciplinary approaches and methods drawn from the humanities, social sciences and environmental studies, to synthesize knowledge about Oceania and its place in the    world;"
+BPAST,3,"Demonstrate a nuanced understanding of the diversity of indigenous, popular culture, policy and scholarly perspectives on and within Oceania;"
+BPAST,4,"Evaluate knowledge and ideas and debate issues using academic and other approaches addressing a variety of scholarly, policy and public audiences;"
+BPAST,5,Exercise critical thinking and judgement in identifying and solving problems individually as well as collaboratively.
+BPLSC,1,"apply concepts and theories used in the study of political science to the analysis of interests, ideas, institutions and behaviour and to the evaluation of political phenomena;"
+BPLSC,2,apply a range of research methods to the investigation of political phenomena;
+BPLSC,3,demonstrate understanding of differences in political systems and the contexts in which they operate; and
+BPLSC,4,"communicate and debate both orally and in writing, and work with others, using a variety of media."
+BPPE,1,major philosophical theories and approaches to the evaluation of social institutions;
+BPPE,2,the methods of economics to the study of political institutions and processes;
+BPPE,3,the methods of economics to questions within political philosophy;
+BPPE,4,"the assumptions, ‘tools’ and limitations of political economy; and"
+BPPE,5,the core arguments and principles of public choice and rational choice theory.
+BPPOL,1,demonstrate understanding of differences in political systems and the contexts in which public policy operates;
+BPPOL,2,apply concepts and theories used in the study of public policy;
+BPPOL,3,apply a range of research methods to the investigation of public policy;
+BPPOL,4,"gather, analyse, and interpret economic data, social data, and statistics related to Australian public policies; and"
+BPPOL,5,"communicate and debate both orally and in writing, and work with others, using a variety of media."
+BSC,1,"develop, apply, integrate and generate scientific knowledge in educational and professional contexts;"
+BSC,2,"use a range of skills and methods to identify, analyse and respond to problems and issues;"
+BSC,3,convey and relate professional and disciplinary information and ideas to diverse audiences in effective and appropriate ways;
+BSC,4,work and learn in both independent and collaborative ways with others to encompass diverse abilities and perspectives;
+BSC,5,"exercise personal, professional and social responsibility as a global citizen."
+BSCY,1,"Develop, apply, integrate and generate scientific knowledge in educational and professional contexts;"
+BSCY,2,"Use a range of skills and methods to identify, analyse and respond to problems and issues;"
+BSCY,3,Convey and relate professional and disciplinary information and ideas to diverse audiences in effective and appropriate ways;
+BSCY,4,Work and learn in both independent and collaborative ways with others to encompass diverse abilities and perspectives;
+BSCY,5,"Exercise personal, professional and social responsibility as a global citizen."
+BSCY,6,Communicate in the target language with fluency and spontaneity making it possible for the student to interact with native speakers in the target language with minimum strain for either party
+BSCY,7,Accurately understand and summarise the central ideas of texts on both concrete and abstract topics familiar to the student in the target language
+BSCY,8,Confidently discuss abstract and concrete issues related to their disciplinary focus in an academic setting in the target language.
+BSCY,9,"Identify, critically analyse and discuss diverse issues relevant to one's study and life with their classmates and beyond in their target country language"
+BSPSY,1,Plan and engage in an independent and sustained critical investigation and evaluation of a chosen research topic
+BSPSY,2,"Systematically identify relevant theory and concepts, relate these to appropriate methodologies and evidence, and draw appropriate conclusions"
+BSPSY,3,Engage in critical review of appropriate and relevant information sources
+BSPSY,4,Communicate concepts and results clearly and effectively both in writing and orally
+BSPSY,5,Record original data and apply statistical or other evaluation processes to original data when appropriate
+BSTAT,1,Review and synthesise a broad range of statistical knowledge from their chosen major
+BSTAT,2,Use the R statistical computing language to carry out a wide variety of statistical tasks
+BSTAT,3,Carry out model selection in a multiple linear regression modelling context
+BSTAT,4,Describe the concepts of stochastic processes in discrete and continuous time
+BSTAT,5,"Describe and interpret probability theory, continuous random variables, and sampling distributions and the central limit theorem"
+BSTAT,6,"Analyse programming problems to suggest, design and implement appropriate modular program structures, based on a data-directed approach."
+BVART,1,"apply technical skills and specialist knowledge to realise artworks, artefacts and related forms of creative expression;"
+BVART,2,"demonstrate skills and knowledge of the practices, languages, forms, materials, technologies and techniques in the visual arts;"
+BVART,3,"recognise and reflect on social, cultural and ethical issues, and apply historical and theoretical perspectives to practice in the visual arts;"
+BVART,4,"develop, express and evaluate ideas, concepts and processes by thinking creatively, critically and reflectively;"
+BVART,5,"interpret, communicate and present ideas, problems and arguments in modes suited to a range of audiences; and"
+BVART,6,work independently and collaboratively in response to project demands.
+ELANG,1,communicate proficiently and confidently in the principal studied language;
+ELANG,2,identify the structure and uses of the principal language studied;
+ELANG,3,"demonstrate an understanding of the societies and cultures of the principal language studied, and its socio-historical context;"
+ELANG,4,"construct a schema of the connections between the principal language studied and its geographical, social and cultural origins; and"
+ELANG,5,recognise the importance of intercultural communication.
+ESTUD,1,apply theoretical frameworks and research techniques relevant to the minor to understanding national and international issues and problems;
+ESTUD,2,identify relevant sources of information from across a variety of media and judge the importance and reliability of those sources;
+ESTUD,3,evaluate ideas and develop solutions to problems;
+ESTUD,4,"work with others, and communicate to diverse audiences, in effective and appropriate ways; and"
+ESTUD,5,undertake further study at Bachelor degree level.
+HACCT,1,"Integrate theoretical and technical accounting knowledge in a business context, including issues in accounting research."
+HACCT,2,"Exercise judgement under supervision to provide possible solutions to emerging and advanced accounting problems in contemporary contexts using where appropriate social, ethical, economic, regulatory, sustainability, governance and/or global perspectives."
+HACCT,3,Critically apply theoretical and technical accounting knowledge and skills to analyse and provide possible solutions to emerging accounting problems and to conduct a research-based project.
+HACCT,4,Justify and communicate accounting ideas and research issues to both specialists and non-specialists.
+HACTS,1,demonstrate a sound knowledge and critical understanding of research design and methods in development of a research proposal and research plan
+HACTS,2,perform independent research
+HACTS,3,exhibit in-depth knowledge of their chosen research topic
+HACTS,4,discuss and apply an actuarial control cycle in a variety of practical commercial situations.
+HADAN,1,Demonstrate a sound knowledge and critical understanding of research design and methods
+HADAN,2,Apply that knowledge to the development of a research proposal and research plan
+HADAN,3,Develop the capacity to perform high-level independent research
+HADAN,4,Exhibit in-depth knowledge of their chosen research topic
+HADAN,5,Demonstrate a high level of ability to critically analyse and evaluate research questions and communicate the results.
+HAHCR,1,pose a significant research question relating to Art History and Curatorship;
+HAHCR,2,"investigate this question creatively, critically, ethically, and independently, including through sophisticated use of appropriate theory and methodology as appropriate to Art History and Curatorship, and place these investigations in the context of the relevant intellectual tradition; and"
+HAHCR,3,communicate their research and its findings through an appropriate medium.
+HAPRC,1,pose a significant research question relating to Archaeological Practice;
+HAPRC,2,"investigate this question creatively, critically, ethically, and independently, including through sophisticated use of appropriate theory and methodology as appropriate to Archaeological Practice, and place these investigations in the context of the relevant intellectual tradition; and"
+HAPRC,3,communicate their research and its findings through an appropriate medium.
+HART2,1,pose a significant research question relating to their discipline;
+HART2,2,"investigate this question creatively, critically, ethically, and independently, including through sophisticated use of appropriate theory and methodology as appropriate to the discipline, and place these investigations in the context of the relevant intellectual tradition; and"
+HART2,3,communicate their research and its findings through an appropriate medium.
+HARTS,1,pose a significant research question relating to their discipline;
+HARTS,2,"investigate this question creatively, critically, ethically, and independently, including through sophisticated use of appropriate theory and methodology as appropriate to the discipline, and place these investigations in the context of the relevant intellectual tradition; and"
+HARTS,3,communicate their research and its findings through an appropriate medium.
+HASIA,1,pose a significant research question relating to the Asia-Pacific region
+HASIA,2,"investigate this question creatively, critically, ethically, and independently, including through sophisticated use of appropriate theory and methodology, and place these investigations in the context of the relevant intellectual tradition; and"
+HASIA,3,communicate their research and its findings through an appropriate medium.
+HBIOT,1,Plan and engage in an independent and sustained critical investigation of a chosen research topic to generate new knowledge.
+HBIOT,2,"Systematically evaluate relevant theory and concepts, relate these to appropriate methodologies and evidence and draw appropriate conclusions."
+HBIOT,3,Analyse and interpret original research data with statistical or other evaluative processes where appropriate.
+HBIOT,4,Demonstrate sufficient mastery to understand and apply relevant experimental techniques and methods to collect original research data
+HBIOT,5,Communicate and justify complex concepts and results clearly and effectively to a variety of audiences.
+HBUSA,1,Demonstrate a sound knowledge and critical understanding of research design and methods in the field of business administration
+HBUSA,2,Apply that knowledge to the development of a research proposal and research plan
+HBUSA,3,Develop the capacity to perform high-level independent research
+HBUSA,4,Exhibit in-depth knowledge of their chosen research topic
+HCLAS,1,pose a significant research question relating to Classical studies;
+HCLAS,2,"investigate this question creatively, critically, ethically, and independently, including through sophisticated use of appropriate theory and methodology as appropriate to Classical studies, and place these investigations in the context of the relevant intellectual tradition; and"
+HCLAS,3,communicate their research and its findings through an appropriate medium.
+HCOMM,1,As per learning outcomes for each specialisation
+HCRIM,1,pose a significant research question relating to criminology;
+HCRIM,2,"investigate this question creatively, critically, ethically, and independently, including through sophisticated use of appropriate theory and methodology as appropriate to criminology, and place these investigations in the context of the relevant intellectual tradition; and"
+HCRIM,3,communicate their research and its findings through an appropriate medium.
+HDESN,1,pose a significant research question relating to design;
+HDESN,2,"investigate this question creatively, critically, ethically, and independently, including through sophisticated use of appropriate theory and methodology as appropriate to design, and place these investigations in the context of the relevant intellectual tradition; and"
+HDESN,3,communicate their research and its findings through an appropriate medium.
+HDEVS,1,pose a significant research question relating to Development Studies;
+HDEVS,2,"investigate this question creatively, critically, ethically, and independently, including through sophisticated use of appropriate theory and methodology as appropriate to Development Studies, and place these investigations in the context of the relevant intellectual tradition; and"
+HDEVS,3,communicate their research and its findings through an appropriate medium.
+HDEVS,4,consolidate learning of methodologies specific to one of the core disciplines of development studies
+HDEVS,5,deepen knowledge of theoretical literature in one of the core disciplines of development studies
+HECON,1,Demonstrate a sound knowledge and critical understanding of research design and methods
+HECON,2,Apply that knowledge to the development of a research proposal and research plan
+HECON,3,Develop the capacity to perform high-level independent research
+HECON,4,Exhibit in-depth knowledge of their chosen research topic
+HECON,5,Demonstrate a high level of ability to critically analyse and evaluate economics research questions and communicate the results.
+HENSU,1,Plan and engage in an independent and sustained critical investigation and evaluation of a chosen research topic relevant to environment and sustainability to generate new knowledge.
+HENSU,2,"Systematically identify and evaluate relevant theory and concepts, relate these to appropriate methodologies and evidence, and draw appropriate original conclusions."
+HENSU,3,Engage in systematic discovery and critical review of appropriate and relevant information sources.
+HENSU,4,"If relevant, demonstrate sufficient mastery to understand, evaluate, and appropriately apply techniques and methods to collect original research data and/or develop new techniques and methods to collect original research data."
+HENSU,5,Analyse and interpret research data with appropriate statistical or other evaluative processes to generate new knowledge.
+HENSU,6,"Understand and appropriately apply ethical standards of conduct in the collection, evaluation, analysis, and interpretation of data and other resources."
+HENSU,7,"Communicate and justify complex research concepts, methods, results, contexts, and implications clearly and effectively both in writing and orally to a variety of audiences."
+HENVS,1,Plan and engage in an independent and sustained critical investigation of a chosen research topic to generate new knowledge.
+HENVS,2,"Systematically evaluate relevant theory and concepts, relate these to appropriate methodologies and evidence and draw appropriate conclusions."
+HENVS,3,Analyse and interpret original research data with statistical or other evaluative processes where appropriate.
+HENVS,4,Demonstrate sufficient mastery to understand and apply relevant experimental techniques and methods to collect original research data
+HENVS,5,Communicate and justify complex concepts and results clearly and effectively to a variety of audiences.
+HEURO,1,pose a significant research question relating to European studies;
+HEURO,2,"investigate this question creatively, critically, ethically, and independently, including through sophisticated use of appropriate theory and methodology as appropriate to European studies, and place these investigations in the context of the relevant intellectual tradition; and"
+HEURO,3,communicate their research and its findings through an appropriate medium.
+HFINN,1,Demonstrate a sound knowledge and critical understanding of research design and methods
+HFINN,2,Apply that knowledge to the development of a research proposal and research plan
+HFINN,3,Develop the capacity to perform high-level independent research
+HFINN,4,Exhibit in-depth knowledge of their chosen research topic
+HFINN,5,Demonstrate a high level of ability to critically analyse and evaluate corporate finance and investments research questions and communicate the results.
+HGENE,1,Plan and engage in an independent and sustained critical investigation of a chosen research topic to generate new knowledge.
+HGENE,2,"Systematically evaluate relevant theory and concepts, relate these to appropriate methodologies and evidence and draw appropriate conclusions."
+HGENE,3,Analyse and interpret original research data with statistical or other evaluative processes where appropriate.
+HGENE,4,Demonstrate sufficient mastery to understand and apply relevant experimental techniques and methods to collect original research data
+HGENE,5,Communicate and justify complex concepts and results clearly and effectively to a variety of audiences.
+HHLTH,1,Plan and engage in an independent and sustained critical investigation of a chosen research topic to generate new knowledge.
+HHLTH,2,"Systematically evaluate relevant theory and concepts, relate these to appropriate methodologies and evidence and draw appropriate conclusions."
+HHLTH,3,Analyse and interpret original research data with statistical or other evaluative processes where appropriate.
+HHLTH,4,Demonstrate sufficient mastery to understand and apply relevant experimental techniques and methods to collect original research data
+HHLTH,5,Communicate and justify complex concepts and results clearly and effectively to a variety of audiences.
+HINBS,1,Demonstrate a sound knowledge and critical understanding of research design and methods in the field of international business
+HINBS,2,Apply that knowledge to the development of a research proposal and research plan
+HINBS,3,Develop the capacity to perform high-level independent research
+HINBS,4,Exhibit in-depth knowledge of their chosen research topic
+HINSS,0,nil
+HIR,1,pose a significant research question relating to international relations;
+HIR,2,"investigate this question creatively, critically, ethically, and independently, including through sophisticated use of appropriate theory and methodology as appropriate to international relations, and place these investigations in the context of the relevant intellectual tradition; and"
+HIR,3,communicate their research and its findings through an appropriate medium.
+HIT,1,Demonstrate a sound knowledge and critical understanding of research design and methods
+HIT,2,Apply that knowledge to the development of a research proposal and research plan
+HIT,3,Develop the capacity to perform high-level independent research
+HIT,4,Exhibit in-depth knowledge of their chosen research topic
+HIT,5,Demonstrate a high level of ability to critically analyse and evaluate computer science research questions and communicate the results.
+HLANG,1,pose a significant research question relating to language studies;
+HLANG,2,"investigate this question creatively, critically, ethically, and independently, including through sophisticated use of appropriate theory and methodology as appropriate to language studies, and place these investigations in the context of the relevant intellectual tradition; and"
+HLANG,3,communicate their research and its findings through an appropriate medium.
+HMASC,1,Plan and engage in an independent and sustained critical investigation of a chosen research topic to generate new knowledge in an area of mathematics.
+HMASC,2,"Systematically evaluate relevant theory and concepts in mathematics, relate these to appropriate methodologies and evidence, and draw appropriate conclusions."
+HMASC,3,"Demonstrate capacity for mathematical reasoning through analysing, proving, and explaining concepts from the chosen research area."
+HMASC,4,Communicate and explain complex concepts clearly and effectively to a variety of audiences.
+HMECA,1,pose a significant research question relating to Middle Eastern and Central Asian studies;
+HMECA,2,"investigate this question creatively, critically, ethically, and independently, including through sophisticated use of appropriate theory and methodology as appropriate to Middle Eastern and Central Asian studies, and place these investigations in the context of the relevant intellectual tradition; and"
+HMECA,3,communicate their research and its findings through an appropriate medium.
+HMEDS,1,Plan and engage in an independent and sustained critical investigation of a chosen research topic to generate new knowledge.
+HMEDS,2,"Systematically evaluate relevant theory and concepts, relate these to appropriate methodologies and evidence and draw appropriate conclusions."
+HMEDS,3,Analyse and interpret original research data with statistical or other evaluative processes where appropriate.
+HMEDS,4,Demonstrate sufficient mastery to understand and apply relevant experimental techniques and methods to collect original research data
+HMEDS,5,Communicate and justify complex concepts and results clearly and effectively to a variety of audiences.
+HMUSI,1,pose a significant research question relating to music;
+HMUSI,2,"investigate this question creatively, critically, ethically, and independently, including through sophisticated use of appropriate theory and methodology as appropriate to music, and place these investigations in the context of the relevant intellectual tradition; and"
+HMUSI,3,communicate their research and its findings through an appropriate medium.
+HPAST,1,pose a significant research question relating to Pacific Studies;
+HPAST,2,"investigate this question creatively, critically, ethically, and independently, including through sophisticated use of appropriate theory and methodology as appropriate to the discipline, and place these investigations in the context of the relevant intellectual tradition; and"
+HPAST,3,communicate their research and its findings through an appropriate medium.
+HPLSC,1,pose a significant research question relating to political science;
+HPLSC,2,"investigate this question creatively, critically, ethically, and independently, including through sophisticated use of appropriate theory and methodology as appropriate to political science, and place these investigations in the context of the relevant intellectual tradition; and"
+HPLSC,3,communicate their research and its findings through an appropriate medium.
+HPPE,1,"pose a significant research question relating to politics, philosophy and economics;"
+HPPE,2,"investigate this question creatively, critically, ethically, and independently, including through sophisticated use of appropriate theory and methodology as appropriate to politics, philosophy and economics, and place these investigations in the context of the relevant intellectual tradition; and"
+HPPE,3,communicate their research and its findings through an appropriate medium.
+HPPOL,1,Pose a significant research question relating to public policy;
+HPPOL,2,"Investigate this question creatively, critically, ethically, and independently, including through sophisticated use of theory and methodology as appropriate to public policy, and place these investigations in the context of the relevant intellectual tradition; and"
+HPPOL,3,Communicate their research and its findings through an appropriate medium.
+HSC,1,Plan and engage in an independent and sustained critical investigation of a chosen research topic to generate new knowledge.
+HSC,2,"Systematically evaluate relevant theory and concepts, relate these to appropriate methodologies and evidence and draw appropriate conclusions."
+HSC,3,Analyse and interpret original research data with statistical or other evaluative processes where appropriate.
+HSC,4,Demonstrate sufficient mastery to understand and apply relevant experimental techniques and methods to collect original research data
+HSC,5,Communicate and justify complex concepts and results clearly and effectively to a variety of audiences.
+HSPSY,1,Plan and engage in an independent and sustained critical investigation of a chosen research topic to generate new knowledge.
+HSPSY,2,"Systematically evaluate relevant theory and concepts, relate these to appropriate methodologies and evidence and draw appropriate conclusions."
+HSPSY,3,Analyse and interpret original research data with statistical or other evaluative processes where appropriate.
+HSPSY,4,Demonstrate sufficient mastery to understand and apply relevant experimental techniques and methods to collect original research data
+HSPSY,5,Communicate and justify complex concepts and results clearly and effectively to a variety of audiences.
+HSTAT,1,Demonstrate a sound knowledge and critical understanding of research design and methods
+HSTAT,2,Apply that knowledge to the development of a research proposal and research plan
+HSTAT,3,Develop the capacity to perform high-level independent research
+HSTAT,4,Exhibit in-depth knowledge of their chosen research topic
+HSTAT,5,Demonstrate a high level of ability to critically analyse statistical inferential approaches.
+HVART,1,pose a significant research question relating to visual arts;
+HVART,2,"investigate this question creatively, critically, ethically, and independently, including through sophisticated use of appropriate theory and methodology as appropriate to visual arts, and place these investigations in the context of the relevant intellectual tradition; and"
+HVART,3,communicate their research and its findings through an appropriate medium.

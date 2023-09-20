@@ -1,0 +1,1034 @@
+
+<!DOCTYPE html>
+<html class="wf-loading">
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5H3R8L');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta name="viewport" content="width=device-width" />
+    <title>Fundamentals of Epidemiology - ANU</title>
+    <meta content="IE=10,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width" name="viewport" />
+    <meta content="phone" media="(max-width: 479px)" name="breakpoint" />
+    <meta content="phone-wide" media="(min-width: 480px) and (max-width: 639px)" name="breakpoint" />
+    <meta content="tablet" media="(min-width: 640px) and (max-width: 959px)" name="breakpoint" />
+    <meta content="mobile" media="(max-width: 959px)" name="breakpoint" />
+    
+    
+
+    <link rel="shortcut icon" href="/content/images/favicon.ico" type="image/x-icon" />
+    <link href="https://programsandcourses.anu.edu.au/2023/course/poph4100/first%20semester/2874" rel="canonical" />
+
+    <link href="/Content/style/css?v=05BLNx1wu76OgAhSxssVhYRy3KqRIxeR5cIEZA51J8A1" rel="stylesheet"/>
+
+    <script src="/Scripts/modernizer?v=l2fp1E6Lih5iAZRql1s00lXjFeESzFAiTh1OjyQwK801"></script>
+
+    <script>
+        Modernizr.load([{
+            test: Modernizr.fontface,
+            yep: '//use.typekit.com/xkv0pni.js',
+            callback: function () {
+                var removeWfLoading = function () {
+                    with (document.documentElement) {
+                        className = className.replace(/\bwf-loading\b/, 'wf-failed');
+                    }
+                };
+                setTimeout(function () {
+                    try { Typekit.load(); } catch (e) { removeWfLoading(); }
+                }, 10);
+                setTimeout(function () {
+                    removeWfLoading();
+                }, 1000);
+            }
+        }]);
+    </script>
+    <script>
+        !function (a, b) { "use strict"; var c = { breakpoints: {}, _isTicking: !1, _debounceLastTime: 0, _namedEvents: {}, _eventMatchCache: {}, _globalEvents: [], onBreakpointChange: function () { var a = Array.prototype.slice.call(arguments), b = a.pop(), d = a.pop(); "undefined" == typeof d ? c._globalEvents.push(b) : (c._namedEvents[d] = []).push(b), k() } }, d = function (c) { /in/.test(b.readyState) ? a.setTimeout(function () { d(c) }, 9) : c() }, e = function (a, b) { var c = a.className.split(" "), d = c.indexOf(b); d > -1 && (c.splice(d, 1), a.className = c.join(" ")) }, f = function (a, b) { -1 === a.className.indexOf(b) && (a.className = "" !== a.className ? a.className + " " + b : b) }, g = function (a, c) { var d = "breakpoint-" + c, g = b.documentElement; a ? f(g, d) : e(g, d) }, h = function (a) { c._globalEvents.forEach(function (b) { "function" == typeof b && b(a) }) }, i = function () { c._isTicking || j(k), c._isTicking = !0 }, j = function (b, d) { if (!a.requestAnimationFrame) { var e = (new Date).getTime(), f = Math.max(0, 16 - (e - c._debounceLastTime)), g = a.setTimeout(function () { b(e + f) }, f); return c._debounceLastTime = e + f, g } a.requestAnimationFrame(b, d) }, k = function () { c._isTicking = !1; var b = []; for (var d in c.breakpoints) { var e = c.breakpoints[d], f = a.matchMedia(e).matches; if (c._namedEvents[d] && c._eventMatchCache[d] !== f) { c._eventMatchCache[d] = f; for (var i = 0; i < c._namedEvents[d].length; i++) { var j = c._namedEvents[d][i]; "function" == typeof j && j(f) } } f && b.push(d), g(f, d) } 0 !== b.length && h(b) }, l = function () { for (var a = b.getElementsByTagName("meta"), d = 0; d < a.length; d++)if ("breakpoint" === a[d].name) { var e = a[d].getAttribute("content"), f = a[d].getAttribute("media"); c.breakpoints[e] = f } }, m = function () { l(), k() }, n = function () { l(), k(), a.addEventListener("resize", i) }; "undefined" != typeof module && module.exports ? module.exports = c : a.metaQuery = c, m(), d(n) }(window, document);
+    </script>
+    <!--
+    To collect end-user usage analytics about your application,
+    insert the following script into each page you want to track.
+    Place this code immediately before the closing </head> tag,
+    and before any other scripts. Your first data will appear
+    automatically in just a few seconds.
+    -->
+    <script type="text/javascript">
+        var appInsights = window.appInsights || function (config) {
+            function s(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, r = document, f = window, e = "script", o = r.createElement(e), i, u; for (o.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", r.getElementsByTagName(e)[0].parentNode.appendChild(o), t.cookie = r.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;)s("track" + i.pop()); return config.disableExceptionTracking || (i = "onerror", s("_" + i), u = f[i], f[i] = function (config, r, f, e, o) { var s = u && u(config, r, f, e, o); return s !== !0 && t["_" + i](config, r, f, e, o), s }), t
+        }({
+            instrumentationKey: "c2b8cab7-0152-4b03-8810-7d9be84a3b34"
+        });
+
+        window.appInsights = appInsights;
+        appInsights.trackPageView();
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <!-- Hotjar Tracking Code for http://www.anu.edu.au -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 1136231, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
+
+    <script>
+        (function (a, b, c, d, e, m) {
+            a['OktopostTrackerObject'] = d;
+            a[d] = a[d] || function () {
+                (a[d].q = a[d].q || []).push(arguments);
+            };
+            e = b.createElement('script');
+            m = b.getElementsByTagName('script')[0];
+            e.async = 1;
+            e.src = ('https:' === document.location.protocol ? 'https://' : 'http://') + c;
+            m.parentNode.insertBefore(e, m);
+        })(window, document, 'static.oktopost.com/oktrk.js', '_oktrk');
+
+        _oktrk('create', '001qt43soloi771');
+    </script>
+
+
+
+    <!-- End Facebook Pixel Code -->
+
+</head>
+<body id="top">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5H3R8L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <meta name="insight-app-sec-validation" content="aac4b9bd-9119-4743-8a28-82bf1124481b" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="//marketing-pages.anu.edu.au/_anu/5/projects/htmlsites/pc.css" />
+<script src="//marketing-pages.anu.edu.au/_anu/4/scripts/jquery-1.11.3.min.js?1" type="text/javascript"></script>
+<script type="text/javascript">
+    var $anujq = jQuery.noConflict();
+</script>
+<script src="//marketing-pages.anu.edu.au/_anu/5/projects/htmlsites/scripts/anu-common.js" type="text/javascript"></script>
+<script src="//marketing-pages.anu.edu.au/_anu/5/projects/htmlsites/scripts/jquery.hoverIntent.js" type="text/javascript"></script>
+
+<!-- noindex -->
+<div id="print-hdr">
+    <div class="left">
+        <img src="//style.anu.edu.au/_anu/4/images/logos/anu_logo_print.png" alt="The Australian National University" height="40" width="115" />
+    </div>
+    <div class="right">
+        <div class="bnr-line-1  bnr-2line">Programs and Courses.</div>
+    </div>
+    <div class="blockline"></div>
+</div>
+
+<div id="bnr-wrap" class="bnr-gwy-high" role="banner">
+    <div id="bnr-gwy" class="bnr-gwy-high">
+        <div id="bnr-left"><a href="http://www.anu.edu.au/" class="anu-logo-png"><img class="text-white" src="https://marketing-pages.anu.edu.au/_anu/4/images/logos/2x_anu_logo_small.svg" alt="The Australian National University"></a></div>
+        <div id="bnr-mid"><div class="left"><img src="https://marketing-pages.anu.edu.au/_anu/4/images/logos/pipe_logo_small.png" alt="" width="66" height="51" class="anu-logo-pipe left"></div><div class="left" id="bnr-h-lines"><div class="bnr-line-1  bnr-2line"><h1><a href="/">Programs and Courses</a></h1></div></div></div>
+        <div id="bnr-right">
+            <div class="bnr-gw2-search ">
+                <form action="https://find.anu.edu.au/search" method="get" id="AnuGlobalSearchForm" role="search" autocomplete="off">
+                    <div>
+                        <label for="qt" class="scrnhide">Search query</label>
+                        <input class="txt" name="q" id="qt" type="search" placeholder="Search ANU web, staff &amp; maps" autocomplete="off">
+                        <input type="hidden" class="srch-f srch-sel-gsa-hidden" name="as_f" data-name="as_f" value="sitename_s[&quot;Programs and courses&quot;]">
+                        <div class="srch-sel-site">
+                            <ul>
+                                <li class="srch-sel-anu srch-selected">
+                                    <span>Search ANU web, staff &amp; maps</span>
+                                <li class="srch-sel-currentsite" id="srch-sel-currentsite-bnr" data-anu-searchname="Integration%20and%20Implementation%20Sciences%20%28I2S%29">
+                                    <span>Search current site content</span>
+                            </ul>
+                        </div>
+                        <div class="srch-divide" id="srch-sel-cont">
+                            <div class="srch-updown">
+                                <img id="srch-sel-arrow" src="https://marketing-pages.anu.edu.au/_anu/4/images/buttons/arrow-down-black.png" alt="search scope">
+                            </div>
+                        </div>
+                        <div class="srch-divide">
+                            <div class="srch-divide2"></div>
+                        </div>
+                        <button value="Go" name="search1" id="search1" onclick="return checkInput('qt','You must enter search terms');" class="btn-go">
+                            <span class="scrnhide">Search</span>
+                            <img src="https://marketing-pages.anu.edu.au/_anu/4/images/buttons/search-black.png" alt="">
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="bnr-low">
+            <!--GW_UTILITIES-->
+
+        </div>
+    </div>
+</div>
+<div style="clear: both;"></div>
+
+
+    
+
+
+<div class="breadcrumbs">
+    <div class="breadcrumbs__inner">
+        <ul class="breadcrumbs__list transition">
+                <li class="breadcrumb__list-item">
+                        <a href="/" class="breadcrumb__list-anchor">Programs and Courses</a>
+
+                </li>
+                <li class="breadcrumb__list-item">
+                        <a href="/catalogue?FilterByCourses=true&amp;Source=Breadcrumb" class="breadcrumb__list-anchor">Courses</a>
+
+                </li>
+                <li class="breadcrumb__list-item">
+                        <a href="/2023/course/POPH4100" class="breadcrumb__list-anchor">POPH4100</a>
+
+                </li>
+                <li class="breadcrumb__list-item">
+                        <a href="/2023/course/POPH4100/First%20Semester/2874" class="breadcrumb__list-anchor breadcrumb__list-anchor-current">First Semester / 2874</a>
+
+                </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="course">
+    <!-- Intro -->
+    <div class="intro" id="skip-to">
+        <div class="intro__inner">
+            <div class="doublenarrow transition">
+                <span class="intro__degree-type" style="font-weight: normal">
+                    <b>Class Summary</b>  | <a href="/2023/course/POPH4100">Back to Course Details</a>
+                </span>
+                <h1 class="intro__degree-title">
+                    <span class="intro__degree-title__component">Fundamentals of Epidemiology</span>
+                </h1>
+                <div class="intro__degree-description">
+                    <p class="intro__degree-description__text">An Undergraduate course offered by the <span class="first-owner">Nat Centre for Epidemiology and Population Health</span>.</p>
+                    <div class="molecule-container">
+    <div class="molecule-individual molecule-single molecule-medium molecule-first">
+        <div class="borderradius molecule" style="color: rgba(0,52,30,0.75); background: rgba(0,105,60,0.75)" data-colour="#00693C" data-hextext="#00341E" data-opacity="75">
+            <span class="molecule__label"><a href="/2023/course/POPH4100">POPH4100</a></span>
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+            <div class="doublenarrow transition">
+                <div class="intro__apply-to-study">
+                    <div class="intro__apply-to-study__current-academic-year">
+                        <div>
+                            <p class="margin-vertical"><strong>First Semester</strong></p>
+                        </div>
+                        <p class="margin-vertical">
+                        Academic Year : <strong>2023</strong>
+                        </p>
+                    </div>
+                    <div class="degree-summary show-mobile w-doublenarrow">
+                        
+<div class="degree-summary-inner">
+    <ul class="degree-summary__requirements">
+        <li class="degree-summary__requirements-length">
+            <span class="degree-summary__requirements-heading"><i class="fa fa-cog no-print"></i>Class Number</span>
+            2874
+        </li>
+        <li class="degree-summary__requirements-units">
+            <span class="degree-summary__requirements-heading"><i class="fa fa-book  no-print"></i>Term Code</span>
+            3330
+        </li>
+    </ul>
+    <div class="degree-summary__codes">
+            <button class="degree-summary__codes-toggle no-print" onclick="$('.degree-summary__codes-column').toggleClass('degree-summary__codes-column--hidden');$(this).toggleClass('degree-summary__codes-toggle--down');">Academic Codes <i class="fa fa-caret-right"></i></button>
+            <ul class="degree-summary__codes-column degree-summary__codes-column--hidden">
+                <li class="degree-summary__code">
+                    <span class="degree-summary__code-heading"><i class="fa fa-flag degree-summary__code-flag-icon  no-print"></i>Class Info</span>
+                </li>
+                    <li class="degree-summary__code">
+                        <span class="class-summary__code-text">Unit Value</span>
+                        <span class="class-summary__code-value">6 units</span>
+                    </li>
+                                                    <li class="degree-summary__code">
+                        <span class="class-summary__code-text">Mode of Delivery</span>
+                        <span class="class-summary__code-value">Online</span>
+                    </li>
+                                    <li class="degree-summary__code">
+                        <span class="degree-summary__code-heading"><i class="fa fa-user degree-summary__code-user-icon  no-print"></i>COURSE CONVENER</span>
+                        <ul>
+                                <li><span class="class-summary__code-value">Amy Villarosa</span></li>
+                        </ul>
+                    </li>
+                                    <li class="degree-summary__code">
+                        <span class="degree-summary__code-heading"><i class="fa fa-user degree-summary__code-user-icon  no-print"></i>LECTURER</span>
+                        <ul>
+                                <li><span class="class-summary__code-value">Amy Villarosa</span></li>
+                        </ul>
+                    </li>
+                            </ul>
+        <ul class="degree-summary__codes-column degree-summary__codes-column--hidden">
+            <li class="degree-summary__code">
+                <span class="degree-summary__code-heading"><i class="fa fa-book degree-summary__code-book-icon  no-print"></i>Class Dates</span>
+            </li>
+            <li class="degree-summary__code">
+                <span class="class-summary__code-text">Class Start Date</span>
+                <span class="class-summary__code-value">20/02/2023</span>
+            </li>
+            <li class="degree-summary__code">
+                <span class="class-summary__code-text">Class End Date</span>
+                <span class="class-summary__code-value">26/05/2023</span>
+            </li>
+                <li class="degree-summary__code">
+                    <span class="class-summary__code-text">Census Date</span>
+                    <span class="class-summary__code-value">31/03/2023</span>
+                </li>
+                            <li class="degree-summary__code">
+                    <span class="class-summary__code-text">Last Date to Enrol</span>
+                    <span class="class-summary__code-value">27/02/2023</span>
+                </li>
+                                </ul>
+    </div>
+    <ul class="degree-summary__requirements text-center no-print">
+        <li class="">
+            <a href="http://timetabling.anu.edu.au/sws2023/">
+                <span class="degree-summary__requirements-heading"><i class="fa fa-calendar-times-o "></i>View Class Timetable</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+<div>
+    <div class="course-social no-print">
+        <div class="social-icons">
+
+    <div class="twitter-wrapper">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Currently looking at Fundamentals of Epidemiology at ANU - Programs and Courses - ">Tweet</a>
+    </div>
+    <script>var encodedUri = encodeURIComponent(location.href);</script>
+    <div class="facebook-wrapper">
+        <a class="facebook-share" href="#" onclick="(window.open('https://www.facebook.com/sharer/sharer.php?u='+encodedUri, 'facebook-share-dialog', 'width=626,height=436'));">Share on Facebook</a>
+    </div>
+    <div class="wattle-wrapper">
+        <a target="_blank" href="https://wattle.anu.edu.au/" class="wattle-share-button" data-text="Currently looking at Fundamentals of Epidemiology at ANU - Programs and Courses - ">Wattle Share</a>
+    </div>
+    <div class="google-wrapper">
+        <div class="g-plusone" data-size="medium"></div>
+        <script>
+        </script>
+    </div>
+</div>
+
+
+        <a href="http://unistats.anu.edu.au/internal/surveys/selt/learning/time-series/POPH4100_Time_Series_LRN.pdf" class="selt-link">
+            <div>
+                <img src="https://odsacep1.blob.core.windows.net/setting-images-local/selt social media button_3bd5752a-98bb-4d1c-9b4b-2a312a7b6da1.jpg">
+            </div>
+            <div class="bubble">
+                SELT Survey Results
+            </div>
+        </a>
+    </div>
+    <br>
+    <div class="class-download-wrapper no-print">
+<form action="/2023/Class/PrintClassPage?courseCode=POPH4100&amp;session=First%20Semester&amp;classId=2874" method="post">            <button title="Download class PDF" class="calender-button-wrapper no-print">
+                <span class="class-download-button"></span>
+            </button>
+</form>    </div>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+            <ul class="intro-tabs clearfix">
+                <li class="intro-tabs__tab intro-tabs__tab--active">
+                    <a href="#overview" featurename="course">Overview</a>
+                </li>
+                <li class="intro-tabs__tab">
+                    <a href="#assessment" featurename="course">Assessment</a>
+                </li>
+                <li class="intro-tabs__tab">
+                    <a href="#submission" featurename="submission">Submission</a>
+                </li>
+                <li class="intro-tabs__tab">
+                    <a href="#contacts" featurename="contacts">Contacts</a>
+                </li>
+            </ul>
+        </div>
+        <div class="intro__shadow"></div>
+    </div>
+    <!-- / Intro -->
+    <!-- Main -->
+    <div class="main">
+        <div class="main-inner">
+            <div class="body transition">
+                <div class="degree-summary hide-mobile w-doublenarrow">
+                    
+<div class="degree-summary-inner">
+    <ul class="degree-summary__requirements">
+        <li class="degree-summary__requirements-length">
+            <span class="degree-summary__requirements-heading"><i class="fa fa-cog no-print"></i>Class Number</span>
+            2874
+        </li>
+        <li class="degree-summary__requirements-units">
+            <span class="degree-summary__requirements-heading"><i class="fa fa-book  no-print"></i>Term Code</span>
+            3330
+        </li>
+    </ul>
+    <div class="degree-summary__codes">
+            <ul class="degree-summary__codes-column">
+                <li class="degree-summary__code">
+                    <span class="degree-summary__code-heading"><i class="fa fa-flag degree-summary__code-flag-icon  no-print"></i>Class Info</span>
+                </li>
+                    <li class="degree-summary__code">
+                        <span class="class-summary__code-text">Unit Value</span>
+                        <span class="class-summary__code-value">6 units</span>
+                    </li>
+                                                    <li class="degree-summary__code">
+                        <span class="class-summary__code-text">Mode of Delivery</span>
+                        <span class="class-summary__code-value">Online</span>
+                    </li>
+                                    <li class="degree-summary__code">
+                        <span class="degree-summary__code-heading"><i class="fa fa-user degree-summary__code-user-icon  no-print"></i>COURSE CONVENER</span>
+                        <ul>
+                                <li><span class="class-summary__code-value">Amy Villarosa</span></li>
+                        </ul>
+                    </li>
+                                    <li class="degree-summary__code">
+                        <span class="degree-summary__code-heading"><i class="fa fa-user degree-summary__code-user-icon  no-print"></i>LECTURER</span>
+                        <ul>
+                                <li><span class="class-summary__code-value">Amy Villarosa</span></li>
+                        </ul>
+                    </li>
+                            </ul>
+        <ul class="degree-summary__codes-column">
+            <li class="degree-summary__code">
+                <span class="degree-summary__code-heading"><i class="fa fa-book degree-summary__code-book-icon  no-print"></i>Class Dates</span>
+            </li>
+            <li class="degree-summary__code">
+                <span class="class-summary__code-text">Class Start Date</span>
+                <span class="class-summary__code-value">20/02/2023</span>
+            </li>
+            <li class="degree-summary__code">
+                <span class="class-summary__code-text">Class End Date</span>
+                <span class="class-summary__code-value">26/05/2023</span>
+            </li>
+                <li class="degree-summary__code">
+                    <span class="class-summary__code-text">Census Date</span>
+                    <span class="class-summary__code-value">31/03/2023</span>
+                </li>
+                            <li class="degree-summary__code">
+                    <span class="class-summary__code-text">Last Date to Enrol</span>
+                    <span class="class-summary__code-value">27/02/2023</span>
+                </li>
+                                </ul>
+    </div>
+    <ul class="degree-summary__requirements text-center no-print">
+        <li class="">
+            <a href="http://timetabling.anu.edu.au/sws2023/">
+                <span class="degree-summary__requirements-heading"><i class="fa fa-calendar-times-o "></i>View Class Timetable</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+<div>
+    <div class="course-social no-print">
+        <div class="social-icons">
+
+    <div class="twitter-wrapper">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Currently looking at Fundamentals of Epidemiology at ANU - Programs and Courses - ">Tweet</a>
+    </div>
+    <script>var encodedUri = encodeURIComponent(location.href);</script>
+    <div class="facebook-wrapper">
+        <a class="facebook-share" href="#" onclick="(window.open('https://www.facebook.com/sharer/sharer.php?u='+encodedUri, 'facebook-share-dialog', 'width=626,height=436'));">Share on Facebook</a>
+    </div>
+    <div class="wattle-wrapper">
+        <a target="_blank" href="https://wattle.anu.edu.au/" class="wattle-share-button" data-text="Currently looking at Fundamentals of Epidemiology at ANU - Programs and Courses - ">Wattle Share</a>
+    </div>
+    <div class="google-wrapper">
+        <div class="g-plusone" data-size="medium"></div>
+        <script>
+        </script>
+    </div>
+</div>
+
+
+        <a href="http://unistats.anu.edu.au/internal/surveys/selt/learning/time-series/POPH4100_Time_Series_LRN.pdf" class="selt-link">
+            <div>
+                <img src="https://odsacep1.blob.core.windows.net/setting-images-local/selt social media button_3bd5752a-98bb-4d1c-9b4b-2a312a7b6da1.jpg">
+            </div>
+            <div class="bubble">
+                SELT Survey Results
+            </div>
+        </a>
+    </div>
+    <br>
+    <div class="class-download-wrapper no-print">
+<form action="/2023/Class/PrintClassPage?courseCode=POPH4100&amp;session=First%20Semester&amp;classId=2874" method="post">            <button title="Download class PDF" class="calender-button-wrapper no-print">
+                <span class="class-download-button"></span>
+            </button>
+</form>    </div>
+</div>
+
+
+
+                </div>
+                <div class="w-narrow secondary-navigation-wrapper">
+                    <div class="w-narrow secondary-navigation-aside">
+                        <span class="secondary-navigation-aside__heading">Fundamentals of Epidemiology (<a href="/2023/course/POPH4100">POPH4100</a>)</span>
+                        <ul class="secondary-navigation nav">
+        <li class="secondary-navigation__list-item" associatedtab="#overview">
+            <a class="secondary-navigation__anchor" href="#overview">Class Overview</a>
+        </li>
+            <li class="secondary-navigation__list-item" associatedtab="#overview">
+            <a class="secondary-navigation__anchor" href="#examination-material-or-equipment">Materials & Resources</a>
+        </li>
+            <li class="secondary-navigation__list-item" associatedtab="#overview">
+            <a class="secondary-navigation__anchor" href="#staff-feedback">Feedback</a>
+        </li>
+            <li class="secondary-navigation__list-item" associatedtab="#overview">
+            <a class="secondary-navigation__anchor" href="#class-schedule">Class Schedule</a>
+        </li>
+
+        <li class="secondary-navigation__list-item" associatedtab="#assessment">
+            <a class="secondary-navigation__anchor" href="#assessment-requirements">Assessment Details</a>
+        </li>
+
+        <li class="secondary-navigation__list-item" associatedtab="#assessment">
+            <a class="secondary-navigation__anchor" href="#assessmenttask-1">Assessment 1</a>
+        </li>
+        <li class="secondary-navigation__list-item" associatedtab="#assessment">
+            <a class="secondary-navigation__anchor" href="#assessmenttask-2">Assessment 2</a>
+        </li>
+        <li class="secondary-navigation__list-item" associatedtab="#assessment">
+            <a class="secondary-navigation__anchor" href="#assessmenttask-3">Assessment 3</a>
+        </li>
+        <li class="secondary-navigation__list-item" associatedtab="#assessment">
+            <a class="secondary-navigation__anchor" href="#assessmenttask-4">Assessment 4</a>
+        </li>
+
+        <li class="secondary-navigation__list-item" associatedtab="#submission">
+            <a class="secondary-navigation__anchor" href="#academic-integrity">Submission Details</a>
+        </li>
+
+        <li class="secondary-navigation__list-item" associatedtab="#contacts">
+            <a class="secondary-navigation__anchor" href="#contact_conveyer">Class Contacts</a>
+        </li>
+</ul>
+                    </div>
+                </div>
+
+                <div id="overview" class="tab-content">
+                    <div class="body__inner w-doublewide copy">
+<p>Epidemiology is the study of the distribution and determinants of health in populations and the application of this study to improve health. The course will cover basic epidemiological concepts including study design; measures of disease frequency and association; bias, confounding and effect modification; causality; screening; and disease surveillance. The course will also introduce the basic tools necessary for using and interpreting population health data.</p>
+                            <h2 id="policies">Learning Outcomes</h2>
+                            <p>
+                                Upon successful completion, students will have the knowledge and skills to:
+                            </p>
+<ol><li>Understand basic principles of epidemiology.</li><li>Identify key sources of population health data.</li><li>Calculate and interpret measures of disease frequency.</li><li>Describe and design basic epidemiologic studies and know the advantages and disadvantages of each design.</li><li>Define major sources of error and bias in epidemiologic research, assess the implications and identify approaches to minimise their impact.</li><li>Use epidemiologic reasoning to evaluate causal inference in epidemiologic studies and to critically review epidemiologic literature.</li></ol>
+                            <h2 id="research-led-teaching">Research-Led Teaching</h2>
+<p>This course will use current research articles/projects to introduce students to interesting topics and problems in the field of epidemiology. All the material in this course was developed by senior academic researchers at the National Centre for Epidemiology and Population Health.</p>                                                                                                    <h2 id="examination-material-or-equipment">Examination Material or equipment</h2>
+<p>All assessments are open-book assessments and students may use calculators and course notes. All assessments must be individual work and students may not get information from others during an assessment task. </p>                                                    <h2 id="required-resources">Required Resources</h2>
+<p>Students will need a calculator or other device to perform mathematical calculations.</p><p><br></p><p>The course textbook is <em>Webb P, Bain C, and Page A. Essential Epidemiology: An Introduction for Students and Health Professionals (4th edition). New York: Cambridge University Press, 2020.</em></p><p>Access to this text is a requirement for this course and it is also available as an eBook. Please note that if you purchase the eBook, you will not be able to print more than one page at a time.</p><p><br></p><p>The 1st (2005), 2nd (2011) or 3rd (2017) editions of the text can also be used, and Chapter Equivalencies are provided in the Course Textbook section of Wattle. However, it is recommended that students use the most recent version of the textbook.</p>                                                    <h2 id="recommended-resources">Recommended Resources</h2>
+<p>Further resources are available on the Wattle site for this course.</p><p><strong>Recommended student system requirements&nbsp;</strong></p><p><em>Fundamentals of Epidemiology</em> is an interactive course with engaging lessons, short videos and animations where appropriate, frequent non-assessed knowledge checking, and extensive exercises to enable students to consolidate their learning and check their own understanding of complex concepts.</p><p>To fully participate, students need:</p><ul><li>A computer or laptop. Mobile devices may work but a computer or laptop may be more appropriate.</li><li>Reliable, stable internet connection. Broadband recommended.</li><li>Suitable location with minimal interruptions and adequate privacy for classes and assessments.</li></ul><p>For more information please see <a href="https://www.anu.edu.au/students/systems/recommended-student-system-requirements" rel="noopener noreferrer" target="_blank">https://www.anu.edu.au/students/systems/recommended-student-system-requirements</a></p>                                                    <h2 id="staff-feedback">Staff Feedback</h2>
+<p>Students will be given feedback in the following forms in this course:</p><ul><li>written comments</li><li>forum posts on Wattle</li><li>verbal comments</li><li>feedback to whole class, groups, individuals, focus group etc</li></ul>                                                    <h2 id="student-feedback">Student Feedback</h2>
+<p>ANU is committed to the demonstration of educational excellence and regularly seeks feedback from students. Students are encouraged to offer feedback directly to their Course Convener or through their College and Course representatives (if applicable). Feedback can also be provided to Course Conveners and teachers via the <a href="https://unistats.anu.edu.au/surveys/selt/" rel="noopener noreferrer" target="_blank" style="color: rgb(112, 48, 160);">Student Experience of Learning &amp; Teaching (SELT) feedback program</a>. SELT surveys are confidential and also provide the Colleges and ANU Executive with opportunities to recognise excellent teaching, and opportunities for improvement.</p>                                                                            <h2 id="class-schedule">Class Schedule</h2>
+
+<table class="table-terms">
+    <thead>
+        <tr>
+            <th class="table-heading-classNumber">Week/Session</th>
+            <th class="table-heading-title">Summary of Activities</th>
+            <th class="table-heading-classDate">Assessment</th>
+        </tr>
+    </thead>
+
+    <tbody>
+            <tr>
+                <td>1</td>
+                <td>Introduction to Epidemiology</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Measures of Disease Frequency</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Study Design</td>
+                <td>Quiz 1 - 5%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Measures of Association</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Error: Chance and Bias</td>
+                <td>Quiz 2 - 5%</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Confounding and Effect Modification</td>
+                <td>Discussion Forum 1 - 5%</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Critical Appraisal</td>
+                <td>Quiz 3 - 5%</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Measuring Population Impact</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Causation and Causal Inference</td>
+                <td>Discussion Forum 2 - 5%</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Prevention and Screening</td>
+                <td>Critical Appraisal - 30%</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Field Epidemiology</td>
+                <td>Quiz 4 - 5%</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Revision</td>
+                <td>Discussion Forum 3 - 5%</td>
+            </tr>
+    </tbody>
+</table>                                                    <h2 id="tutorial-registration">Tutorial Registration</h2>
+<p>Registration for tutorials is not required.</p>                                                    <h2 id="assessment-summary">Assessment Summary</h2>
+
+<table class="table-terms">
+    <thead>
+        <tr>
+            <th class="table-heading-classNumber">Assessment task</th>
+                <th class="table-heading-classDate">Value</th>
+                            <th class="table-heading-classDate">Due Date</th>
+                            <th class="table-heading-classDate">Return of assessment</th>
+                  <th class="table-heading-classDate">Learning Outcomes</th>
+        </tr>
+    </thead>
+
+    <tbody>
+            <tr>
+                <td>Discussion Forums</td>
+
+                    <td>15 %</td>
+                                    <td>*</td>
+                                    <td>*</td>
+                                    <td>1,4,5,8</td>
+            </tr>
+            <tr>
+                <td>Quizzes </td>
+
+                    <td>20 %</td>
+                                    <td>*</td>
+                                    <td>*</td>
+                                    <td>1,3,4,5</td>
+            </tr>
+            <tr>
+                <td>Critical Appraisal </td>
+
+                    <td>30 %</td>
+                                    <td>08/05/2023</td>
+                                    <td>*</td>
+                                    <td>2,6,7,8</td>
+            </tr>
+            <tr>
+                <td>Online Exam</td>
+
+                    <td>35 %</td>
+                                    <td>06/06/2023</td>
+                                    <td>29/06/2023</td>
+                                    <td>3,5,6,7</td>
+            </tr>
+    </tbody>
+</table>
+<p>* If the Due Date and Return of Assessment date are blank, see the Assessment Tab for specific Assessment Task details</p>                                                    <h2 id="policies">Policies</h2>
+<p>ANU has <a href="https://policies.anu.edu.au/ppl/index.htm" rel="noopener noreferrer" target="_blank">educational policies, procedures and guidelines</a> , which are designed to ensure that staff and students are aware of the University’s academic standards, and implement them. Students are expected to have read the <a href="https://www.anu.edu.au/about/governance/legislation" rel="noopener noreferrer" target="_blank">Academic Integrity Rule</a> before the commencement of their course. Other key policies and guidelines include:</p><ul><li>Academic Integrity <a href="https://policies.anu.edu.au/ppl/document/ANUP_6477101" rel="noopener noreferrer" target="_blank">Policy</a> and <a href="https://policies.anu.edu.au/ppl/document/ANUP_6477150" rel="noopener noreferrer" target="_blank">Procedure</a> </li><li>Student Assessment (Coursework) <a href="https://policies.anu.edu.au/ppl/document/ANUP_004603" rel="noopener noreferrer" target="_blank">Policy</a> and <a href="https://policies.anu.edu.au/ppl/document/ANUP_004604" rel="noopener noreferrer" target="_blank">Procedure</a></li><li>Special Assessment Consideration <a href="https://policies.anu.edu.au/ppl/document/ANUP_009608" rel="noopener noreferrer" target="_blank">Guideline</a> and <a href="http://www.anu.edu.au/students/program-administration/assessments-exams/special-assessment-consideration" rel="noopener noreferrer" target="_blank">General Information</a>&nbsp;</li><li><a href="https://policies.anu.edu.au/ppl/document/ANUP_004601" rel="noopener noreferrer" target="_blank">Student Surveys and Evaluations</a></li><li><a href="http://www.anu.edu.au/students/program-administration/assessments-exams/deferred-examinations" rel="noopener noreferrer" target="_blank">Deferred Examinations</a></li><li>Student Complaint Resolution&nbsp;<a href="https://policies.anu.edu.au/ppl/document/ANUP_000468" rel="noopener noreferrer" target="_blank">Policy </a>and <a href="https://policies.anu.edu.au/ppl/document/ANUP_000540" rel="noopener noreferrer" target="_blank">Procedure</a></li><li><a href="https://policies.anu.edu.au/ppl/document/ANUP_000726" rel="noopener noreferrer" target="_blank">Code of practice for teaching and learning </a></li></ul>
+                    </div>  
+                </div>
+                    <div id="assessment" class="tab-content">
+                        <div class="body__inner w-doublewide copy">
+                    <h2 id="assessment-requirements">Assessment Requirements</h2>
+<p>The ANU is using Turnitin to enhance student citation and referencing techniques, and to assess assignment submissions as a component of the University's approach to managing Academic Integrity. For additional information regarding Turnitin please visit the <a href="https://www.anu.edu.au/students/academic-skills/academic-integrity/turnitin" rel="noopener noreferrer" target="_blank">Academic Skills website</a>. In rare cases where online submission using Turnitin software is not technically possible; or where not using Turnitin software has been justified by the Course Convener and approved by the Associate Dean (Education) on the basis of the teaching model being employed; students shall submit assessment online via ‘Wattle’ outside of Turnitin, or failing that in hard copy, or through a combination of submission methods as approved by the Associate Dean (Education). The submission method is detailed below.</p>                                                <h2 id="moderation-of-assessment">Moderation of Assessment</h2>
+<p>Marks that are allocated during Semester are to be considered provisional until formalised by the College examiners meeting at the end of each Semester. If appropriate, some moderation of marks might be applied prior to final results being released.</p>                                                                            <h2 id="examination">Examination(s)</h2>
+<p>This course will include an online exam at the end of the course, to be held on Tuesday 6 June 2023. Further details about this can be found under Assessment Task 4.</p>                            
+
+
+<h2 id="assessmenttask-1">Assessment Task 1</h2>
+
+<div class="callout-box callout-box--reverse callout-box--right">
+    <div class="callout-box__content">
+        <b>Value:</b>&nbsp;15 %<br>
+
+
+        <b>Learning Outcomes:&nbsp;</b>1,4,5,8<br>
+    </div>
+</div>
+
+<p><b>Discussion Forums</b></p>
+<p>Students are required to post into Q&amp;A forums to demonstrate their conceptual understanding of topics, and as preparation for “short answer” questions in the final exam. There are three forums, broadly keyed to areas of Description, Validation and Population. Students will have until the dates posted on the Wattle site to post their answers for each forum. After this time, grades will not be awarded for posts on the respective forum.</p><p>There are multiple activities associated with this task with individual due dates. The dates for the Forums are as follows:</p><p><strong>Forum 1</strong></p><p>Key Area: Description</p><p>Covers Topics Taught in Weeks: 1-4</p><p>Date: 27 March</p><p><br></p><p><strong>Forum 2 </strong></p><p>Key Area: Validation</p><p>Covers Topics Taught in Weeks: 5-7</p><p>Date: 1 May</p><p><br></p><p><strong>Forum 3 </strong></p><p>Key Area: Population</p><p>Covers Topics Taught in Weeks: 8-10</p><p>Date: 22 May</p><p>&nbsp;</p><p>In a Q&amp;A forum, several questions are asked, which are related to the material covered in the preceding topics, and students answer one or more of them. Once they have posted an answer, the student will be able to view other students’ responses and can reflect on their viewpoint. They may choose to discuss the responses further.</p><p>The convenor will award a grade for the first post on each question, which will be visible to the student. If a student posts on more than one question in a forum, the single post with the highest mark from that forum will contribute to a student’s grade. Each forum is worth 5% of the total mark for the course (total 15%).</p><p><br></p><p>Posts should be thoughtful and constructive, and preferably involve reference to other academic or official sources. References must be cited in an appropriate manner. Each post should be about 200-300 words (not including References). Students are encouraged to return to the forum and read the feedback provided by the convenor, for their own posts, and the posts of other students. This will help guide students on the expectations in the final exam.</p><p><br></p><p>The table below gives an indication of how marks are awarded in the Q&amp;A forums.</p>
+
+    <h2>Rubric</h2>
+<table><thead><tr><th>MARK</th><th>INDICATORS</th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td><p>10,9</p></td><td><p>These postings are made in time for others to read and respond, deliver information that is full of thought, insight, and analysis, make connections to previous or current content or to real-life situations, contain rich and fully developed new ideas, connections, or applications. References are cited correctly.</p></td><td></td><td></td><td></td><td></td></tr><tr><td><p>8,7</p></td><td><p>These postings are made in time for others to read and respond, deliver information that shows that thought, insight, and analysis have taken place, make connections to previous or current content or to real-life situations, but the connections are not really clear or are too obvious, contain new ideas, connections, or applications, but they may lack depth and/or detail. References are cited correctly.</p></td><td></td><td></td><td></td><td></td></tr><tr><td><p>6,5</p></td><td><p>These postings may not all be made in time for others to read and respond, are generally competent, but the actual information they deliver seems thin and commonplace, make limited, if any, connections, and those art often cast in the form of vague generalities, contain few, if any, new ideas or applications; often are a rehashing or summary of other comments.</p></td><td></td><td></td><td></td><td></td></tr><tr><td><p>4,3</p></td><td><p>These postings may not have been made in time for others to read and respond, are rudimentary and superficial; there is no evidence of insight or analysis, contribute no new ideas, connections, or applications, are off topic.</p></td><td></td><td></td><td></td><td></td></tr><tr><td><p>2,1</p></td><td><p>Postings that are different to those described above.</p></td><td></td><td></td><td></td><td></td></tr><tr><td><p>0</p></td><td><p>Not counted, e.g. student query to another student.</p><p>Evidence of plagiarism.</p></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+
+
+
+
+<h2 id="assessmenttask-2">Assessment Task 2</h2>
+
+<div class="callout-box callout-box--reverse callout-box--right">
+    <div class="callout-box__content">
+        <b>Value:</b>&nbsp;20 %<br>
+
+
+        <b>Learning Outcomes:&nbsp;</b>1,3,4,5<br>
+    </div>
+</div>
+
+<p><b>Quizzes </b></p>
+<p>The four topic-based online quizzes are designed to prompt students to revise the material covered in lectures and tutorials. Each quiz will cover material up to the previous week (e.g. Quiz 1 covers material from weeks 1 and 2). The final quiz may cover material from the entire course.</p><p>Marks from all four quizzes count towards the total quiz mark. Each individual quiz is worth 5% of the overall mark for the course (total 20%). No quiz can be taken after it has closed. Therefore, failure to complete any of the quizzes within the allotted time, without prior permission from the Convenor, will result in a zero grade for that quiz. Quizzes will be available on the following dates:</p><ul><li>8 March</li><li>22 March</li><li>19 April</li><li>17 May</li></ul><p><u>Format</u></p><p>Each online quiz will be available on Wattle for a limited time. Once started, students must continue until completed, as each quiz allows only one attempt per student. There is a 60-minute time limit for each quiz. The format is open- book, so students may make use of course materials and textbooks while taking any quiz. Calculators are also permitted. Students must complete each quiz as individual work. This means sharing or discussing answers with others is not allowed and collusion will be treated seriously.</p>
+
+
+
+
+
+
+<h2 id="assessmenttask-3">Assessment Task 3</h2>
+
+<div class="callout-box callout-box--reverse callout-box--right">
+    <div class="callout-box__content">
+        <b>Value:</b>&nbsp;30 %<br>
+
+<form action="/2023/Class/AddToICalendar?downloadFileName=Assessment%203%20%E2%80%93%20Due&amp;date=05%2F08%2F2023%2000%3A00%3A00" method="post">                <b>Due Date:&nbsp;</b>08/05/2023                    <button title="Assessment 3 – Due" class="btn anu-right-swap1 calender-button-wrapper no-print">
+                        <span class="fa fa-calendar"></span>
+                    </button>
+                <br>
+</form>
+        <b>Learning Outcomes:&nbsp;</b>2,6,7,8<br>
+    </div>
+</div>
+
+<p><b>Critical Appraisal </b></p>
+<p><u>Description</u></p><p>This assessment task involves writing a critique of a published epidemiological study and contributes 30% of the total mark for the course. The journal article will be available on Wattle at the end of week 7. The due date will be 8 May.</p><p>A critical appraisal is a careful and systematic review of a piece of research to assess the strengths and limitations of the study. The primary aim of this assessment task is for students to demonstrate that they understand the key epidemiological concepts covered throughout the course.</p><p>&nbsp;&nbsp;</p><p><u>Format Requirements </u></p><ul><li>Do not include a title page or cover sheet.</li><li>Document names should not be longer than 50 characters.</li><li>12-point of any font type is acceptable, with line spacing of 1.5 lines and page margins of at least 2.5cm on all sides.</li><li>Each page should be numbered.</li><li>Headings and sub-headings may be used to structure your Critical Appraisal, but full sentences are required throughout (ie. do not write in bullet points at all).</li><li>Limit your Critical Appraisal to 2000-2500 words. Avoid lengthy introductory material or a paragraph telling the readers what you will tell them. If there are too many issues to cover well within the word limit, choose the most important issues to discuss. Write the word count (not including References or Declaration) at the end of the text.&nbsp;</li></ul><p><br></p><p><u>Guidelines for writing a Critical Appraisal </u></p><p>Although a critique will include some descriptive statements about the study, the main focus is careful reasoning to clearly and objectively make a judgment about the piece of research. The emphasis should be on a synthesis and interpretation of the material and not simply a description of the study or a recitation of facts. It should focus less on statistical issues and concentrate more on the basic concepts of epidemiologic research design and the validity of the inferences that are drawn. For the purpose of this task, it is acceptable to assume that the correct statistical methods have been used.</p><p>&nbsp;</p><p>To fulfil this requirement, your Critical Appraisal should include three sections, as below:</p><ol><li>In no more than 150 words, concisely describe the study’s objective, methods and main finding(s).</li><li>Systematically, and critically, review the methods (ie. study design, bias, confounding and chance) to assess the study quality and validity of the findings. (Students may wish to make use of Figure 9.1 Issues to consider when reading epidemiological papers; see Wattle or Webb &amp; Bain 3e 2017 p.261).</li><li>Weigh up the strengths and limitations of the study and make recommendations on how future studies might be designed in order to provide stronger evidence either   for or against the existence of a relationship between the exposure and the outcome.</li></ol><p>&nbsp;</p><p><u>Referencing </u></p><p>Students will need to appropriately acknowledge source material for this assessment piece. It is recommended that in-text citations use numbers, such as Vancouver style, so that they are not included in your word count. Where possible, references should be drawn from the past eight years. If you are unsure whether, or how, to acknowledge source material, you can make use of the resources offered by the ANU Academic Skills and Learning Centre. Students can obtain free and confidential help with their academic work through individual consultations, workshops, courses, podcasts&nbsp;and handouts.</p><p>&nbsp;</p><p>ANU students are encouraged to use EndNote, which is software that allows a researcher to build libraries of references and insert them as citations into assignments, theses and papers. Using EndNote helps ensure the consistency of references and automates much of the work of formatting references. More information about EndNote, and links to download it for free, can be found at http://libguides.anu.edu.au/endnotehowtoguide.</p><p>&nbsp;</p><p><u>Grading </u></p><ul><li>Marks will be awarded according to the following criteria:</li><li>Demonstrates an understanding of epidemiological concepts and methods&nbsp;</li><li>Demonstrates an ability to reflect critically on the methodological rigour and reliability of the findings from an epidemiological study</li><li>Clear expression of ideas and the presentation of a cogent argument</li><li>Adherence to word limit and format requirements</li><li>Referencing that is undertaken accurately and as necessary</li></ul><p>&nbsp;</p><p>For maximum marks, evidence of critical thinking in the synthesis and interpretation of the selected study and application of the key concepts covered throughout the course must be demonstrated within the word limit.</p><p>&nbsp;</p><p>Unless an extension has been arranged beforehand, assignments submitted after the due date will be penalised by 5% of the possible marks available per day (or part thereof).</p><p>&nbsp;</p><p>In fairness to students who submit on time and cannot have their marked assignments returned until every student has submitted, late assignments will not be accepted after ten working days; if a student is unable to submit by that time, alternative assessment may be set by the Convenor.</p>
+
+
+
+
+
+
+<h2 id="assessmenttask-4">Assessment Task 4</h2>
+
+<div class="callout-box callout-box--reverse callout-box--right">
+    <div class="callout-box__content">
+        <b>Value:</b>&nbsp;35 %<br>
+
+<form action="/2023/Class/AddToICalendar?downloadFileName=Assessment%204%20%E2%80%93%20Due&amp;date=06%2F06%2F2023%2000%3A00%3A00" method="post">                <b>Due Date:&nbsp;</b>06/06/2023                    <button title="Assessment 4 – Due" class="btn anu-right-swap1 calender-button-wrapper no-print">
+                        <span class="fa fa-calendar"></span>
+                    </button>
+                <br>
+</form>
+<form action="/2023/Class/AddToICalendar?downloadFileName=Assessment%204%20%E2%80%93%20Return&amp;date=06%2F29%2F2023%2000%3A00%3A00" method="post">                <b>Return of Assessment:&nbsp;</b>29/06/2023                    <button title="Assessment 4 – Return" class="btn anu-right-swap1 calender-button-wrapper no-print">
+                        <span class="fa fa-calendar"></span>
+                    </button>
+                <br>
+</form>        <b>Learning Outcomes:&nbsp;</b>3,5,6,7<br>
+    </div>
+</div>
+
+<p><b>Online Exam</b></p>
+<p><u>Description</u></p><p>The online exam contributes 35% of the total mark for the course. The questions are based on a published epidemiological study (journal article), but may refer to any topic covered in the course. Calculations may be required. The journal article will be available on Wattle at least 24 hours before the assessment.</p><p>&nbsp;</p><p><u>Format</u></p><p>Students will have 2 hours to complete all questions. The format is open-book, so students may make use of reference materials (including course notes, textbooks and bilingual dictionaries). Work must be individual and students may not share answers or speak with others during the exam. Collusion will be treated seriously. Calculators may be used.</p><p><br></p><p><u>Grading</u></p><p>Marks for each question are indicated next to the question; students may use these as a guide to the level of detail required for the answer.</p><p>Please refer to the course Wattle site for the exam date.</p>
+
+
+
+
+                        </div>
+                    </div>
+                    <div id="submission" class="tab-content">
+                        <div class="body__inner w-doublewide copy">
+                    <h2 id="academic-integrity">Academic Integrity</h2>
+<p>Academic integrity is a core part of the ANU culture as a community of scholars. The University’s students are an integral part of that community. The <a href="https://www.legislation.gov.au/Details/F2021L00997#_Toc35619227" rel="noopener noreferrer" target="_blank">academic integrity principle</a> commits all students to engage in academic work in ways that are consistent with, and actively support, academic integrity, and to uphold this commitment by behaving honestly, responsibly and ethically, and with respect and fairness, in scholarly practice.</p><p><br></p><p>The University expects all staff and students to be familiar with the academic integrity principle, the <a href="https://www.anu.edu.au/about/governance/legislation" rel="noopener noreferrer" target="_blank">Academic Integrity Rule 2021,</a> the <a href="https://policies.anu.edu.au/ppl/document/ANUP_6477101" rel="noopener noreferrer" target="_blank">Policy: Student Academic Integrity</a> and <a href="https://policies.anu.edu.au/ppl/document/ANUP_6477150" rel="noopener noreferrer" target="_blank">Procedure: Student Academic Integrity</a>, and to uphold high standards of academic integrity to ensure the quality and value of our qualifications.</p><p><br></p><p>The Academic Integrity Rule 2021 is a legal document that the University uses to promote academic integrity, and manage breaches of the academic integrity principle. The Policy and Procedure support the Rule by outlining overarching principles, responsibilities and processes. The Academic Integrity Rule 2021 commences on 1 December 2021 and applies to courses commencing on or after that date, as well as to research conduct occurring on or after that date. Prior to this, the <a href="https://www.legislation.gov.au/Details/F2015L02025" rel="noopener noreferrer" target="_blank">Academic Misconduct Rule 2015</a> applies.</p><p>&nbsp;</p><p>The University commits to assisting all students to understand how to engage in academic work in ways that are consistent with, and actively support academic integrity. All coursework students must complete the online Academic Integrity Module (Epigeum), and Higher Degree Research (HDR) students are required to complete research integrity training. The <a href="https://www.anu.edu.au/students/academic-skills/academic-integrity" rel="noopener noreferrer" target="_blank">Academic Integrity website</a> provides information about services available to assist students with their assignments, examinations and other learning activities, as well as understanding and upholding academic integrity.</p>                                                <h2 id="onlinesubmission">Online Submission</h2>
+<p>You will be required to electronically sign a declaration as part of the submission of your assignment. Please keep a copy of the assignment for your records. Unless an exemption has been approved by the Associate Dean (Education) submission must be through Turnitin.</p>
+                    <h2 id="hardcopysubmission">Hardcopy Submission</h2>
+<p>For some forms of assessment (hand written assignments, art works, laboratory notes, etc.) hard copy submission is appropriate when approved by the Associate Dean (Education). Hard copy submissions must utilise the Assignment Cover Sheet. Please keep a copy of tasks completed for your records.</p>                                                <h2 id="latesubmission">Late Submission</h2>
+<p>Late submission of assessment tasks without an extension are penalised at the rate of 5% of the possible marks available per working day or part thereof. Late submission of assessment tasks is not accepted after 10 working days after the due date. </p><p><br></p><p>Late submission is not accepted for the final examination.</p>                                                <h2 id="referencing-requirements">Referencing Requirements </h2>
+<p>The <a href="https://www.anu.edu.au/students/academic-skills" rel="noopener noreferrer" target="_blank">Academic Skills website</a> has information to assist you with your writing and assessments. The website includes information about Academic Integrity including <a href="https://www.anu.edu.au/students/academic-skills/academic-integrity/referencing" rel="noopener noreferrer" target="_blank">referencing requirements for different disciplines</a>. There is also information on <a href="https://www.anu.edu.au/students/academic-skills/academic-integrity/plagiarism" rel="noopener noreferrer" target="_blank">Plagiarism</a> and different ways to <a href="https://www.anu.edu.au/students/academic-skills/academic-integrity/using-sources" rel="noopener noreferrer" target="_blank">use source</a> material.</p>                                                <h2 id="returning-assignments">Returning Assignments </h2>
+<p>It is intended that the marked forums will be returned within 2 weeks after submission, and the marked quizzes will be returned within 1 week after submission. Feedback will be provided via the course Wattle site.</p><p>It is intended that the marked critical appraisal assignment will be returned within 3 weeks after submission. Feedback will be provided via the course Wattle site.</p><p>The exam marks will be available via the course Wattle site on the date final results are published on ISIS.</p>                                                <h2 id="extensions-and-penalties">Extensions and Penalties </h2>
+<p>Extensions and late submission of assessment pieces are covered by the Student Assessment (Coursework) <a href="https://policies.anu.edu.au/ppl/document/ANUP_004603" target="_blank">Policy</a> and <a href="https://policies.anu.edu.au/ppl/document/ANUP_004604" target="_blank">Procedure</a>. Extensions may be granted for assessment pieces that are not examinations or take-home examinations. If you need an extension, you must request an extension in writing on or before the due date. If you have documented and appropriate medical evidence that demonstrates you were not able to request an extension on or before the due date, you may be able to request it after the due date.</p>                                                <h2 id="resubmission-of-assignments">Resubmission of Assignments</h2>
+<p>Resubmission of forums and quizzes is not permitted.</p><p>Resubmission of the critical appraisal assignment is not permitted. If a student is unable to submit that assessment they should contact the Convenor prior to the due date, with appropriate documentary evidence. If an extension is granted the student will submit their assignment via the course Wattle site.</p><p>Resubmission of the exam is not permitted. If a student is unable to submit that assessment they should contact the Convenor prior to the due date, with appropriate documentary evidence to consider options.</p>                                                                            <h2 id="privacy-notice">Privacy Notice</h2>
+The ANU has made a number of third party, online, databases available for students to use. Use of each online database is conditional on student end users first agreeing to the database licensor’s terms of service and/or privacy policy. Students should read these carefully. In some cases student end users will be required to register an account with the database licensor and submit personal information, including their: first name; last name; ANU email address; and other information.<br>In cases where student end users are asked to submit ‘content’ to a database, such as an assignment or short answers, the database licensor may only use the student’s ‘content’ in accordance with the terms of service – including any (copyright) licence the student grants to the database licensor. Any personal information or content a student submits may be stored by the licensor, potentially offshore, and will be used to process the database service in accordance with the licensors terms of service and/or privacy policy.<br>If any student chooses not to agree to the database licensor’s terms of service or privacy policy, the student will not be able to access and use the database. In these circumstances students should contact their lecturer to enquire about alternative arrangements that are available.                                                <h2 id="distribution-of-grades-policy">Distribution of grades policy</h2>
+<p>Academic Quality Assurance Committee monitors the performance of students, including attrition, further study and employment rates and grade distribution, and College reports on quality assurance processes for assessment activities, including alignment with national and international disciplinary and interdisciplinary standards, as well as qualification type learning outcomes.  </p><p>Since first semester 1994, ANU uses a <a href="http://www.anu.edu.au/students/program-administration/assessments-exams/grading-scale" target="_blank">grading scale</a> for all courses. This grading scale is used by all academic areas of the University. </p>                                                <h2 id="support-for-students">Support for students</h2>
+<p>The University offers students support through several different services. You may contact the services listed below directly or seek advice from your Course Convener, Student Administrators, or your College and Course representatives (if applicable).</p><ul><li><a href="http://www.anu.edu.au/students/health-safety-wellbeing" rel="noopener noreferrer" target="_blank">ANU Health, safety &amp; wellbeing</a> for medical services, counselling, mental health and spiritual support</li><li><a href="https://www.anu.edu.au/students/health-safety-wellbeing/access-inclusion" rel="noopener noreferrer" target="_blank">ANU Access and inclusion</a> for students with a disability or ongoing or chronic illness</li><li><a href="http://www.anu.edu.au/students/contacts/dean-of-students" rel="noopener noreferrer" target="_blank">ANU Dean of Students</a> for confidential, impartial advice and help to resolve problems between students and the academic or administrative areas of the University</li><li><a href="https://www.anu.edu.au/students/academic-skills" rel="noopener noreferrer" target="_blank">ANU Academic Skills and Learning Centre</a> supports you make your own decisions about how you learn and manage your workload.</li><li><a href="http://www.anu.edu.au/students/contacts/counselling-centre" rel="noopener noreferrer" target="_blank">ANU Counselling Centre</a> promotes, supports and enhances mental health and wellbeing within the University student community.</li><li><a href="https://anusa.com.au/" rel="noopener noreferrer" target="_blank">ANUSA</a> supports and represents undergraduate and ANU College students</li><li><a href="https://parsa.anu.edu.au/" rel="noopener noreferrer" target="_blank">PARSA </a>supports and represents postgraduate and research students</li></ul>                        </div>
+                    </div>
+                    <div id="contacts" class="tab-content">
+                        <div class="body__inner w-doublewide copy">
+                            
+<div id="testdiv" style="display:inline-block;width:60%">
+
+
+<div class="callout-box callout-box--left" style="width:100%">
+    <div class="callout-box__header clearfix">
+        <h2 id="contact_convener" class="callout-box__title">Convener</h2>
+        <div class="callout-box__tabs clearfix">
+            <a href="#contact_details" class="callout-box__tab callout-box__tab--active header_convener_0" onclick="$('.header_convener_0').toggleClass('callout-box__tab--active');$('.content_convener_0').toggleClass('callout-box__tab-content--active');return false;">
+                Details
+            </a>
+            <a href="#contact_consulting_hours" class="callout-box__tab header_convener_0" onclick="$('.header_convener_0').toggleClass('callout-box__tab--active');$('.content_convener_0').toggleClass('callout-box__tab-content--active');return false;">
+                Consulting Hours
+            </a>
+        </div>
+    </div>
+
+    <div class="callout-box__content">
+        <div id="contact_details_convener_0" class="callout-box__tab-content callout-box__tab-content--active content_convener_0">
+            <table class="class-contact-table">
+                <tr>
+                    <td>
+                        <img class="contact-image" src="/Content/Images/person.png">
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Amy Villarosa</td>
+                            </tr>
+                            <tr>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td><a href="mailto:u1131503@anu.edu.au">u1131503@anu.edu.au</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3>Research Interests</h3>
+                        <br>
+                            
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="contact_consulting_hours_convener_0" class="callout-box__tab-content callout-box__tab-content consulting-hours content_convener_0">
+            <h3>Amy Villarosa</h3>
+            <table class="consulting-hourse-table">
+                <tr>
+                    <td>
+                        <img class="contact-image" src="/Content/Images/person.png">
+                    </td>
+                    <td>
+                        <table class="table-consulting-hours">
+                            <tbody>
+                                    <tr>
+                                            <td nowrap="" colspan="3">By Appointment</td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+
+
+<div class="callout-box callout-box--left" style="width:100%">
+    <div class="callout-box__header clearfix">
+        <h2 id="contact_lecturer" class="callout-box__title">Instructor</h2>
+        <div class="callout-box__tabs clearfix">
+            <a href="#contact_details" class="callout-box__tab callout-box__tab--active header_lecturer_0" onclick="$('.header_lecturer_0').toggleClass('callout-box__tab--active');$('.content_lecturer_0').toggleClass('callout-box__tab-content--active');return false;">
+                Details
+            </a>
+            <a href="#contact_consulting_hours" class="callout-box__tab header_lecturer_0" onclick="$('.header_lecturer_0').toggleClass('callout-box__tab--active');$('.content_lecturer_0').toggleClass('callout-box__tab-content--active');return false;">
+                Consulting Hours
+            </a>
+        </div>
+    </div>
+
+    <div class="callout-box__content">
+        <div id="contact_details_lecturer_0" class="callout-box__tab-content callout-box__tab-content--active content_lecturer_0">
+            <table class="class-contact-table">
+                <tr>
+                    <td>
+                        <img class="contact-image" src="/Content/Images/person.png">
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Amy Villarosa</td>
+                            </tr>
+                            <tr>
+                                <td>0261255622</td>
+                            </tr>
+                            <tr>
+                                <td><a href="mailto:Amy.Villarosa@anu.edu.au">Amy.Villarosa@anu.edu.au</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3>Research Interests</h3>
+                        <br>
+                            
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="contact_consulting_hours_lecturer_0" class="callout-box__tab-content callout-box__tab-content consulting-hours content_lecturer_0">
+            <h3>Amy Villarosa</h3>
+            <table class="consulting-hourse-table">
+                <tr>
+                    <td>
+                        <img class="contact-image" src="/Content/Images/person.png">
+                    </td>
+                    <td>
+                        <table class="table-consulting-hours">
+                            <tbody>
+                                    <tr>
+                                            <td nowrap="" colspan="3">By Appointment</td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+                        </div>
+                    </div>
+                    </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    <div class="page-contact transition" style="clear: both">
+        <div class="page-contact__inner">
+            <p class="page-contact-info"><strong>Responsible Officer:</strong> Registrar, Student Administration <span>/</span> <strong>Page Contact:</strong> <a href="mailto:programsandcourses@anu.edu.au">Website Administrator</a> <span>/</span> <a href="/2023/Faq">Frequently Asked Questions</a></p>
+        </div>
+    </div>
+
+    <!-- noindex -->
+<div id="footer-wrap" class="no-print" role="contentinfo">
+    <div id="anu-footer">
+        <div id="anu-detail">
+            <ul>
+                <li><a href="http://www.anu.edu.au/contact/">Contact ANU</a></li>
+                <li><a href="http://www.anu.edu.au/maps">Campus Map</a></li>
+                <li><a href="http://www.anu.edu.au/copyright/">Copyright</a></li>
+                <li><a href="http://www.anu.edu.au/disclaimer">Disclaimer</a></li>
+                <li><a href="http://www.anu.edu.au/privacy">Privacy</a></li>
+                <li><a href="http://foi.anu.edu.au/">Freedom of Information</a></li>
+
+            </ul>
+        </div>
+        <div id="anu-address">
+            <p>
+                +61 2 6125 5111<br>
+                The Australian National University, Canberra<br>
+                CRICOS Provider : 00120C<br>
+                ABN : 52 234 063 906
+            </p>
+        </div>
+
+        <div id="anu-groups">
+            <div class="anu-ftr-go8 hpad vpad"><a href="http://www.anu.edu.au/about/partnerships/group-of-eight">
+                <img class="text-white" src="//style.anu.edu.au/_anu/4/images/logos/2x_GroupOf8.png" alt="Group of Eight Member"></a></div>
+            <div class="anu-ftr-iaru hpad vpad"><a href="http://www.anu.edu.au/about/partnerships/international-alliance-of-research-universities">
+                <img class="text-white" src="//style.anu.edu.au/_anu/4/images/logos/2x_iaru.png" alt="IARU"></a></div>
+            <div class="anu-ftr-apru hpad vpad"><a href="http://www.anu.edu.au/about/partnerships/association-of-pacific-rim-universities">
+                <img class="text-white" src="//style.anu.edu.au/_anu/4/images/logos/2x_apru.png" alt="APRU"></a></div>
+            <div class="anu-ftr-edx hpad vpad"><a href="http://www.anu.edu.au/about/partnerships/edx">
+                <img class="text-white" src="//style.anu.edu.au/_anu/4/images/logos/2x_edx.png" alt="edX"></a></div>
+        </div>
+    </div>
+</div>
+<!-- endnoindex -->
+
+    <script src="/Scripts/js?v=JP1un1h0rycQluSztdTxuhaMP0seQCNlZJNvrb9m6vs1"></script>
+
+    <script src="/Scripts/Knockout/js?v=LOGR7woollVSO0HK_vlQxp4gdzRw7kB5Dv4n6oXE6LY1"></script>
+
+    
+    
+    
+    <script src="/Scripts/misc.js" type="text/javascript"></script>
+    <script src="/Scripts/MoleculeColourFallback/js?v=cF6g_av_aq_3K49endnkXkBwpL-8fcTbVY7dOP880xk1"></script>
+
+    <script src="/Scripts/MoleculeColourToOwner/js?v=lvYw3HmvcPAuyLdhuBSllZTwGTnEI51QqMWksyIVkFk1"></script>
+
+    <script src="/Scripts/video/js?v=-XHrFjWWn56AK2mxbgjoUT_9cKeeP7EaoKmFP4qL9a81"></script>
+
+    <script src="/Scripts/SocialMedia/js?v=dNedT8IkbODerVmLKImXwBZJAm48G6VS1XKlkEIynUY1"></script>
+
+    <script async src="https://www.youtube.com/iframe_api" type="text/javascript"></script>
+
+
+
+    <!-- Google Analytics -->
+    <script>
+        if (typeof ga === 'undefined') {
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        }
+        ga('create', 'UA-5266663-4', 'auto', { 'name': 'allANU' });
+        ga('allANU.send', 'pageview');
+    </script>
+</body>
+</html>

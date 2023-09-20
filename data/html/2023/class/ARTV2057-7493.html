@@ -1,0 +1,1127 @@
+
+<!DOCTYPE html>
+<html class="wf-loading">
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5H3R8L');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta name="viewport" content="width=device-width" />
+    <title>Hands On: Emerging Material Language - ANU</title>
+    <meta content="IE=10,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width" name="viewport" />
+    <meta content="phone" media="(max-width: 479px)" name="breakpoint" />
+    <meta content="phone-wide" media="(min-width: 480px) and (max-width: 639px)" name="breakpoint" />
+    <meta content="tablet" media="(min-width: 640px) and (max-width: 959px)" name="breakpoint" />
+    <meta content="mobile" media="(max-width: 959px)" name="breakpoint" />
+    
+    
+
+    <link rel="shortcut icon" href="/content/images/favicon.ico" type="image/x-icon" />
+    <link href="https://programsandcourses.anu.edu.au/2023/course/artv2057/second%20semester/7493" rel="canonical" />
+
+    <link href="/Content/style/css?v=05BLNx1wu76OgAhSxssVhYRy3KqRIxeR5cIEZA51J8A1" rel="stylesheet"/>
+
+    <script src="/Scripts/modernizer?v=l2fp1E6Lih5iAZRql1s00lXjFeESzFAiTh1OjyQwK801"></script>
+
+    <script>
+        Modernizr.load([{
+            test: Modernizr.fontface,
+            yep: '//use.typekit.com/xkv0pni.js',
+            callback: function () {
+                var removeWfLoading = function () {
+                    with (document.documentElement) {
+                        className = className.replace(/\bwf-loading\b/, 'wf-failed');
+                    }
+                };
+                setTimeout(function () {
+                    try { Typekit.load(); } catch (e) { removeWfLoading(); }
+                }, 10);
+                setTimeout(function () {
+                    removeWfLoading();
+                }, 1000);
+            }
+        }]);
+    </script>
+    <script>
+        !function (a, b) { "use strict"; var c = { breakpoints: {}, _isTicking: !1, _debounceLastTime: 0, _namedEvents: {}, _eventMatchCache: {}, _globalEvents: [], onBreakpointChange: function () { var a = Array.prototype.slice.call(arguments), b = a.pop(), d = a.pop(); "undefined" == typeof d ? c._globalEvents.push(b) : (c._namedEvents[d] = []).push(b), k() } }, d = function (c) { /in/.test(b.readyState) ? a.setTimeout(function () { d(c) }, 9) : c() }, e = function (a, b) { var c = a.className.split(" "), d = c.indexOf(b); d > -1 && (c.splice(d, 1), a.className = c.join(" ")) }, f = function (a, b) { -1 === a.className.indexOf(b) && (a.className = "" !== a.className ? a.className + " " + b : b) }, g = function (a, c) { var d = "breakpoint-" + c, g = b.documentElement; a ? f(g, d) : e(g, d) }, h = function (a) { c._globalEvents.forEach(function (b) { "function" == typeof b && b(a) }) }, i = function () { c._isTicking || j(k), c._isTicking = !0 }, j = function (b, d) { if (!a.requestAnimationFrame) { var e = (new Date).getTime(), f = Math.max(0, 16 - (e - c._debounceLastTime)), g = a.setTimeout(function () { b(e + f) }, f); return c._debounceLastTime = e + f, g } a.requestAnimationFrame(b, d) }, k = function () { c._isTicking = !1; var b = []; for (var d in c.breakpoints) { var e = c.breakpoints[d], f = a.matchMedia(e).matches; if (c._namedEvents[d] && c._eventMatchCache[d] !== f) { c._eventMatchCache[d] = f; for (var i = 0; i < c._namedEvents[d].length; i++) { var j = c._namedEvents[d][i]; "function" == typeof j && j(f) } } f && b.push(d), g(f, d) } 0 !== b.length && h(b) }, l = function () { for (var a = b.getElementsByTagName("meta"), d = 0; d < a.length; d++)if ("breakpoint" === a[d].name) { var e = a[d].getAttribute("content"), f = a[d].getAttribute("media"); c.breakpoints[e] = f } }, m = function () { l(), k() }, n = function () { l(), k(), a.addEventListener("resize", i) }; "undefined" != typeof module && module.exports ? module.exports = c : a.metaQuery = c, m(), d(n) }(window, document);
+    </script>
+    <!--
+    To collect end-user usage analytics about your application,
+    insert the following script into each page you want to track.
+    Place this code immediately before the closing </head> tag,
+    and before any other scripts. Your first data will appear
+    automatically in just a few seconds.
+    -->
+    <script type="text/javascript">
+        var appInsights = window.appInsights || function (config) {
+            function s(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, r = document, f = window, e = "script", o = r.createElement(e), i, u; for (o.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", r.getElementsByTagName(e)[0].parentNode.appendChild(o), t.cookie = r.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;)s("track" + i.pop()); return config.disableExceptionTracking || (i = "onerror", s("_" + i), u = f[i], f[i] = function (config, r, f, e, o) { var s = u && u(config, r, f, e, o); return s !== !0 && t["_" + i](config, r, f, e, o), s }), t
+        }({
+            instrumentationKey: "c2b8cab7-0152-4b03-8810-7d9be84a3b34"
+        });
+
+        window.appInsights = appInsights;
+        appInsights.trackPageView();
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <!-- Hotjar Tracking Code for http://www.anu.edu.au -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 1136231, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
+
+    <script>
+        (function (a, b, c, d, e, m) {
+            a['OktopostTrackerObject'] = d;
+            a[d] = a[d] || function () {
+                (a[d].q = a[d].q || []).push(arguments);
+            };
+            e = b.createElement('script');
+            m = b.getElementsByTagName('script')[0];
+            e.async = 1;
+            e.src = ('https:' === document.location.protocol ? 'https://' : 'http://') + c;
+            m.parentNode.insertBefore(e, m);
+        })(window, document, 'static.oktopost.com/oktrk.js', '_oktrk');
+
+        _oktrk('create', '001qt43soloi771');
+    </script>
+
+
+
+    <!-- End Facebook Pixel Code -->
+
+</head>
+<body id="top">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5H3R8L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <meta name="insight-app-sec-validation" content="aac4b9bd-9119-4743-8a28-82bf1124481b" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="//marketing-pages.anu.edu.au/_anu/5/projects/htmlsites/pc.css" />
+<script src="//marketing-pages.anu.edu.au/_anu/4/scripts/jquery-1.11.3.min.js?1" type="text/javascript"></script>
+<script type="text/javascript">
+    var $anujq = jQuery.noConflict();
+</script>
+<script src="//marketing-pages.anu.edu.au/_anu/5/projects/htmlsites/scripts/anu-common.js" type="text/javascript"></script>
+<script src="//marketing-pages.anu.edu.au/_anu/5/projects/htmlsites/scripts/jquery.hoverIntent.js" type="text/javascript"></script>
+
+<!-- noindex -->
+<div id="print-hdr">
+    <div class="left">
+        <img src="//style.anu.edu.au/_anu/4/images/logos/anu_logo_print.png" alt="The Australian National University" height="40" width="115" />
+    </div>
+    <div class="right">
+        <div class="bnr-line-1  bnr-2line">Programs and Courses.</div>
+    </div>
+    <div class="blockline"></div>
+</div>
+
+<div id="bnr-wrap" class="bnr-gwy-high" role="banner">
+    <div id="bnr-gwy" class="bnr-gwy-high">
+        <div id="bnr-left"><a href="http://www.anu.edu.au/" class="anu-logo-png"><img class="text-white" src="https://marketing-pages.anu.edu.au/_anu/4/images/logos/2x_anu_logo_small.svg" alt="The Australian National University"></a></div>
+        <div id="bnr-mid"><div class="left"><img src="https://marketing-pages.anu.edu.au/_anu/4/images/logos/pipe_logo_small.png" alt="" width="66" height="51" class="anu-logo-pipe left"></div><div class="left" id="bnr-h-lines"><div class="bnr-line-1  bnr-2line"><h1><a href="/">Programs and Courses</a></h1></div></div></div>
+        <div id="bnr-right">
+            <div class="bnr-gw2-search ">
+                <form action="https://find.anu.edu.au/search" method="get" id="AnuGlobalSearchForm" role="search" autocomplete="off">
+                    <div>
+                        <label for="qt" class="scrnhide">Search query</label>
+                        <input class="txt" name="q" id="qt" type="search" placeholder="Search ANU web, staff &amp; maps" autocomplete="off">
+                        <input type="hidden" class="srch-f srch-sel-gsa-hidden" name="as_f" data-name="as_f" value="sitename_s[&quot;Programs and courses&quot;]">
+                        <div class="srch-sel-site">
+                            <ul>
+                                <li class="srch-sel-anu srch-selected">
+                                    <span>Search ANU web, staff &amp; maps</span>
+                                <li class="srch-sel-currentsite" id="srch-sel-currentsite-bnr" data-anu-searchname="Integration%20and%20Implementation%20Sciences%20%28I2S%29">
+                                    <span>Search current site content</span>
+                            </ul>
+                        </div>
+                        <div class="srch-divide" id="srch-sel-cont">
+                            <div class="srch-updown">
+                                <img id="srch-sel-arrow" src="https://marketing-pages.anu.edu.au/_anu/4/images/buttons/arrow-down-black.png" alt="search scope">
+                            </div>
+                        </div>
+                        <div class="srch-divide">
+                            <div class="srch-divide2"></div>
+                        </div>
+                        <button value="Go" name="search1" id="search1" onclick="return checkInput('qt','You must enter search terms');" class="btn-go">
+                            <span class="scrnhide">Search</span>
+                            <img src="https://marketing-pages.anu.edu.au/_anu/4/images/buttons/search-black.png" alt="">
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="bnr-low">
+            <!--GW_UTILITIES-->
+
+        </div>
+    </div>
+</div>
+<div style="clear: both;"></div>
+
+
+    
+
+
+<div class="breadcrumbs">
+    <div class="breadcrumbs__inner">
+        <ul class="breadcrumbs__list transition">
+                <li class="breadcrumb__list-item">
+                        <a href="/" class="breadcrumb__list-anchor">Programs and Courses</a>
+
+                </li>
+                <li class="breadcrumb__list-item">
+                        <a href="/catalogue?FilterByCourses=true&amp;Source=Breadcrumb" class="breadcrumb__list-anchor">Courses</a>
+
+                </li>
+                <li class="breadcrumb__list-item">
+                        <a href="/2023/course/ARTV2057" class="breadcrumb__list-anchor">ARTV2057</a>
+
+                </li>
+                <li class="breadcrumb__list-item">
+                        <a href="/2023/course/ARTV2057/Second%20Semester/7493" class="breadcrumb__list-anchor breadcrumb__list-anchor-current">Second Semester / 7493</a>
+
+                </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="course">
+    <!-- Intro -->
+    <div class="intro" id="skip-to">
+        <div class="intro__inner">
+            <div class="doublenarrow transition">
+                <span class="intro__degree-type" style="font-weight: normal">
+                    <b>Class Summary</b>  | <a href="/2023/course/ARTV2057">Back to Course Details</a>
+                </span>
+                <h1 class="intro__degree-title">
+                    <span class="intro__degree-title__component">Hands On: Emerging Material Language</span>
+                </h1>
+                <div class="intro__degree-description">
+                    <p class="intro__degree-description__text">An Undergraduate course offered by the <span class="first-owner">School of Art and Design</span>.</p>
+                    <div class="molecule-container">
+    <div class="molecule-individual molecule-single molecule-medium molecule-first">
+        <div class="borderradius molecule" style="color: rgba(0,28,83,0.75); background: rgba(0,57,166,0.75)" data-colour="#0039A6" data-hextext="#001C53" data-opacity="75">
+            <span class="molecule__label"><a href="/2023/course/ARTV2057">ARTV2057</a></span>
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+            <div class="doublenarrow transition">
+                <div class="intro__apply-to-study">
+                    <div class="intro__apply-to-study__current-academic-year">
+                        <div>
+                            <p class="margin-vertical"><strong>Second Semester</strong></p>
+                        </div>
+                        <p class="margin-vertical">
+                        Academic Year : <strong>2023</strong>
+                        </p>
+                    </div>
+                    <div class="degree-summary show-mobile w-doublenarrow">
+                        
+<div class="degree-summary-inner">
+    <ul class="degree-summary__requirements">
+        <li class="degree-summary__requirements-length">
+            <span class="degree-summary__requirements-heading"><i class="fa fa-cog no-print"></i>Class Number</span>
+            7493
+        </li>
+        <li class="degree-summary__requirements-units">
+            <span class="degree-summary__requirements-heading"><i class="fa fa-book  no-print"></i>Term Code</span>
+            3360
+        </li>
+    </ul>
+    <div class="degree-summary__codes">
+            <button class="degree-summary__codes-toggle no-print" onclick="$('.degree-summary__codes-column').toggleClass('degree-summary__codes-column--hidden');$(this).toggleClass('degree-summary__codes-toggle--down');">Academic Codes <i class="fa fa-caret-right"></i></button>
+            <ul class="degree-summary__codes-column degree-summary__codes-column--hidden">
+                <li class="degree-summary__code">
+                    <span class="degree-summary__code-heading"><i class="fa fa-flag degree-summary__code-flag-icon  no-print"></i>Class Info</span>
+                </li>
+                    <li class="degree-summary__code">
+                        <span class="class-summary__code-text">Unit Value</span>
+                        <span class="class-summary__code-value">6 units</span>
+                    </li>
+                                                    <li class="degree-summary__code">
+                        <span class="class-summary__code-text">Mode of Delivery</span>
+                        <span class="class-summary__code-value">In Person</span>
+                    </li>
+                                    <li class="degree-summary__code">
+                        <span class="degree-summary__code-heading"><i class="fa fa-user degree-summary__code-user-icon  no-print"></i>COURSE CONVENER</span>
+                        <ul>
+                                <li><span class="class-summary__code-value">Lucy Irvine</span></li>
+                        </ul>
+                    </li>
+                                    <li class="degree-summary__code">
+                        <span class="degree-summary__code-heading"><i class="fa fa-user degree-summary__code-user-icon  no-print"></i>LECTURER</span>
+                        <ul>
+                                <li><span class="class-summary__code-value">  Joanne Searle</span></li>
+                                <li><span class="class-summary__code-value">Melanie Olde</span></li>
+                        </ul>
+                    </li>
+                            </ul>
+        <ul class="degree-summary__codes-column degree-summary__codes-column--hidden">
+            <li class="degree-summary__code">
+                <span class="degree-summary__code-heading"><i class="fa fa-book degree-summary__code-book-icon  no-print"></i>Class Dates</span>
+            </li>
+            <li class="degree-summary__code">
+                <span class="class-summary__code-text">Class Start Date</span>
+                <span class="class-summary__code-value">24/07/2023</span>
+            </li>
+            <li class="degree-summary__code">
+                <span class="class-summary__code-text">Class End Date</span>
+                <span class="class-summary__code-value">27/10/2023</span>
+            </li>
+                <li class="degree-summary__code">
+                    <span class="class-summary__code-text">Census Date</span>
+                    <span class="class-summary__code-value">31/08/2023</span>
+                </li>
+                            <li class="degree-summary__code">
+                    <span class="class-summary__code-text">Last Date to Enrol</span>
+                    <span class="class-summary__code-value">31/07/2023</span>
+                </li>
+                                </ul>
+    </div>
+    <ul class="degree-summary__requirements text-center no-print">
+        <li class="">
+            <a href="http://timetabling.anu.edu.au/sws2023/">
+                <span class="degree-summary__requirements-heading"><i class="fa fa-calendar-times-o "></i>View Class Timetable</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+<div>
+    <div class="course-social no-print">
+        <div class="social-icons">
+
+    <div class="twitter-wrapper">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Currently looking at Hands On: Emerging Material Language at ANU - Programs and Courses - ">Tweet</a>
+    </div>
+    <script>var encodedUri = encodeURIComponent(location.href);</script>
+    <div class="facebook-wrapper">
+        <a class="facebook-share" href="#" onclick="(window.open('https://www.facebook.com/sharer/sharer.php?u='+encodedUri, 'facebook-share-dialog', 'width=626,height=436'));">Share on Facebook</a>
+    </div>
+    <div class="wattle-wrapper">
+        <a target="_blank" href="https://wattle.anu.edu.au/" class="wattle-share-button" data-text="Currently looking at Hands On: Emerging Material Language at ANU - Programs and Courses - ">Wattle Share</a>
+    </div>
+    <div class="google-wrapper">
+        <div class="g-plusone" data-size="medium"></div>
+        <script>
+        </script>
+    </div>
+</div>
+
+
+        <a href="http://unistats.anu.edu.au/internal/surveys/selt/learning/time-series/ARTV2057_Time_Series_LRN.pdf" class="selt-link">
+            <div>
+                <img src="https://odsacep1.blob.core.windows.net/setting-images-local/selt social media button_3bd5752a-98bb-4d1c-9b4b-2a312a7b6da1.jpg">
+            </div>
+            <div class="bubble">
+                SELT Survey Results
+            </div>
+        </a>
+    </div>
+    <br>
+    <div class="class-download-wrapper no-print">
+<form action="/2023/Class/PrintClassPage?courseCode=ARTV2057&amp;session=Second%20Semester&amp;classId=7493" method="post">            <button title="Download class PDF" class="calender-button-wrapper no-print">
+                <span class="class-download-button"></span>
+            </button>
+</form>    </div>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+            <ul class="intro-tabs clearfix">
+                <li class="intro-tabs__tab intro-tabs__tab--active">
+                    <a href="#overview" featurename="course">Overview</a>
+                </li>
+                <li class="intro-tabs__tab">
+                    <a href="#assessment" featurename="course">Assessment</a>
+                </li>
+                <li class="intro-tabs__tab">
+                    <a href="#submission" featurename="submission">Submission</a>
+                </li>
+                <li class="intro-tabs__tab">
+                    <a href="#contacts" featurename="contacts">Contacts</a>
+                </li>
+            </ul>
+        </div>
+        <div class="intro__shadow"></div>
+    </div>
+    <!-- / Intro -->
+    <!-- Main -->
+    <div class="main">
+        <div class="main-inner">
+            <div class="body transition">
+                <div class="degree-summary hide-mobile w-doublenarrow">
+                    
+<div class="degree-summary-inner">
+    <ul class="degree-summary__requirements">
+        <li class="degree-summary__requirements-length">
+            <span class="degree-summary__requirements-heading"><i class="fa fa-cog no-print"></i>Class Number</span>
+            7493
+        </li>
+        <li class="degree-summary__requirements-units">
+            <span class="degree-summary__requirements-heading"><i class="fa fa-book  no-print"></i>Term Code</span>
+            3360
+        </li>
+    </ul>
+    <div class="degree-summary__codes">
+            <ul class="degree-summary__codes-column">
+                <li class="degree-summary__code">
+                    <span class="degree-summary__code-heading"><i class="fa fa-flag degree-summary__code-flag-icon  no-print"></i>Class Info</span>
+                </li>
+                    <li class="degree-summary__code">
+                        <span class="class-summary__code-text">Unit Value</span>
+                        <span class="class-summary__code-value">6 units</span>
+                    </li>
+                                                    <li class="degree-summary__code">
+                        <span class="class-summary__code-text">Mode of Delivery</span>
+                        <span class="class-summary__code-value">In Person</span>
+                    </li>
+                                    <li class="degree-summary__code">
+                        <span class="degree-summary__code-heading"><i class="fa fa-user degree-summary__code-user-icon  no-print"></i>COURSE CONVENER</span>
+                        <ul>
+                                <li><span class="class-summary__code-value">Lucy Irvine</span></li>
+                        </ul>
+                    </li>
+                                    <li class="degree-summary__code">
+                        <span class="degree-summary__code-heading"><i class="fa fa-user degree-summary__code-user-icon  no-print"></i>LECTURER</span>
+                        <ul>
+                                <li><span class="class-summary__code-value">  Joanne Searle</span></li>
+                                <li><span class="class-summary__code-value">Melanie Olde</span></li>
+                        </ul>
+                    </li>
+                            </ul>
+        <ul class="degree-summary__codes-column">
+            <li class="degree-summary__code">
+                <span class="degree-summary__code-heading"><i class="fa fa-book degree-summary__code-book-icon  no-print"></i>Class Dates</span>
+            </li>
+            <li class="degree-summary__code">
+                <span class="class-summary__code-text">Class Start Date</span>
+                <span class="class-summary__code-value">24/07/2023</span>
+            </li>
+            <li class="degree-summary__code">
+                <span class="class-summary__code-text">Class End Date</span>
+                <span class="class-summary__code-value">27/10/2023</span>
+            </li>
+                <li class="degree-summary__code">
+                    <span class="class-summary__code-text">Census Date</span>
+                    <span class="class-summary__code-value">31/08/2023</span>
+                </li>
+                            <li class="degree-summary__code">
+                    <span class="class-summary__code-text">Last Date to Enrol</span>
+                    <span class="class-summary__code-value">31/07/2023</span>
+                </li>
+                                </ul>
+    </div>
+    <ul class="degree-summary__requirements text-center no-print">
+        <li class="">
+            <a href="http://timetabling.anu.edu.au/sws2023/">
+                <span class="degree-summary__requirements-heading"><i class="fa fa-calendar-times-o "></i>View Class Timetable</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+<div>
+    <div class="course-social no-print">
+        <div class="social-icons">
+
+    <div class="twitter-wrapper">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Currently looking at Hands On: Emerging Material Language at ANU - Programs and Courses - ">Tweet</a>
+    </div>
+    <script>var encodedUri = encodeURIComponent(location.href);</script>
+    <div class="facebook-wrapper">
+        <a class="facebook-share" href="#" onclick="(window.open('https://www.facebook.com/sharer/sharer.php?u='+encodedUri, 'facebook-share-dialog', 'width=626,height=436'));">Share on Facebook</a>
+    </div>
+    <div class="wattle-wrapper">
+        <a target="_blank" href="https://wattle.anu.edu.au/" class="wattle-share-button" data-text="Currently looking at Hands On: Emerging Material Language at ANU - Programs and Courses - ">Wattle Share</a>
+    </div>
+    <div class="google-wrapper">
+        <div class="g-plusone" data-size="medium"></div>
+        <script>
+        </script>
+    </div>
+</div>
+
+
+        <a href="http://unistats.anu.edu.au/internal/surveys/selt/learning/time-series/ARTV2057_Time_Series_LRN.pdf" class="selt-link">
+            <div>
+                <img src="https://odsacep1.blob.core.windows.net/setting-images-local/selt social media button_3bd5752a-98bb-4d1c-9b4b-2a312a7b6da1.jpg">
+            </div>
+            <div class="bubble">
+                SELT Survey Results
+            </div>
+        </a>
+    </div>
+    <br>
+    <div class="class-download-wrapper no-print">
+<form action="/2023/Class/PrintClassPage?courseCode=ARTV2057&amp;session=Second%20Semester&amp;classId=7493" method="post">            <button title="Download class PDF" class="calender-button-wrapper no-print">
+                <span class="class-download-button"></span>
+            </button>
+</form>    </div>
+</div>
+
+
+
+                </div>
+                <div class="w-narrow secondary-navigation-wrapper">
+                    <div class="w-narrow secondary-navigation-aside">
+                        <span class="secondary-navigation-aside__heading">Hands On: Emerging Material Language (<a href="/2023/course/ARTV2057">ARTV2057</a>)</span>
+                        <ul class="secondary-navigation nav">
+        <li class="secondary-navigation__list-item" associatedtab="#overview">
+            <a class="secondary-navigation__anchor" href="#overview">Class Overview</a>
+        </li>
+                <li class="secondary-navigation__list-item" associatedtab="#overview">
+            <a class="secondary-navigation__anchor" href="#staff-feedback">Feedback</a>
+        </li>
+            <li class="secondary-navigation__list-item" associatedtab="#overview">
+            <a class="secondary-navigation__anchor" href="#class-schedule">Class Schedule</a>
+        </li>
+
+        <li class="secondary-navigation__list-item" associatedtab="#assessment">
+            <a class="secondary-navigation__anchor" href="#assessment-requirements">Assessment Details</a>
+        </li>
+
+        <li class="secondary-navigation__list-item" associatedtab="#assessment">
+            <a class="secondary-navigation__anchor" href="#assessmenttask-1">Assessment 1</a>
+        </li>
+        <li class="secondary-navigation__list-item" associatedtab="#assessment">
+            <a class="secondary-navigation__anchor" href="#assessmenttask-2">Assessment 2</a>
+        </li>
+        <li class="secondary-navigation__list-item" associatedtab="#assessment">
+            <a class="secondary-navigation__anchor" href="#assessmenttask-3">Assessment 3</a>
+        </li>
+        <li class="secondary-navigation__list-item" associatedtab="#assessment">
+            <a class="secondary-navigation__anchor" href="#assessmenttask-4">Assessment 4</a>
+        </li>
+
+        <li class="secondary-navigation__list-item" associatedtab="#submission">
+            <a class="secondary-navigation__anchor" href="#academic-integrity">Submission Details</a>
+        </li>
+
+        <li class="secondary-navigation__list-item" associatedtab="#contacts">
+            <a class="secondary-navigation__anchor" href="#contact_conveyer">Class Contacts</a>
+        </li>
+</ul>
+                    </div>
+                </div>
+
+                <div id="overview" class="tab-content">
+                    <div class="body__inner w-doublewide copy">
+<p>This course is designed for students who wish to explore the ways that different media and emerging practices can be engaged to express creative ideas in visual art and craft whilst extending the application of particular technologies and techniques. This is a topic-based course with a menu of disciplinary or media pairings. Students will bring their own ideas to working across the course disciplines, guided by a course theme.</p><p>An Interdisciplinary approach enables students to extend their knowledge and skills in contemporary creative practice through contextual investigations, critique and reflection, informed by safe and culturally informed practices.&nbsp;</p>
+                            <h2 id="policies">Learning Outcomes</h2>
+                            <p>
+                                Upon successful completion, students will have the knowledge and skills to:
+                            </p>
+<ol><li>extend the acquisition and application of skills and knowledge in response to thematic art and design projects;</li><li>apply exploratory methods and new technologies to discover, interrogate, and synthesise ideas and creative processes;</li><li>use critical and reflective evaluation to develop concepts and workflows in the execution of self-initiated projects; and</li><li>apply historical and theoretical contexts to inform, progress and express creative ideas in material and written form.</li></ol>
+                            <h2 id="research-led-teaching">Research-Led Teaching</h2>
+<p>Lecturers will draw from their own cross-disciplinary and experimental research practices to teach the critical and creative investigations of materials, processes and forms in this course. </p>                                                                            <h2 id="additional-course-costs">Additional Course Costs</h2>
+<p><strong>REQUIRED RESOURCES AND INCIDENTAL FEES</strong></p><p><strong>Dear Student,</strong></p><p><strong>The School of Art &amp; Design provides additional access to the workshop areas and use of equipment, tooling and consumable items during extra hours. For this access the School charges the Optional Workshop Fee. This is not a compulsory fee and is not essential to course completion, however if a student chooses not to pay it, access to the workshop areas and equipment outside of stated course hours is not allowed.</strong></p><p><strong>The School of Art &amp; Design supplies materials that become your physical property on payment of the relevant material fee. You can choose to pay the Materials Fee and have these materials supplied through the School of Art &amp; Design, allowing you to take advantage of the GST-free bulk purchasing power of the ANU. These materials are also WHS compliant.</strong></p><p><strong>Please go to the payment portal located on the Required Resources and Incidental Fees page&nbsp;</strong><a href="http://soad.cass.anu.edu.au/required-resources-and-incidental-fees" rel="noopener noreferrer" target="_blank" style="color: rgb(6, 111, 169);">here</a>&nbsp;on the School of Art &amp; Design website. Follow the prompts to the payment portal, select the relevant discipline and the fee you wish to pay for.&nbsp;</p><p>If you need assistance please contact the Technical Officer in the relevant discipline or at the administration offices of the School of Art &amp; Design.</p><p>Thank you</p><p>School of Art &amp; Design</p>                                                                            <h2 id="required-resources">Required Resources</h2>
+<p>Students will be encouraged to source additional materials for this course so as to expand their own experimental, material, conceptual thinking through class tasks. Please see Wattle for more details. </p><p>Student contribution amounts under the Higher Education Support Act 2003 (HESA) and tuition fees support the course described in the Course Outline and include tuition, teaching materials and student access to the workshops for the stated course hours.</p><p>Students are requested to refer to the School of Art website for information:&nbsp;<a href="http://soa.anu.edu.au/required-resources-and-incidental-fees" rel="noopener noreferrer" target="_blank" style="color: rgb(6, 111, 169);">http://soa.anu.edu.au/required-resources-and-incidental-fees</a></p><p><strong>Wattle</strong>. Ensure that your details are correct as Wattle will be the primary method of communication between lecturers and students and assessment submission point.</p>                                                    <h2 id="recommended-resources">Recommended Resources</h2>
+<p>lease see Wattle for readings and recommended resources</p><p>ANU outlines <a href="https://www.anu.edu.au/students/learning-platforms/recommended-student-system-requirements" rel="noopener noreferrer" target="_blank" style="color: rgb(6, 111, 169);">recommended student system requirements</a> to ensure you are able to participate fully in your learning. Other information is also available about the various <a href="https://www.anu.edu.au/students/learning-platforms" rel="noopener noreferrer" target="_blank" style="color: rgb(6, 111, 169);">Learning Platforms</a> you may use.</p>                                                    <h2 id="staff-feedback">Staff Feedback</h2>
+<p>Students will be given feedback in the following forms in this course:</p><ul><li>written comments</li><li>verbal comments</li><li>feedback to whole class, groups, individuals, focus group etc</li></ul>                                                    <h2 id="student-feedback">Student Feedback</h2>
+<p>ANU is committed to the demonstration of educational excellence and regularly seeks feedback from students. Students are encouraged to offer feedback directly to their Course Convener or through their College and Course representatives (if applicable). Feedback can also be provided to Course Conveners and teachers via the <a href="https://unistats.anu.edu.au/surveys/selt/" rel="noopener noreferrer" target="_blank" style="color: rgb(112, 48, 160);">Student Experience of Learning &amp; Teaching (SELT) feedback program</a>. SELT surveys are confidential and also provide the Colleges and ANU Executive with opportunities to recognise excellent teaching, and opportunities for improvement.</p>                                                                            <h2 id="class-schedule">Class Schedule</h2>
+
+<table class="table-terms">
+    <thead>
+        <tr>
+            <th class="table-heading-classNumber">Week/Session</th>
+            <th class="table-heading-title">Summary of Activities</th>
+            <th class="table-heading-classDate">Assessment</th>
+        </tr>
+    </thead>
+
+    <tbody>
+            <tr>
+                <td>1</td>
+                <td><strong style="background-color: rgba(218, 215, 215, 0.14); color: rgb(0, 0, 0);">Thursday July 27 9.00-13.00 </strong><strong>Whole class activities</strong>9.00-9.40 &nbsp;All students meet in SOAD Textiles Workshop Upstairs Teaching Space·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Introduction to course: themes, assessment tasks and structure of workshop rotations·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Discuss preparation for Week 2:&gt;Homework for Group 1: Weaving with wire &gt;Homework for Group 2: Make ceramic connectors &nbsp;10.00-13.00 Rotation X2 80 min activities in Textiles and Ceramics Workshops:·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weaving experiments for slip cast burnouts<ul><li>Clay forms multiples and perforated structures </li></ul></td>
+                <td><strong>Course Overview</strong><strong>Task 1&gt;</strong> Pre-recorded presentation <strong>Task 2&gt;</strong> Material Tensions Challenge<strong>Task 3&gt;</strong> Collaborative Project: group installation and presentation<strong>Task 4&gt; </strong>Collaborative Project: individual research and reflection</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><strong style="background-color: rgba(218, 215, 215, 0.14); color: rgb(0, 0, 0);">Thursday August 03 9.00-13.00 </strong><strong style="color: rgb(73, 80, 87);">Rotation 1: Transformations – material and methods</strong><strong>Textiles: Group 1 </strong>SOAD Textiles Workshop Upstairs Teaching Space·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Workshop induction·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Analyse burn-out structures and wire weaving homework·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weaving: basics and early experimentation&nbsp;<strong>Ceramics: Group 2 </strong>SOAD Ceramics Workshop Main Teaching Space·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Workshop and equipment inductions·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Analyse connectors made for homework and the burnout structures. <ul><li>Hand-building skills: extruding and slab-building with clay</li></ul></td>
+                <td><strong>Research for Task 1&gt;</strong> Pre-recorded presentation<strong>Make for Task 2&gt;</strong> Material Tensions ChallengeWorkshop specific inductions</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><strong style="background-color: rgba(218, 215, 215, 0.14); color: rgb(0, 0, 0);">Thursday August 10 9.00-13.00 </strong><strong style="color: rgb(73, 80, 87);">Rotation 1: </strong><strong>Connectivity – Enablers, links and intersections &amp;                                        Structure and agency – strengths and weaknesses     </strong><strong style="color: rgb(73, 80, 87);">Textiles: Group 1 </strong>SOAD Textiles Workshop Upstairs Teaching Space·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Discussion of 2-3 papers in class·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weaving: extending skills and experimenting·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adding rings, found objects, loops, joining methods for panels etc ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Making holes in the weave·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Testing/pushing/distorting structure<strong style="color: rgb(73, 80, 87);">Ceramics: Group 2 </strong>SOAD Ceramics Workshop Main Teaching Space·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Discussion of 2-3 papers in class·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hand building: extending skills and experimenting·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attention to surface·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creating more components and connectors·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weaving with clay <ul><li>Glazes, firing and finishing&nbsp;</li></ul></td>
+                <td><strong>Prepare for</strong> <strong style="color: rgb(73, 80, 87);">Task 1&gt;</strong> Pre-recorded presentation <strong style="color: rgb(73, 80, 87);">Make for Task 2&gt;</strong> Material Tensions Challenge</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><strong style="background-color: rgba(218, 215, 215, 0.14); color: rgb(0, 0, 0);">Thursday August 17 9.00-13.00</strong><strong style="color: rgb(73, 80, 87);">Rotation 1: Connectivity – Enablers, links and intersections &amp;                                        Structure and agency – strengths and weaknesses   </strong><strong style="color: rgb(73, 80, 87);">Textiles: Group 1 </strong>SOAD Textiles Workshop Upstairs Teaching Space·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weaving: extending skills and experimenting·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adding rings, found objects, loops, joining methods for panels etc ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Making holes in the weave·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Testing/pushing/distorting structure·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removing work from weaving frames·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Discuss preparation for Week 5:&gt;Homework for Group 1: Make ceramic connectors&nbsp;<strong style="color: rgb(73, 80, 87);">Ceramics: Group 2 </strong>SOAD Ceramics Workshop Main Teaching Space·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hand building: extending skills and experimenting·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attention to surface·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creating more components and connectors·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weaving with clay.<ul><li>Glazes, firing and finishing&nbsp;</li></ul>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Discuss preparation for Week 5:&gt;Homework for Group 2: Weaving with wire&nbsp;</td>
+                <td><strong style="background-color: inherit;"><u>Submit</u></strong><u> </u><strong style="background-color: inherit;">Task 1&gt;</strong> Pre-recorded presentation <strong style="background-color: inherit;">Make for Task 2&gt;</strong> Material Tensions Challenge</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><strong>Thursday August 24 9.00-13.00</strong><strong>Rotation 2:</strong> <strong>Transformations – material and methods</strong><strong>Textiles: Group 2</strong>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Workshop induction·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Analyse burn-out structures and wire weaving homework·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weaving: basics and early experimentation&nbsp;<strong>Ceramics: Group 1</strong>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Workshop and equipment inductions·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Analyse connectors made for homework and the burnout structures. <ul><li>Hand-building skills: extruding and slab-building with clay</li></ul></td>
+                <td><strong style="color: rgb(73, 80, 87);">Make for Task 2&gt;</strong> Material Tensions ChallengeWorkshop specific inductions </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><strong>Thursday August 31st 9.00-13.00</strong><strong style="color: rgb(73, 80, 87);"><span class="ql-cursor"></span>Connectivity – Enablers, links and intersections&nbsp;&amp; Structure and agency – strengths and weaknesses</strong><strong>Textiles: Group 2</strong>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Discussion of 2-3 papers in class·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weaving: extending skills and experimenting·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adding rings, found objects, loops, joining methods for panels etc ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Making holes in the weave<ul><li>Testing/pushing/distorting structure</li></ul><strong>Ceramics: Group 1 </strong>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Discussion of 2-3 papers in class·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hand building: extending skills and experimenting·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attention to surface·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creating more components and connectors·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weaving with clay<ul><li>Glazes, firing and finishing</li></ul></td>
+                <td><strong style="color: rgb(73, 80, 87);">Make for Task 2&gt;</strong> Material Tensions Challenge</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td><strong>Thursday September 21 9.00-13.00 </strong><strong style="color: rgb(73, 80, 87);">Connectivity – Enablers, links and intersections&nbsp;&amp; Structure and agency – strengths and weaknesses</strong><strong>Textiles: Group 2</strong>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weaving: extending skills and experimenting·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adding rings, found objects, loops, joining methods for panels etc ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Making holes in the weave·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Testing/pushing/distorting structure·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removing work from weaving frames<ul><li>Discuss preparation for Week 8&amp;9</li></ul><strong>Ceramics: Group 1</strong>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hand building: extending skills and experimenting·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attention to surface·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creating more components and connectors·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weaving with clay.·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Firing and finishing ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Discuss preparation for Week 8&amp;9<ul><li>Glazes, firing and finishing</li></ul></td>
+                <td><strong style="color: rgb(73, 80, 87);">Prepare for Task 2&gt;</strong> Material Tensions Challenge</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td><strong>Thursday September 28 9.00-13.00</strong><strong>Whole class activities - Material Tensions Challenge</strong>9.00 All students meet in SOAD Textiles Workshop Upstairs Teaching Space·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Experimenting with installation methods and spatial distribution and connection methods for multiple objects·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Choosing 2-3 Challenge questions to respond to in class time in preparation for Assessment Task 2·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ladder and drill inductions·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Allocation of spaces to work ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patch spaces before finishing class·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Allocation of spaces for Week 9 Assessment Task 2·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Introduce group project&nbsp;</td>
+                <td><strong style="color: rgb(73, 80, 87);">Prepare for Task 2&gt;</strong> Material Tensions Challenge<strong>Discuss Task 3&gt; </strong>Collaborative Project: group installation and presentationWHS inductions for installation tools and equipment</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td><strong>Thursday October 05 9.00-13.00</strong><strong style="color: rgb(73, 80, 87);">Whole class activities - Material Tensions Challenge</strong>9.00 Set up work for Assessment Task 210.00 Tour assessment works 11.00-12.30 <strong style="color: rgb(73, 80, 87);">Group Work - Collaborative Project</strong><ul><li>Form groups for Collaborative Project by identifying shared interests and complimentary methods from final Material Tensions Challenge installations.</li><li>Reformulate a Challenge Question and begin filling in Collaborative Planning Guide</li></ul>12.30-13.00 De-install Assessment Task 2</td>
+                <td><strong><u>Present </u>Task 2</strong><strong style="color: rgb(73, 80, 87);">&gt;</strong><strong> </strong>Material Tensions Challenge<strong>Begin </strong><strong style="color: rgb(73, 80, 87);">Task 3&gt; </strong>Collaborative Project: group installation and presentation<strong>Discuss Task 4&gt; </strong>Collaborative Project: individual research and reflection</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td><strong>Thursday October 12 9.00-13.00</strong><strong>Group Work - Collaborative Project</strong>9.00 All students meet in SOAD Textiles Workshop Upstairs Teaching Space before dispersing to:·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Discuss completed Collaborative Planning Guide with lecturer and also tech officer if needs be. ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sketch and plan group installation·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Begin to make components for project <ul><li>Test installation in space as early as possible – even using proxy-components made of paper or cardboard to check the scale, fixings, number of components needed etc</li></ul><br></td>
+                <td><strong>Progress Task 3&gt; </strong>Collaborative Project: group installation and presentation<strong>Prepare Task 4&gt; </strong>Collaborative Project: individual research and reflection</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td><strong>Thursday October 19 9.00-13.00</strong><strong style="color: rgb(73, 80, 87);">Group Work - Collaborative Project</strong>9.00 All students meet in SOAD Textiles Workshop Upstairs Teaching Space before dispersing to:·&nbsp;&nbsp;&nbsp;Discuss progress with lecturer·&nbsp;&nbsp;&nbsp;Continue to make installation components<ul><li>Test installation in space as early as possible – even using proxy-components made of paper or cardboard to check the scale, fixings, number of components needed etc</li></ul></td>
+                <td><strong style="background-color: inherit;">Progress Task 3&gt; </strong>Collaborative Project: group installation and presentation<strong style="background-color: inherit;">Prepare Task 4&gt; </strong>Collaborative Project: individual research and reflection</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td><strong>Thursday October 26 9.00-13.00</strong><strong style="color: rgb(73, 80, 87);">Group Work - Collaborative Project</strong>9.00 All students meet in SOAD Textiles Workshop Upstairs Teaching Space before dispersing to: ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Have final feedback from lecturer·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Complete installation components<ul><li>Finalise installation rationale, structure, rules, scale etc</li></ul></td>
+                <td>Last chance for peer and lecturer feedback before assessment period.<strong>Consolidate Task 3&gt;</strong> Collaborative Project: group installation and presentation<strong style="color: rgb(73, 80, 87); background-color: inherit;">Prepare Task 4&gt; </strong>Collaborative Project: individual research and reflection</td>
+            </tr>
+    </tbody>
+</table>                                                    <h2 id="tutorial-registration">Tutorial Registration</h2>
+<p>Any tutorials are included within class time, please refer to Wattle for more details</p>                                                    <h2 id="assessment-summary">Assessment Summary</h2>
+
+<table class="table-terms">
+    <thead>
+        <tr>
+            <th class="table-heading-classNumber">Assessment task</th>
+                <th class="table-heading-classDate">Value</th>
+                            <th class="table-heading-classDate">Due Date</th>
+                            <th class="table-heading-classDate">Return of assessment</th>
+                  <th class="table-heading-classDate">Learning Outcomes</th>
+        </tr>
+    </thead>
+
+    <tbody>
+            <tr>
+                <td>Pre-recorded Presentation </td>
+
+                    <td>15 %</td>
+                                    <td>17/08/2023</td>
+                                    <td>28/08/2023</td>
+                                    <td>1,2,3,4</td>
+            </tr>
+            <tr>
+                <td>Material Tensions Challenge</td>
+
+                    <td>40 %</td>
+                                    <td>05/10/2023</td>
+                                    <td>12/10/2023</td>
+                                    <td>1,2,3,4</td>
+            </tr>
+            <tr>
+                <td>Collaborative Project: group installation and presentation</td>
+
+                    <td>30 %</td>
+                                    <td>09/11/2023</td>
+                                    <td>30/11/2023</td>
+                                    <td>1,2,3,4</td>
+            </tr>
+            <tr>
+                <td>Collaborative Project: individual research and reflection</td>
+
+                    <td>15 %</td>
+                                    <td>08/11/2023</td>
+                                    <td>30/11/2021</td>
+                                    <td>1,2,3,4</td>
+            </tr>
+    </tbody>
+</table>
+<p>* If the Due Date and Return of Assessment date are blank, see the Assessment Tab for specific Assessment Task details</p>                                                    <h2 id="policies">Policies</h2>
+<p>ANU has <a href="https://policies.anu.edu.au/ppl/index.htm" rel="noopener noreferrer" target="_blank">educational policies, procedures and guidelines</a> , which are designed to ensure that staff and students are aware of the University’s academic standards, and implement them. Students are expected to have read the <a href="https://www.anu.edu.au/about/governance/legislation" rel="noopener noreferrer" target="_blank">Academic Integrity Rule</a> before the commencement of their course. Other key policies and guidelines include:</p><ul><li>Academic Integrity <a href="https://policies.anu.edu.au/ppl/document/ANUP_6477101" rel="noopener noreferrer" target="_blank">Policy</a> and <a href="https://policies.anu.edu.au/ppl/document/ANUP_6477150" rel="noopener noreferrer" target="_blank">Procedure</a></li><li>Student Assessment (Coursework) <a href="https://policies.anu.edu.au/ppl/document/ANUP_004603" rel="noopener noreferrer" target="_blank">Policy</a> and <a href="https://policies.anu.edu.au/ppl/document/ANUP_004604" rel="noopener noreferrer" target="_blank">Procedure</a></li><li><a href="https://www.anu.edu.au/students/program-administration/assessments-exams/extenuating-circumstances-application" rel="noopener noreferrer" target="_blank">Extenuating Circumstances Application</a> </li><li><a href="https://policies.anu.edu.au/ppl/document/ANUP_004601" rel="noopener noreferrer" target="_blank">Student Surveys and Evaluations</a></li><li><a href="http://www.anu.edu.au/students/program-administration/assessments-exams/deferred-examinations" rel="noopener noreferrer" target="_blank">Deferred Examinations</a></li><li>Student Complaint Resolution&nbsp;<a href="https://policies.anu.edu.au/ppl/document/ANUP_000468" rel="noopener noreferrer" target="_blank">Policy </a>and <a href="https://policies.anu.edu.au/ppl/document/ANUP_000540" rel="noopener noreferrer" target="_blank">Procedure</a></li><li><a href="https://policies.anu.edu.au/ppl/document/ANUP_000726" rel="noopener noreferrer" target="_blank">Code of practice for teaching and learning </a></li></ul>
+                    </div>  
+                </div>
+                    <div id="assessment" class="tab-content">
+                        <div class="body__inner w-doublewide copy">
+                    <h2 id="assessment-requirements">Assessment Requirements</h2>
+<p>The ANU is using Turnitin to enhance student citation and referencing techniques, and to assess assignment submissions as a component of the University's approach to managing Academic Integrity. For additional information regarding Turnitin please visit the <a href="https://www.anu.edu.au/students/academic-skills/academic-integrity/turnitin" rel="noopener noreferrer" target="_blank">Academic Skills website</a>. In rare cases where online submission using Turnitin software is not technically possible; or where not using Turnitin software has been justified by the Course Convener and approved by the Associate Dean (Education) on the basis of the teaching model being employed; students shall submit assessment online via ‘Wattle’ outside of Turnitin, or failing that in hard copy, or through a combination of submission methods as approved by the Associate Dean (Education). The submission method is detailed below.</p>                                                <h2 id="moderation-of-assessment">Moderation of Assessment</h2>
+<p>Marks that are allocated during Semester are to be considered provisional until formalised by the College examiners meeting at the end of each Semester. If appropriate, some moderation of marks might be applied prior to final results being released.</p>                                                <h2 id="participation">Participation</h2>
+<p>Students are expected to attend all classes and to be active participants, taking responsibility for their own learning along the way.  There will be opportunities for discussion and peer learning throughout the course as a means to build your technical, critical and communication skills. Participation is particularly important for the final group project. </p>                                                <h2 id="examination">Examination(s)</h2>
+<p>Task 1 is submitted via Wattle, </p><p>Task 2 is assessed in Week 9 during class</p><p>Task 4 is submitted via Wattle during the assessment period, the day before reinstalling and presenting Task 3. </p>                            
+
+
+<h2 id="assessmenttask-1">Assessment Task 1</h2>
+
+<div class="callout-box callout-box--reverse callout-box--right">
+    <div class="callout-box__content">
+        <b>Value:</b>&nbsp;15 %<br>
+
+<form action="/2023/Class/AddToICalendar?downloadFileName=Assessment%201%20%E2%80%93%20Due&amp;date=08%2F17%2F2023%2000%3A00%3A00" method="post">                <b>Due Date:&nbsp;</b>17/08/2023                    <button title="Assessment 1 – Due" class="btn anu-right-swap1 calender-button-wrapper no-print">
+                        <span class="fa fa-calendar"></span>
+                    </button>
+                <br>
+</form>
+<form action="/2023/Class/AddToICalendar?downloadFileName=Assessment%201%20%E2%80%93%20Return&amp;date=08%2F28%2F2023%2000%3A00%3A00" method="post">                <b>Return of Assessment:&nbsp;</b>28/08/2023                    <button title="Assessment 1 – Return" class="btn anu-right-swap1 calender-button-wrapper no-print">
+                        <span class="fa fa-calendar"></span>
+                    </button>
+                <br>
+</form>        <b>Learning Outcomes:&nbsp;</b>1,2,3,4<br>
+    </div>
+</div>
+
+<p><b>Pre-recorded Presentation </b></p>
+<p><strong>Value: 15%</strong></p><p><strong>Details of task: </strong>For this presentation you will be asked to analyse and compare 2 artworks from the list provided. To support your analysis reference 2 relevant texts, 1 can be from the class readings and the other needs to come from your own research. Structure your presentation by answering all of the following prompts:</p><p>For each artwork</p><ul><li>Distinguish the different disciplines, media or processes that are combined in the artwork.</li><li>What tensions, synergies or associations do these combinations produce?</li><li>Support your critique of the aspects and qualities that you have identified by drawing from an academic text.</li></ul><p>In comparison</p><ul><li>Which aspects of each artwork do you find most or least* successful and why? *If you do not think the artwork is successful it is okay to say so, but you still need to back up why.</li><li>What would you like to apply or test from this analysis in your own work in this course?</li></ul><p><strong>Format: </strong>7-minute pre-recorded power-presentation submitted to Wattle. Final slide to include a bibliography that must be formatted precisely using the Chicago style. Please refer to this link for further information: <a href="http://soad.cass.anu.edu.au/referencing-guidelines" rel="noopener noreferrer" target="_blank">http://soad.cass.anu.edu.au/referencing-guidelines</a></p>
+
+    <h2>Rubric</h2>
+<table><thead><tr><th>CRITERIA</th><th>HD</th><th>D</th><th>CR</th><th>P</th><th>F</th></tr></thead><tbody><tr><td><p>Distinguishing disciplines/ media/processes</p><p>LO 1&amp;2</p></td><td><p>Demonstrates an extensive knowledge of disciplines/media/processes by distinguishing relevant detail.</p></td><td><p>Demonstrates a good knowledge of disciplines/media/processes by providing relevant detail.</p></td><td><p>Demonstrates a growing knowledge of disciplines/media/processes not all details shared become relevant to the argument/analysis</p></td><td><p>Disciplines/ media/processes were identified at a basic level. </p></td><td><p>Disciplines/ media/processes were adequately identified.</p></td></tr><tr><td><p>Analysis</p><p>LO 1,2,3</p></td><td><p>Concisely determines and analyses aspects of an artwork by critically examining the effect created when combining disciplines/media/processes. </p></td><td><p>Clearly identifies and analyses artwork by examining the effect created when combining disciplines/media/processes. </p></td><td><p>Identifies and analyses artwork considering the effect created when combining disciplines/media/processes. </p></td><td><p>Describes the artwork and some of its aspects and effect. </p></td><td><p>Ineffectually describes the artwork. Little to no analysis</p></td></tr><tr><td><p>Contextual understanding</p><p>LO 4</p></td><td><p>Demonstrates excellent contextual understanding through combining and contrasting ideas. Is able to strengthen own argument through academic reading. </p></td><td><p>Demonstrates good contextual understanding. Is able to strengthen own argument through academic reading. </p></td><td><p>Demonstrates a working understanding of context by describing ideas that have come from academic reading and connecting them with aspects of an artwork </p></td><td><p>Demonstrates a basic grasp of how to reference academic reading in relation to artwork.</p></td><td><p>Has not demonstrated contextual understanding. </p></td></tr><tr><td><p>Communication and Academic skills</p><p>LO 4</p></td><td><p>Thoroughly engaging and articulate presentation. Properly referenced and well-laid out slides </p></td><td><p>Engaging presentation with properly referenced and well-laid out slides </p></td><td><p>Solid presentation with engaging moments. Referencing and slide preparation need further development.</p></td><td><p>Basic presentation and slides though needs to develop communication and academic skills further. </p></td><td><p>Poorly prepared presentation overall lacking communication and academic skills .</p></td></tr></tbody></table>
+
+
+
+
+<h2 id="assessmenttask-2">Assessment Task 2</h2>
+
+<div class="callout-box callout-box--reverse callout-box--right">
+    <div class="callout-box__content">
+        <b>Value:</b>&nbsp;40 %<br>
+
+<form action="/2023/Class/AddToICalendar?downloadFileName=Assessment%202%20%E2%80%93%20Due&amp;date=10%2F05%2F2023%2000%3A00%3A00" method="post">                <b>Due Date:&nbsp;</b>05/10/2023                    <button title="Assessment 2 – Due" class="btn anu-right-swap1 calender-button-wrapper no-print">
+                        <span class="fa fa-calendar"></span>
+                    </button>
+                <br>
+</form>
+<form action="/2023/Class/AddToICalendar?downloadFileName=Assessment%202%20%E2%80%93%20Return&amp;date=10%2F12%2F2023%2000%3A00%3A00" method="post">                <b>Return of Assessment:&nbsp;</b>12/10/2023                    <button title="Assessment 2 – Return" class="btn anu-right-swap1 calender-button-wrapper no-print">
+                        <span class="fa fa-calendar"></span>
+                    </button>
+                <br>
+</form>        <b>Learning Outcomes:&nbsp;</b>1,2,3,4<br>
+    </div>
+</div>
+
+<p><b>Material Tensions Challenge</b></p>
+<p><strong>Value: 40%</strong></p><p><strong>Details of task: </strong>Class activities undertaken in both Ceramics and Textiles between Weeks 2-7 investigate the themes of material transformations, connectivity, structure and agency through research, making and discussion. On completion of the workshop rotations, you will begin to expand your skills and critical approach to these themes by using the artwork that you have made so far as component parts for new constructs and installations. In Week 8, choose 2-3 Material Tensions Challenge prompts to respond to by combining media and methods in new exploratory ways. Document your process of experimentation and evaluation as you work. For assessment in Week 9, select the most successful response to reinstall along with supporting documentation from Week 8 activities and a 200–300-word rationale which explains how you met each challenge you faced. </p><p><strong>Format: </strong>Installation, supporting documentation and written rationale assessed in class Week 9.<strong> </strong>Install your most successful response along with annotated sketches and or photographs from Week 8 these can either be in a visual diary or loose. Print out a 200–300-word rationale including your name and the specific Material Tensions Challenges you responded to, indicating which one you have reinstalled. </p><p><strong>Please refer to Wattle for full guidelines and the WHS requirements for this task</strong></p>
+
+    <h2>Rubric</h2>
+<table><thead><tr><th>CRITERIA </th><th>HD</th><th>D</th><th>C</th><th>P</th><th>F</th></tr></thead><tbody><tr><td><p>Experimentation </p><p>LO 1,2</p></td><td><p>Extensive experimentation demonstrates a range of creative iterative approaches that interrogate and combine materials and methods in a highly relevant way in response to prompts. </p></td><td><p>A high level of experimentation demonstrates some creative iterative approaches that combine materials and methods in a relevant way in response to prompts. </p></td><td><p>Some good experimentation demonstrates a solid approach to combining materials and methods, though the response to prompts could have been further iterated or relevant.  </p></td><td><p>Experimentation demonstrates a basic approach to combining materials and methods. The limited response to prompts is only partially relevant but some iterative learning is still evident. </p></td><td><p>Has not demonstrated adequate engagement with experimentation. There is little to no iteration and the responses lack relevance to the prompts. </p></td></tr><tr><td><p>Evaluation </p><p>LO 3,4</p></td><td><p>Has consistently and acutely evaluated their response by differentiating which methods are working and why in the exploratory process. Demonstrates critically informed decision making as result. </p></td><td><p>Has evaluated their response with some acute observations differentiating which methods are working and why in the exploratory process. Demonstrates some well-informed decision making as a result. </p></td><td><p>Is developing evaluation skills by identifying some of the methods which are working and why in the exploratory process. Has made decisions as a result which further comprehension of the prompt.</p></td><td><p>Has identified some of the some of the methods which are working and why in the process of responding to a selected prompt. Can connect cause and effect but needs to develop more informed decision making. </p></td><td><p>Has not adequately identified methods which are working and why. The process of working appears disconnected from the prompt. </p></td></tr><tr><td><p>Resolution </p><p>1,2,3</p></td><td><p>Final installation is very well resolved and rationalised, demonstrating a comprehensive interdisciplinary approach. There is a synthesis between the challenge and how it has been met culminating in a cohesive artwork. </p></td><td><p>Final installation is well resolved and rationalised, demonstrating a good interdisciplinary approach overall. There are strong connections between the challenge and how it has been met culminating in a mainly cohesive artwork. </p></td><td><p>Final installation is mainly well-presented and justified, demonstrating connections being made between disciplines. There is a clear argument being made about how the challenge has been met but this is not entirely resolved in the artwork itself.</p></td><td><p>Final installation has been presented and justified but lacks an interdisciplinary resolution. Connections are still made between the challenge and the resulting response. </p></td><td><p>Final installation is incomplete and/or not adequately explained. Connections between the challenge and response are confused or unconvincing.</p></td></tr></tbody></table>
+
+
+
+
+<h2 id="assessmenttask-3">Assessment Task 3</h2>
+
+<div class="callout-box callout-box--reverse callout-box--right">
+    <div class="callout-box__content">
+        <b>Value:</b>&nbsp;30 %<br>
+
+<form action="/2023/Class/AddToICalendar?downloadFileName=Assessment%203%20%E2%80%93%20Due&amp;date=11%2F09%2F2023%2000%3A00%3A00" method="post">                <b>Due Date:&nbsp;</b>09/11/2023                    <button title="Assessment 3 – Due" class="btn anu-right-swap1 calender-button-wrapper no-print">
+                        <span class="fa fa-calendar"></span>
+                    </button>
+                <br>
+</form>
+<form action="/2023/Class/AddToICalendar?downloadFileName=Assessment%203%20%E2%80%93%20Return&amp;date=11%2F30%2F2023%2000%3A00%3A00" method="post">                <b>Return of Assessment:&nbsp;</b>30/11/2023                    <button title="Assessment 3 – Return" class="btn anu-right-swap1 calender-button-wrapper no-print">
+                        <span class="fa fa-calendar"></span>
+                    </button>
+                <br>
+</form>        <b>Learning Outcomes:&nbsp;</b>1,2,3,4<br>
+    </div>
+</div>
+
+<p><b>Collaborative Project: group installation and presentation</b></p>
+<p>Value: 30%</p><p><strong style="color: rgb(73, 80, 87);">Details of task: </strong>From Weeks 9-12 you will work collaboratively in small groups to devise and create an ambitious new artwork, consolidating an interdisciplinary approach to materials, processes and outcomes. These new artworks will extend textiles and ceramics further into installation practice, investigating transformation, connectivity, structure and or agency in increasingly spatial ways.  </p><p>Format: During the assessment period, install a final resolved artwork that you have developed, made and resolved collaboratively. Prepare a group presentation of a maximum of 10 minutes in which each group member contributes 2-3 minutes of content. Include the following in your presentation:</p><ul><li>State your reformulated Material Tensions Challenge question or prompt and position your response as interdisciplinary method.</li><li>How did you initially intend to apply and extend media and processes in the project (refer back to your Collaborative Planning Guide)</li><li>How did plans and intentions change as the project developed and resolved, what did your group do to adapt?</li><li>Examine to 2 key artists and 2 texts that you have discussed in your group (at least 1 artist and 1 text must be from your own research not supplied in class). How have your collective and differing interpretations of these references informed the project. </li><li>What further conceptual or material explorations does the final work suggest now?</li></ul><p><strong>Please refer to Wattle for further details and WHS requirements</strong></p>
+
+    <h2>Rubric</h2>
+<table><thead><tr><th>CRITERIA</th><th>HD</th><th>D</th><th>C</th><th>P</th><th>F</th></tr></thead><tbody><tr><td><p>Application of contextual research </p><p>LO 1,4</p></td><td><p>Contextual research has been integrated into the project, consciously informing its development and the application of ideas and methods. </p></td><td><p>Contextual research has clearly contributed to the project's development and the application of ideas and methods. </p></td><td><p>Contextual research has been included in the scope of the project though its application to ideas and methods is only partially evident or successful. </p></td><td><p>Contextual research is identified in the presentation though its application to ideas and methods in the project is rudimentary.</p></td><td><p>Contextual research is either not adequately identified or has an unclear connection to ideas and methods in the project.</p></td></tr><tr><td><p>Project Organisation </p><p>LO 2,3</p></td><td><p>Project has been well-planned with an excellent use of resources and time. Demonstrates collective capacity to adapt and review as the project developed.</p></td><td><p>Project has been well-planned with a good use of resources and time. Demonstrates some capacity to adapt and review as the project developed.</p></td><td><p>Project has been planned to make sufficient use of resources and time. Further ability to adapt and review could have better developed the project. </p></td><td><p>Project has been planned to make basic use of resources. Limited ability to adapt and review as part of the project development.</p></td><td><p>Project has not been adequately planned as a result there has been an insufficient use of time and resources in the development of the project.</p></td></tr><tr><td><p>Development of interdisciplinary methods</p><p>1,2,3,4</p></td><td><p>The group has developed their own creative and critical interdisciplinary methods to respond to their Material Tensions Challenge </p></td><td><p>The group has developed their own creative interdisciplinary methods to respond to their Material Tensions Challenge</p></td><td><p>The group has partially developed their own creative interdisciplinary methods to respond to their Material Tensions Challenge</p></td><td><p>The group has combined methods to respond creatively to their Material Tensions Challenge though they do not quite operate coherently.</p></td><td><p>The group has attempted to combine methods with limited creativity and a lack of cohesion. </p></td></tr><tr><td><p>Execution of final artwork</p><p>1,2,3,4</p></td><td><p>Highly resolved execution of a cohesive and ambitious artwork. Details of the connections and structures in a given space have been carefully considered. </p></td><td><p>Well-resolved execution of a mainly cohesive artwork. Some good consideration of connections and structure in a given space. </p></td><td><p>Final artwork has been completed. Execution demonstrates a developing consideration of connections and structure in a given space. </p></td><td><p>Final artwork has been completed though connections and structures are basic and require more detailed consideration and spatial engagement.</p></td><td><p>Final artwork is incomplete or demonstrates limited understanding of the task</p></td></tr></tbody></table>
+
+
+
+
+<h2 id="assessmenttask-4">Assessment Task 4</h2>
+
+<div class="callout-box callout-box--reverse callout-box--right">
+    <div class="callout-box__content">
+        <b>Value:</b>&nbsp;15 %<br>
+
+<form action="/2023/Class/AddToICalendar?downloadFileName=Assessment%204%20%E2%80%93%20Due&amp;date=11%2F08%2F2023%2000%3A00%3A00" method="post">                <b>Due Date:&nbsp;</b>08/11/2023                    <button title="Assessment 4 – Due" class="btn anu-right-swap1 calender-button-wrapper no-print">
+                        <span class="fa fa-calendar"></span>
+                    </button>
+                <br>
+</form>
+<form action="/2023/Class/AddToICalendar?downloadFileName=Assessment%204%20%E2%80%93%20Return&amp;date=11%2F30%2F2021%2000%3A00%3A00" method="post">                <b>Return of Assessment:&nbsp;</b>30/11/2021                    <button title="Assessment 4 – Return" class="btn anu-right-swap1 calender-button-wrapper no-print">
+                        <span class="fa fa-calendar"></span>
+                    </button>
+                <br>
+</form>        <b>Learning Outcomes:&nbsp;</b>1,2,3,4<br>
+    </div>
+</div>
+
+<p><b>Collaborative Project: individual research and reflection</b></p>
+<p><strong>Value: </strong>15%</p><p><strong>Details of task:</strong> To support the development and resolution of the Collaborative Project you are expected to research and reflect independently. This is an opportunity for you to consider the role you have played in the group and to think about what and how you have learned. </p><p><strong>Format</strong>: Submit a PDF via Wattle that accounts for your personal contextual and material research and contribution towards the Collaborative Project. Include 3 important breakthrough moments of your own learning from the development of the project, this can be a constructive reflection on both the successes and failures. </p><p><strong style="color: rgb(73, 80, 87);">Please refer to Wattle for full guidelines and a reflection template</strong></p>
+
+    <h2>Rubric</h2>
+<table><thead><tr><th>CRITERIA</th><th>HD</th><th>D</th><th>C</th><th>P</th><th>F</th></tr></thead><tbody><tr><td><p>Reflection</p><p>LO 3</p></td><td><p>Demonstrates insightful reflection.  Corelates breakthrough moments in the projects to specific learning about methods, ideas and workflow.</p></td><td><p>Demonstrates some insightful reflection. Relates breakthroughs in the project to learning with some specificity around methods, ideas and workflow.</p></td><td><p>Demonstrates ability to reflect upon the project. Can identify breakthroughs but stronger connection to specific learning could be made.</p></td><td><p>Can identify 3 important moments in the project. The reflection on learning is demonstrated at a general or basic level.</p></td><td><p>Has not identified 3 important moments or adequately reflected upon them.</p></td></tr><tr><td><p>Participation </p><p>1,2,3,4</p></td><td><p>Committed participation. Displaying an integrally valuable contribution to the research, development and resolution of the project. </p></td><td><p>Valuable participation.</p><p>Displaying a substantial contribution to the research, development and resolution of the project. </p></td><td><p>Notable participation. </p><p>Played a solid role in the development and resolution of the project though could have contributed more. </p></td><td><p>Some participation. </p><p>Can identify the part played in the project though it was a minimal contribution. </p></td><td><p>Limited to no participation or was an unreliable group member.</p></td></tr><tr><td><p>Research engagement </p><p>1,4</p></td><td><p>Extensive independent contextual research demonstrates critical engagement with artists, readings and ideas pertinent to course themes and interdisciplinary approaches. </p></td><td><p>Sustained independent contextual research demonstrates critical engagement with artists, readings and ideas relevant to course themes and interdisciplinary approaches. </p></td><td><p>Some relevant independent contextual research demonstrates engagement with artists, readings and ideas related course themes and interdisciplinary approaches.   </p></td><td><p>Evidence of independent contextual research demonstrates engagement with artists, readings and ideas though relevance and depth of research need to be developed further.</p></td><td><p>Little to no evidence of independent contextual research.</p></td></tr></tbody></table>
+
+
+                        </div>
+                    </div>
+                    <div id="submission" class="tab-content">
+                        <div class="body__inner w-doublewide copy">
+                    <h2 id="academic-integrity">Academic Integrity</h2>
+<p>Academic integrity is a core part of the ANU culture as a community of scholars. The University’s students are an integral part of that community. The <a href="https://www.legislation.gov.au/Details/F2021L00997#_Toc35619227" rel="noopener noreferrer" target="_blank">academic integrity principle</a> commits all students to engage in academic work in ways that are consistent with, and actively support, academic integrity, and to uphold this commitment by behaving honestly, responsibly and ethically, and with respect and fairness, in scholarly practice.</p><p><br></p><p>The University expects all staff and students to be familiar with the academic integrity principle, the <a href="https://www.anu.edu.au/about/governance/legislation" rel="noopener noreferrer" target="_blank">Academic Integrity Rule 2021,</a> the <a href="https://policies.anu.edu.au/ppl/document/ANUP_6477101" rel="noopener noreferrer" target="_blank">Policy: Student Academic Integrity</a> and <a href="https://policies.anu.edu.au/ppl/document/ANUP_6477150" rel="noopener noreferrer" target="_blank">Procedure: Student Academic Integrity</a>, and to uphold high standards of academic integrity to ensure the quality and value of our qualifications.</p><p><br></p><p>The Academic Integrity Rule 2021 is a legal document that the University uses to promote academic integrity, and manage breaches of the academic integrity principle. The Policy and Procedure support the Rule by outlining overarching principles, responsibilities and processes. The Academic Integrity Rule 2021 commences on 1 December 2021 and applies to courses commencing on or after that date, as well as to research conduct occurring on or after that date. Prior to this, the <a href="https://www.legislation.gov.au/Details/F2015L02025" rel="noopener noreferrer" target="_blank">Academic Misconduct Rule 2015</a> applies.</p><p>&nbsp;</p><p>The University commits to assisting all students to understand how to engage in academic work in ways that are consistent with, and actively support academic integrity. All coursework students must complete the online Academic Integrity Module (Epigeum), and Higher Degree Research (HDR) students are required to complete research integrity training. The <a href="https://www.anu.edu.au/students/academic-skills/academic-integrity" rel="noopener noreferrer" target="_blank">Academic Integrity website</a> provides information about services available to assist students with their assignments, examinations and other learning activities, as well as understanding and upholding academic integrity.</p>                                                <h2 id="onlinesubmission">Online Submission</h2>
+<p>You will be required to electronically sign a declaration as part of the submission of your assignment. Please keep a copy of the assignment for your records. Unless an exemption has been approved by the Associate Dean (Education) submission must be through Turnitin.</p>
+                    <h2 id="hardcopysubmission">Hardcopy Submission</h2>
+<p>For some forms of assessment (hand written assignments, art works, laboratory notes, etc.) hard copy submission is appropriate when approved by the Associate Dean (Education). Hard copy submissions must utilise the Assignment Cover Sheet. Please keep a copy of tasks completed for your records.</p>                                                <h2 id="latesubmission">Late Submission</h2>
+<p>Individual assessment tasks may or may not allow for late submission.  Policy regarding late submission is detailed below:</p><ul><li><strong>Late submission not permitted.</strong> If submission of assessment tasks without an extension after the due date is not permitted, a mark of 0 will be awarded.</li><li><strong>Late submission permitted. </strong>Late submission of assessment tasks without an extension are penalised at the rate of 5% of the possible marks available per working day or part thereof. Late submission of assessment tasks is not accepted after 10 working days after the due date, or on or after the date specified in the course outline for the return of the assessment item. Late submission is not accepted for take-home examinations.</li></ul>                                                <h2 id="referencing-requirements">Referencing Requirements </h2>
+<p>The <a href="https://www.anu.edu.au/students/academic-skills" rel="noopener noreferrer" target="_blank">Academic Skills website</a> has information to assist you with your writing and assessments. The website includes information about Academic Integrity including <a href="https://www.anu.edu.au/students/academic-skills/academic-integrity/referencing" rel="noopener noreferrer" target="_blank">referencing requirements for different disciplines</a>. There is also information on <a href="https://www.anu.edu.au/students/academic-skills/academic-integrity/plagiarism" rel="noopener noreferrer" target="_blank">Plagiarism</a> and different ways to <a href="https://www.anu.edu.au/students/academic-skills/academic-integrity/using-sources" rel="noopener noreferrer" target="_blank">use source</a> material.</p>                                                <h2 id="returning-assignments">Returning Assignments </h2>
+<p>Students will be asked to take all of their studio-based work home at the end of semester. </p>                                                <h2 id="extensions-and-penalties">Extensions and Penalties </h2>
+<p>Extensions and late submission of assessment pieces are covered by the Student Assessment (Coursework) <a href="https://policies.anu.edu.au/ppl/document/ANUP_004603" target="_blank">Policy</a> and <a href="https://policies.anu.edu.au/ppl/document/ANUP_004604" target="_blank">Procedure</a>. Extensions may be granted for assessment pieces that are not examinations or take-home examinations. If you need an extension, you must request an extension in writing on or before the due date. If you have documented and appropriate medical evidence that demonstrates you were not able to request an extension on or before the due date, you may be able to request it after the due date.</p>                                                <h2 id="resubmission-of-assignments">Resubmission of Assignments</h2>
+<p>Students may resubmit assignments under exceptional circumstances, this will be considered on a case by case basis with the agreement of lecturers and the course convenor.&nbsp;Resubmission of works is not common in a studio-based course, as students can seek feedback on projects throughout the semester. Requests for resubmission will be handled on a case-by-case basis.</p>                                                                            <h2 id="privacy-notice">Privacy Notice</h2>
+The ANU has made a number of third party, online, databases available for students to use. Use of each online database is conditional on student end users first agreeing to the database licensor’s terms of service and/or privacy policy. Students should read these carefully. In some cases student end users will be required to register an account with the database licensor and submit personal information, including their: first name; last name; ANU email address; and other information.<br>In cases where student end users are asked to submit ‘content’ to a database, such as an assignment or short answers, the database licensor may only use the student’s ‘content’ in accordance with the terms of service – including any (copyright) licence the student grants to the database licensor. Any personal information or content a student submits may be stored by the licensor, potentially offshore, and will be used to process the database service in accordance with the licensors terms of service and/or privacy policy.<br>If any student chooses not to agree to the database licensor’s terms of service or privacy policy, the student will not be able to access and use the database. In these circumstances students should contact their lecturer to enquire about alternative arrangements that are available.                                                <h2 id="distribution-of-grades-policy">Distribution of grades policy</h2>
+<p>Academic Quality Assurance Committee monitors the performance of students, including attrition, further study and employment rates and grade distribution, and College reports on quality assurance processes for assessment activities, including alignment with national and international disciplinary and interdisciplinary standards, as well as qualification type learning outcomes.  </p><p>Since first semester 1994, ANU uses a <a href="http://www.anu.edu.au/students/program-administration/assessments-exams/grading-scale" target="_blank">grading scale</a> for all courses. This grading scale is used by all academic areas of the University. </p>                                                <h2 id="support-for-students">Support for students</h2>
+<p>The University offers students support through several different services. You may contact the services listed below directly or seek advice from your Course Convener, Student Administrators, or your College and Course representatives (if applicable).</p><ul><li><a href="http://www.anu.edu.au/students/health-safety-wellbeing" rel="noopener noreferrer" target="_blank">ANU Health, safety &amp; wellbeing</a> for medical services, counselling, mental health and spiritual support</li><li><a href="https://www.anu.edu.au/students/health-safety-wellbeing/access-inclusion" rel="noopener noreferrer" target="_blank">ANU Access and inclusion</a> for students with a disability or ongoing or chronic illness</li><li><a href="http://www.anu.edu.au/students/contacts/dean-of-students" rel="noopener noreferrer" target="_blank">ANU Dean of Students</a> for confidential, impartial advice and help to resolve problems between students and the academic or administrative areas of the University</li><li><a href="https://www.anu.edu.au/students/academic-skills" rel="noopener noreferrer" target="_blank">ANU Academic Skills and Learning Centre</a> supports you make your own decisions about how you learn and manage your workload.</li><li><a href="http://www.anu.edu.au/students/contacts/counselling-centre" rel="noopener noreferrer" target="_blank">ANU Counselling Centre</a> promotes, supports and enhances mental health and wellbeing within the University student community.</li><li><a href="https://anusa.com.au/" rel="noopener noreferrer" target="_blank">ANUSA</a> supports and represents all ANU students</li></ul>                        </div>
+                    </div>
+                    <div id="contacts" class="tab-content">
+                        <div class="body__inner w-doublewide copy">
+                            
+<div id="testdiv" style="display:inline-block;width:60%">
+
+
+<div class="callout-box callout-box--left" style="width:100%">
+    <div class="callout-box__header clearfix">
+        <h2 id="contact_convener" class="callout-box__title">Convener</h2>
+        <div class="callout-box__tabs clearfix">
+            <a href="#contact_details" class="callout-box__tab callout-box__tab--active header_convener_0" onclick="$('.header_convener_0').toggleClass('callout-box__tab--active');$('.content_convener_0').toggleClass('callout-box__tab-content--active');return false;">
+                Details
+            </a>
+            <a href="#contact_consulting_hours" class="callout-box__tab header_convener_0" onclick="$('.header_convener_0').toggleClass('callout-box__tab--active');$('.content_convener_0').toggleClass('callout-box__tab-content--active');return false;">
+                Consulting Hours
+            </a>
+        </div>
+    </div>
+
+    <div class="callout-box__content">
+        <div id="contact_details_convener_0" class="callout-box__tab-content callout-box__tab-content--active content_convener_0">
+            <table class="class-contact-table">
+                <tr>
+                    <td>
+                        <img class="contact-image" src="/Content/Images/person.png">
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Lucy Irvine</td>
+                            </tr>
+                            <tr>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td><a href="mailto:&lt;p&gt;lucy.irvine@anu.edu.au&lt;/p&gt;">&lt;p&gt;lucy.irvine@anu.edu.au&lt;/p&gt;</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3>Research Interests</h3>
+                        <br>
+                            Contemporary art, spatial practice, textiles, sculpture, public art, architecture, experimental weaving and place making
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="contact_consulting_hours_convener_0" class="callout-box__tab-content callout-box__tab-content consulting-hours content_convener_0">
+            <h3>Lucy Irvine</h3>
+            <table class="consulting-hourse-table">
+                <tr>
+                    <td>
+                        <img class="contact-image" src="/Content/Images/person.png">
+                    </td>
+                    <td>
+                        <table class="table-consulting-hours">
+                            <tbody>
+                                    <tr>
+                                            <td>Wednesday</td>
+                                                <td>11:45</td>
+                                                <td>13:45</td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+
+
+<div class="callout-box callout-box--left" style="width:100%">
+    <div class="callout-box__header clearfix">
+        <h2 id="contact_lecturer" class="callout-box__title">Instructor</h2>
+        <div class="callout-box__tabs clearfix">
+            <a href="#contact_details" class="callout-box__tab callout-box__tab--active header_lecturer_0" onclick="$('.header_lecturer_0').toggleClass('callout-box__tab--active');$('.content_lecturer_0').toggleClass('callout-box__tab-content--active');return false;">
+                Details
+            </a>
+            <a href="#contact_consulting_hours" class="callout-box__tab header_lecturer_0" onclick="$('.header_lecturer_0').toggleClass('callout-box__tab--active');$('.content_lecturer_0').toggleClass('callout-box__tab-content--active');return false;">
+                Consulting Hours
+            </a>
+        </div>
+    </div>
+
+    <div class="callout-box__content">
+        <div id="contact_details_lecturer_0" class="callout-box__tab-content callout-box__tab-content--active content_lecturer_0">
+            <table class="class-contact-table">
+                <tr>
+                    <td>
+                        <img class="contact-image" src="/Content/Images/person.png">
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>  Joanne Searle</td>
+                            </tr>
+                            <tr>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td><a href="mailto:joanne.searle@anu.edu.au">joanne.searle@anu.edu.au</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3>Research Interests</h3>
+                        <br>
+                            Contemporary art, spatial practice, textiles, sculpture, public art, architecture, experimental weaving and place making
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="contact_consulting_hours_lecturer_0" class="callout-box__tab-content callout-box__tab-content consulting-hours content_lecturer_0">
+            <h3>  Joanne Searle</h3>
+            <table class="consulting-hourse-table">
+                <tr>
+                    <td>
+                        <img class="contact-image" src="/Content/Images/person.png">
+                    </td>
+                    <td>
+                        <table class="table-consulting-hours">
+                            <tbody>
+                                    <tr>
+                                            <td nowrap="" colspan="3">By Appointment</td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="callout-box callout-box--left" style="width:100%">
+    <div class="callout-box__header clearfix">
+        <h2 id="contact_lecturer" class="callout-box__title">Instructor</h2>
+        <div class="callout-box__tabs clearfix">
+            <a href="#contact_details" class="callout-box__tab callout-box__tab--active header_lecturer_1" onclick="$('.header_lecturer_1').toggleClass('callout-box__tab--active');$('.content_lecturer_1').toggleClass('callout-box__tab-content--active');return false;">
+                Details
+            </a>
+            <a href="#contact_consulting_hours" class="callout-box__tab header_lecturer_1" onclick="$('.header_lecturer_1').toggleClass('callout-box__tab--active');$('.content_lecturer_1').toggleClass('callout-box__tab-content--active');return false;">
+                Consulting Hours
+            </a>
+        </div>
+    </div>
+
+    <div class="callout-box__content">
+        <div id="contact_details_lecturer_1" class="callout-box__tab-content callout-box__tab-content--active content_lecturer_1">
+            <table class="class-contact-table">
+                <tr>
+                    <td>
+                        <img class="contact-image" src="/Content/Images/person.png">
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Melanie Olde</td>
+                            </tr>
+                            <tr>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td><a href="mailto:melanie.olde@anu.edu.au">melanie.olde@anu.edu.au</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3>Research Interests</h3>
+                        <br>
+                            
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="contact_consulting_hours_lecturer_1" class="callout-box__tab-content callout-box__tab-content consulting-hours content_lecturer_1">
+            <h3>Melanie Olde</h3>
+            <table class="consulting-hourse-table">
+                <tr>
+                    <td>
+                        <img class="contact-image" src="/Content/Images/person.png">
+                    </td>
+                    <td>
+                        <table class="table-consulting-hours">
+                            <tbody>
+                                    <tr>
+                                            <td nowrap="" colspan="3">By Appointment</td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+                        </div>
+                    </div>
+                    </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    <div class="page-contact transition" style="clear: both">
+        <div class="page-contact__inner">
+            <p class="page-contact-info"><strong>Responsible Officer:</strong> Registrar, Student Administration <span>/</span> <strong>Page Contact:</strong> <a href="mailto:programsandcourses@anu.edu.au">Website Administrator</a> <span>/</span> <a href="/2023/Faq">Frequently Asked Questions</a></p>
+        </div>
+    </div>
+
+    <!-- noindex -->
+<div id="footer-wrap" class="no-print" role="contentinfo">
+    <div id="anu-footer">
+        <div id="anu-detail">
+            <ul>
+                <li><a href="http://www.anu.edu.au/contact/">Contact ANU</a></li>
+                <li><a href="http://www.anu.edu.au/maps">Campus Map</a></li>
+                <li><a href="http://www.anu.edu.au/copyright/">Copyright</a></li>
+                <li><a href="http://www.anu.edu.au/disclaimer">Disclaimer</a></li>
+                <li><a href="http://www.anu.edu.au/privacy">Privacy</a></li>
+                <li><a href="http://foi.anu.edu.au/">Freedom of Information</a></li>
+
+            </ul>
+        </div>
+        <div id="anu-address">
+            <p>
+                +61 2 6125 5111<br>
+                The Australian National University, Canberra<br>
+                CRICOS Provider : 00120C<br>
+                ABN : 52 234 063 906
+            </p>
+        </div>
+
+        <div id="anu-groups">
+            <div class="anu-ftr-go8 hpad vpad"><a href="http://www.anu.edu.au/about/partnerships/group-of-eight">
+                <img class="text-white" src="//style.anu.edu.au/_anu/4/images/logos/2x_GroupOf8.png" alt="Group of Eight Member"></a></div>
+            <div class="anu-ftr-iaru hpad vpad"><a href="http://www.anu.edu.au/about/partnerships/international-alliance-of-research-universities">
+                <img class="text-white" src="//style.anu.edu.au/_anu/4/images/logos/2x_iaru.png" alt="IARU"></a></div>
+            <div class="anu-ftr-apru hpad vpad"><a href="http://www.anu.edu.au/about/partnerships/association-of-pacific-rim-universities">
+                <img class="text-white" src="//style.anu.edu.au/_anu/4/images/logos/2x_apru.png" alt="APRU"></a></div>
+            <div class="anu-ftr-edx hpad vpad"><a href="http://www.anu.edu.au/about/partnerships/edx">
+                <img class="text-white" src="//style.anu.edu.au/_anu/4/images/logos/2x_edx.png" alt="edX"></a></div>
+        </div>
+    </div>
+</div>
+<!-- endnoindex -->
+
+    <script src="/Scripts/js?v=JP1un1h0rycQluSztdTxuhaMP0seQCNlZJNvrb9m6vs1"></script>
+
+    <script src="/Scripts/Knockout/js?v=LOGR7woollVSO0HK_vlQxp4gdzRw7kB5Dv4n6oXE6LY1"></script>
+
+    
+    
+    
+    <script src="/Scripts/misc.js" type="text/javascript"></script>
+    <script src="/Scripts/MoleculeColourFallback/js?v=cF6g_av_aq_3K49endnkXkBwpL-8fcTbVY7dOP880xk1"></script>
+
+    <script src="/Scripts/MoleculeColourToOwner/js?v=lvYw3HmvcPAuyLdhuBSllZTwGTnEI51QqMWksyIVkFk1"></script>
+
+    <script src="/Scripts/video/js?v=-XHrFjWWn56AK2mxbgjoUT_9cKeeP7EaoKmFP4qL9a81"></script>
+
+    <script src="/Scripts/SocialMedia/js?v=dNedT8IkbODerVmLKImXwBZJAm48G6VS1XKlkEIynUY1"></script>
+
+    <script async src="https://www.youtube.com/iframe_api" type="text/javascript"></script>
+
+
+
+    <!-- Google Analytics -->
+    <script>
+        if (typeof ga === 'undefined') {
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        }
+        ga('create', 'UA-5266663-4', 'auto', { 'name': 'allANU' });
+        ga('allANU.send', 'pageview');
+    </script>
+</body>
+</html>

@@ -1,0 +1,1035 @@
+
+<!DOCTYPE html>
+<html class="wf-loading">
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5H3R8L');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta name="viewport" content="width=device-width" />
+    <title>Human Skeletal Analysis - ANU</title>
+    <meta content="IE=10,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width" name="viewport" />
+    <meta content="phone" media="(max-width: 479px)" name="breakpoint" />
+    <meta content="phone-wide" media="(min-width: 480px) and (max-width: 639px)" name="breakpoint" />
+    <meta content="tablet" media="(min-width: 640px) and (max-width: 959px)" name="breakpoint" />
+    <meta content="mobile" media="(max-width: 959px)" name="breakpoint" />
+    
+    
+
+    <link rel="shortcut icon" href="/content/images/favicon.ico" type="image/x-icon" />
+    <link href="https://programsandcourses.anu.edu.au/2023/course/bian6517/first%20semester/2459" rel="canonical" />
+
+    <link href="/Content/style/css?v=05BLNx1wu76OgAhSxssVhYRy3KqRIxeR5cIEZA51J8A1" rel="stylesheet"/>
+
+    <script src="/Scripts/modernizer?v=l2fp1E6Lih5iAZRql1s00lXjFeESzFAiTh1OjyQwK801"></script>
+
+    <script>
+        Modernizr.load([{
+            test: Modernizr.fontface,
+            yep: '//use.typekit.com/xkv0pni.js',
+            callback: function () {
+                var removeWfLoading = function () {
+                    with (document.documentElement) {
+                        className = className.replace(/\bwf-loading\b/, 'wf-failed');
+                    }
+                };
+                setTimeout(function () {
+                    try { Typekit.load(); } catch (e) { removeWfLoading(); }
+                }, 10);
+                setTimeout(function () {
+                    removeWfLoading();
+                }, 1000);
+            }
+        }]);
+    </script>
+    <script>
+        !function (a, b) { "use strict"; var c = { breakpoints: {}, _isTicking: !1, _debounceLastTime: 0, _namedEvents: {}, _eventMatchCache: {}, _globalEvents: [], onBreakpointChange: function () { var a = Array.prototype.slice.call(arguments), b = a.pop(), d = a.pop(); "undefined" == typeof d ? c._globalEvents.push(b) : (c._namedEvents[d] = []).push(b), k() } }, d = function (c) { /in/.test(b.readyState) ? a.setTimeout(function () { d(c) }, 9) : c() }, e = function (a, b) { var c = a.className.split(" "), d = c.indexOf(b); d > -1 && (c.splice(d, 1), a.className = c.join(" ")) }, f = function (a, b) { -1 === a.className.indexOf(b) && (a.className = "" !== a.className ? a.className + " " + b : b) }, g = function (a, c) { var d = "breakpoint-" + c, g = b.documentElement; a ? f(g, d) : e(g, d) }, h = function (a) { c._globalEvents.forEach(function (b) { "function" == typeof b && b(a) }) }, i = function () { c._isTicking || j(k), c._isTicking = !0 }, j = function (b, d) { if (!a.requestAnimationFrame) { var e = (new Date).getTime(), f = Math.max(0, 16 - (e - c._debounceLastTime)), g = a.setTimeout(function () { b(e + f) }, f); return c._debounceLastTime = e + f, g } a.requestAnimationFrame(b, d) }, k = function () { c._isTicking = !1; var b = []; for (var d in c.breakpoints) { var e = c.breakpoints[d], f = a.matchMedia(e).matches; if (c._namedEvents[d] && c._eventMatchCache[d] !== f) { c._eventMatchCache[d] = f; for (var i = 0; i < c._namedEvents[d].length; i++) { var j = c._namedEvents[d][i]; "function" == typeof j && j(f) } } f && b.push(d), g(f, d) } 0 !== b.length && h(b) }, l = function () { for (var a = b.getElementsByTagName("meta"), d = 0; d < a.length; d++)if ("breakpoint" === a[d].name) { var e = a[d].getAttribute("content"), f = a[d].getAttribute("media"); c.breakpoints[e] = f } }, m = function () { l(), k() }, n = function () { l(), k(), a.addEventListener("resize", i) }; "undefined" != typeof module && module.exports ? module.exports = c : a.metaQuery = c, m(), d(n) }(window, document);
+    </script>
+    <!--
+    To collect end-user usage analytics about your application,
+    insert the following script into each page you want to track.
+    Place this code immediately before the closing </head> tag,
+    and before any other scripts. Your first data will appear
+    automatically in just a few seconds.
+    -->
+    <script type="text/javascript">
+        var appInsights = window.appInsights || function (config) {
+            function s(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, r = document, f = window, e = "script", o = r.createElement(e), i, u; for (o.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", r.getElementsByTagName(e)[0].parentNode.appendChild(o), t.cookie = r.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;)s("track" + i.pop()); return config.disableExceptionTracking || (i = "onerror", s("_" + i), u = f[i], f[i] = function (config, r, f, e, o) { var s = u && u(config, r, f, e, o); return s !== !0 && t["_" + i](config, r, f, e, o), s }), t
+        }({
+            instrumentationKey: "c2b8cab7-0152-4b03-8810-7d9be84a3b34"
+        });
+
+        window.appInsights = appInsights;
+        appInsights.trackPageView();
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <!-- Hotjar Tracking Code for http://www.anu.edu.au -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 1136231, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
+
+    <script>
+        (function (a, b, c, d, e, m) {
+            a['OktopostTrackerObject'] = d;
+            a[d] = a[d] || function () {
+                (a[d].q = a[d].q || []).push(arguments);
+            };
+            e = b.createElement('script');
+            m = b.getElementsByTagName('script')[0];
+            e.async = 1;
+            e.src = ('https:' === document.location.protocol ? 'https://' : 'http://') + c;
+            m.parentNode.insertBefore(e, m);
+        })(window, document, 'static.oktopost.com/oktrk.js', '_oktrk');
+
+        _oktrk('create', '001qt43soloi771');
+    </script>
+
+
+
+    <!-- End Facebook Pixel Code -->
+
+</head>
+<body id="top">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5H3R8L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <meta name="insight-app-sec-validation" content="aac4b9bd-9119-4743-8a28-82bf1124481b" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="//marketing-pages.anu.edu.au/_anu/5/projects/htmlsites/pc.css" />
+<script src="//marketing-pages.anu.edu.au/_anu/4/scripts/jquery-1.11.3.min.js?1" type="text/javascript"></script>
+<script type="text/javascript">
+    var $anujq = jQuery.noConflict();
+</script>
+<script src="//marketing-pages.anu.edu.au/_anu/5/projects/htmlsites/scripts/anu-common.js" type="text/javascript"></script>
+<script src="//marketing-pages.anu.edu.au/_anu/5/projects/htmlsites/scripts/jquery.hoverIntent.js" type="text/javascript"></script>
+
+<!-- noindex -->
+<div id="print-hdr">
+    <div class="left">
+        <img src="//style.anu.edu.au/_anu/4/images/logos/anu_logo_print.png" alt="The Australian National University" height="40" width="115" />
+    </div>
+    <div class="right">
+        <div class="bnr-line-1  bnr-2line">Programs and Courses.</div>
+    </div>
+    <div class="blockline"></div>
+</div>
+
+<div id="bnr-wrap" class="bnr-gwy-high" role="banner">
+    <div id="bnr-gwy" class="bnr-gwy-high">
+        <div id="bnr-left"><a href="http://www.anu.edu.au/" class="anu-logo-png"><img class="text-white" src="https://marketing-pages.anu.edu.au/_anu/4/images/logos/2x_anu_logo_small.svg" alt="The Australian National University"></a></div>
+        <div id="bnr-mid"><div class="left"><img src="https://marketing-pages.anu.edu.au/_anu/4/images/logos/pipe_logo_small.png" alt="" width="66" height="51" class="anu-logo-pipe left"></div><div class="left" id="bnr-h-lines"><div class="bnr-line-1  bnr-2line"><h1><a href="/">Programs and Courses</a></h1></div></div></div>
+        <div id="bnr-right">
+            <div class="bnr-gw2-search ">
+                <form action="https://find.anu.edu.au/search" method="get" id="AnuGlobalSearchForm" role="search" autocomplete="off">
+                    <div>
+                        <label for="qt" class="scrnhide">Search query</label>
+                        <input class="txt" name="q" id="qt" type="search" placeholder="Search ANU web, staff &amp; maps" autocomplete="off">
+                        <input type="hidden" class="srch-f srch-sel-gsa-hidden" name="as_f" data-name="as_f" value="sitename_s[&quot;Programs and courses&quot;]">
+                        <div class="srch-sel-site">
+                            <ul>
+                                <li class="srch-sel-anu srch-selected">
+                                    <span>Search ANU web, staff &amp; maps</span>
+                                <li class="srch-sel-currentsite" id="srch-sel-currentsite-bnr" data-anu-searchname="Integration%20and%20Implementation%20Sciences%20%28I2S%29">
+                                    <span>Search current site content</span>
+                            </ul>
+                        </div>
+                        <div class="srch-divide" id="srch-sel-cont">
+                            <div class="srch-updown">
+                                <img id="srch-sel-arrow" src="https://marketing-pages.anu.edu.au/_anu/4/images/buttons/arrow-down-black.png" alt="search scope">
+                            </div>
+                        </div>
+                        <div class="srch-divide">
+                            <div class="srch-divide2"></div>
+                        </div>
+                        <button value="Go" name="search1" id="search1" onclick="return checkInput('qt','You must enter search terms');" class="btn-go">
+                            <span class="scrnhide">Search</span>
+                            <img src="https://marketing-pages.anu.edu.au/_anu/4/images/buttons/search-black.png" alt="">
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="bnr-low">
+            <!--GW_UTILITIES-->
+
+        </div>
+    </div>
+</div>
+<div style="clear: both;"></div>
+
+
+    
+
+
+<div class="breadcrumbs">
+    <div class="breadcrumbs__inner">
+        <ul class="breadcrumbs__list transition">
+                <li class="breadcrumb__list-item">
+                        <a href="/" class="breadcrumb__list-anchor">Programs and Courses</a>
+
+                </li>
+                <li class="breadcrumb__list-item">
+                        <a href="/catalogue?FilterByCourses=true&amp;Source=Breadcrumb" class="breadcrumb__list-anchor">Courses</a>
+
+                </li>
+                <li class="breadcrumb__list-item">
+                        <a href="/2023/course/BIAN6517" class="breadcrumb__list-anchor">BIAN6517</a>
+
+                </li>
+                <li class="breadcrumb__list-item">
+                        <a href="/2023/course/BIAN6517/First%20Semester/2459" class="breadcrumb__list-anchor breadcrumb__list-anchor-current">First Semester / 2459</a>
+
+                </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="course">
+    <!-- Intro -->
+    <div class="intro" id="skip-to">
+        <div class="intro__inner">
+            <div class="doublenarrow transition">
+                <span class="intro__degree-type" style="font-weight: normal">
+                    <b>Class Summary</b>  | <a href="/2023/course/BIAN6517">Back to Course Details</a>
+                </span>
+                <h1 class="intro__degree-title">
+                    <span class="intro__degree-title__component">Human Skeletal Analysis</span>
+                </h1>
+                <div class="intro__degree-description">
+                    <p class="intro__degree-description__text">A Postgraduate course offered by the <span class="first-owner">School of Archaeology and Anthropology</span>.</p>
+                    <div class="molecule-container">
+    <div class="molecule-individual molecule-single molecule-medium molecule-first">
+        <div class="borderradius molecule" style="color: rgba(0,28,83,0.75); background: rgba(0,57,166,0.75)" data-colour="#0039A6" data-hextext="#001C53" data-opacity="75">
+            <span class="molecule__label"><a href="/2023/course/BIAN6517">BIAN6517</a></span>
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+            <div class="doublenarrow transition">
+                <div class="intro__apply-to-study">
+                    <div class="intro__apply-to-study__current-academic-year">
+                        <div>
+                            <p class="margin-vertical"><strong>First Semester</strong></p>
+                        </div>
+                        <p class="margin-vertical">
+                        Academic Year : <strong>2023</strong>
+                        </p>
+                    </div>
+                    <div class="degree-summary show-mobile w-doublenarrow">
+                        
+<div class="degree-summary-inner">
+    <ul class="degree-summary__requirements">
+        <li class="degree-summary__requirements-length">
+            <span class="degree-summary__requirements-heading"><i class="fa fa-cog no-print"></i>Class Number</span>
+            2459
+        </li>
+        <li class="degree-summary__requirements-units">
+            <span class="degree-summary__requirements-heading"><i class="fa fa-book  no-print"></i>Term Code</span>
+            3330
+        </li>
+    </ul>
+    <div class="degree-summary__codes">
+            <button class="degree-summary__codes-toggle no-print" onclick="$('.degree-summary__codes-column').toggleClass('degree-summary__codes-column--hidden');$(this).toggleClass('degree-summary__codes-toggle--down');">Academic Codes <i class="fa fa-caret-right"></i></button>
+            <ul class="degree-summary__codes-column degree-summary__codes-column--hidden">
+                <li class="degree-summary__code">
+                    <span class="degree-summary__code-heading"><i class="fa fa-flag degree-summary__code-flag-icon  no-print"></i>Class Info</span>
+                </li>
+                    <li class="degree-summary__code">
+                        <span class="class-summary__code-text">Unit Value</span>
+                        <span class="class-summary__code-value">6 units</span>
+                    </li>
+                                                    <li class="degree-summary__code">
+                        <span class="class-summary__code-text">Mode of Delivery</span>
+                        <span class="class-summary__code-value">In Person</span>
+                    </li>
+                                    <li class="degree-summary__code">
+                        <span class="degree-summary__code-heading"><i class="fa fa-user degree-summary__code-user-icon  no-print"></i>COURSE CONVENER</span>
+                        <ul>
+                                <li><span class="class-summary__code-value">Dr Stacey Ward</span></li>
+                        </ul>
+                    </li>
+                                            </ul>
+        <ul class="degree-summary__codes-column degree-summary__codes-column--hidden">
+            <li class="degree-summary__code">
+                <span class="degree-summary__code-heading"><i class="fa fa-book degree-summary__code-book-icon  no-print"></i>Class Dates</span>
+            </li>
+            <li class="degree-summary__code">
+                <span class="class-summary__code-text">Class Start Date</span>
+                <span class="class-summary__code-value">20/02/2023</span>
+            </li>
+            <li class="degree-summary__code">
+                <span class="class-summary__code-text">Class End Date</span>
+                <span class="class-summary__code-value">26/05/2023</span>
+            </li>
+                <li class="degree-summary__code">
+                    <span class="class-summary__code-text">Census Date</span>
+                    <span class="class-summary__code-value">31/03/2023</span>
+                </li>
+                            <li class="degree-summary__code">
+                    <span class="class-summary__code-text">Last Date to Enrol</span>
+                    <span class="class-summary__code-value">27/02/2023</span>
+                </li>
+                            <li class="degree-summary__code">
+                    <span class="degree-summary__code-heading"><i class="fa fa-user degree-summary__code-user-icon  no-print"></i>TUTOR</span>
+                    <ul>
+                            <li><span class="class-summary__code-value">AsPr Laura Wilson</span></li>
+                    </ul>
+                </li>
+                    </ul>
+    </div>
+    <ul class="degree-summary__requirements text-center no-print">
+        <li class="">
+            <a href="http://timetabling.anu.edu.au/sws2023/">
+                <span class="degree-summary__requirements-heading"><i class="fa fa-calendar-times-o "></i>View Class Timetable</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+<div>
+    <div class="course-social no-print">
+        <div class="social-icons">
+
+    <div class="twitter-wrapper">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Currently looking at Human Skeletal Analysis at ANU - Programs and Courses - ">Tweet</a>
+    </div>
+    <script>var encodedUri = encodeURIComponent(location.href);</script>
+    <div class="facebook-wrapper">
+        <a class="facebook-share" href="#" onclick="(window.open('https://www.facebook.com/sharer/sharer.php?u='+encodedUri, 'facebook-share-dialog', 'width=626,height=436'));">Share on Facebook</a>
+    </div>
+    <div class="wattle-wrapper">
+        <a target="_blank" href="https://wattle.anu.edu.au/" class="wattle-share-button" data-text="Currently looking at Human Skeletal Analysis at ANU - Programs and Courses - ">Wattle Share</a>
+    </div>
+    <div class="google-wrapper">
+        <div class="g-plusone" data-size="medium"></div>
+        <script>
+        </script>
+    </div>
+</div>
+
+
+        <a href="http://unistats.anu.edu.au/internal/surveys/selt/learning/time-series/BIAN6517_Time_Series_LRN.pdf" class="selt-link">
+            <div>
+                <img src="https://odsacep1.blob.core.windows.net/setting-images-local/selt social media button_3bd5752a-98bb-4d1c-9b4b-2a312a7b6da1.jpg">
+            </div>
+            <div class="bubble">
+                SELT Survey Results
+            </div>
+        </a>
+    </div>
+    <br>
+    <div class="class-download-wrapper no-print">
+<form action="/2023/Class/PrintClassPage?courseCode=BIAN6517&amp;session=First%20Semester&amp;classId=2459" method="post">            <button title="Download class PDF" class="calender-button-wrapper no-print">
+                <span class="class-download-button"></span>
+            </button>
+</form>    </div>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+            <ul class="intro-tabs clearfix">
+                <li class="intro-tabs__tab intro-tabs__tab--active">
+                    <a href="#overview" featurename="course">Overview</a>
+                </li>
+                <li class="intro-tabs__tab">
+                    <a href="#assessment" featurename="course">Assessment</a>
+                </li>
+                <li class="intro-tabs__tab">
+                    <a href="#submission" featurename="submission">Submission</a>
+                </li>
+                <li class="intro-tabs__tab">
+                    <a href="#contacts" featurename="contacts">Contacts</a>
+                </li>
+            </ul>
+        </div>
+        <div class="intro__shadow"></div>
+    </div>
+    <!-- / Intro -->
+    <!-- Main -->
+    <div class="main">
+        <div class="main-inner">
+            <div class="body transition">
+                <div class="degree-summary hide-mobile w-doublenarrow">
+                    
+<div class="degree-summary-inner">
+    <ul class="degree-summary__requirements">
+        <li class="degree-summary__requirements-length">
+            <span class="degree-summary__requirements-heading"><i class="fa fa-cog no-print"></i>Class Number</span>
+            2459
+        </li>
+        <li class="degree-summary__requirements-units">
+            <span class="degree-summary__requirements-heading"><i class="fa fa-book  no-print"></i>Term Code</span>
+            3330
+        </li>
+    </ul>
+    <div class="degree-summary__codes">
+            <ul class="degree-summary__codes-column">
+                <li class="degree-summary__code">
+                    <span class="degree-summary__code-heading"><i class="fa fa-flag degree-summary__code-flag-icon  no-print"></i>Class Info</span>
+                </li>
+                    <li class="degree-summary__code">
+                        <span class="class-summary__code-text">Unit Value</span>
+                        <span class="class-summary__code-value">6 units</span>
+                    </li>
+                                                    <li class="degree-summary__code">
+                        <span class="class-summary__code-text">Mode of Delivery</span>
+                        <span class="class-summary__code-value">In Person</span>
+                    </li>
+                                    <li class="degree-summary__code">
+                        <span class="degree-summary__code-heading"><i class="fa fa-user degree-summary__code-user-icon  no-print"></i>COURSE CONVENER</span>
+                        <ul>
+                                <li><span class="class-summary__code-value">Dr Stacey Ward</span></li>
+                        </ul>
+                    </li>
+                                            </ul>
+        <ul class="degree-summary__codes-column">
+            <li class="degree-summary__code">
+                <span class="degree-summary__code-heading"><i class="fa fa-book degree-summary__code-book-icon  no-print"></i>Class Dates</span>
+            </li>
+            <li class="degree-summary__code">
+                <span class="class-summary__code-text">Class Start Date</span>
+                <span class="class-summary__code-value">20/02/2023</span>
+            </li>
+            <li class="degree-summary__code">
+                <span class="class-summary__code-text">Class End Date</span>
+                <span class="class-summary__code-value">26/05/2023</span>
+            </li>
+                <li class="degree-summary__code">
+                    <span class="class-summary__code-text">Census Date</span>
+                    <span class="class-summary__code-value">31/03/2023</span>
+                </li>
+                            <li class="degree-summary__code">
+                    <span class="class-summary__code-text">Last Date to Enrol</span>
+                    <span class="class-summary__code-value">27/02/2023</span>
+                </li>
+                            <li class="degree-summary__code">
+                    <span class="degree-summary__code-heading"><i class="fa fa-user degree-summary__code-user-icon  no-print"></i>TUTOR</span>
+                    <ul>
+                            <li><span class="class-summary__code-value">AsPr Laura Wilson</span></li>
+                    </ul>
+                </li>
+                    </ul>
+    </div>
+    <ul class="degree-summary__requirements text-center no-print">
+        <li class="">
+            <a href="http://timetabling.anu.edu.au/sws2023/">
+                <span class="degree-summary__requirements-heading"><i class="fa fa-calendar-times-o "></i>View Class Timetable</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+<div>
+    <div class="course-social no-print">
+        <div class="social-icons">
+
+    <div class="twitter-wrapper">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Currently looking at Human Skeletal Analysis at ANU - Programs and Courses - ">Tweet</a>
+    </div>
+    <script>var encodedUri = encodeURIComponent(location.href);</script>
+    <div class="facebook-wrapper">
+        <a class="facebook-share" href="#" onclick="(window.open('https://www.facebook.com/sharer/sharer.php?u='+encodedUri, 'facebook-share-dialog', 'width=626,height=436'));">Share on Facebook</a>
+    </div>
+    <div class="wattle-wrapper">
+        <a target="_blank" href="https://wattle.anu.edu.au/" class="wattle-share-button" data-text="Currently looking at Human Skeletal Analysis at ANU - Programs and Courses - ">Wattle Share</a>
+    </div>
+    <div class="google-wrapper">
+        <div class="g-plusone" data-size="medium"></div>
+        <script>
+        </script>
+    </div>
+</div>
+
+
+        <a href="http://unistats.anu.edu.au/internal/surveys/selt/learning/time-series/BIAN6517_Time_Series_LRN.pdf" class="selt-link">
+            <div>
+                <img src="https://odsacep1.blob.core.windows.net/setting-images-local/selt social media button_3bd5752a-98bb-4d1c-9b4b-2a312a7b6da1.jpg">
+            </div>
+            <div class="bubble">
+                SELT Survey Results
+            </div>
+        </a>
+    </div>
+    <br>
+    <div class="class-download-wrapper no-print">
+<form action="/2023/Class/PrintClassPage?courseCode=BIAN6517&amp;session=First%20Semester&amp;classId=2459" method="post">            <button title="Download class PDF" class="calender-button-wrapper no-print">
+                <span class="class-download-button"></span>
+            </button>
+</form>    </div>
+</div>
+
+
+
+                </div>
+                <div class="w-narrow secondary-navigation-wrapper">
+                    <div class="w-narrow secondary-navigation-aside">
+                        <span class="secondary-navigation-aside__heading">Human Skeletal Analysis (<a href="/2023/course/BIAN6517">BIAN6517</a>)</span>
+                        <ul class="secondary-navigation nav">
+        <li class="secondary-navigation__list-item" associatedtab="#overview">
+            <a class="secondary-navigation__anchor" href="#overview">Class Overview</a>
+        </li>
+            <li class="secondary-navigation__list-item" associatedtab="#overview">
+            <a class="secondary-navigation__anchor" href="#examination-material-or-equipment">Materials & Resources</a>
+        </li>
+            <li class="secondary-navigation__list-item" associatedtab="#overview">
+            <a class="secondary-navigation__anchor" href="#staff-feedback">Feedback</a>
+        </li>
+            <li class="secondary-navigation__list-item" associatedtab="#overview">
+            <a class="secondary-navigation__anchor" href="#class-schedule">Class Schedule</a>
+        </li>
+
+        <li class="secondary-navigation__list-item" associatedtab="#assessment">
+            <a class="secondary-navigation__anchor" href="#assessment-requirements">Assessment Details</a>
+        </li>
+
+        <li class="secondary-navigation__list-item" associatedtab="#assessment">
+            <a class="secondary-navigation__anchor" href="#assessmenttask-1">Assessment 1</a>
+        </li>
+        <li class="secondary-navigation__list-item" associatedtab="#assessment">
+            <a class="secondary-navigation__anchor" href="#assessmenttask-2">Assessment 2</a>
+        </li>
+        <li class="secondary-navigation__list-item" associatedtab="#assessment">
+            <a class="secondary-navigation__anchor" href="#assessmenttask-3">Assessment 3</a>
+        </li>
+        <li class="secondary-navigation__list-item" associatedtab="#assessment">
+            <a class="secondary-navigation__anchor" href="#assessmenttask-4">Assessment 4</a>
+        </li>
+
+        <li class="secondary-navigation__list-item" associatedtab="#submission">
+            <a class="secondary-navigation__anchor" href="#academic-integrity">Submission Details</a>
+        </li>
+
+        <li class="secondary-navigation__list-item" associatedtab="#contacts">
+            <a class="secondary-navigation__anchor" href="#contact_conveyer">Class Contacts</a>
+        </li>
+</ul>
+                    </div>
+                </div>
+
+                <div id="overview" class="tab-content">
+                    <div class="body__inner w-doublewide copy">
+<p>This course offers students training in the anatomy of the human skeleton and techniques used in biological profiling from skeletal remains. Students will be taught a range of skeletal biology techniques used to estimate age-at-death, biological sex, stature, and bone functional adaptation. We will cover the development, form, and function of human hard tissues (bones and teeth). Acquired skills will be of value to any students interested in skeletal studies including vertebrate biology, comparative skeletal anatomy, medicine, palaeontology, human and primate evolution, forensic sciences and archaeology.</p>
+                            <h2 id="policies">Learning Outcomes</h2>
+                            <p>
+                                Upon successful completion, students will have the knowledge and skills to:
+                            </p>
+<ol><li>describe and explain advanced human skeletal structure: name and define hard tissues and their parts at a macroscopic (gross) and microscopic (histological) level;</li><li>describe and explain advanced fundamentals of human skeletal growth and metabolic processes in a developmental and functional context;</li><li>gain practical experience and develop skills in identification and analysis of human skeletal tissues;</li><li>outline the ethical treatment of human skeletal remains, and be able to recall key professional documents stipulating the code of ethics, guidance on care and curation of human remains; and</li><li>critically evaluate, in a written format, one method used in the analysis of human skeletal remains.</li></ol>
+                                                                            <h2 id="additional-course-costs">Additional Course Costs</h2>
+<p>Clean white lab coats are compulsory attire for in-person lab sessions on campus (see required resources below).</p>                                                    <h2 id="examination-material-or-equipment">Examination Material or equipment</h2>
+<ul><li><strong>Assessments are limited open-book for this course</strong>. You are permitted to bring ONE SINGLE-SIDED, HANDWRITTEN A4 PAGE of notes with you into the assessments. If you find handwriting tricky due to an EAP condition, you are welcome to type this page and print it out, using a minimum font size of 12pt and 2cm margins.</li><li>We will supply any equipment required for the mid-semester lab practical test - just bring yourself, your lab coat, your student ID card, and a pen!</li></ul>                                                    <h2 id="required-resources">Required Resources</h2>
+<p><strong style="background-color: inherit;">Core Textbook:</strong></p><ul><li><strong style="background-color: inherit;">White TD, and Folkens PA. 2005. </strong><em>The Human Bone Manual</em>. Boston: Academic Press.</li><li>This text is available as an <a href="https://www.sciencedirect.com/book/9780120884674/the-human-bone-manual" rel="noopener noreferrer" target="_blank" style="color: rgb(6, 111, 169);">eBook via the library catalogue</a> or can be <a href="https://www.harryhartog.com.au/new-books/the-human-bone-manual/9780120884674/buy-online" rel="noopener noreferrer" target="_blank" style="color: rgb(6, 111, 169);">purchsed from the Harry Hartog shop for $50</a> .</li></ul><p><br></p><p><strong style="background-color: inherit;">Lab Equipment:</strong></p><ul><li><span style="background-color: inherit;">Lab coats show respect to the dead and also protect both you and your clothes in the lab.</span></li><li><span style="background-color: inherit;">You must wear a clean white labcoat to all in-person lab sessions. </span><strong>No lab coat, no entry.</strong></li><li><span style="background-color: inherit;">For those of you who need to purchase a lab coat, ANU lab coats can be purchased through the Harry Hartog bookshop</span><strong> (</strong><a href="https://www.harryhartog.com.au/anu/clothing" rel="noopener noreferrer" target="_blank" style="color: rgb(0, 84, 158);">online</a>&nbsp;or on campus) for $30.</li><li>Non-branded coats may also be purchased from any workwear or uniform supply shop (e.g.,&nbsp;<a href="https://labcoatcompany.com.au/" rel="noopener noreferrer" target="_blank" style="color: rgb(0, 84, 158);">The Lab Coat Company,</a>&nbsp;<a href="https://www.uniforms.com.au/" rel="noopener noreferrer" target="_blank" style="color: rgb(0, 84, 158);">uniforms.com.au</a>).</li></ul>                                                    <h2 id="recommended-resources">Recommended Resources</h2>
+<p>The following titles are not compulsory reading, but will provide extra background information that may assist you in completing this course:</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;White, TD, Black, MT, Folkens, PA. 2012. Human osteology. Amsterdam: Academic Press.</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bass, WM. 2005. Human Osteology: A Laboratory and Field Manual. Columbia, Missouri: Missouri Archaeological Society.</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scheuer L, Black S, and Christie A. 2000. Developmental Juvenile Osteology. San Diego, CA: Academic Press.</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hillson S. 1996. Dental Anthropology. Cambridge: Cambridge University Press.</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Larsen CS. 2015. Bioarchaeology: Interpreting Behavior from the Human Skeleton. Cambridge, UK: Cambridge University Press.</p>                                                    <h2 id="staff-feedback">Staff Feedback</h2>
+<ul><li>You will receive the following feedback on assessments:</li><li>Written (via Wattle) comments on lab quizzes.</li><li>Verbal comments on hardcopy mid-semester tests. Please note that the mid-semester test questions are embargoed, so your scripts will not be returned to you. However, you are very welcome to come and view your scripts by appointment. </li><li>Exam feedback will be released on Wattle <em>after the final marks have been released for the course.</em> The semester 1 marks release date is 29 June. You will receive your individual exam marks, the multichoice question answers, and personalised marks sheets showing how you went for each essay question.</li><li>General written and verbal feedback will be given to the class via Wattle and in lectures.</li><li>All grades will be recorded in the Wattle Gradebook</li></ul>                                                    <h2 id="student-feedback">Student Feedback</h2>
+<p>ANU is committed to the demonstration of educational excellence and regularly seeks feedback from students. Students are encouraged to offer feedback directly to their Course Convener or through their College and Course representatives (if applicable). Feedback can also be provided to Course Conveners and teachers via the <a href="https://unistats.anu.edu.au/surveys/selt/" rel="noopener noreferrer" target="_blank" style="color: rgb(112, 48, 160);">Student Experience of Learning &amp; Teaching (SELT) feedback program</a>. SELT surveys are confidential and also provide the Colleges and ANU Executive with opportunities to recognise excellent teaching, and opportunities for improvement.</p>                                                    <h2 id="other-information">Other Information</h2>
+<p><strong style="background-color: inherit;">Labs</strong></p><ul><li><strong style="background-color: inherit;">You must attend one 90 minute lab a week as part of this course. </strong><span style="background-color: inherit;">Labs are on Wednesdays, with the postgraduate session offered 4:30pm. Please register for one lab session of your choice through</span><strong style="background-color: inherit;"> </strong><a href="https://mytimetable.anu.edu.au/odd/student" rel="noopener noreferrer" target="_blank" style="color: rgb(6, 111, 169);">My Timetable</a> prior to labs beginning in Week 1. Please register early to avoid missing out on your preferred session.</li><li>Labs will be held in the Biological Anthropology lab on campus (Banks 2.39, Banks Building, 44 Linnaeus Way). Please wear a clean white lab coat and face mask to the lab. </li><li>Where possible you will be required to attend labs <strong>in person.</strong> </li><li>If you miss a lab, please indepedently complete the lab worksheet for that week using the learning materials and model answers provided on Wattle. If you still have questions after consulting the model answers, feel free to get in touch with any of the teaching staff.</li></ul><p><br></p><p><strong style="background-color: inherit;">Assigned Course Readings:</strong></p><ul><li><span style="background-color: inherit;">This course involves assigned (required) readings, which must completed prior to each lecture.</span></li><li><span style="background-color: inherit;">These readings will provide you with critical background knowledge for each lecture and increase your understanding of key course concepts.</span></li><li><span style="background-color: inherit;">The readings for each week are listed under 'Weekly Activites' on Wattle.</span></li><li><span style="background-color: inherit;">All readings are available via the library website or as PDFs on Wattle.</span></li></ul><p><br></p><p><strong style="background-color: inherit;">Referencing</strong></p><ul><li><strong style="background-color: inherit;">This course employs the Harvard referencing style. Where applicable, all assessments must be referenced using this style.</strong></li><li><strong style="background-color: inherit;">For examples of Harvard referencing, see </strong><a href="https://www.anu.edu.au/students/academic-skills/academic-integrity/referencing/harvard" rel="noopener noreferrer" target="_blank" style="color: rgb(6, 111, 169);"><strong>https://www.anu.edu.au/students/academic-skills/academic-integrity/referencing/harvard</strong></a></li></ul>                                                    <h2 id="class-schedule">Class Schedule</h2>
+
+<table class="table-terms">
+    <thead>
+        <tr>
+            <th class="table-heading-classNumber">Week/Session</th>
+            <th class="table-heading-title">Summary of Activities</th>
+            <th class="table-heading-classDate">Assessment</th>
+        </tr>
+    </thead>
+
+    <tbody>
+            <tr>
+                <td>1</td>
+                <td>Lecture: Introduction and Anatomy Basics; Lab: Postcranial Anatomy 1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Lecture: Postcranial Anatomy; Lab: Postcranial Anatomy 2</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Lecture: Cranial and Dental Anatomy; Lab: Cranial and Dental Anatomy</td>
+                <td>Lab Test 1 (8%, on Week 1 and 2 Material)</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Lecture: Joints and Muscles; Lab: Joints and Muscles</td>
+                <td>Lab Test 2 (8%, on Week 3 Material)</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Lecture: Movement and Habitual Behaviour; Lab: Habitual Behaviour</td>
+                <td>Lab Test 3 (8%, on Week 4 Material)</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Lecture: Ethics and Repatriation; Lab: Mid-Semester Practical Test</td>
+                <td>Mid-Semester Practical Test (20%, in Lab Time)</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Lecture: Skeletal Development and Microstructure; Lab: Skeletal Development and Microstructure</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Lecture: Subadult Age Estimation; Lab: Subadult Age Estimation</td>
+                <td>Lab Test 4 (8%, on Week 7 Material)</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Lecture: Adult Age Estimation; Lab: Adult Age Estimation</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Lecture: Sex Estimation; Lab: Sex Estimation</td>
+                <td>Lab Test 5 (8%, on Week 9 Material)</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Lecture: Biodistance and Ancestry; Lab: Repatriation Debate</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Lecture: Stature and Mass and Exam Information; Lab: Stature and Mass</td>
+                <td>Written Methodological Evaluation (10%) due 9am Monday 29 May</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Semester 1 Exam Period: 1-17 June</td>
+                <td>Final Examination (30%), date and time TBD by Exam Office</td>
+            </tr>
+    </tbody>
+</table>                                                    <h2 id="tutorial-registration">Tutorial Registration</h2>
+<p>You must register for a lab session of your choice prior to labs beginning in Week 1. To register, please go to&nbsp;<a href="https://mytimetable.anu.edu.au/even/student" rel="noopener noreferrer" target="_blank" style="background-color: rgb(253, 253, 253); color: rgb(0, 84, 158);">MyTimetable</a>. This software enables students to view the timetable for their enrolled courses, browse, then self-allocate to small teaching activities / tutorials so they can better plan their time. If you need help with MyTimetable, please see<a href="https://www.anu.edu.au/students/program-administration/timetabling/student-access-and-support-for-mytimetable" rel="noopener noreferrer" target="_blank" style="background-color: rgb(253, 253, 253); color: rgb(0, 84, 158);">&nbsp;this website</a>.</p>                                                    <h2 id="assessment-summary">Assessment Summary</h2>
+
+<table class="table-terms">
+    <thead>
+        <tr>
+            <th class="table-heading-classNumber">Assessment task</th>
+                <th class="table-heading-classDate">Value</th>
+                            <th class="table-heading-classDate">Due Date</th>
+                            <th class="table-heading-classDate">Return of assessment</th>
+                  <th class="table-heading-classDate">Learning Outcomes</th>
+        </tr>
+    </thead>
+
+    <tbody>
+            <tr>
+                <td>5 x Online Lab Tests</td>
+
+                    <td>40 %</td>
+                                    <td>*</td>
+                                    <td>*</td>
+                                    <td>1,2,3</td>
+            </tr>
+            <tr>
+                <td>Mid-Semester Practical Test</td>
+
+                    <td>20 %</td>
+                                    <td>*</td>
+                                    <td>*</td>
+                                    <td>1,2,3</td>
+            </tr>
+            <tr>
+                <td>Written Methods Evaluation </td>
+
+                    <td>10 %</td>
+                                    <td>29/05/2021</td>
+                                    <td>02/06/2021</td>
+                                    <td>5</td>
+            </tr>
+            <tr>
+                <td>Final Exam</td>
+
+                    <td>30 %</td>
+                                    <td>*</td>
+                                    <td>*</td>
+                                    <td>1,2,3,4</td>
+            </tr>
+    </tbody>
+</table>
+<p>* If the Due Date and Return of Assessment date are blank, see the Assessment Tab for specific Assessment Task details</p>                                                    <h2 id="policies">Policies</h2>
+<p>ANU has <a href="https://policies.anu.edu.au/ppl/index.htm" rel="noopener noreferrer" target="_blank">educational policies, procedures and guidelines</a> , which are designed to ensure that staff and students are aware of the University’s academic standards, and implement them. Students are expected to have read the <a href="https://www.anu.edu.au/about/governance/legislation" rel="noopener noreferrer" target="_blank">Academic Integrity Rule</a> before the commencement of their course. Other key policies and guidelines include:</p><ul><li>Academic Integrity <a href="https://policies.anu.edu.au/ppl/document/ANUP_6477101" rel="noopener noreferrer" target="_blank">Policy</a> and <a href="https://policies.anu.edu.au/ppl/document/ANUP_6477150" rel="noopener noreferrer" target="_blank">Procedure</a> </li><li>Student Assessment (Coursework) <a href="https://policies.anu.edu.au/ppl/document/ANUP_004603" rel="noopener noreferrer" target="_blank">Policy</a> and <a href="https://policies.anu.edu.au/ppl/document/ANUP_004604" rel="noopener noreferrer" target="_blank">Procedure</a></li><li>Special Assessment Consideration <a href="https://policies.anu.edu.au/ppl/document/ANUP_009608" rel="noopener noreferrer" target="_blank">Guideline</a> and <a href="http://www.anu.edu.au/students/program-administration/assessments-exams/special-assessment-consideration" rel="noopener noreferrer" target="_blank">General Information</a>&nbsp;</li><li><a href="https://policies.anu.edu.au/ppl/document/ANUP_004601" rel="noopener noreferrer" target="_blank">Student Surveys and Evaluations</a></li><li><a href="http://www.anu.edu.au/students/program-administration/assessments-exams/deferred-examinations" rel="noopener noreferrer" target="_blank">Deferred Examinations</a></li><li>Student Complaint Resolution&nbsp;<a href="https://policies.anu.edu.au/ppl/document/ANUP_000468" rel="noopener noreferrer" target="_blank">Policy </a>and <a href="https://policies.anu.edu.au/ppl/document/ANUP_000540" rel="noopener noreferrer" target="_blank">Procedure</a></li><li><a href="https://policies.anu.edu.au/ppl/document/ANUP_000726" rel="noopener noreferrer" target="_blank">Code of practice for teaching and learning </a></li></ul>
+                    </div>  
+                </div>
+                    <div id="assessment" class="tab-content">
+                        <div class="body__inner w-doublewide copy">
+                    <h2 id="assessment-requirements">Assessment Requirements</h2>
+<p>The ANU is using Turnitin to enhance student citation and referencing techniques, and to assess assignment submissions as a component of the University's approach to managing Academic Integrity. For additional information regarding Turnitin please visit the <a href="https://www.anu.edu.au/students/academic-skills/academic-integrity/turnitin" rel="noopener noreferrer" target="_blank">Academic Skills website</a>. In rare cases where online submission using Turnitin software is not technically possible; or where not using Turnitin software has been justified by the Course Convener and approved by the Associate Dean (Education) on the basis of the teaching model being employed; students shall submit assessment online via ‘Wattle’ outside of Turnitin, or failing that in hard copy, or through a combination of submission methods as approved by the Associate Dean (Education). The submission method is detailed below.</p>                                                <h2 id="moderation-of-assessment">Moderation of Assessment</h2>
+<p>Marks that are allocated during Semester are to be considered provisional until formalised by the College examiners meeting at the end of each Semester. If appropriate, some moderation of marks might be applied prior to final results being released.</p>                                                                            <h2 id="examination">Examination(s)</h2>
+<p>This course includes a formal final examination (Assessment 3 above). This exam will differ from the 'in-class' assessments included in this course as it is formally scheduled by the ANU Exam Office, rather than the course convenor. Formal exams are held during the Semester 1 Exam Period (1-17 June); you will learn the exact time and date when the exam timetables are published around the end of April. You will then be able to access your individual exam timetable at <a href="https://exams.anu.edu.au/timetable/" rel="noopener noreferrer" target="_blank" style="color: rgb(6, 111, 169); background-color: rgb(255, 255, 255);">https://exams.anu.edu.au/timetable/</a>. Information about the exam will also be communicated to you via Wattle and in class as soon as it becomes available. The format of the exam will be outlined in the last lecture of the semester.</p>                            
+
+
+<h2 id="assessmenttask-1">Assessment Task 1</h2>
+
+<div class="callout-box callout-box--reverse callout-box--right">
+    <div class="callout-box__content">
+        <b>Value:</b>&nbsp;40 %<br>
+
+
+        <b>Learning Outcomes:&nbsp;</b>1,2,3<br>
+    </div>
+</div>
+
+<p><b>5 x Online Lab Tests</b></p>
+<p>These five 15 minute long <em>online</em> tests will examine the knowledge you have gathered from both <em>lab practical sessions and lectures</em>, and are designed to help you learn major concepts, skeletal anatomy terminology, identification, and basic techniques efficiently. These tests will be administered using the Wattle quiz function and will cover material from the week before the test to give you time to revise. Test questions will be <em>multi-choice</em> and may include identifying and naming bones and bony features from skeletal specimens from photos, siding bones and providing justification using photos and 3D models, applying methods learned in the lab, and explaining the functional significance of certain landmarks.</p><p>&nbsp;</p><p><strong style="background-color: inherit;">Further detail on this assessment will be provided on Wattle and in class.</strong></p><p><strong style="background-color: inherit;">&nbsp;</strong></p><p><strong style="background-color: inherit;">Value: </strong>40% (8% per test).</p><p>Note that the percentages for each of the five tests will be <em>summed</em> to determine the portion of the total 40% that you get. This means that the more tests you complete, the more of the 40% you will earn! For example, Jenny sat 3 lab tests, getting marks of 5/10 (4%), 10/10 (8%) and 4/10 (3%) for each test. She received zeroes for the tests she did not complete. The percentages she got for each test were added (4% + 8% + 3% + 0% + 0%), giving her a total of 17% out of the possible 40% for the assessment. This assessment therefore contributed 17% of her final grade for the course. Zorab sat all five tests, getting marks of 9/10 (7%), 10/10 (8%), 8/10 (6%), 10/10 (8%) and 9/10 (7%). When these percentages were added together, Zorab had accumulated 36% of a possible 40% for this assessment, giving him a total of 36% towards his final grade for the course.</p><p><strong style="background-color: inherit;">Due Dates: </strong>Tests will be available on Wattle for 48 hours from the end of your lab on Wednesday 8 March, Wednesday 15 March, Wednesday 22 March, Wednesday 26 April and Wednesday 10 May. Each test will automatically close when the 48 hours has elapsed (i.e., on Friday 10 March, Friday 17 March, Friday 24 March, Friday 28 April and Friday 12 May). This gives you ample time to complete the test and ensures each lab group gets the same amount of preparation time.</p><p><strong style="background-color: inherit;">Estimated return date: </strong>Monday 13 March, Monday 20 March, Monday 27 March, Monday 1 May and Monday 15 May, all by 5pm.</p>
+
+
+
+
+
+
+<h2 id="assessmenttask-2">Assessment Task 2</h2>
+
+<div class="callout-box callout-box--reverse callout-box--right">
+    <div class="callout-box__content">
+        <b>Value:</b>&nbsp;20 %<br>
+
+
+        <b>Learning Outcomes:&nbsp;</b>1,2,3<br>
+    </div>
+</div>
+
+<p><b>Mid-Semester Practical Test</b></p>
+<p>This one hour long Lab Practical Test will take place during your scheduled lab session in <em>Week 6</em>. The test will assess the the practical knowledge you have gained in the labs in Weeks 1-5. The test will be structured as a circuit test. This means that during this test, you will cycle through a series of stations. At each station you will be asked a series of <em>short answer questions </em>(i.e., there will be no list of answers to choose from, just a blank space for you to write your answers in)<em>.</em> These questions will include identifying and naming bones and bony features from pictures, specimens and models, describing the form and function of certain bony features, siding bones and justifying your answer, and applying methods such as age estimation to skeletal specimens provided. When the buzzer goes, you will move to the next station and answer the next question. This sequence is repeated until you have complete the entire circuit. </p><p><br></p><p><em>You are advised to start early on your study for this test as it requires you to know skeletal anatomy 'off the top of your head'. Attending as many labs as you can will be very helpful, as you get a chance to practice with all the skeletal specimens you will see in the test. Many people also find it useful to revise each week's content as they go to prevent a pile up of information to learn the week of the test!</em></p><p>&nbsp;</p><p><strong style="background-color: inherit;">Further detail on this assessment will be provided on Wattle and in class.</strong></p><p><strong style="background-color: inherit;">&nbsp;</strong></p><p><strong style="background-color: inherit;">Value: </strong>20%</p><p><strong style="background-color: inherit;">Due Dates: </strong>Wednesday<strong style="background-color: inherit;"> </strong>29 March <em>in your usual lab time</em>.</p><p><strong style="background-color: inherit;">Estimated return date:</strong> Monday 17 April by 5pm</p>
+
+
+
+
+
+
+<h2 id="assessmenttask-3">Assessment Task 3</h2>
+
+<div class="callout-box callout-box--reverse callout-box--right">
+    <div class="callout-box__content">
+        <b>Value:</b>&nbsp;10 %<br>
+
+<form action="/2023/Class/AddToICalendar?downloadFileName=Assessment%203%20%E2%80%93%20Due&amp;date=05%2F29%2F2021%2000%3A00%3A00" method="post">                <b>Due Date:&nbsp;</b>29/05/2021                    <button title="Assessment 3 – Due" class="btn anu-right-swap1 calender-button-wrapper no-print">
+                        <span class="fa fa-calendar"></span>
+                    </button>
+                <br>
+</form>
+<form action="/2023/Class/AddToICalendar?downloadFileName=Assessment%203%20%E2%80%93%20Return&amp;date=06%2F02%2F2021%2000%3A00%3A00" method="post">                <b>Return of Assessment:&nbsp;</b>02/06/2021                    <button title="Assessment 3 – Return" class="btn anu-right-swap1 calender-button-wrapper no-print">
+                        <span class="fa fa-calendar"></span>
+                    </button>
+                <br>
+</form>        <b>Learning Outcomes:&nbsp;</b>5<br>
+    </div>
+</div>
+
+<p><b>Written Methods Evaluation </b></p>
+<p>You are required to write a short essay providing a critical commentary on <strong><u>one</u> </strong>methods paper (references will be revealed throughout the course) from<strong> </strong>one of the following categories:&nbsp;</p><p>&nbsp;</p><p>1.&nbsp;&nbsp;&nbsp;Sex estimation</p><p>2.&nbsp;&nbsp;&nbsp;Adult age-at-death estimation</p><p>3.&nbsp;&nbsp;&nbsp;Sub-adult age-at-death estimation</p><p>4.&nbsp;&nbsp;&nbsp;Stature estimation</p><p>&nbsp;</p><p>This essay will assess your critical thinking and analytical skills.</p><p>&nbsp;</p><p><strong style="background-color: inherit; color: rgb(34, 34, 34);">Further detail on this assessment will be provided on Wattle and in class.</strong></p><p>&nbsp;</p><p><strong>Word count: </strong>600 words (+/- 10%)</p><p><strong>Value: </strong>10%</p><p><strong>Due Date: </strong>9am Monday 29 May</p><p><strong>Estimated return date:</strong> Friday 2 June by 5pm</p>
+
+
+
+
+
+
+<h2 id="assessmenttask-4">Assessment Task 4</h2>
+
+<div class="callout-box callout-box--reverse callout-box--right">
+    <div class="callout-box__content">
+        <b>Value:</b>&nbsp;30 %<br>
+
+
+        <b>Learning Outcomes:&nbsp;</b>1,2,3,4<br>
+    </div>
+</div>
+
+<p><b>Final Exam</b></p>
+<p>This two hour long exam will comprise of <em>multi-choice and essay questions</em> covering <em>theoretical</em> information covered across all lectures and labs. Theoretical components of the course include understanding how major skeletal processes (e.g. growth, remodelling) work, understanding the biological, evolutionary, and functional factors underpinning the application of practical methods (e.g. knowing why we are able to conduct a sex estimation from a skeleton), and discussing key issues in human skeletal analysis (e.g. ethical considerations).</p><p><br></p><p><strong style="background-color: inherit;">Specific information on the exam will be provided on Wattle and in the final lecture for the course.</strong></p><p><br></p><p><strong style="background-color: inherit;">Value:</strong> 30%</p><p><strong style="background-color: inherit;">Due Date: </strong>TBD by the Exam Office</p><p><strong style="background-color: inherit;">Estimated return date:</strong> TBD</p>
+
+
+
+
+                        </div>
+                    </div>
+                    <div id="submission" class="tab-content">
+                        <div class="body__inner w-doublewide copy">
+                    <h2 id="academic-integrity">Academic Integrity</h2>
+<p>Academic integrity is a core part of the ANU culture as a community of scholars. The University’s students are an integral part of that community. The <a href="https://www.legislation.gov.au/Details/F2021L00997#_Toc35619227" rel="noopener noreferrer" target="_blank">academic integrity principle</a> commits all students to engage in academic work in ways that are consistent with, and actively support, academic integrity, and to uphold this commitment by behaving honestly, responsibly and ethically, and with respect and fairness, in scholarly practice.</p><p><br></p><p>The University expects all staff and students to be familiar with the academic integrity principle, the <a href="https://www.anu.edu.au/about/governance/legislation" rel="noopener noreferrer" target="_blank">Academic Integrity Rule 2021,</a> the <a href="https://policies.anu.edu.au/ppl/document/ANUP_6477101" rel="noopener noreferrer" target="_blank">Policy: Student Academic Integrity</a> and <a href="https://policies.anu.edu.au/ppl/document/ANUP_6477150" rel="noopener noreferrer" target="_blank">Procedure: Student Academic Integrity</a>, and to uphold high standards of academic integrity to ensure the quality and value of our qualifications.</p><p><br></p><p>The Academic Integrity Rule 2021 is a legal document that the University uses to promote academic integrity, and manage breaches of the academic integrity principle. The Policy and Procedure support the Rule by outlining overarching principles, responsibilities and processes. The Academic Integrity Rule 2021 commences on 1 December 2021 and applies to courses commencing on or after that date, as well as to research conduct occurring on or after that date. Prior to this, the <a href="https://www.legislation.gov.au/Details/F2015L02025" rel="noopener noreferrer" target="_blank">Academic Misconduct Rule 2015</a> applies.</p><p>&nbsp;</p><p>The University commits to assisting all students to understand how to engage in academic work in ways that are consistent with, and actively support academic integrity. All coursework students must complete the online Academic Integrity Module (Epigeum), and Higher Degree Research (HDR) students are required to complete research integrity training. The <a href="https://www.anu.edu.au/students/academic-skills/academic-integrity" rel="noopener noreferrer" target="_blank">Academic Integrity website</a> provides information about services available to assist students with their assignments, examinations and other learning activities, as well as understanding and upholding academic integrity.</p>                                                <h2 id="onlinesubmission">Online Submission</h2>
+<p>You will be required to electronically sign a declaration as part of the submission of your assignment. Please keep a copy of the assignment for your records. Unless an exemption has been approved by the Associate Dean (Education) submission must be through Turnitin.</p>
+                    <h2 id="hardcopysubmission">Hardcopy Submission</h2>
+<p>For this course, the in-person mid-semester practical test and final exam will use printed paper scripts. Ensure that you complete the cover sheets provided on the front of the exam scripts to ensure your test result will be linked to your student ID. During the test time you will complete the questions inside the test script as directed by your demonstrators. At the conclusion of the test or exam, hand your script in to your demonstrator or exam supervisor as instructed. <em>Please note, any test scripts that leave the room will be invalidated.</em></p>                                                <h2 id="latesubmission">Late Submission</h2>
+<p><strong style="background-color: inherit;">Late submission of assessment items without an extension is NOT permitted for this course. </strong>This means that if you miss a test or exam and you have not been granted an extension to sit the test at another time, you will fail this assessment. To apply for an extension, please complete an application through the <a href="https://apps.powerapps.com/play/e/default-e37d725c-ab5c-4624-9ae5-f0533e486437/a/679dcc79-99bd-4f3f-a929-9475490be5b1?tenantId=e37d725c-ab5c-4624-9ae5-f0533e486437" rel="noopener noreferrer" target="_blank" style="color: rgb(6, 111, 169);">CASS Extension Request Portal</a> on or before the assessment due date. Please note that you must provide documentation to support your application and that extensions cannot be granted after the due date unless you can demonstrate that you were unable to apply in time due to extenuating circumstances. </p><ul><li>Instructions on how to use the application portal can be found <a href="https://cloudstor.aarnet.edu.au/plus/s/DqSRyndaWiPAfE9" rel="noopener noreferrer" target="_blank" style="color: rgb(6, 111, 169);">here</a>.</li><li>To learn more about how extensions work at the ANU, please see the ANU coursework extension <a href="https://policies.anu.edu.au/ppl/document/ANUP_004603" rel="noopener noreferrer" target="_blank" style="color: rgb(6, 111, 169);">Policy</a> and <a href="https://policies.anu.edu.au/ppl/document/ANUP_004604" rel="noopener noreferrer" target="_blank" style="color: rgb(6, 111, 169);">Procedure</a>.</li></ul>                                                <h2 id="referencing-requirements">Referencing Requirements </h2>
+<p>The <a href="https://www.anu.edu.au/students/academic-skills" rel="noopener noreferrer" target="_blank">Academic Skills website</a> has information to assist you with your writing and assessments. The website includes information about Academic Integrity including <a href="https://www.anu.edu.au/students/academic-skills/academic-integrity/referencing" rel="noopener noreferrer" target="_blank">referencing requirements for different disciplines</a>. There is also information on <a href="https://www.anu.edu.au/students/academic-skills/academic-integrity/plagiarism" rel="noopener noreferrer" target="_blank">Plagiarism</a> and different ways to <a href="https://www.anu.edu.au/students/academic-skills/academic-integrity/using-sources" rel="noopener noreferrer" target="_blank">use source</a> material.</p>                                                <h2 id="returning-assignments">Returning Assignments </h2>
+<ul><li>All grades will be recorded in the Wattle Gradebook</li><li>Online test scripts will be returned via Wattle when all class members have completed the test.</li><li>Hard copy (in person) tests and exams can be viewed by appointment after everyone has completed the test.</li></ul>                                                <h2 id="extensions-and-penalties">Extensions and Penalties </h2>
+<p>Extensions and late submission of assessment pieces are covered by the Student Assessment (Coursework) <a href="https://policies.anu.edu.au/ppl/document/ANUP_004603" target="_blank">Policy</a> and <a href="https://policies.anu.edu.au/ppl/document/ANUP_004604" target="_blank">Procedure</a>. Extensions may be granted for assessment pieces that are not examinations or take-home examinations. If you need an extension, you must request an extension in writing on or before the due date. If you have documented and appropriate medical evidence that demonstrates you were not able to request an extension on or before the due date, you may be able to request it after the due date.</p>                                                <h2 id="resubmission-of-assignments">Resubmission of Assignments</h2>
+<p>Resubmission of assessments is not permitted for this course.</p>                                                                            <h2 id="privacy-notice">Privacy Notice</h2>
+The ANU has made a number of third party, online, databases available for students to use. Use of each online database is conditional on student end users first agreeing to the database licensor’s terms of service and/or privacy policy. Students should read these carefully. In some cases student end users will be required to register an account with the database licensor and submit personal information, including their: first name; last name; ANU email address; and other information.<br>In cases where student end users are asked to submit ‘content’ to a database, such as an assignment or short answers, the database licensor may only use the student’s ‘content’ in accordance with the terms of service – including any (copyright) licence the student grants to the database licensor. Any personal information or content a student submits may be stored by the licensor, potentially offshore, and will be used to process the database service in accordance with the licensors terms of service and/or privacy policy.<br>If any student chooses not to agree to the database licensor’s terms of service or privacy policy, the student will not be able to access and use the database. In these circumstances students should contact their lecturer to enquire about alternative arrangements that are available.                                                <h2 id="distribution-of-grades-policy">Distribution of grades policy</h2>
+<p>Academic Quality Assurance Committee monitors the performance of students, including attrition, further study and employment rates and grade distribution, and College reports on quality assurance processes for assessment activities, including alignment with national and international disciplinary and interdisciplinary standards, as well as qualification type learning outcomes.  </p><p>Since first semester 1994, ANU uses a <a href="http://www.anu.edu.au/students/program-administration/assessments-exams/grading-scale" target="_blank">grading scale</a> for all courses. This grading scale is used by all academic areas of the University. </p>                                                <h2 id="support-for-students">Support for students</h2>
+<p>The University offers students support through several different services. You may contact the services listed below directly or seek advice from your Course Convener, Student Administrators, or your College and Course representatives (if applicable).</p><ul><li><a href="http://www.anu.edu.au/students/health-safety-wellbeing" rel="noopener noreferrer" target="_blank">ANU Health, safety &amp; wellbeing</a> for medical services, counselling, mental health and spiritual support</li><li><a href="https://www.anu.edu.au/students/health-safety-wellbeing/access-inclusion" rel="noopener noreferrer" target="_blank">ANU Access and inclusion</a> for students with a disability or ongoing or chronic illness</li><li><a href="http://www.anu.edu.au/students/contacts/dean-of-students" rel="noopener noreferrer" target="_blank">ANU Dean of Students</a> for confidential, impartial advice and help to resolve problems between students and the academic or administrative areas of the University</li><li><a href="https://www.anu.edu.au/students/academic-skills" rel="noopener noreferrer" target="_blank">ANU Academic Skills and Learning Centre</a> supports you make your own decisions about how you learn and manage your workload.</li><li><a href="http://www.anu.edu.au/students/contacts/counselling-centre" rel="noopener noreferrer" target="_blank">ANU Counselling Centre</a> promotes, supports and enhances mental health and wellbeing within the University student community.</li><li><a href="https://anusa.com.au/" rel="noopener noreferrer" target="_blank">ANUSA</a> supports and represents undergraduate and ANU College students</li><li><a href="https://parsa.anu.edu.au/" rel="noopener noreferrer" target="_blank">PARSA </a>supports and represents postgraduate and research students</li></ul>                        </div>
+                    </div>
+                    <div id="contacts" class="tab-content">
+                        <div class="body__inner w-doublewide copy">
+                            
+<div id="testdiv" style="display:inline-block;width:60%">
+
+
+<div class="callout-box callout-box--left" style="width:100%">
+    <div class="callout-box__header clearfix">
+        <h2 id="contact_convener" class="callout-box__title">Convener</h2>
+        <div class="callout-box__tabs clearfix">
+            <a href="#contact_details" class="callout-box__tab callout-box__tab--active header_convener_0" onclick="$('.header_convener_0').toggleClass('callout-box__tab--active');$('.content_convener_0').toggleClass('callout-box__tab-content--active');return false;">
+                Details
+            </a>
+            <a href="#contact_consulting_hours" class="callout-box__tab header_convener_0" onclick="$('.header_convener_0').toggleClass('callout-box__tab--active');$('.content_convener_0').toggleClass('callout-box__tab-content--active');return false;">
+                Consulting Hours
+            </a>
+        </div>
+    </div>
+
+    <div class="callout-box__content">
+        <div id="contact_details_convener_0" class="callout-box__tab-content callout-box__tab-content--active content_convener_0">
+            <table class="class-contact-table">
+                <tr>
+                    <td>
+                        <img class="contact-image" src="/Content/Images/person.png">
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Dr Stacey Ward</td>
+                            </tr>
+                            <tr>
+                                <td>02 6125 9295</td>
+                            </tr>
+                            <tr>
+                                <td><a href="mailto:U1105218@anu.edu.au">U1105218@anu.edu.au</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3>Research Interests</h3>
+                        <br>
+                            <p>Bioarchaeology Education, Social Inequality, Non-Specific Stress, Prehistoric Southeat Asia, Gender</p>
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="contact_consulting_hours_convener_0" class="callout-box__tab-content callout-box__tab-content consulting-hours content_convener_0">
+            <h3>Dr Stacey Ward</h3>
+            <table class="consulting-hourse-table">
+                <tr>
+                    <td>
+                        <img class="contact-image" src="/Content/Images/person.png">
+                    </td>
+                    <td>
+                        <table class="table-consulting-hours">
+                            <tbody>
+                                    <tr>
+                                            <td nowrap="" colspan="3">By Appointment</td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="callout-box callout-box--left" style="width:100%">
+    <div class="callout-box__header clearfix">
+        <h2 id="contact_tutor" class="callout-box__title">Tutor</h2>
+        <div class="callout-box__tabs clearfix">
+            <a href="#contact_details" class="callout-box__tab callout-box__tab--active header_tutuor_0" onclick="$('.header_tutuor_0').toggleClass('callout-box__tab--active');$('.content_tutuor_0').toggleClass('callout-box__tab-content--active');return false;">
+                Details
+            </a>
+            <a href="#contact_consulting_hours" class="callout-box__tab header_tutuor_0" onclick="$('.header_tutuor_0').toggleClass('callout-box__tab--active');$('.content_tutuor_0').toggleClass('callout-box__tab-content--active');return false;">
+                Consulting Hours
+            </a>
+        </div>
+    </div>
+
+    <div class="callout-box__content">
+        <div id="contact_details_tutuor_0" class="callout-box__tab-content callout-box__tab-content--active content_tutuor_0">
+            <table class="class-contact-table">
+                <tr>
+                    <td>
+                        <img class="contact-image" src="/Content/Images/person.png">
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>AsPr Laura Wilson</td>
+                            </tr>
+                            <tr>
+                                <td>02 6125 8226</td>
+                            </tr>
+                            <tr>
+                                <td><a href="mailto:laura.wilson@anu.edu.au">laura.wilson@anu.edu.au</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3>Research Interests</h3>
+                        <br>
+                            
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="contact_consulting_hours_tutuor_0" class="callout-box__tab-content callout-box__tab-content consulting-hours content_tutuor_0">
+            <h3>AsPr Laura Wilson</h3>
+            <table class="consulting-hourse-table">
+                <tr>
+                    <td>
+                        <img class="contact-image" src="/Content/Images/person.png">
+                    </td>
+                    <td>
+                        <table class="table-consulting-hours">
+                            <tbody>
+                                    <tr>
+                                            <td nowrap="" colspan="3">By Appointment</td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+</div>
+
+                        </div>
+                    </div>
+                    </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    <div class="page-contact transition" style="clear: both">
+        <div class="page-contact__inner">
+            <p class="page-contact-info"><strong>Responsible Officer:</strong> Registrar, Student Administration <span>/</span> <strong>Page Contact:</strong> <a href="mailto:programsandcourses@anu.edu.au">Website Administrator</a> <span>/</span> <a href="/2023/Faq">Frequently Asked Questions</a></p>
+        </div>
+    </div>
+
+    <!-- noindex -->
+<div id="footer-wrap" class="no-print" role="contentinfo">
+    <div id="anu-footer">
+        <div id="anu-detail">
+            <ul>
+                <li><a href="http://www.anu.edu.au/contact/">Contact ANU</a></li>
+                <li><a href="http://www.anu.edu.au/maps">Campus Map</a></li>
+                <li><a href="http://www.anu.edu.au/copyright/">Copyright</a></li>
+                <li><a href="http://www.anu.edu.au/disclaimer">Disclaimer</a></li>
+                <li><a href="http://www.anu.edu.au/privacy">Privacy</a></li>
+                <li><a href="http://foi.anu.edu.au/">Freedom of Information</a></li>
+
+            </ul>
+        </div>
+        <div id="anu-address">
+            <p>
+                +61 2 6125 5111<br>
+                The Australian National University, Canberra<br>
+                CRICOS Provider : 00120C<br>
+                ABN : 52 234 063 906
+            </p>
+        </div>
+
+        <div id="anu-groups">
+            <div class="anu-ftr-go8 hpad vpad"><a href="http://www.anu.edu.au/about/partnerships/group-of-eight">
+                <img class="text-white" src="//style.anu.edu.au/_anu/4/images/logos/2x_GroupOf8.png" alt="Group of Eight Member"></a></div>
+            <div class="anu-ftr-iaru hpad vpad"><a href="http://www.anu.edu.au/about/partnerships/international-alliance-of-research-universities">
+                <img class="text-white" src="//style.anu.edu.au/_anu/4/images/logos/2x_iaru.png" alt="IARU"></a></div>
+            <div class="anu-ftr-apru hpad vpad"><a href="http://www.anu.edu.au/about/partnerships/association-of-pacific-rim-universities">
+                <img class="text-white" src="//style.anu.edu.au/_anu/4/images/logos/2x_apru.png" alt="APRU"></a></div>
+            <div class="anu-ftr-edx hpad vpad"><a href="http://www.anu.edu.au/about/partnerships/edx">
+                <img class="text-white" src="//style.anu.edu.au/_anu/4/images/logos/2x_edx.png" alt="edX"></a></div>
+        </div>
+    </div>
+</div>
+<!-- endnoindex -->
+
+    <script src="/Scripts/js?v=JP1un1h0rycQluSztdTxuhaMP0seQCNlZJNvrb9m6vs1"></script>
+
+    <script src="/Scripts/Knockout/js?v=LOGR7woollVSO0HK_vlQxp4gdzRw7kB5Dv4n6oXE6LY1"></script>
+
+    
+    
+    
+    <script src="/Scripts/misc.js" type="text/javascript"></script>
+    <script src="/Scripts/MoleculeColourFallback/js?v=cF6g_av_aq_3K49endnkXkBwpL-8fcTbVY7dOP880xk1"></script>
+
+    <script src="/Scripts/MoleculeColourToOwner/js?v=lvYw3HmvcPAuyLdhuBSllZTwGTnEI51QqMWksyIVkFk1"></script>
+
+    <script src="/Scripts/video/js?v=-XHrFjWWn56AK2mxbgjoUT_9cKeeP7EaoKmFP4qL9a81"></script>
+
+    <script src="/Scripts/SocialMedia/js?v=dNedT8IkbODerVmLKImXwBZJAm48G6VS1XKlkEIynUY1"></script>
+
+    <script async src="https://www.youtube.com/iframe_api" type="text/javascript"></script>
+
+
+
+    <!-- Google Analytics -->
+    <script>
+        if (typeof ga === 'undefined') {
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        }
+        ga('create', 'UA-5266663-4', 'auto', { 'name': 'allANU' });
+        ga('allANU.send', 'pageview');
+    </script>
+</body>
+</html>

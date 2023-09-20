@@ -2,13 +2,13 @@ from flask import Flask, Response, jsonify, request
 import logging
 
 from .errors import errors
-from .marks import marks
+from .views import views
 from .functions import functions
 
 # register app
 app = Flask(__name__)
 app.register_blueprint(errors, flush=True)
-app.register_blueprint(marks, flush=True)
+app.register_blueprint(views, flush=True)
 app.register_blueprint(functions, flush=True)
 
 # setup logging
@@ -21,7 +21,7 @@ def index():
     """check it's alive"""
     app.logger.debug('DEBUG logging')
     app.logger.info('INFO logging')
-    return Response("VirtuousLoop is running!", status=200)
+    return Response("P&CE is running!", status=200)
 
 
 @app.route("/json", methods=["POST"])

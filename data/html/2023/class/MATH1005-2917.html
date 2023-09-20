@@ -1,0 +1,1095 @@
+
+<!DOCTYPE html>
+<html class="wf-loading">
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5H3R8L');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta name="viewport" content="width=device-width" />
+    <title>Discrete Mathematical Models - ANU</title>
+    <meta content="IE=10,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width" name="viewport" />
+    <meta content="phone" media="(max-width: 479px)" name="breakpoint" />
+    <meta content="phone-wide" media="(min-width: 480px) and (max-width: 639px)" name="breakpoint" />
+    <meta content="tablet" media="(min-width: 640px) and (max-width: 959px)" name="breakpoint" />
+    <meta content="mobile" media="(max-width: 959px)" name="breakpoint" />
+    
+    
+
+    <link rel="shortcut icon" href="/content/images/favicon.ico" type="image/x-icon" />
+    <link href="https://programsandcourses.anu.edu.au/2023/course/math1005/first%20semester/2917" rel="canonical" />
+
+    <link href="/Content/style/css?v=05BLNx1wu76OgAhSxssVhYRy3KqRIxeR5cIEZA51J8A1" rel="stylesheet"/>
+
+    <script src="/Scripts/modernizer?v=l2fp1E6Lih5iAZRql1s00lXjFeESzFAiTh1OjyQwK801"></script>
+
+    <script>
+        Modernizr.load([{
+            test: Modernizr.fontface,
+            yep: '//use.typekit.com/xkv0pni.js',
+            callback: function () {
+                var removeWfLoading = function () {
+                    with (document.documentElement) {
+                        className = className.replace(/\bwf-loading\b/, 'wf-failed');
+                    }
+                };
+                setTimeout(function () {
+                    try { Typekit.load(); } catch (e) { removeWfLoading(); }
+                }, 10);
+                setTimeout(function () {
+                    removeWfLoading();
+                }, 1000);
+            }
+        }]);
+    </script>
+    <script>
+        !function (a, b) { "use strict"; var c = { breakpoints: {}, _isTicking: !1, _debounceLastTime: 0, _namedEvents: {}, _eventMatchCache: {}, _globalEvents: [], onBreakpointChange: function () { var a = Array.prototype.slice.call(arguments), b = a.pop(), d = a.pop(); "undefined" == typeof d ? c._globalEvents.push(b) : (c._namedEvents[d] = []).push(b), k() } }, d = function (c) { /in/.test(b.readyState) ? a.setTimeout(function () { d(c) }, 9) : c() }, e = function (a, b) { var c = a.className.split(" "), d = c.indexOf(b); d > -1 && (c.splice(d, 1), a.className = c.join(" ")) }, f = function (a, b) { -1 === a.className.indexOf(b) && (a.className = "" !== a.className ? a.className + " " + b : b) }, g = function (a, c) { var d = "breakpoint-" + c, g = b.documentElement; a ? f(g, d) : e(g, d) }, h = function (a) { c._globalEvents.forEach(function (b) { "function" == typeof b && b(a) }) }, i = function () { c._isTicking || j(k), c._isTicking = !0 }, j = function (b, d) { if (!a.requestAnimationFrame) { var e = (new Date).getTime(), f = Math.max(0, 16 - (e - c._debounceLastTime)), g = a.setTimeout(function () { b(e + f) }, f); return c._debounceLastTime = e + f, g } a.requestAnimationFrame(b, d) }, k = function () { c._isTicking = !1; var b = []; for (var d in c.breakpoints) { var e = c.breakpoints[d], f = a.matchMedia(e).matches; if (c._namedEvents[d] && c._eventMatchCache[d] !== f) { c._eventMatchCache[d] = f; for (var i = 0; i < c._namedEvents[d].length; i++) { var j = c._namedEvents[d][i]; "function" == typeof j && j(f) } } f && b.push(d), g(f, d) } 0 !== b.length && h(b) }, l = function () { for (var a = b.getElementsByTagName("meta"), d = 0; d < a.length; d++)if ("breakpoint" === a[d].name) { var e = a[d].getAttribute("content"), f = a[d].getAttribute("media"); c.breakpoints[e] = f } }, m = function () { l(), k() }, n = function () { l(), k(), a.addEventListener("resize", i) }; "undefined" != typeof module && module.exports ? module.exports = c : a.metaQuery = c, m(), d(n) }(window, document);
+    </script>
+    <!--
+    To collect end-user usage analytics about your application,
+    insert the following script into each page you want to track.
+    Place this code immediately before the closing </head> tag,
+    and before any other scripts. Your first data will appear
+    automatically in just a few seconds.
+    -->
+    <script type="text/javascript">
+        var appInsights = window.appInsights || function (config) {
+            function s(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, r = document, f = window, e = "script", o = r.createElement(e), i, u; for (o.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", r.getElementsByTagName(e)[0].parentNode.appendChild(o), t.cookie = r.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;)s("track" + i.pop()); return config.disableExceptionTracking || (i = "onerror", s("_" + i), u = f[i], f[i] = function (config, r, f, e, o) { var s = u && u(config, r, f, e, o); return s !== !0 && t["_" + i](config, r, f, e, o), s }), t
+        }({
+            instrumentationKey: "c2b8cab7-0152-4b03-8810-7d9be84a3b34"
+        });
+
+        window.appInsights = appInsights;
+        appInsights.trackPageView();
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <!-- Hotjar Tracking Code for http://www.anu.edu.au -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 1136231, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
+
+    <script>
+        (function (a, b, c, d, e, m) {
+            a['OktopostTrackerObject'] = d;
+            a[d] = a[d] || function () {
+                (a[d].q = a[d].q || []).push(arguments);
+            };
+            e = b.createElement('script');
+            m = b.getElementsByTagName('script')[0];
+            e.async = 1;
+            e.src = ('https:' === document.location.protocol ? 'https://' : 'http://') + c;
+            m.parentNode.insertBefore(e, m);
+        })(window, document, 'static.oktopost.com/oktrk.js', '_oktrk');
+
+        _oktrk('create', '001qt43soloi771');
+    </script>
+
+
+
+    <!-- End Facebook Pixel Code -->
+
+</head>
+<body id="top">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5H3R8L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <meta name="insight-app-sec-validation" content="aac4b9bd-9119-4743-8a28-82bf1124481b" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="//marketing-pages.anu.edu.au/_anu/5/projects/htmlsites/pc.css" />
+<script src="//marketing-pages.anu.edu.au/_anu/4/scripts/jquery-1.11.3.min.js?1" type="text/javascript"></script>
+<script type="text/javascript">
+    var $anujq = jQuery.noConflict();
+</script>
+<script src="//marketing-pages.anu.edu.au/_anu/5/projects/htmlsites/scripts/anu-common.js" type="text/javascript"></script>
+<script src="//marketing-pages.anu.edu.au/_anu/5/projects/htmlsites/scripts/jquery.hoverIntent.js" type="text/javascript"></script>
+
+<!-- noindex -->
+<div id="print-hdr">
+    <div class="left">
+        <img src="//style.anu.edu.au/_anu/4/images/logos/anu_logo_print.png" alt="The Australian National University" height="40" width="115" />
+    </div>
+    <div class="right">
+        <div class="bnr-line-1  bnr-2line">Programs and Courses.</div>
+    </div>
+    <div class="blockline"></div>
+</div>
+
+<div id="bnr-wrap" class="bnr-gwy-high" role="banner">
+    <div id="bnr-gwy" class="bnr-gwy-high">
+        <div id="bnr-left"><a href="http://www.anu.edu.au/" class="anu-logo-png"><img class="text-white" src="https://marketing-pages.anu.edu.au/_anu/4/images/logos/2x_anu_logo_small.svg" alt="The Australian National University"></a></div>
+        <div id="bnr-mid"><div class="left"><img src="https://marketing-pages.anu.edu.au/_anu/4/images/logos/pipe_logo_small.png" alt="" width="66" height="51" class="anu-logo-pipe left"></div><div class="left" id="bnr-h-lines"><div class="bnr-line-1  bnr-2line"><h1><a href="/">Programs and Courses</a></h1></div></div></div>
+        <div id="bnr-right">
+            <div class="bnr-gw2-search ">
+                <form action="https://find.anu.edu.au/search" method="get" id="AnuGlobalSearchForm" role="search" autocomplete="off">
+                    <div>
+                        <label for="qt" class="scrnhide">Search query</label>
+                        <input class="txt" name="q" id="qt" type="search" placeholder="Search ANU web, staff &amp; maps" autocomplete="off">
+                        <input type="hidden" class="srch-f srch-sel-gsa-hidden" name="as_f" data-name="as_f" value="sitename_s[&quot;Programs and courses&quot;]">
+                        <div class="srch-sel-site">
+                            <ul>
+                                <li class="srch-sel-anu srch-selected">
+                                    <span>Search ANU web, staff &amp; maps</span>
+                                <li class="srch-sel-currentsite" id="srch-sel-currentsite-bnr" data-anu-searchname="Integration%20and%20Implementation%20Sciences%20%28I2S%29">
+                                    <span>Search current site content</span>
+                            </ul>
+                        </div>
+                        <div class="srch-divide" id="srch-sel-cont">
+                            <div class="srch-updown">
+                                <img id="srch-sel-arrow" src="https://marketing-pages.anu.edu.au/_anu/4/images/buttons/arrow-down-black.png" alt="search scope">
+                            </div>
+                        </div>
+                        <div class="srch-divide">
+                            <div class="srch-divide2"></div>
+                        </div>
+                        <button value="Go" name="search1" id="search1" onclick="return checkInput('qt','You must enter search terms');" class="btn-go">
+                            <span class="scrnhide">Search</span>
+                            <img src="https://marketing-pages.anu.edu.au/_anu/4/images/buttons/search-black.png" alt="">
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="bnr-low">
+            <!--GW_UTILITIES-->
+
+        </div>
+    </div>
+</div>
+<div style="clear: both;"></div>
+
+
+    
+
+
+<div class="breadcrumbs">
+    <div class="breadcrumbs__inner">
+        <ul class="breadcrumbs__list transition">
+                <li class="breadcrumb__list-item">
+                        <a href="/" class="breadcrumb__list-anchor">Programs and Courses</a>
+
+                </li>
+                <li class="breadcrumb__list-item">
+                        <a href="/catalogue?FilterByCourses=true&amp;Source=Breadcrumb" class="breadcrumb__list-anchor">Courses</a>
+
+                </li>
+                <li class="breadcrumb__list-item">
+                        <a href="/2023/course/MATH1005" class="breadcrumb__list-anchor">MATH1005</a>
+
+                </li>
+                <li class="breadcrumb__list-item">
+                        <a href="/2023/course/MATH1005/First%20Semester/2917" class="breadcrumb__list-anchor breadcrumb__list-anchor-current">First Semester / 2917</a>
+
+                </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="course">
+    <!-- Intro -->
+    <div class="intro" id="skip-to">
+        <div class="intro__inner">
+            <div class="doublenarrow transition">
+                <span class="intro__degree-type" style="font-weight: normal">
+                    <b>Class Summary</b>  | <a href="/2023/course/MATH1005">Back to Course Details</a>
+                </span>
+                <h1 class="intro__degree-title">
+                    <span class="intro__degree-title__component">Discrete Mathematical Models</span>
+                </h1>
+                <div class="intro__degree-description">
+                    <p class="intro__degree-description__text">An Undergraduate course offered by the <span class="first-owner">Mathematical Sciences Institute</span>.</p>
+                    <div class="molecule-container">
+    <div class="molecule-individual molecule-single molecule-medium molecule-first">
+        <div class="borderradius molecule" style="color: rgba(0,52,30,0.75); background: rgba(0,105,60,0.75)" data-colour="#00693C" data-hextext="#00341E" data-opacity="75">
+            <span class="molecule__label"><a href="/2023/course/MATH1005">MATH1005</a></span>
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+            <div class="doublenarrow transition">
+                <div class="intro__apply-to-study">
+                    <div class="intro__apply-to-study__current-academic-year">
+                        <div>
+                            <p class="margin-vertical"><strong>First Semester</strong></p>
+                        </div>
+                        <p class="margin-vertical">
+                        Academic Year : <strong>2023</strong>
+                        </p>
+                    </div>
+                    <div class="degree-summary show-mobile w-doublenarrow">
+                        
+<div class="degree-summary-inner">
+    <ul class="degree-summary__requirements">
+        <li class="degree-summary__requirements-length">
+            <span class="degree-summary__requirements-heading"><i class="fa fa-cog no-print"></i>Class Number</span>
+            2917
+        </li>
+        <li class="degree-summary__requirements-units">
+            <span class="degree-summary__requirements-heading"><i class="fa fa-book  no-print"></i>Term Code</span>
+            3330
+        </li>
+    </ul>
+    <div class="degree-summary__codes">
+            <button class="degree-summary__codes-toggle no-print" onclick="$('.degree-summary__codes-column').toggleClass('degree-summary__codes-column--hidden');$(this).toggleClass('degree-summary__codes-toggle--down');">Academic Codes <i class="fa fa-caret-right"></i></button>
+            <ul class="degree-summary__codes-column degree-summary__codes-column--hidden">
+                <li class="degree-summary__code">
+                    <span class="degree-summary__code-heading"><i class="fa fa-flag degree-summary__code-flag-icon  no-print"></i>Class Info</span>
+                </li>
+                    <li class="degree-summary__code">
+                        <span class="class-summary__code-text">Unit Value</span>
+                        <span class="class-summary__code-value">6 units</span>
+                    </li>
+                                                    <li class="degree-summary__code">
+                        <span class="class-summary__code-text">Mode of Delivery</span>
+                        <span class="class-summary__code-value">In Person</span>
+                    </li>
+                                    <li class="degree-summary__code">
+                        <span class="degree-summary__code-heading"><i class="fa fa-user degree-summary__code-user-icon  no-print"></i>COURSE CONVENER</span>
+                        <ul>
+                                <li><span class="class-summary__code-value">AsPr Adam Piggott</span></li>
+                        </ul>
+                    </li>
+                                    <li class="degree-summary__code">
+                        <span class="degree-summary__code-heading"><i class="fa fa-user degree-summary__code-user-icon  no-print"></i>LECTURER</span>
+                        <ul>
+                                <li><span class="class-summary__code-value">AsPr Adam Piggott</span></li>
+                        </ul>
+                    </li>
+                            </ul>
+        <ul class="degree-summary__codes-column degree-summary__codes-column--hidden">
+            <li class="degree-summary__code">
+                <span class="degree-summary__code-heading"><i class="fa fa-book degree-summary__code-book-icon  no-print"></i>Class Dates</span>
+            </li>
+            <li class="degree-summary__code">
+                <span class="class-summary__code-text">Class Start Date</span>
+                <span class="class-summary__code-value">20/02/2023</span>
+            </li>
+            <li class="degree-summary__code">
+                <span class="class-summary__code-text">Class End Date</span>
+                <span class="class-summary__code-value">26/05/2023</span>
+            </li>
+                <li class="degree-summary__code">
+                    <span class="class-summary__code-text">Census Date</span>
+                    <span class="class-summary__code-value">31/03/2023</span>
+                </li>
+                            <li class="degree-summary__code">
+                    <span class="class-summary__code-text">Last Date to Enrol</span>
+                    <span class="class-summary__code-value">27/02/2023</span>
+                </li>
+                                </ul>
+    </div>
+    <ul class="degree-summary__requirements text-center no-print">
+        <li class="">
+            <a href="http://timetabling.anu.edu.au/sws2023/">
+                <span class="degree-summary__requirements-heading"><i class="fa fa-calendar-times-o "></i>View Class Timetable</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+<div>
+    <div class="course-social no-print">
+        <div class="social-icons">
+
+    <div class="twitter-wrapper">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Currently looking at Discrete Mathematical Models at ANU - Programs and Courses - ">Tweet</a>
+    </div>
+    <script>var encodedUri = encodeURIComponent(location.href);</script>
+    <div class="facebook-wrapper">
+        <a class="facebook-share" href="#" onclick="(window.open('https://www.facebook.com/sharer/sharer.php?u='+encodedUri, 'facebook-share-dialog', 'width=626,height=436'));">Share on Facebook</a>
+    </div>
+    <div class="wattle-wrapper">
+        <a target="_blank" href="https://wattle.anu.edu.au/" class="wattle-share-button" data-text="Currently looking at Discrete Mathematical Models at ANU - Programs and Courses - ">Wattle Share</a>
+    </div>
+    <div class="google-wrapper">
+        <div class="g-plusone" data-size="medium"></div>
+        <script>
+        </script>
+    </div>
+</div>
+
+
+        <a href="http://unistats.anu.edu.au/internal/surveys/selt/learning/time-series/MATH1005_Time_Series_LRN.pdf" class="selt-link">
+            <div>
+                <img src="https://odsacep1.blob.core.windows.net/setting-images-local/selt social media button_3bd5752a-98bb-4d1c-9b4b-2a312a7b6da1.jpg">
+            </div>
+            <div class="bubble">
+                SELT Survey Results
+            </div>
+        </a>
+    </div>
+    <br>
+    <div class="class-download-wrapper no-print">
+<form action="/2023/Class/PrintClassPage?courseCode=MATH1005&amp;session=First%20Semester&amp;classId=2917" method="post">            <button title="Download class PDF" class="calender-button-wrapper no-print">
+                <span class="class-download-button"></span>
+            </button>
+</form>    </div>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+            <ul class="intro-tabs clearfix">
+                <li class="intro-tabs__tab intro-tabs__tab--active">
+                    <a href="#overview" featurename="course">Overview</a>
+                </li>
+                <li class="intro-tabs__tab">
+                    <a href="#assessment" featurename="course">Assessment</a>
+                </li>
+                <li class="intro-tabs__tab">
+                    <a href="#submission" featurename="submission">Submission</a>
+                </li>
+                <li class="intro-tabs__tab">
+                    <a href="#contacts" featurename="contacts">Contacts</a>
+                </li>
+            </ul>
+        </div>
+        <div class="intro__shadow"></div>
+    </div>
+    <!-- / Intro -->
+    <!-- Main -->
+    <div class="main">
+        <div class="main-inner">
+            <div class="body transition">
+                <div class="degree-summary hide-mobile w-doublenarrow">
+                    
+<div class="degree-summary-inner">
+    <ul class="degree-summary__requirements">
+        <li class="degree-summary__requirements-length">
+            <span class="degree-summary__requirements-heading"><i class="fa fa-cog no-print"></i>Class Number</span>
+            2917
+        </li>
+        <li class="degree-summary__requirements-units">
+            <span class="degree-summary__requirements-heading"><i class="fa fa-book  no-print"></i>Term Code</span>
+            3330
+        </li>
+    </ul>
+    <div class="degree-summary__codes">
+            <ul class="degree-summary__codes-column">
+                <li class="degree-summary__code">
+                    <span class="degree-summary__code-heading"><i class="fa fa-flag degree-summary__code-flag-icon  no-print"></i>Class Info</span>
+                </li>
+                    <li class="degree-summary__code">
+                        <span class="class-summary__code-text">Unit Value</span>
+                        <span class="class-summary__code-value">6 units</span>
+                    </li>
+                                                    <li class="degree-summary__code">
+                        <span class="class-summary__code-text">Mode of Delivery</span>
+                        <span class="class-summary__code-value">In Person</span>
+                    </li>
+                                    <li class="degree-summary__code">
+                        <span class="degree-summary__code-heading"><i class="fa fa-user degree-summary__code-user-icon  no-print"></i>COURSE CONVENER</span>
+                        <ul>
+                                <li><span class="class-summary__code-value">AsPr Adam Piggott</span></li>
+                        </ul>
+                    </li>
+                                    <li class="degree-summary__code">
+                        <span class="degree-summary__code-heading"><i class="fa fa-user degree-summary__code-user-icon  no-print"></i>LECTURER</span>
+                        <ul>
+                                <li><span class="class-summary__code-value">AsPr Adam Piggott</span></li>
+                        </ul>
+                    </li>
+                            </ul>
+        <ul class="degree-summary__codes-column">
+            <li class="degree-summary__code">
+                <span class="degree-summary__code-heading"><i class="fa fa-book degree-summary__code-book-icon  no-print"></i>Class Dates</span>
+            </li>
+            <li class="degree-summary__code">
+                <span class="class-summary__code-text">Class Start Date</span>
+                <span class="class-summary__code-value">20/02/2023</span>
+            </li>
+            <li class="degree-summary__code">
+                <span class="class-summary__code-text">Class End Date</span>
+                <span class="class-summary__code-value">26/05/2023</span>
+            </li>
+                <li class="degree-summary__code">
+                    <span class="class-summary__code-text">Census Date</span>
+                    <span class="class-summary__code-value">31/03/2023</span>
+                </li>
+                            <li class="degree-summary__code">
+                    <span class="class-summary__code-text">Last Date to Enrol</span>
+                    <span class="class-summary__code-value">27/02/2023</span>
+                </li>
+                                </ul>
+    </div>
+    <ul class="degree-summary__requirements text-center no-print">
+        <li class="">
+            <a href="http://timetabling.anu.edu.au/sws2023/">
+                <span class="degree-summary__requirements-heading"><i class="fa fa-calendar-times-o "></i>View Class Timetable</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+<div>
+    <div class="course-social no-print">
+        <div class="social-icons">
+
+    <div class="twitter-wrapper">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Currently looking at Discrete Mathematical Models at ANU - Programs and Courses - ">Tweet</a>
+    </div>
+    <script>var encodedUri = encodeURIComponent(location.href);</script>
+    <div class="facebook-wrapper">
+        <a class="facebook-share" href="#" onclick="(window.open('https://www.facebook.com/sharer/sharer.php?u='+encodedUri, 'facebook-share-dialog', 'width=626,height=436'));">Share on Facebook</a>
+    </div>
+    <div class="wattle-wrapper">
+        <a target="_blank" href="https://wattle.anu.edu.au/" class="wattle-share-button" data-text="Currently looking at Discrete Mathematical Models at ANU - Programs and Courses - ">Wattle Share</a>
+    </div>
+    <div class="google-wrapper">
+        <div class="g-plusone" data-size="medium"></div>
+        <script>
+        </script>
+    </div>
+</div>
+
+
+        <a href="http://unistats.anu.edu.au/internal/surveys/selt/learning/time-series/MATH1005_Time_Series_LRN.pdf" class="selt-link">
+            <div>
+                <img src="https://odsacep1.blob.core.windows.net/setting-images-local/selt social media button_3bd5752a-98bb-4d1c-9b4b-2a312a7b6da1.jpg">
+            </div>
+            <div class="bubble">
+                SELT Survey Results
+            </div>
+        </a>
+    </div>
+    <br>
+    <div class="class-download-wrapper no-print">
+<form action="/2023/Class/PrintClassPage?courseCode=MATH1005&amp;session=First%20Semester&amp;classId=2917" method="post">            <button title="Download class PDF" class="calender-button-wrapper no-print">
+                <span class="class-download-button"></span>
+            </button>
+</form>    </div>
+</div>
+
+
+
+                </div>
+                <div class="w-narrow secondary-navigation-wrapper">
+                    <div class="w-narrow secondary-navigation-aside">
+                        <span class="secondary-navigation-aside__heading">Discrete Mathematical Models (<a href="/2023/course/MATH1005">MATH1005</a>)</span>
+                        <ul class="secondary-navigation nav">
+        <li class="secondary-navigation__list-item" associatedtab="#overview">
+            <a class="secondary-navigation__anchor" href="#overview">Class Overview</a>
+        </li>
+            <li class="secondary-navigation__list-item" associatedtab="#overview">
+            <a class="secondary-navigation__anchor" href="#examination-material-or-equipment">Materials & Resources</a>
+        </li>
+            <li class="secondary-navigation__list-item" associatedtab="#overview">
+            <a class="secondary-navigation__anchor" href="#staff-feedback">Feedback</a>
+        </li>
+            <li class="secondary-navigation__list-item" associatedtab="#overview">
+            <a class="secondary-navigation__anchor" href="#class-schedule">Class Schedule</a>
+        </li>
+
+        <li class="secondary-navigation__list-item" associatedtab="#assessment">
+            <a class="secondary-navigation__anchor" href="#assessment-requirements">Assessment Details</a>
+        </li>
+
+        <li class="secondary-navigation__list-item" associatedtab="#assessment">
+            <a class="secondary-navigation__anchor" href="#assessmenttask-1">Assessment 1</a>
+        </li>
+        <li class="secondary-navigation__list-item" associatedtab="#assessment">
+            <a class="secondary-navigation__anchor" href="#assessmenttask-2">Assessment 2</a>
+        </li>
+        <li class="secondary-navigation__list-item" associatedtab="#assessment">
+            <a class="secondary-navigation__anchor" href="#assessmenttask-3">Assessment 3</a>
+        </li>
+        <li class="secondary-navigation__list-item" associatedtab="#assessment">
+            <a class="secondary-navigation__anchor" href="#assessmenttask-4">Assessment 4</a>
+        </li>
+        <li class="secondary-navigation__list-item" associatedtab="#assessment">
+            <a class="secondary-navigation__anchor" href="#assessmenttask-5">Assessment 5</a>
+        </li>
+
+        <li class="secondary-navigation__list-item" associatedtab="#submission">
+            <a class="secondary-navigation__anchor" href="#academic-integrity">Submission Details</a>
+        </li>
+
+        <li class="secondary-navigation__list-item" associatedtab="#contacts">
+            <a class="secondary-navigation__anchor" href="#contact_conveyer">Class Contacts</a>
+        </li>
+</ul>
+                    </div>
+                </div>
+
+                <div id="overview" class="tab-content">
+                    <div class="body__inner w-doublewide copy">
+<p>Introduction to discrete mathematics and its use in mathematical modelling. Emphasis will be placed on developing facility, technique and use in applications. Modelling of processes and phenomena which occur in the physical, environmental and life sciences, especially computer science, will be used as a vehicle throughout. Topics to be covered include: logic and set theory, mathematical reasoning, combinatorics and counting, mathematical induction and recurrence relations, graph theory and networks, matrix arithmetic and Markov chains.</p>
+                            <h2 id="policies">Learning Outcomes</h2>
+                            <p>
+                                Upon successful completion, students will have the knowledge and skills to:
+                            </p>
+<ol><li>Recall, invent, interpret examples of motivation for mathematical constructs used in discrete mathematics as models of processes in the world.</li><li>Recognise, define, explain and use terminology and notation from discrete mathematics.</li><li>Identify the logical structure of a statement, and then identify the logical structure of an argument that may be used to prove or disprove the statement.</li><li>Perform mathematical calculations in discrete mathematics using methods presented in the course.</li><li>Write simple proofs/construct explicit counterexamples for statements relating to discrete mathematics topics covered in the course.</li></ol>
+                            <h2 id="research-led-teaching">Research-Led Teaching</h2>
+<p>Where appropriate, indication will be given of current research areas related to topics in the course.</p>                                                                                                    <h2 id="examination-material-or-equipment">Examination Material or equipment</h2>
+<p>In both the mid-semester exam and the final exam the permitted materials will include:</p><ul><li>A non-annotated translation dictionary (for ESL students).</li></ul>                                                    <h2 id="required-resources">Required Resources</h2>
+<p><strong>Course Notes</strong>: PDF copies of all lecture slides will be made available on the course website, in addition to the ECHO lecture recordings.</p>                                                    <h2 id="recommended-resources">Recommended Resources</h2>
+<p><strong>Optional Text</strong>: Susanna Epp: <em>Discrete Mathematics with Applications; </em>5th ed. Cengage.</p><p>References to this text will be provided for all course topics except the last (Random Walks).</p><p>The text does not cover every single subtopic in the course, and does cover some subtopics not required for the course, but is nonetheless a good match to course in both level and content.</p><p><br></p><p><strong>Recommended student system requirements&nbsp;</strong></p><p>ANU courses commonly use a number of online resources and activities including:</p><ul><li>video material, similar to YouTube, for lectures and other instruction</li><li>two-way video conferencing for interactive learning</li><li>email and other messaging tools for communication</li><li>interactive web apps for formative and collaborative activities</li><li>print and photo/scan for handwritten work</li><li>home-based assessment.</li></ul><p>To fully participate in ANU learning, students need:</p><ul><li>A computer or laptop. Mobile devices may work well but in some situations a computer/laptop may be more appropriate.</li><li>Webcam</li><li>Speakers and a microphone (e.g. headset)</li><li>Reliable, stable internet connection. Broadband recommended. If using a mobile network or wi-fi then check performance is adequate.</li><li>Suitable location with minimal interruptions and adequate privacy for classes and assessments.</li><li>Printing, and photo/scanning equipment</li></ul><p>For more information please see <a href="https://www.anu.edu.au/students/systems/recommended-student-system-requirements" rel="noopener noreferrer" target="_blank">https://www.anu.edu.au/students/systems/recommended-student-system-requirements</a></p>                                                    <h2 id="staff-feedback">Staff Feedback</h2>
+<p>Students will be given feedback in the following forms in this course:</p><ul><li>Workshops: Demonstrators will give individual guidance and correction to student work on, and presentation of, worksheet problems.</li><li>Homework Assignments: Demonstrators will grade, but not correct, assignment work. Brief indications of where and how errors have been made will be provided with each student’s work. Common errors may be briefly discussed with the whole class during workshops. Students will then have an opportunity to ask the demonstrator about other errors.</li><li>Mid-semester exam and final exam: Students will be given an opportunity to view their exam scripts, view official solutions and rubrics, and ask the convener about any grading issues using a grade appeal process.</li></ul>                                                    <h2 id="student-feedback">Student Feedback</h2>
+ANU is committed to the demonstration of educational excellence and regularly seeks feedback from students. Students are encouraged to offer feedback directly to their Course Convener or through their College and Course representatives (if applicable). The feedback given in these surveys is anonymous and provides the Colleges, University Education Committee and Academic Board with opportunities to recognise excellent teaching, and opportunities for improvement. The <a href="http://unistats.anu.edu.au/surveys/selt/students/" target="_blank">Surveys and Evaluation website</a> provides more information on student surveys at ANU and <a href="http://unistats.anu.edu.au/surveys/selt/results/learning/" target="_blank">reports</a> on the feedback provided on ANU courses.                                                    <h2 id="other-information">Other Information</h2>
+<p>It is intended that all lectures will be delivered in-person on-campus for those who can attend on-campus events. Lectures are recorded, and the recordings are made available via Wattle shortly after the lecture. Workshops are offered in-person and online workshops via zoom. The online workshops are intended to serve only those students who are unable to be on campus. You should sign up for an in-person workshop if you possibly can.</p><p><br></p><p>Finally, please also note that, as with all courses at ANU, a moderation process takes place after the marks for the various assessment components of the course are aggregated. Moderation is to provide consistency of grade standards across years and courses. It may result in the scaling up or scaling down, of your raw total score.</p>                                                    <h2 id="class-schedule">Class Schedule</h2>
+
+<table class="table-terms">
+    <thead>
+        <tr>
+            <th class="table-heading-classNumber">Week/Session</th>
+            <th class="table-heading-title">Summary of Activities</th>
+            <th class="table-heading-classDate">Assessment</th>
+        </tr>
+    </thead>
+
+    <tbody>
+            <tr>
+                <td>1</td>
+                <td>A1 Logic: Statements and Predicates. Valid Arguments.</td>
+                <td>Weekly assignments and workshop work will reinforce the content.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>A2 Sets: Set Operations and identities. Russell's Paradox.</td>
+                <td>Weekly assignments and workshop work will reinforce the content.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>A3 Relations and Functions: Definition & Properties of Relations and Functions.</td>
+                <td>Weekly assignments and workshop work will reinforce the content.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>B1 Numbers: N,Z,Q,R. Base n. Computer & Modular Arithmetic.</td>
+                <td>Weekly assignments and workshop work will reinforce the content.</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>B2 Sequences and Induction: Implicit to Explicit Seq Def by Induction. Sorting. B3 Matrices: Matrix & Vector Operations. Linear Functions.</td>
+                <td>Weekly assignments and workshop work will reinforce the content.</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>C1 Counting: Cardinality. Permutations & Combinations. Stars & Bars. Pigeonhole Principle.</td>
+                <td>Weekly assignments and workshop work will reinforce the content.</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>C2 Probability: Probability Properties. Distributions. Random Variables.</td>
+                <td>Weekly assignments and workshop work will reinforce the content.</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>C3 Markov Processes: Markov States &Transition Matrices. Steady State.</td>
+                <td>Weekly assignments and workshop work will reinforce the content.</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>D1 Graph Theory: Graphs & Digraphs. Degree. Euler & Hamilton Graphs. Trees.</td>
+                <td>Weekly assignments and workshop work will reinforce the content.</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>D2 Weighted Graphs: Minimum Span. Travelling Sales Person Problem. Shortest Path. Max Flow. Matching.</td>
+                <td>Weekly assignments and workshop work will reinforce the content.</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>D3 Random Walks: Graph 'Walking'. Webgraphs & PageRank Algorithm.</td>
+                <td>Weekly assignments and workshop work will reinforce the content.</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Revision</td>
+                <td>Weekly assignments and workshop work will reinforce the content.</td>
+            </tr>
+    </tbody>
+</table>                                                    <h2 id="tutorial-registration">Tutorial Registration</h2>
+<p>Students are required to enrol in one of the available weekly workshop groups by following a process that will be detailed on the course Wattle page, starting in Week 0. Remote participation options will be provided for students who require them due to travel restrictions or COVID-safe guidelines.&nbsp;However, not all times will be available for both remote and in-person attendance. Please refer to the course Wattle site for more information.</p>                                                    <h2 id="assessment-summary">Assessment Summary</h2>
+
+<table class="table-terms">
+    <thead>
+        <tr>
+            <th class="table-heading-classNumber">Assessment task</th>
+                <th class="table-heading-classDate">Value</th>
+                                          <th class="table-heading-classDate">Learning Outcomes</th>
+        </tr>
+    </thead>
+
+    <tbody>
+            <tr>
+                <td>Workshop Quizzes (Best 8 of 10)</td>
+
+                    <td>8 %</td>
+                                                                    <td>1,2,3</td>
+            </tr>
+            <tr>
+                <td>Participation in Workshops (Best 8 of 10)</td>
+
+                    <td>8 %</td>
+                                                                    <td>1,2,3,4,5</td>
+            </tr>
+            <tr>
+                <td>Weekly Written Assignments (Best 8 of 10)</td>
+
+                    <td>8 %</td>
+                                                                    <td>1,2,3,4,5</td>
+            </tr>
+            <tr>
+                <td>Mid-Semester Examination</td>
+
+                    <td>26 %</td>
+                                                                    <td>1,2,3,4,5</td>
+            </tr>
+            <tr>
+                <td> Final Examination</td>
+
+                    <td>50 %</td>
+                                                                    <td>1,2,3,4,5</td>
+            </tr>
+    </tbody>
+</table>
+<p>* If the Due Date and Return of Assessment date are blank, see the Assessment Tab for specific Assessment Task details</p>                                                    <h2 id="policies">Policies</h2>
+ANU has <a href="http://policies.anu.edu.au" target="_blank">educational policies, procedures and guidelines</a>, which are designed to ensure that staff and students are aware of the University’s academic standards, and implement them. Students are expected to have read the <a href="https://www.legislation.gov.au/Details/F2015L02025" blank="_blank">Academic Misconduct Rule</a> before the commencement of their course. Other key policies and guidelines include:
+<ul>
+<li>Student Assessment (Coursework) <a href="https://policies.anu.edu.au/ppl/document/ANUP_004604" target="_blank">Policy</a> and <a href="https://policies.anu.edu.au/ppl/document/ANUP_004604" target="_blank">Procedure</a></li>
+<li>Special Assessment Consideration <a href="https://policies.anu.edu.au/ppl/document/ANUP_009608" target="_blank">Policy</a> and <a href="http://www.anu.edu.au/students/program-administration/assessments-exams/special-assessment-consideration" target="_blank">General Information</a> </li>
+<li><a href="https://policies.anu.edu.au/ppl/document/ANUP_004601" target="_blank">Student Surveys and Evaluations</a></li>
+<li><a href="http://www.anu.edu.au/students/program-administration/assessments-exams/deferred-examinations" target="_blank">Deferred Examinations</a></li>
+<li>Student Complaint Resolution <a href="https://policies.anu.edu.au/ppl/document/ANUP_000468" target="_blank">Policy</a> and <a href="https://policies.anu.edu.au/ppl/document/ANUP_000540" target="_blank">Procedure</a></li>
+</ul>
+                    </div>  
+                </div>
+                    <div id="assessment" class="tab-content">
+                        <div class="body__inner w-doublewide copy">
+                    <h2 id="assessment-requirements">Assessment Requirements</h2>
+The ANU is using Turnitin to enhance student citation and referencing techniques, and to assess assignment submissions as a component of the University's approach to managing Academic Integrity. For additional information regarding Turnitin please visit the <a href="https://services.anu.edu.au/business-units/anu-online" target="_blank"> ANU Online website</a> Students may choose not to submit assessment items through Turnitin. In this instance you will be required to submit, alongside the assessment item itself, hard copies of all references included in the assessment item.                                                <h2 id="moderation-of-assessment">Moderation of Assessment</h2>
+Marks that are allocated during Semester are to be considered provisional until formalised by the College examiners meeting at the end of each Semester. If appropriate, some moderation of marks might be applied prior to final results being released.                                                <h2 id="participation">Participation</h2>
+<p>In Semester 1 2023, this course is delivered on campus with adjustments for remote participants. Although there are no participation <em>requirements</em> (hurdles) for this course please note that:</p><p><strong>You must attend the workshop in which you are enrolled in order to take the workshop quiz, quiz scores contribute 8% of your final grade and workshop participation contributes 8% to your final grade. </strong>Details of how this is assessed are given in the details of this assessment item stated earlier in this document.</p><p><strong>Assessable material for the course is specified by lecture content</strong> (rather than any text). So it is important to keep up regular monitoring of lectures, preferably by attending but otherwise by accessing the lecture recordings and/or PDF notes on Wattle.</p>                                                <h2 id="examination">Examination(s)</h2>
+<p>This course includes a mid-semester and a final examination. The&nbsp;details and&nbsp;mode of delivery for exams&nbsp;will be communicated through the course Wattle site and the ANU examination timetable.</p><p>&nbsp;</p><p>Please note that, where a date range is used in the Assessment Summary in relation to exams, the due date and return date for mid-semester exams indicate the approximate timeframe in which the exam will be held; the due and return date for end of semester exams indicate the approximate timeframe in which the exam will be held and the date official end of Semester results are released on ISIS. Students should consult the course Wattle site and the ANU final examination timetable to confirm the date, time and mode of the exam.</p>                            
+
+
+<h2 id="assessmenttask-1">Assessment Task 1</h2>
+
+<div class="callout-box callout-box--reverse callout-box--right">
+    <div class="callout-box__content">
+        <b>Value:</b>&nbsp;8 %<br>
+
+
+        <b>Learning Outcomes:&nbsp;</b>1,2,3<br>
+    </div>
+</div>
+
+<p><b>Workshop Quizzes (Best 8 of 10)</b></p>
+<p>At the start of each workshop, you will complete a very short quiz, primarily on the material from lectures in the week preceding the quiz (the quiz in week x will primarily address material covered in lectures during week x-1).&nbsp;A typical quiz question will ask you to demonstrate your ability to recall or invent examples to illustrate ideas and motivations (LO1), your proficiency with the ideas, vocabulary and notation of the material (LO2), or your ability to recognize the logical structure of an argument or to describe the logical structure of an argument that may be used to prove a given statement (LO3). Given the nature of the problems, no partial credit will be given on quizzes. Your scores on each problem will be used to assign a score out of 1 for each quiz. <strong>To allow for occasional absences, the quiz contribution to your final grade will be calculated from your best eight (out of ten) quiz marks.</strong></p>
+
+
+
+
+
+
+<h2 id="assessmenttask-2">Assessment Task 2</h2>
+
+<div class="callout-box callout-box--reverse callout-box--right">
+    <div class="callout-box__content">
+        <b>Value:</b>&nbsp;8 %<br>
+
+
+        <b>Learning Outcomes:&nbsp;</b>1,2,3,4,5<br>
+    </div>
+</div>
+
+<p><b>Participation in Workshops (Best 8 of 10)</b></p>
+<p>Workshops run in teaching weeks 2, 3, 4, 5, 6 and 8, 9, 10, 11, 12.  You should attend one workshop, at the same time, each week.  You can select from available workshop times as described on the course Wattle page. There are online-only zoom workshops and on-campus face-to-face workshops. There are limited spaces in online workshops and these are intended to serve only those students who are unable to be on campus at any time during the week.</p><p><br></p><p>A worksheet will be made available on Wattle for each workshop. You will be expected to access a copy of the worksheet in the workshop (so bring a printout or a device to access the pdf). In the workshop you will be encouraged to work collaboratively on the worksheet questions, asking for help from the demonstrator as needed. You may also be asked to present solutions to the class. The aim is to give you an opportunity to practice and improve your skill in verbal communication of mathematics, and to give the demonstrator an opportunity to correct any misconceptions that you or other class members may have about the underlying theory.</p><p><br></p><p>For each workshop, a participation score of up to 1 point will be determined by your demonstrator and recorded in Wattle. You earn this point by participating throughout the workshop with energy and enthusiasm. No partial credit will be given. At the end of the semester, your scores will be combined to compute the workshop participation contribution to your final grade. <strong style="background-color: inherit;">To allow for occasional absences, your workshop participation contribution to your final grade will be calculated from your best eight (out of ten) workshop marks.</strong></p><p><br></p><p>Please note that this grading scheme makes no mention of "correct solutions"; rather, it is your energy and commitment to making the most of the learning opportunities that are rewarded. Workshops are formative tasks, meaning we expect that the workshops help you master the material.</p>
+
+
+
+
+
+
+<h2 id="assessmenttask-3">Assessment Task 3</h2>
+
+<div class="callout-box callout-box--reverse callout-box--right">
+    <div class="callout-box__content">
+        <b>Value:</b>&nbsp;8 %<br>
+
+
+        <b>Learning Outcomes:&nbsp;</b>1,2,3,4,5<br>
+    </div>
+</div>
+
+<p><b>Weekly Written Assignments (Best 8 of 10)</b></p>
+<p>In teaching weeks 2, 3, 4, 5, 6 and 8, 9, 10, 11, 12 you will have a weekly assignment to complete. Each assignment has questions relating to current workshop material. Answer types range over requiring examples (LO1), selecting correct terminology (LO2), interpreting and creating diagrams and expressions (LO1, 2, 4), calculating various values and expressions from given data (LO4), identifying the logical structure of a statement, and then identifying the logical structure of an argument that may be used to prove or disprove the statement (LO3) and, creating justifications or proofs of statements (LO5).</p><p><br></p><p>Assignments will be made available on the course website (Wattle) at 6 pm on the day of your workshop (if your workshop is on Monday, for example, your assignment will become available at 6 pm on Monday). The assignment will be due exactly six days after it becomes available. The completed assignment must be scanned and uploaded to Wattle before the deadline stated on the assignment (exactly six days after it is made available). <strong>Late assignments will not be accepted. </strong>It is intended that you will be able to view your grade with brief feedback within a week of the submission deadline.</p><p><br></p><p>There are 10 assignments due over the semester. <strong style="background-color: inherit;">To allow for occasional absences, your weekly assignment contribution to your final grade will be calculated from your best eight (out of ten) assignment marks.</strong></p>
+
+
+
+
+
+
+<h2 id="assessmenttask-4">Assessment Task 4</h2>
+
+<div class="callout-box callout-box--reverse callout-box--right">
+    <div class="callout-box__content">
+        <b>Value:</b>&nbsp;26 %<br>
+
+
+        <b>Learning Outcomes:&nbsp;</b>1,2,3,4,5<br>
+    </div>
+</div>
+
+<p><b>Mid-Semester Examination</b></p>
+<p>120 mins. Covers the material from the first six weeks of lectures. A sample exam, plus solutions, will be available on Wattle.</p><p><br></p><p>The mid-semester exam will be held during the ANU mid-semester examination period at a time and date determined by the ANU Examinations Office. Please check the course Wattle site and the ANU Examination Timetable to confirm the date, time, and location of the mid-semester exam.</p><p><br></p><p>It is intended that results will be released electronically within two weeks of the exam date.</p><p><br></p><p><strong>This exam is redeemable via the final exam: if the percentage score on the mid-semester exam is less than the percentage score on the final exam, only the final exam will count and it will be weighted at 76% instead of 50%.</strong></p>
+
+
+
+
+
+
+<h2 id="assessmenttask-5">Assessment Task 5</h2>
+
+<div class="callout-box callout-box--reverse callout-box--right">
+    <div class="callout-box__content">
+        <b>Value:</b>&nbsp;50 %<br>
+
+
+        <b>Learning Outcomes:&nbsp;</b>1,2,3,4,5<br>
+    </div>
+</div>
+
+<p><b> Final Examination</b></p>
+<p>180 mins. Covers the entire course, but with an emphasis on material not tested in the mid-semester exam. A sample exam, plus solutions, will be available on Wattle.</p><p>Some scaling of marks on the final exam may occur if the distribution of marks leads to results significantly out of line with previous years.</p><p><br></p><p>Regardless of performance on other assessment items, a minimum scaled score of 40% on the final exam is required to pass the course. (This is known as a 'course hurdle'.)</p><p><br></p><p>The exam will be held during the ANU mid-semester examination period at a time and date determined by the ANU Examinations Office. Please check the course Wattle site and the ANU Examination Timetable to confirm the date, time and location of the exam.</p><p><br></p><p>It is intended that results will be released electronically on the date that first-semester results are published, as specified by the ANU academic calendar.</p>
+
+
+
+
+                        </div>
+                    </div>
+                    <div id="submission" class="tab-content">
+                        <div class="body__inner w-doublewide copy">
+                    <h2 id="academic-integrity">Academic Integrity</h2>
+Academic integrity is a core part of our culture as a community of scholars. At its heart, academic integrity is about behaving ethically. This means that all members of the community commit to honest and responsible scholarly practice and to upholding these values with respect and fairness. The Australian National University commits to embedding the values of academic integrity in our teaching and learning. We ensure that all members of our community understand how to engage in academic work in ways that are consistent with, and actively support academic integrity. The ANU expects staff and students to uphold high standards of academic integrity and act ethically and honestly, to ensure the quality and value of the qualification that you will graduate with. The University has policies and procedures in place to promote academic integrity and manage academic misconduct. Visit the following <a href="http://www.anu.edu.au/students/program-administration/assessments-exams/academic-honesty-plagiarism" target="_blank">Academic honesty & plagiarism website</a> for more information about academic integrity and what the ANU considers academic misconduct. The ANU offers a number of services to assist students with their assignments, examinations, and other learning activities. The <a href="http://www.anu.edu.au/students/learning-development" target="_blank">Academic Skills and Learning Centre</a> offers a number of workshops and seminars that you may find useful for your studies.                                                <h2 id="onlinesubmission">Online Submission</h2>
+<p>You will be required to agree to a declaration as part of the submission of your assignments, that will record your understanding of ANU academic integrity principles.  You should keep a copy of both your completed document and its pdf file. <strong>Note that pdf is the only file format permitted for online submission in <a href="/2023/course/MATH1005">MATH1005</a>. </strong><a href="/2023/course/MATH1005">MATH1005</a> does not use Turnitin, having been granted an exemption.</p>
+                    <h2 id="hardcopysubmission">Hardcopy Submission</h2>
+<p>Except under very special course-wide conditions (e.g. major breakdown of the Wattle system)  hardcopy submission of assignments will not be permitted in <a href="/2023/course/MATH1005">MATH1005</a>.</p>                                                <h2 id="latesubmission">Late Submission</h2>
+<p>Except in rare cases, such as documented illness or temporary disability, extensions to assignment deadlines will be not be granted in this course. In particular, extensions will not be granted to cover timing misjudgements. So you need to leave enough time to scan and upload your document, remembering to allow time for possible mishaps in the process.</p><p>An assignment not submitted by the due date and time, and without an extension, will generally be awarded a mark of zero.  Unless an extension has been granted, Wattle will not allow late submissions.</p>                                                <h2 id="referencing-requirements">Referencing Requirements </h2>
+Accepted academic practice for referencing sources that you use in presentations can be found via the links on the Wattle site, under the file named “ANU and College Policies, Program Information, Student Support Services and Assessment”. Alternatively, you can seek help through the <a href="http://www.anu.edu.au/students/learning-development/academic-integrity/plagiarism" target="_blank">Students Learning Development</a> website.                                                <h2 id="returning-assignments">Returning Assignments </h2>
+<p>Except in exceptional circumstances, you will be able to view your marked assignment via Wattle within a week of the due date. Exceptions include, but are not restricted to, unexpected unavailability of the marker and disruptions to the timetable resulting from public holidays.</p>                                                <h2 id="extensions-and-penalties">Extensions and Penalties </h2>
+Extensions and late submission of assessment pieces are covered by the Student Assessment (Coursework) <a href="https://policies.anu.edu.au/ppl/document/ANUP_004603" target="_blank">Policy</a> and <a href="https://policies.anu.edu.au/ppl/document/ANUP_004604" target="_blank">Procedure</a> The Course Convener may grant extensions for assessment pieces that are not examinations or take-home examinations. If you need an extension, you must request an extension in writing on or before the due date. If you have documented and appropriate medical evidence that demonstrates you were not able to request an extension on or before the due date, you may be able to request it after the due date.                                                <h2 id="resubmission-of-assignments">Resubmission of Assignments</h2>
+<p>Assignments cannot be resubmitted.</p>                                                                            <h2 id="privacy-notice">Privacy Notice</h2>
+The ANU has made a number of third party, online, databases available for students to use. Use of each online database is conditional on student end users first agreeing to the database licensor’s terms of service and/or privacy policy. Students should read these carefully. In some cases student end users will be required to register an account with the database licensor and submit personal information, including their: first name; last name; ANU email address; and other information.
+
+In cases where student end users are asked to submit ‘content’ to a database, such as an assignment or short answers, the database licensor may only use the student’s ‘content’ in accordance with the terms of service — including any (copyright) licence the student grants to the database licensor. Any personal information or content a student submits may be stored by the licensor, potentially offshore, and will be used to process the database service in accordance with the licensors terms of service and/or privacy policy.
+
+If any student chooses not to agree to the database licensor’s terms of service or privacy policy, the student will not be able to access and use the database. In these circumstances students should contact their lecturer to enquire about alternative arrangements that are available.                                                <h2 id="distribution-of-grades-policy">Distribution of grades policy</h2>
+Academic Quality Assurance Committee monitors the performance of students, including attrition, further study and employment rates and grade distribution, and College reports on quality assurance processes for assessment activities, including alignment with national and international disciplinary and interdisciplinary standards, as well as qualification type learning outcomes.
+
+Since first semester 1994, ANU uses a <a href="http://www.anu.edu.au/students/program-administration/assessments-exams/grading-scale" target="_blank">grading scale</a> for all courses. This grading scale is used by all academic areas of the University.                                                <h2 id="support-for-students">Support for students</h2>
+The University offers students support through several different services. You may contact the services listed below directly or seek advice from your Course Convener, Student Administrators, or your College and Course representatives (if applicable).<ul>
+<li><a href="http://www.anu.edu.au/students/health-safety-wellbeing" target="_blank">ANU Health, safety & wellbeing</a> for medical services, counselling, mental health and spiritual support</li>
+<li><a href="http://www.anu.edu.au/students/health-wellbeing/diversity-inclusion" target="_blank">ANU Diversity and inclusion</a> for students with a disability or ongoing or chronic illness</li>
+<li><a href="http://www.anu.edu.au/students/contacts/dean-of-students" target="_blank">ANU Dean of Students</a> for confidential, impartial advice and help to resolve problems between students and the academic or administrative areas of the University</li>
+<li><a href="http://www.anu.edu.au/students/learning-development" target="_blank">ANU Academic Skills and Learning Centre</a> supports you make your own decisions about how you learn and manage your workload.</li>
+<li><a href="http://www.anu.edu.au/students/contacts/counselling-centre" target="_blank">ANU Counselling Centre</a> promotes, supports and enhances mental health and wellbeing within the University student community.</li>
+<li><a href="https://anusa.com.au/" target="_blank">ANUSA</a> supports and represents undergraduate and ANU College students</li>
+<li><a href="https://parsa.anu.edu.au/" target="_blank">PARSA</a> supports and represents postgraduate and research students</li></ul>                        </div>
+                    </div>
+                    <div id="contacts" class="tab-content">
+                        <div class="body__inner w-doublewide copy">
+                            
+<div id="testdiv" style="display:inline-block;width:60%">
+
+
+<div class="callout-box callout-box--left" style="width:100%">
+    <div class="callout-box__header clearfix">
+        <h2 id="contact_convener" class="callout-box__title">Convener</h2>
+        <div class="callout-box__tabs clearfix">
+            <a href="#contact_details" class="callout-box__tab callout-box__tab--active header_convener_0" onclick="$('.header_convener_0').toggleClass('callout-box__tab--active');$('.content_convener_0').toggleClass('callout-box__tab-content--active');return false;">
+                Details
+            </a>
+            <a href="#contact_consulting_hours" class="callout-box__tab header_convener_0" onclick="$('.header_convener_0').toggleClass('callout-box__tab--active');$('.content_convener_0').toggleClass('callout-box__tab-content--active');return false;">
+                Consulting Hours
+            </a>
+        </div>
+    </div>
+
+    <div class="callout-box__content">
+        <div id="contact_details_convener_0" class="callout-box__tab-content callout-box__tab-content--active content_convener_0">
+            <table class="class-contact-table">
+                <tr>
+                    <td>
+                        <img class="contact-image" src="/Content/Images/person.png">
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>AsPr Adam Piggott</td>
+                            </tr>
+                            <tr>
+                                <td>61252915</td>
+                            </tr>
+                            <tr>
+                                <td><a href="mailto:Adam.Piggott@anu.edu.au">Adam.Piggott@anu.edu.au</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3>Research Interests</h3>
+                        <br>
+                            <p>Combinatorial and geometric group theory; Rewriting systems; Theoretical computer science</p>
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="contact_consulting_hours_convener_0" class="callout-box__tab-content callout-box__tab-content consulting-hours content_convener_0">
+            <h3>AsPr Adam Piggott</h3>
+            <table class="consulting-hourse-table">
+                <tr>
+                    <td>
+                        <img class="contact-image" src="/Content/Images/person.png">
+                    </td>
+                    <td>
+                        <table class="table-consulting-hours">
+                            <tbody>
+                                    <tr>
+                                            <td>Tuesday</td>
+                                                <td>10:30</td>
+                                                <td>12:00</td>
+                                    </tr>
+                                    <tr>
+                                            <td>Tuesday</td>
+                                                <td>10:30</td>
+                                                <td>12:00</td>
+                                    </tr>
+                                    <tr>
+                                            <td>Thursday</td>
+                                                <td>13:00</td>
+                                                <td>14:30</td>
+                                    </tr>
+                                    <tr>
+                                            <td>Thursday</td>
+                                                <td>13:00</td>
+                                                <td>14:30</td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+
+
+<div class="callout-box callout-box--left" style="width:100%">
+    <div class="callout-box__header clearfix">
+        <h2 id="contact_lecturer" class="callout-box__title">Instructor</h2>
+        <div class="callout-box__tabs clearfix">
+            <a href="#contact_details" class="callout-box__tab callout-box__tab--active header_lecturer_0" onclick="$('.header_lecturer_0').toggleClass('callout-box__tab--active');$('.content_lecturer_0').toggleClass('callout-box__tab-content--active');return false;">
+                Details
+            </a>
+            <a href="#contact_consulting_hours" class="callout-box__tab header_lecturer_0" onclick="$('.header_lecturer_0').toggleClass('callout-box__tab--active');$('.content_lecturer_0').toggleClass('callout-box__tab-content--active');return false;">
+                Consulting Hours
+            </a>
+        </div>
+    </div>
+
+    <div class="callout-box__content">
+        <div id="contact_details_lecturer_0" class="callout-box__tab-content callout-box__tab-content--active content_lecturer_0">
+            <table class="class-contact-table">
+                <tr>
+                    <td>
+                        <img class="contact-image" src="/Content/Images/person.png">
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>AsPr Adam Piggott</td>
+                            </tr>
+                            <tr>
+                                <td>61252915</td>
+                            </tr>
+                            <tr>
+                                <td><a href="mailto:Adam.Piggott@anu.edu.au">Adam.Piggott@anu.edu.au</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3>Research Interests</h3>
+                        <br>
+                            
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="contact_consulting_hours_lecturer_0" class="callout-box__tab-content callout-box__tab-content consulting-hours content_lecturer_0">
+            <h3>AsPr Adam Piggott</h3>
+            <table class="consulting-hourse-table">
+                <tr>
+                    <td>
+                        <img class="contact-image" src="/Content/Images/person.png">
+                    </td>
+                    <td>
+                        <table class="table-consulting-hours">
+                            <tbody>
+                                    <tr>
+                                            <td>Tuesday</td>
+                                                <td>10:30</td>
+                                                <td>12:00</td>
+                                    </tr>
+                                    <tr>
+                                            <td>Tuesday</td>
+                                                <td>10:30</td>
+                                                <td>12:00</td>
+                                    </tr>
+                                    <tr>
+                                            <td>Thursday</td>
+                                                <td>13:00</td>
+                                                <td>14:30</td>
+                                    </tr>
+                                    <tr>
+                                            <td>Thursday</td>
+                                                <td>13:00</td>
+                                                <td>14:30</td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+                        </div>
+                    </div>
+                    </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    <div class="page-contact transition" style="clear: both">
+        <div class="page-contact__inner">
+            <p class="page-contact-info"><strong>Responsible Officer:</strong> Registrar, Student Administration <span>/</span> <strong>Page Contact:</strong> <a href="mailto:programsandcourses@anu.edu.au">Website Administrator</a> <span>/</span> <a href="/2023/Faq">Frequently Asked Questions</a></p>
+        </div>
+    </div>
+
+    <!-- noindex -->
+<div id="footer-wrap" class="no-print" role="contentinfo">
+    <div id="anu-footer">
+        <div id="anu-detail">
+            <ul>
+                <li><a href="http://www.anu.edu.au/contact/">Contact ANU</a></li>
+                <li><a href="http://www.anu.edu.au/maps">Campus Map</a></li>
+                <li><a href="http://www.anu.edu.au/copyright/">Copyright</a></li>
+                <li><a href="http://www.anu.edu.au/disclaimer">Disclaimer</a></li>
+                <li><a href="http://www.anu.edu.au/privacy">Privacy</a></li>
+                <li><a href="http://foi.anu.edu.au/">Freedom of Information</a></li>
+
+            </ul>
+        </div>
+        <div id="anu-address">
+            <p>
+                +61 2 6125 5111<br>
+                The Australian National University, Canberra<br>
+                CRICOS Provider : 00120C<br>
+                ABN : 52 234 063 906
+            </p>
+        </div>
+
+        <div id="anu-groups">
+            <div class="anu-ftr-go8 hpad vpad"><a href="http://www.anu.edu.au/about/partnerships/group-of-eight">
+                <img class="text-white" src="//style.anu.edu.au/_anu/4/images/logos/2x_GroupOf8.png" alt="Group of Eight Member"></a></div>
+            <div class="anu-ftr-iaru hpad vpad"><a href="http://www.anu.edu.au/about/partnerships/international-alliance-of-research-universities">
+                <img class="text-white" src="//style.anu.edu.au/_anu/4/images/logos/2x_iaru.png" alt="IARU"></a></div>
+            <div class="anu-ftr-apru hpad vpad"><a href="http://www.anu.edu.au/about/partnerships/association-of-pacific-rim-universities">
+                <img class="text-white" src="//style.anu.edu.au/_anu/4/images/logos/2x_apru.png" alt="APRU"></a></div>
+            <div class="anu-ftr-edx hpad vpad"><a href="http://www.anu.edu.au/about/partnerships/edx">
+                <img class="text-white" src="//style.anu.edu.au/_anu/4/images/logos/2x_edx.png" alt="edX"></a></div>
+        </div>
+    </div>
+</div>
+<!-- endnoindex -->
+
+    <script src="/Scripts/js?v=JP1un1h0rycQluSztdTxuhaMP0seQCNlZJNvrb9m6vs1"></script>
+
+    <script src="/Scripts/Knockout/js?v=LOGR7woollVSO0HK_vlQxp4gdzRw7kB5Dv4n6oXE6LY1"></script>
+
+    
+    
+    
+    <script src="/Scripts/misc.js" type="text/javascript"></script>
+    <script src="/Scripts/MoleculeColourFallback/js?v=cF6g_av_aq_3K49endnkXkBwpL-8fcTbVY7dOP880xk1"></script>
+
+    <script src="/Scripts/MoleculeColourToOwner/js?v=lvYw3HmvcPAuyLdhuBSllZTwGTnEI51QqMWksyIVkFk1"></script>
+
+    <script src="/Scripts/video/js?v=-XHrFjWWn56AK2mxbgjoUT_9cKeeP7EaoKmFP4qL9a81"></script>
+
+    <script src="/Scripts/SocialMedia/js?v=dNedT8IkbODerVmLKImXwBZJAm48G6VS1XKlkEIynUY1"></script>
+
+    <script async src="https://www.youtube.com/iframe_api" type="text/javascript"></script>
+
+
+
+    <!-- Google Analytics -->
+    <script>
+        if (typeof ga === 'undefined') {
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        }
+        ga('create', 'UA-5266663-4', 'auto', { 'name': 'allANU' });
+        ga('allANU.send', 'pageview');
+    </script>
+</body>
+</html>
