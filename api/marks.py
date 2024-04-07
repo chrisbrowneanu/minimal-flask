@@ -40,7 +40,8 @@ def feedback_marks():
         )
         pdf_out = HTML(string=html_out).write_pdf(stylesheets=[stylesheet])
     except Exception:
-        app.logger.debug("Exception on pdf_out")
+        # app.logger.debug("Exception on pdf_out")
+        print("failed")
 
     # return the pdf
     return Response(pdf_out, mimetype="application/pdf")
