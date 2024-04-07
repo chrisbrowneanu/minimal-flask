@@ -21,7 +21,7 @@ def feedback_marks():
 
     summary = variables['summary']
     record = variables['record']
-    fields = variables['fields_array']
+    fields = variables['fields']
     rubric_levels = variables['rubric_levels']
     rubric_desc = variable['rubric_desc']
 
