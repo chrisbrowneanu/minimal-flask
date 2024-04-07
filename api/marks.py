@@ -22,9 +22,8 @@ def feedback_marks():
     summary = variables['summary']
     record = variables['record']
     fields = variables['fields_array']
-    rubric_levels = variables['rubric_levels_array']
-    rubric_desc = variable['rubric_desc_array']
-
+    rubric_levels = variables['rubric_levels']
+    rubric_desc = variable['rubric_desc']
 
     # load the template
     template = env.get_template("feedback_marks.html")
