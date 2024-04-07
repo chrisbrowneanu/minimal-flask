@@ -10,7 +10,8 @@
     {% if variables.record_text_b %}<p>{{ variables.record_text_b }}</p>{% endif %}
     {% if variables.pdf_header_c %}<h2>{{ variables.pdf_header_c}}</h2>{% endif %}
     {% if variables.record_text_c %}<p>{{ variables.record_text_c }}</p>{% endif %}
-    {{ results['Comment_A'] }}
-    {{ results['Comment_B'] }}
+    <h3>variables['record']['comment_a']</h3>
+    {{ variables['record']['Comment_A'] }}
+    <h3>Variables</h3>
     {{ variables }}
 {% endblock %}

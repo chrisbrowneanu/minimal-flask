@@ -25,10 +25,7 @@ def feedback_marks():
 
     # build the pdf
     try:
-        html_out = template.render(
-            variables=variables,
-            results=variables['results']
-        )
+        html_out = template.render(variables=variables)
         pdf_out = HTML(string=html_out).write_pdf(stylesheets=[stylesheet])
     except Exception:
         app.logger.debug("Exception on pdf_out")
