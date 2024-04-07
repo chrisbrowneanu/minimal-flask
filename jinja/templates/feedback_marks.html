@@ -1,15 +1,6 @@
 {% extends "pdf.html" %}
 {% block content %}
-    <h1>{% if variables.pdf_header %}{{ variables.pdf_header}}{% endif %}
-        {% if variables.record_header %}{{ variables.record_header|replace("_", " ") }}{% endif %}
-    </h1>
-    {% if variables.pdf_description %}<p>{{ variables.pdf_description}}</p>{% endif %}
-    {% if variables.pdf_header_a %}<h2>{{ variables.pdf_header_a}}</h2>{% endif %}
-    {% if variables.record_text_a %}<p>{{ variables.record_text_a }}</p>{% endif %}
-    {% if variables.pdf_header_b %}<h2>{{ variables.pdf_header_b}}</h2>{% endif %}
-    {% if variables.record_text_b %}<p>{{ variables.record_text_b }}</p>{% endif %}
-    {% if variables.pdf_header_c %}<h2>{{ variables.pdf_header_c}}</h2>{% endif %}
-    {% if variables.record_text_c %}<p>{{ variables.record_text_c }}</p>{% endif %}
+    <h1>{% if summary.assignment_name %}{{ summary.assignment_name }}{% endif %}</h1>
     <h3>variables['record']['comment_a']</h3>
     {{ variables['record']['Comment_A'] }}
     <h3>Variables</h3>
