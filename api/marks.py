@@ -19,29 +19,16 @@ def feedback_marks():
     default_variables = fn.default_var()
     variables =  default_variables | post_json
 
-    summary = variables['summary']
-    record = variables['record']
-    fields = variables['fields']
-    rubric_levels = variables['rubric_levels']
-    rubric_desc = variables['rubric_desc']
-
     # load the template
     template = env.get_template("feedback_marks.html")
     stylesheet = fn.stylesheet_path(variables["pdf_stylesheet"])
 
     # build the pdf
     try:
-        html_out = template.render(
-            summary=summary,
-            record=record,
-            fields=fields,
-            rubric_levels=rubric_levels,
-            rubric_desc=rubric_desc
-        )
+        html_out = template.render(variables=variables)
         pdf_out = HTML(string=html_out).write_pdf(stylesheets=[stylesheet])
     except Exception:
-        # app.logger.debug("Exception on pdf_out")
-        pdf_out = HTML(string=html_out)
+        app.logger.debug("Exception on pdf_out")
 
     # return the pdf
     return Response(pdf_out, mimetype="application/pdf")
