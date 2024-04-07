@@ -1,8 +1,8 @@
 {% extends "pdf.html" %}
 {% block content %}
     <h1>{% if summary.assignment_name %}{{ summary.assignment_name }}{% endif %}</h1>
-    <h3>variables['record']['comment_a']</h3>
-    {{ variables['record']['Comment_A'] }}
-    <h3>Variables</h3>
-    {{ variables }}
+    <h3>Summary</h3>
+    {{ summary }}
+    <h3>Record</h3>
+    {{ record }}
 {% endblock %}
