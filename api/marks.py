@@ -18,7 +18,6 @@ def feedback_marks():
     post_json = request.get_json()
     default_variables = fn.default_var()
     variables =  default_variables | post_json
-    variables_clean = {k: str(v).encode("utf-8") for k, v in variables.items()}
 
     # load the template
     template = env.get_template("feedback_marks.html")
@@ -26,7 +25,7 @@ def feedback_marks():
 
     # build the pdf
     # try:
-    html_out = template.render(variables=variables_clean)
+    html_out = template.render(variables=variables)
     pdf_out = HTML(string=html_out).write_pdf(stylesheets=[stylesheet])
     # except Exception:
     #     app.logger.debug("Exception on pdf_out")
