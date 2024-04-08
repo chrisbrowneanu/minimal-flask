@@ -5,7 +5,7 @@
         {% for k,v in variables['record'].items() %}
             {% if fields['field'] in k|string|lower %}
                 {% if v|length > 1 %}
-                    <p>{{ v|string }}</p>
+                    <p>{{ v }}</p>
                 {% else %}
                     <p>No comment</p>
                 {% endif %}
