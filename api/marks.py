@@ -18,8 +18,7 @@ def feedback_marks():
     post_json = request.get_json()
     default_variables = fn.default_var()
     variables =  default_variables | post_json
-
-    print(variables['summary'])
+    variables = {k: str(v).encode("utf-8") for k, v in variables.items()}
 
     # load the template
     template = env.get_template("feedback_marks.html")
