@@ -1,0 +1,15 @@
+{% for fields in variables['fields'] %}
+    {% if 'comment' in fields['field']|string %}
+        <h2>{{ fields['label'] }}</h2>
+        {# get record for expected comment field #}
+        {% for k,v in variables['record'].items() %}
+            {% if fields['field'] in k|string|lower %}
+                {% if v|length > 1 %}
+                    <p>{{ v|string }}</p>
+                {% else %}
+                    <p>No comment</p>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endfor %}

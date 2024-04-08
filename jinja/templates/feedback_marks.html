@@ -1,8 +1,9 @@
 {% extends "pdf.html" %}
+{% block corners %}
+    {% include 'partials/display_corners.html' %}
+{% endblock %}
 {% block content %}
-    <h1>{% if summary.assignment_name %}{{ summary.assignment_name }}{% endif %}</h1>
-    <h3>Summary</h3>
-    {{ summary }}
-    <h3>Record</h3>
-    {{ record }}
+    {# find expected comment fields #}
+    {% include 'partials/display_heading.html' %}
+    {% include 'partials/display_comments.html' %}
 {% endblock %}
