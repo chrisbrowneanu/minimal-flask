@@ -1,0 +1,27 @@
+{#<table class="rubric">#}
+{#<tr>#}
+{#<th>Criteria</th>#}
+{#{% for level in rubric['rubric_levels'] %}#}
+{#    {% if level['rubric'] == 'show' %}#}
+{#        <th>{{ level['label'] }}</th>#}
+{#    {% endif %}#}
+{#{% endfor %}#}
+{#</tr>#}
+
+{#{% for fields in rubric['fields'] %}#}
+{#    {% if 'crit' in fields['field']|string %}#}
+{#        <tr>#}
+{#            <th>{{ fields['label'] }}<br />#}
+{#                {{ fields['description'] }}<br/ >#}
+{#                ({{ fields['weight'] }})</th>#}
+{#            {% for level_row in rubric['rubric_levels'] %}#}
+{#                {% if level_row['rubric'] == 'show' %}#}
+{#                    {% for desc in rubric['rubric_desc'] %}#}
+{#                        {% if desc['level'] == level_row['level'] and desc['field'] == fields['field'] %}#}
+{#                            <td>{{ desc['description'] }}</td>#}
+{#                        {% endif %}#}
+{#                    {% endfor %}#}
+{#                {% endif %}#}
+{#            {% endfor %}#}
+{#    {% endif %}#}
+{#{% endfor %}#}

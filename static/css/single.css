@@ -14,6 +14,7 @@ background-position: 0 0;
 background-repeat: no-repeat;
 position: relative;
 
+
   @top-left {
     display: block;
     content: element(nw);
@@ -85,6 +86,10 @@ position: relative;
 /*opacity: 0.3; !* Firefox, Chrome, Safari, Opera, IE >= 9 (preview) *!*/
 /*filter:alpha(opacity=30); !* for <= IE 8 *!*/
 /*}*/
+
+@page rubric {
+    size: landscape;
+}
 
 @page :blank {
   @top-left {
@@ -464,4 +469,28 @@ p {
 
 h3 {
   page-break-after: avoid;
+}
+
+table {
+  page-break-before: always;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 0.5pt solid #333333;
+  page-break-inside: avoid;
+}
+
+.rubric {
+  page: rubric;
+  font-size: 12px;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.b100 {
+  background-color: #DEC187;
+}
+.b50 {
+  background-color: #EBDAB7;
 }
