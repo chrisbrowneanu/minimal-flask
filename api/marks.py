@@ -22,14 +22,11 @@ def feedback_marks():
     # load the template
     template = env.get_template("feedback_marks.html")
 
-    stylesheet = fn.stylesheet_path(variables["pdf_stylesheet"])
-    print("here")
+    stylesheet = fn.stylesheet_path(variables['summary']['pdf_stylesheet'])
     # build the pdf
     # try:
     html_out = template.render(variables=variables,
                                rubric=rubric)
-    print("html_out")
-    print(html_out)
     pdf_out = HTML(string=html_out).write_pdf(stylesheets=[stylesheet])
     # except Exception:
     #     app.logger.debug("Exception on pdf_out")
@@ -37,27 +34,29 @@ def feedback_marks():
     # return the pdf
     return Response(pdf_out, mimetype="application/pdf")
 
+
 def process_json(variables):
+    print("trying here")
     res = []
-    for field_item in variables['fields']:
-        if 'crit' in field_item['field']:
-            rubric_levels = []
-            for rubric_item in variables['rubric_levels']:
-                if rubric_item['rubric'] == 'show':
-                    for rubric_desc in variables['rubric_desc']:
-                        if rubric_desc['field'] == field_item['field'] and rubric_desc['level'] == rubric_item['level']:
-                            rubric_item.update({'description': rubric_desc['description']})
-                    for k,v in variables['record'].items():
-                        if k.lower() == field_item['field']:
-                           for level_item_find in variables['rubric_levels']:
-                               if v == level_item_find['level']:
-                                   if level_item_find['class1'] == rubric_item['level'] and level_item_find['class2'] == rubric_item['level']:
-                                       rubric_item.update({'background': 'b100'})
-                                   elif level_item_find['class1'] == rubric_item['level'] or level_item_find['class2'] == rubric_item['level']:
-                                       rubric_item.update({'background': 'b50'})
-                                   else:
-                                       rubric_item.update({'background': 'b0'})
-                    rubric_levels.append(rubric_item)
-            field_item.update({'rubric_levels': rubric_levels})
-        res.append(field_item)
+    for crit in variables['fields']:
+        if 'crit' in crit['field']:
+            row = []
+            for col in variables['rubric_levels']:
+                for cell in variables['rubric_desc']:
+                    if 'crit' in crit['field'] and col['rubric'] == 'show' and crit['field'] == cell['field'] and col['level'] == cell['level']:
+                        for k,v in variables['record'].items():
+                            if k.lower() == crit['field']:
+                                for level_item_find in variables['rubric_levels']:
+                                  if v == level_item_find['level']:
+                                      if level_item_find['class1'] == col['level'] and level_item_find['class2'] == col['level']:
+                                          background = 'b100'
+                                      elif level_item_find['class1'] == col['level'] or level_item_find['class2'] == col['level']:
+                                          background = 'b50'
+                                      else:
+                                          background = 'b0'
+                        row.append({'level': cell['level'],
+                                    'description': cell['description'],
+                                    'background': background})
+            crit['row'] = row
+            res.append(crit)
     return res
