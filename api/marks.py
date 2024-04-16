@@ -1,6 +1,7 @@
 import jinja2
 from flask import Blueprint, Response, request
 from weasyprint import HTML
+import unidecode
 
 import api.functions as fn
 
@@ -27,7 +28,10 @@ def feedback_marks():
     # try:
     html_out = template.render(variables=variables,
                                rubric=rubric)
-    pdf_out = HTML(string=html_out).write_pdf(stylesheets=[stylesheet])
+
+    converted = unidecode.unidecode(html_out)
+
+    pdf_out = HTML(string=converted).write_pdf(stylesheets=[stylesheet])
     # except Exception:
     #     app.logger.debug("Exception on pdf_out")
 
