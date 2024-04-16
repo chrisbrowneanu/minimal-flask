@@ -28,7 +28,8 @@ def feedback_marks():
     html_out = template.render(variables=variables,
                                rubric=rubric)
 
-    converted = unidecode.unidecode(html_out)
+    converted = html_out.encode('ascii',errors='ignore').decode('ascii')
+    # converted = unidecode.unidecode(html_out)
 
     pdf_out = HTML(string=converted).write_pdf(stylesheets=[stylesheet])
     # except Exception:
