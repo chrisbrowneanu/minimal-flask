@@ -2,7 +2,6 @@ import jinja2
 from flask import Blueprint, Response, request
 from weasyprint import HTML
 import unidecode
-
 import api.functions as fn
 
 marks = Blueprint("marks", __name__)
