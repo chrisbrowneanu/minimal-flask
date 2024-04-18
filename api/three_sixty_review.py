@@ -39,9 +39,8 @@ def feedback_three_sixty_review():
 
 def process_json(variables):
     record_list=[]
+    print(variables)
     for record in variables['records']:
-        record_list.append(record[variables['summary']['group_on']])
-    print(record_list)
-    records = [*{*record_list}]
-    print(records)
+        print(record[variables['summary']['categorise']])
+
     return res

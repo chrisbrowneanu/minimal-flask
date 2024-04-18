@@ -48,7 +48,7 @@ def process_json(variables):
             for col in variables['rubric_levels']:
                 for cell in variables['rubric_desc']:
                     if 'crit' in crit['field'] and col['rubric'] == 'show' and crit['field'] == cell['field'] and col['level'] == cell['level']:
-                        for k,v in variables['record'].items():
+                        for k,v in variables['records'].items():
                             if k.lower() == crit['field']:
                                 for level_item_find in variables['rubric_levels']:
                                   if v == level_item_find['level']:
