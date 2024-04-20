@@ -4,12 +4,11 @@ from weasyprint import HTML
 import unidecode
 import api.functions as fn
 
-marks = Blueprint("marks", __name__)
+rubric = Blueprint("rubric", __name__)
 
-@marks.route("/marks", methods = ['POST'])
-def feedback_marks():
+@rubric.route("/rubric", methods = ['POST'])
+def feedback_rubric():
     """turns the marks json into css feedback"""
-
 
     # load the jinja environment
     loader = jinja2.FileSystemLoader(searchpath=fn.template_path())
@@ -17,10 +16,10 @@ def feedback_marks():
 
     # take the POST json, and merge it with the default variables needed in the template
     variables = request.get_json()
-    rubric = process_json(variables)
+    rubric = build_rubric(variables)
 
     # load the template
-    template = env.get_template("feedback_marks.html")
+    template = env.get_template("feedback_rubric.html")
 
     stylesheet = fn.stylesheet_path(variables['summary']['pdf_stylesheet'])
     # build the pdf
@@ -39,8 +38,7 @@ def feedback_marks():
     return Response(pdf_out, mimetype="application/pdf")
 
 
-def process_json(variables):
-    print("trying here")
+def build_rubric(variables):
     res = []
     for crit in variables['fields']:
         if 'crit' in crit['field']:
@@ -48,7 +46,8 @@ def process_json(variables):
             for col in variables['rubric_levels']:
                 for cell in variables['rubric_desc']:
                     if 'crit' in crit['field'] and col['rubric'] == 'show' and crit['field'] == cell['field'] and col['level'] == cell['level']:
-                        for k,v in variables['records'].items():
+                        # uses records[0] - rubric only returns first result
+                        for k,v in variables['records'][0].items():
                             if k.lower() == crit['field']:
                                 for level_item_find in variables['rubric_levels']:
                                   if v == level_item_find['level']:

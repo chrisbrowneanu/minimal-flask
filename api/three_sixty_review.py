@@ -38,9 +38,29 @@ def feedback_three_sixty_review():
 
 
 def process_json(variables):
-    record_list=[]
-    print(variables)
+    records=[]
     for record in variables['records']:
-        print(record[variables['summary']['categorise']])
-
+        print(record)
+    # res = []
+    # for crit in variables['fields']:
+    #     if 'crit' in crit['field']:
+    #         row = []
+    #         for col in variables['rubric_levels']:
+    #             for cell in variables['rubric_desc']:
+    #                 if 'crit' in crit['field'] and col['rubric'] == 'show' and crit['field'] == cell['field'] and col['level'] == cell['level']:
+    #                     for k,v in variables['records'].items():
+    #                         if k.lower() == crit['field']:
+    #                             for level_item_find in variables['rubric_levels']:
+    #                               if v == level_item_find['level']:
+    #                                   if level_item_find['class1'] == col['level'] and level_item_find['class2'] == col['level']:
+    #                                       background = 'b100'
+    #                                   elif level_item_find['class1'] == col['level'] or level_item_find['class2'] == col['level']:
+    #                                       background = 'b50'
+    #                                   else:
+    #                                       background = 'b0'
+    #                     row.append({'level': cell['level'],
+    #                                 'description': cell['description'],
+    #                                 'background': background})
+    #         crit['row'] = row
+    #         res.append(crit)
     return res

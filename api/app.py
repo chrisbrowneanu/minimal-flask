@@ -2,14 +2,14 @@ from flask import Flask, Response, jsonify, request
 import logging
 
 from .errors import errors
-from .marks import marks
+from .rubric import rubric
 from .three_sixty_review import three_sixty_review
 from .functions import functions
 
 # register app
 app = Flask(__name__)
 app.register_blueprint(errors, flush=True)
-app.register_blueprint(marks, flush=True)
+app.register_blueprint(rubric, flush=True)
 app.register_blueprint(three_sixty_review, flush=True)
 app.register_blueprint(functions, flush=True)
 
