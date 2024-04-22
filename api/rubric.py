@@ -20,19 +20,19 @@ def feedback_rubric():
 
     # load the template
     template = env.get_template("feedback_rubric.html")
-
     stylesheet = fn.stylesheet_path(variables['summary']['pdf_stylesheet'])
+
     # build the pdf
-    # try:
-    html_out = template.render(variables=variables,
+    try:
+        html_out = template.render(variables=variables,
                                rubric=rubric)
+        converted = html_out.encode('ascii',errors='ignore').decode('ascii')
 
-    converted = html_out.encode('ascii',errors='ignore').decode('ascii')
-    # converted = unidecode.unidecode(html_out)
-
-    pdf_out = HTML(string=converted).write_pdf(stylesheets=[stylesheet])
-    # except Exception:
-    #     app.logger.debug("Exception on pdf_out")
+        pdf_out = HTML(string=converted).write_pdf(stylesheets=[stylesheet])
+    except Exception:
+        converted = ""
+        pdf_out = HTML(string=converted).write_pdf(stylesheets=[stylesheet])
+        app.logger.debug("Exception on pdf_out")
 
     # return the pdf
     return Response(pdf_out, mimetype="application/pdf")
@@ -46,7 +46,8 @@ def build_rubric(variables):
             for col in variables['rubric_levels']:
                 for cell in variables['rubric_desc']:
                     if 'crit' in crit['field'] and col['rubric'] == 'show' and crit['field'] == cell['field'] and col['level'] == cell['level']:
-                        # uses records[0] - rubric only returns first result
+
+                        # note uses records[0] - rubric only returns first result
                         for k,v in variables['records'][0].items():
                             if k.lower() == crit['field']:
                                 for level_item_find in variables['rubric_levels']:

@@ -9,6 +9,10 @@ gunicorn = "*"
 jinja2 = "*"
 weasyprint = "*"
 unidecode = "*"
+numpy = "*"
+matplot = "*"
+matplotlib = "*"
+seaborn = "*"
 
 [dev-packages]
 

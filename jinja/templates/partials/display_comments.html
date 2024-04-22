@@ -5,13 +5,19 @@
         {% for record in variables['records'] %}
             {% for k,v in record.items() %}
                 {% if fields['field'] in k|string|lower %}
-                    {% if v|length > 1 %}
-                        <p>{{ v }}</p>
-                    {% else %}
-                        <p>No comment</p>
+                    <dl>
+                    {% if record['role'] %}
+                        <dt>{{ record['role'] }}</dt>
                     {% endif %}
+                    {% if v|length > 1 %}
+                        <dd>{{ v }}</dd>
+                    {% else %}
+                        <dd>No comment</dd>
+                    {% endif %}
+                    </dl>
                 {% endif %}
             {% endfor %}
         {% endfor %}
     {% endif %}
 {% endfor %}
+

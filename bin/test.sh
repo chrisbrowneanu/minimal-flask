@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-flask --debug run
+flask --debug run -p 3001

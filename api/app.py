@@ -13,6 +13,9 @@ app.register_blueprint(rubric, flush=True)
 app.register_blueprint(three_sixty_review, flush=True)
 app.register_blueprint(functions, flush=True)
 
+app.template_filter('svg2data_url')
+
+
 # setup logging
 gunicorn_logger = logging.getLogger('gunicorn.error')
 app.logger.handlers = gunicorn_logger.handlers
