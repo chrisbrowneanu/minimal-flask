@@ -43,14 +43,14 @@ def build_rubric(variables):
     for crit in variables['fields']:
         if 'crit' in crit['field']:
             row = []
-            for col in variables['rubric_levels']:
-                for cell in variables['rubric_desc']:
-                    if 'crit' in crit['field'] and col['rubric'] == 'show' and crit['field'] == cell['field'] and col['level'] == cell['level']:
+            for col in variables['levels']:
+                for cell in variables['desc']:
+                    if 'crit' in crit['field'] and col['display'] == 'show' and crit['field'] == cell['field'] and col['level'] == cell['level']:
 
                         # note uses records[0] - rubric only returns first result
                         for k,v in variables['records'][0].items():
                             if k.lower() == crit['field']:
-                                for level_item_find in variables['rubric_levels']:
+                                for level_item_find in variables['levels']:
                                   if v == level_item_find['level']:
                                       if level_item_find['class1'] == col['level'] and level_item_find['class2'] == col['level']:
                                           background = 'b100'
