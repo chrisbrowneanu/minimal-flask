@@ -30,7 +30,7 @@ def feedback_three_sixty_review():
     chart = build_stripplot(variables)
 
     # load the template
-    template = env.get_template("three_sixty_review.html")
+    template = env.get_template(variables['summary']['pdf_template'] + ".html")
     stylesheet = fn.stylesheet_path(variables['summary']['pdf_stylesheet'])
 
     # build the pdf
