@@ -5,21 +5,27 @@ from .errors import errors
 from .rubric import rubric
 from .three_sixty_review import three_sixty_review
 from .functions import functions
+from .td_course_list import td_course_list
+from .sete_sessions import sete_sessions
 
 # register app
-app = Flask(__name__)
+app = Flask(__name__,
+            static_url_path='',
+            static_folder='static')
 app.register_blueprint(errors, flush=True)
 app.register_blueprint(rubric, flush=True)
 app.register_blueprint(three_sixty_review, flush=True)
+app.register_blueprint(td_course_list, flush=True)
+app.register_blueprint(sete_sessions, flush=True)
 app.register_blueprint(functions, flush=True)
 
 app.template_filter('svg2data_url')
-
 
 # setup logging
 gunicorn_logger = logging.getLogger('gunicorn.error')
 app.logger.handlers = gunicorn_logger.handlers
 app.logger.setLevel(gunicorn_logger.level)
+
 
 @app.route("/")
 def index():

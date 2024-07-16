@@ -1,0 +1,26 @@
+{% extends "pdf.html" %}
+{% block content %}
+    <h1 class="text-grey">{{ stream['stream_title'] }}</h1>
+    <p>{{ stream['stream_description'] }}</p>
+    <p>Lead: {{ stream['stream_lead'] }}<br />
+    Domains: {{ stream['stream_domains'] }}</p>
+    <p>Submissions Summary:</p>
+    <ol>
+    {% for row in variables %}
+        {% if stream['stream_title'] == row['category'] %}
+        <li>{{ row['title'] }} ({{ row['type'] }})</li>
+        {% endif %}
+    {% endfor %}
+
+    {% for row in variables %}
+        {% if stream['stream_title'] == row['category'] %}
+            <h2 class="break-before">{{ row['id'] }} {{ row['title'] }}</h2>
+            <p class="text-grey"><em>{{ row['authors'] }}</em></p>
+            <p class="text-blue">Keywords: {{ row['keywords'] }}</p>
+            <p>Type: {{ row['type'] }}<br />
+                Stream submitted: {{ row['category_submitted'] }}</p>
+            <p>{{ row['abstract'] }}</p>
+            <hr />
+        {% endif %}
+    {% endfor %}
+{% endblock %}

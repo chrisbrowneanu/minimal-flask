@@ -13,6 +13,7 @@ numpy = "*"
 matplot = "*"
 matplotlib = "*"
 seaborn = "*"
+chardet = "*"
 
 [dev-packages]
 

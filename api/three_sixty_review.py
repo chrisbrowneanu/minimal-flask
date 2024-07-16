@@ -33,12 +33,13 @@ def feedback_three_sixty_review():
     template = env.get_template(variables['summary']['pdf_template'] + ".html")
     stylesheet = fn.stylesheet_path(variables['summary']['pdf_stylesheet'])
 
+
     # build the pdf
     try:
         html_out = template.render(variables=variables,
                                chart=chart)
         converted = html_out.encode('ascii',errors='ignore').decode('ascii')
-        print("pdf_out working")
+        print("pdf complete")
         pdf_out = HTML(string=converted).write_pdf(stylesheets=[stylesheet])
     except Exception:
         converted = ""
@@ -73,8 +74,6 @@ def build_colorpalette(roles):
     palette = {}
     for role in roles:
         palette[role['role']] = role['palette']
-
-    print(palette)
     return palette
 
 def get_level(variables, v):
@@ -123,10 +122,7 @@ def build_data(variables):
 
     df['value_list'].replace('', np.nan, inplace=True)
     df.dropna(subset=['value_list'], inplace=True)
-
     df.sort_values(by=['crit_list','value_list'], inplace=True)
-    print("here")
-
     return df
 
 def build_stripplot(variables):
@@ -144,6 +140,7 @@ def build_stripplot(variables):
     ax = sns.stripplot(x='value_list', y='crit_list', hue='role_list',
                        data=this_df, s=10, alpha=0.6, jitter=True,
                        palette=palette_map, native_scale=False)
+
 
     ax.set_xlabel("")
     ax.set_ylabel("")

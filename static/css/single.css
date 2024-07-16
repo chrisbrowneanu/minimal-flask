@@ -506,3 +506,64 @@ dt {
   font-weight: bold;
   margin-left: 2em;
 }
+
+.text-gold {
+  color: #BE830E;
+}
+
+.text-blue {
+  color: #0085AD;
+}
+
+.text-ochre {
+  color: #AD4D2D;
+}
+
+.text-grey {
+  color: #666666;
+}
+
+.medium {
+  font-weight: 400;
+}
+
+.margin-left {
+  margin-left: 40px;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0px;
+}
+
+.no-margin-top {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.bg-green {
+  background-color: #B5E0A4;
+}
+
+.bg-yellow {
+  background-color: #FDF39A;
+}
+
+.bg-grey {
+  background-color: #CCCCCC;
+}
+
+td.w40 {
+  width: 200px;
+}
+
+td.w20 {
+  width: 100px;
+}
+
+.break-before {
+  break-before: always;
+}
+
+.break-after {
+  break-after: always;
+}

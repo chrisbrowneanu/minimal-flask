@@ -1,0 +1,8 @@
+{% extends "pdf.html" %}
+{% block content %}
+    {# find expected comment fields #}
+    {% for row in rows %}
+        <h1>{{ row['Course'] }} {{ row['Name'] }}</h1>
+        <img src="{{ url_for('static', filename='/charts/' + row['Course'] + '.png' ) }}" />
+    {% endfor %}
+{% endblock %}
