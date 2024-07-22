@@ -1,4 +1,4 @@
-from flask import Flask, Response, jsonify, request
+from flask import Flask, Response, jsonify, request, render_template
 import logging
 
 from .errors import errors
@@ -15,7 +15,7 @@ app = Flask(__name__,
 app.register_blueprint(errors, flush=True)
 app.register_blueprint(rubric, flush=True)
 app.register_blueprint(three_sixty_review, flush=True)
-app.register_blueprint(td_course_list, flush=True)
+app.register_blueprint(td_course_list, flush=True, url_prefix='/td_courses')
 app.register_blueprint(sete_sessions, flush=True)
 app.register_blueprint(functions, flush=True)
 

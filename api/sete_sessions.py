@@ -40,6 +40,7 @@ def feedback_sete_sessions():
         reader = csv.DictReader(csvfile)
         streams = [row for row in reader]
 
+
     # load the template
     template = env.get_template("sete_sessions.html")
     stylesheet = fn.stylesheet_path("single.css")

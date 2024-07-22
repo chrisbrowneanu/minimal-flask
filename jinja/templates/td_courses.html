@@ -1,8 +1,112 @@
 {% extends "pdf.html" %}
 {% block content %}
-    {# find expected comment fields #}
-    {% for row in rows %}
-        <h1>{{ row['Course'] }} {{ row['Name'] }}</h1>
-        <img src="{{ url_for('static', filename='/charts/' + row['Course'] + '.png' ) }}" />
+{# find expected comment fields #}
+
+    <h1>Naive Assessments of Courses for TD-GA</h1>
+    <p>Date Generated: {{ date }}</p>
+    <p>Chris.Browne@anu.edu.au</p>
+    <p>This report contains a 'naive' assessment of courses. Naive assessments take the Course Outlines and are assessed against the proposed levels of Transdisciplinary Problem-Solving for each element below.</p>
+    <img src="rubric.png">
+    <p>In general, the following process was followed:</p>
+    <p>
+        <ul>
+            <li>The course desription, learning outcomes and asssesment activities were considered.</li>
+            <li>If needed, the class summary was also included - especially if TD elements were unclear in assessment or class activities</li>
+            <li>TD elements that were clear in Learning Outcomes are preferred, especially where there is an Assessment item with clear alignment around the TD element.</li>
+            <li>Where TD elements are not clear in Learning Outcomes, the level ('Likeliness') was considered more conservatively.</li>
+        </ul>
+    </p>
+    <p>It is also understood that:</p>
+    <p>
+        <ul>
+            <li>On occasion, what is in Course Outlines and Class Summaries (the formal curriculum) is not what is emphasised in classes. Please update Course Outlines to emphasise relevant elements if they are missing.</li>
+            <li>Bias or other errors may exist in the Naive Assessment. Forgive me, and please share your insights: Chris.Browne@anu.edu.au</li>
+            <li>These positions are not authoritative. The authority for inclusion as a TD course sits with College Associate Deans (Education), and endorsement with AQAC/Academic Board.</li>
+        </ul>
+    </p>
+    <article id="contents">
+        <p>This report has been generated from the data in: <a href="https://anu365.sharepoint.com/:x:/s/AcademicPortfolioInitiatives/EUeaaoZoaVtHpGK7hFng2rcBiY4c_q2YwvpdSTaZfN9kgQ?e=uSQXGe">TD Course List.xls on Sharepoint</a>.</p>
+        <p>No 'decisions' are indicated in the document, though these are tracked in the spreadsheet.</p>
+        <p>The report has been organised in two ways: first, by Alpha code, and; second, with some exemplars organised around each TD Element.</p>
+    <h1>Course-Level Naive Assessments</h1>
+        <ul>
+        {% for row in td_rows %}
+            <li class="text-blue no-margin-bottom no-margin-top"><a class="" href="#{{ row['Course_Code'] }}">{{ row['Course_Code'] }} {{ row['Course_Name'] }}</a></li>
+        {% endfor %}
+        </ul>
+    <h1>Extracted examples of TD Elements in Course Outlines</h1>
+        <ul>
+        {% for el in td_elements %}
+            <li class="text-blue no-margin-bottom no-margin-top"><a class="" href="#{{ el['td_element'] }}">{{ el['td_title'] }}</a></li>
+        {% endfor %}
+    </article>
+
+    {% for row in td_rows %}
+    <h2 id="{{ row['Course_Code'] }}">{{ row['Course_Code'] }} {{ row['Course_Name'] }}</h2>
+        <p>
+            <span class="text-grey">URL:</span>&nbsp;&nbsp;&nbsp;&nbsp;<a class="text-blue no-margin-top" href="{{ row['URL'] }}">{{ row['URL'] }}</a><br />
+            <span class="text-grey">Last updated/version: </span>&nbsp;&nbsp;&nbsp;&nbsp;{{ row['Last_Published'] }}<br />
+            <span class="text-grey">Last assessed: </span>&nbsp;&nbsp;&nbsp;&nbsp;{{ row['Last_Assessed'] }}<br />
+            <span class="text-grey">Prerequisite structure:</span>&nbsp;&nbsp;&nbsp;&nbsp;{{ row['Prerequisite_Courses'] }}<br />
+            <span class="text-grey">Prerequisite units:</span>&nbsp;&nbsp;&nbsp;&nbsp;{{ row['Prerequisite_Units'] }}<br />
+            <span class="text-grey">College:</span>&nbsp;&nbsp;&nbsp;&nbsp;{{ row['College'] }}
+        </p>
+
+        <h3>Summary of TD Elements captured in course outline/class summary</h3>
+        <table class="center">
+            <thead>
+                <tr>
+                {% for el in row['td_elements'] %}
+                    <td class="center medium w16 no_break">{{ el['td_title'] }}</td>
+                {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                {% for el in row['td_elements'] %}
+                    <td class="{{ el['this_class'] }}">
+                        {{ el['this_level'] }}
+                    </td>
+                {% endfor %}
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Description of TD Elements captured in course outline/class summary</h3>
+
+        {% for el in row['td_elements'] %}
+            {% if el['this_class'] != 'blank' %}
+                <p class="no-margin-bottom no-margin-top"><span class="medium">{{ el['td_title'] }}</span><br />
+                    <span class="emphasis">{{ el['td_description'] }}</p>
+                <p class="text-grey no-margin-bottom">Description for {{ el['td_title'] }} at {{ el['this_level'] }}</p>
+                <p class="text-ochre margin-left no-margin-bottom no-margin-top">{{ el['this_level_description'] }}</p>
+                <p class="text-grey no-margin-bottom">Extracted examples from outline/summary</p>
+                <p class="margin-left no-margin-bottom no-margin-top keep-together">{{ el['this_level_written'] }}</p>
+                </p>
+            {% endif %}
+        {% endfor %}
+
+        <div class="keep-together">
+            <h3>Student cohort analysis</h3>
+                <p>Students graduating in 2023 who took {{ row['Course_Code'] }} {{ row['Course_Name'] }}, also took courses in these subject areas</p>
+                <img src="charts/{{ row['Course_Code'] }}.png" />
+        </div>
+
     {% endfor %}
+
+    <h1>Examples of TD Elements</h1>
+        {% for element in td_elements %}
+            <h2 id="{{ element['td_element'] }}">{{ element['td_title'] }}</h2>
+                {% for row in td_rows %}
+                    {% for el in row['td_elements'] %}
+                        {% if el['td_element'] == element['td_element'] %}
+                            {% if el['this_level'] == 'Highly Likely' or el['this_level'] == 'Likely' %}
+                                <p class="strong no-margin-bottom">{{ row['Course_Code'] }} - {{ row['Course_Name'] }}</p>
+                                <p class="margin-left no-margin-top"><span class="medium">({{ el['this_level'] }})</span> {{ el['this_level_written'] | replace('\n', '<br/><br />') }}</p>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
+        {% endfor %}
+
 {% endblock %}

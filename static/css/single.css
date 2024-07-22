@@ -167,7 +167,7 @@ html body h1 {
     color: black;
     font-weight: 600; }
   html body h2 {
-    /*break-before: always;*/
+    break-before: always;
     font-size: 14pt;
   }
   html body h3 {
@@ -187,8 +187,6 @@ html body h1 {
       margin-top: 500px;
       }
   html body article#contents {
-    /*break-before: right;*/
-    /*break-after: left;*/
     page: no-chapter; }
     html body article#contents h2 {
       font-size: 20pt;
@@ -316,9 +314,6 @@ img{
   max-width:100%;
 }
 
-/*@media print {
-  h1 { display: block; page-break-before: always; }
-}*/
 
 html body article#contents #TOC {
   margin-top: 100px;
@@ -419,9 +414,9 @@ td.info {
     table-layout: fixed;
   }
 
-table td:last-child{
-    width:100%;
-}
+/*table td:last-child{*/
+/*    width:100%;*/
+/*}*/
 
 .name {
     width: 30%;
@@ -451,7 +446,7 @@ tbody th {
     background-color: #DEC18C
 }
 
-strong {
+strong, .strong {
   font-weight: 800;
 }
 
@@ -472,7 +467,6 @@ h3 {
 }
 
 table {
-  page-break-before: always;
   border-collapse: collapse;
 }
 
@@ -560,10 +554,56 @@ td.w20 {
   width: 100px;
 }
 
+td.w16, th.w16 {
+  width = 116px;
+  max-width: 120px;
+  min-width: 110px;
+}
+
 .break-before {
   break-before: always;
 }
 
 .break-after {
   break-after: always;
+}
+
+.padding-left {
+  padding-left: 40px;
+}
+
+.em, .emphasis {
+  font-style: italic;
+}
+
+.center {
+  text-align: center;
+}
+
+.highly_likely {
+  background-color: #CB9C3E;
+}
+
+.likely {
+  background-color: #D8B46F;
+}
+
+.somewhat_likely {
+  background-color: #DEC187;
+}
+
+.blank {
+  background-color: #999999;
+}
+
+td.no_break {
+  white-space: nowrap;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.keep-together {
+  page-break-inside: avoid;
 }

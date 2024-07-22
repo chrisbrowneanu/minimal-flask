@@ -1,52 +1,99 @@
-{% extends "pdf.html" %}
-{% block content %}
-    {# find expected comment fields #}
-    <p><em class="text-blue">DISCLAIMER: Naive assessment undertaken by Chris.Browne@anu.edu.au based on information available on P&C. Errors, oversights, misunderstandings are likely my own.</em></p>
-    <h2 class="text-gold no-margin-bottom">{{ variables['Course'] }} {{ variables['Name'] }}</h2>
-    <p><a class="text-blue no-margin-top" href="{{ variables['URL'] }}">{{ variables['URL'] }}</a></p>
-    <p>
-        <span class="text-grey">Prerequisite structure</span>&nbsp;&nbsp;&nbsp;&nbsp;{{ variables['Prerequisite_Courses'] }}<br />
-        <span class="text-grey">Prerequisite units</span>&nbsp;&nbsp;&nbsp;&nbsp;{{ variables['Prerequisite_Units'] }}
-    </p>
-    <h3 class="text-grey">TD Skills: Do students develop transdisciplinary problem-solving skills through this course?</h3>
-    {% if variables['TD_Skills_HS_1'] == "On" %}
-        <p class="text-ochre medium margin-left"><strong>Highly likely</strong><br /><em>Students are genuinely scaffolded to learn and develop appropriate transdisciplinary problem-solving skills associated with the graduate attribute</em></p>
-    {% elif variables['TD_Skills_HS_2'] == "On" %}
-        <p class="text-ochre medium margin-left"><strong>Likely</strong><br /><em>Students engage with and are supported to develop appropriate transdisciplinary problem-solving skills</em></p>
-    {% elif variables['TD_Skills_HS_3'] == "On" %}
-        <p class="text-ochre medium margin-left"><strong>Somewhat Likely</strong><br /><em>Students develop limited transdisciplinary problem-solving skills amongst other skills throughout the course</em></p>
-    {% elif variables['TD_Skills_HS_4'] == "On" %}
-        <p class="text-ochre medium margin-left"><strong>Not Likely</strong><br /><em>No or serendipitous engagement with transdisciplinary problem-solving skills</em></p>
-    {% endif %}
-    <p class="margin-left"><em>For example</em><br /> {{ variables['TD_Skills_Written'] }}</p>
-    <h3 class="text-grey">TD Skills: Do students meaningfully collaborate across disciplinary/area difference through this course?</h3>
-    {% if variables['TD_Collab_HS_1'] == "On" %}
-        <p class="text-ochre medium margin-left"><strong>Highly likely</strong><br /><em>Students and experts from diverse disciplines intentionally collaborating across disciplinary difference towards a shared understanding of a given problem and exploration of points of difference</em></p>
-    {% elif variables['TD_Collab_HS_2'] == "On" %}
-        <p class="text-ochre medium margin-left"><strong>Likely</strong><br /><em>Students from diverse disciplinary perspectives intentionally collaborating with peers across disciplinary difference towards a shared understanding of a given problem and exploration of points of difference</em></p>
-    {% elif variables['TD_Collab_HS_3'] == "On" %}
-        <p class="text-ochre medium margin-left"><strong>Likely</strong><br /><em>Students intentionally collaborating with experts from diverse disciplinary difference towards a shared understanding of a given problem and exploration of points of difference</em></p>
-    {% elif variables['TD_Collab_HS_4'] == "On" %}
-        <p class="text-ochre medium margin-left"><strong>Somewhat Likely</strong><br /><em>Students from broad disciplinary background participating in collaboration with peers or experts</em></p>
-    {% elif variables['TD_Collab_HS_5'] == "On" %}
-        <p class="text-ochre medium margin-left"><strong>Somewhat Likely</strong><br /><em>Students from a common disciplinary background collaborating with experts from broad disciplinary backgrounds</em></p>
-    {% elif variables['TD_Collab_HS_6'] == "On" %}
-        <p class="text-ochre medium margin-left"><strong>Somewhat Likely</strong><br /><em>Students engaging with material that facilitates collaboration with other disciplinary backgrounds</em></p>
-    {% elif variables['TD_Collab_HS_7'] == "On" %}
-        <p class="text-ochre medium margin-left"><strong>Not Likely</strong><br /><em>No or serendipitous engagement with transdisciplinary collaboration</em></p>
-    {% endif %}
-    <p class="margin-left"><em>For example</em><br /> {{ variables['TD_Collab_Written'] }}</p>
+ <p><em class="text-grey strong">Do students meaningfully engage in collaboration across disciplinary/area difference?</em><br />
+                {% for element in td_elements %}
+                    {% if element['td_element'] == 'td_interactive' %}
+                        {{ element['td_title'] }} "{{ element['td_headline'] }}": <strong class="text-ochre">{{ row['TD_Interactive'] }}</strong><br />
+                        {% for level in td_levels %}
+                            {% if level['td_element']|lower == element['td_element'] %}
+                                {% if level['td_level'] == data['TD_Interactive'] %}
+                                    {{ level['td_level_description'] }}
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                        </p>
+                        <p class="padding-left"><span class="text-grey">Example from course outline:</span><br />
+                        <span class="text-ochre">{{ data['TD_Interactive_Written'] }}</span></p>
 
-    <h3 class="text-grey">TD Context: How is the transdisciplinary problem-solving experience situated with respect to broader contexts?</h3>
-    {% if variables['TD_Engage_HS_1'] == "On" %}
-        <p class="text-ochre medium margin-left"><strong>Highly likely</strong><br /><em>Students engage with ‘wicked’, messy, disputed problems, with multiple stakeholders and multiple perspectives, and consider the social, technical, political, historical, cultural and other big-picture circumstances</em></p>
-    {% elif variables['TD_Engage_HS_2'] == "On" %}
-        <p class="text-ochre medium margin-left"><strong>Likely</strong><br /><em>Students navigate big-picture problems or ideas from multiple perspectives relevant to broad and interconnected disciplines</em></p>
-    {% elif variables['TD_Engage_HS_3'] == "On" %}
-        <p class="text-ochre medium margin-left"><strong>Somewhat Likely</strong><br /><em>Students explore big-picture problems, ideas and broader contexts in relation to a discipline/area</em></p>
-    {% elif variables['TD_Engage_HS_4'] == "On" %}
-        <p class="text-ochre medium margin-left"><strong>Not Likely</strong><br /><em>No or serendipitous engagement with big-picture issues that span disciplines/areas</em></p>
-    {% endif %}
-    <p class="margin-left"><em>For example</em><br /> {{ variables['TD_Engage_Written'] }}</p>
+                    {% endif %}
+                {% endfor %}
+                <p><em class="text-grey strong">Do students develop transdisciplinary problem-solving skills in broader contexts?</em><br />
+                {% for element in td_elements %}
+                    {% if element['td_element'] == 'td_context' %}
+                        {{ element['td_title'] }} "{{ element['td_headline'] }}": <strong class="text-ochre">{{ data['TD_Context'] }}</strong><br />
+                        {% for level in td_levels %}
+                            {% if level['td_element']|lower == element['td_element'] %}
+                                {% if level['td_level'] == data['TD_Context'] %}
+                                    {{ level['td_level_description'] }}
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                        <p>{{ data['TD_Context_Written'] }}</p>
+                    {% endif %}
+                {% endfor %}
+                <p><em class="text-grey strong">Do students develop transdisciplinary problem-solving skills through this course?</em><br />
+                {% for element in td_elements %}
+                    {% if element['td_element'] == 'td_integrative' %}
+                        {% if row['TD_Integrative'] != '-' %}
+                            {{ element['td_title'] }} "{{ element['td_headline'] }}": <strong class="text-ochre">{{ data['TD_Integrative'] }}</strong><br />
+                            {% for level in td_levels %}
+                                {% if level['td_element']|lower == element['td_element'] %}
+                                    {% if level['td_level'] == data['TD_Integrative'] %}
+                                        {{ level['td_level_description'] }}
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                            <p>{{ data['TD_Integrative_Written'] }}</p>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+                {% for element in td_elements %}
+                    {% if element['td_element'] == 'td_pluralistic' %}
+                        {% if row['TD_Pluralistic'] != '-' %}
+                            {{ element['td_title'] }} "{{ element['td_headline'] }}": <strong class="text-ochre">{{ data['TD_Pluralistic'] }}</strong><br />
+                            {% for level in td_levels %}
+                                {% if level['td_element']|lower == element['td_element'] %}
+                                    {% if level['td_level'] == data['TD_Pluralistic'] %}
+                                        {{ level['td_level_description'] }}
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                            <p>{{ data['TD_Pluralistic_Written'] }}</p>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+                {% for element in td_elements %}
+                    {% if element['td_element'] == 'td_change' %}
+                        {% if row['TD_Change'] != '-' %}
+                            {{ element['td_title'] }} "{{ element['td_headline'] }}": <strong class="text-ochre">{{ data['TD_Change'] }}</strong><br />
+                            {% for level in td_levels %}
+                                {% if level['td_element']|lower == element['td_element'] %}
+                                    {% if level['td_level'] == data['TD_Change'] %}
+                                        {{ level['td_level_description'] }}
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                            <p>{{ data['TD_Change_Written'] }}</p>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+                {% for element in td_elements %}
+                    {% if element['td_element'] == 'td_systemic' %}
+                        {% if row['TD_Systemic'] != '-' %}
+                            {{ element['td_title'] }} "{{ element['td_headline'] }}": <strong class="text-ochre">{{ data['TD_Systemic'] }}</strong><br />
+                            {% for level in td_levels %}
+                                {% if level['td_element']|lower == element['td_element'] %}
+                                    {% if level['td_level'] == data['TD_Sytemic'] %}
+                                        {{ level['td_level_description'] }}
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                            <p>{{ data['TD_Systemic_Written'] }}</p>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+                 <img src="charts/{{ data['Course_Code'] }}.png" />
 
+            {% endif %}
+
+        {% endfor %}
+    {% endfor %}
 {% endblock %}

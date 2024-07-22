@@ -1,0 +1,24 @@
+td_element,td_level,td_class,td_display,td_level_description
+td_interactive,Highly Likely,highly_likely,TRUE,Students and experts from diverse disciplines intentionally collaborate across disciplinary difference towards a shared understanding of a given problem and exploration of points of difference.
+td_interactive,Likely (Peers),likely,TRUE,Students from diverse disciplinary perspectives intentionally collaborate with peers across disciplinary difference towards a shared understanding of a given problem and points of difference
+td_interactive,Likely (Experts),likely,TRUE,Students intentionally collaborate with experts from diverse disciplinary difference towards a shared understanding of a given problem and exploration of points of difference
+td_interactive,Somewhat Likely (Broad),somewhat_likely,TRUE,Students from broad disciplinary background participating in collaboration with peers or experts
+td_interactive,Somewhat Likely (Common),somewhat_likely,TRUE,Students from a common disciplinary background collaborate with experts from broad disciplinary backgrounds
+td_interactive,Somewhat Likely (Material),somewhat_likely,TRUE,Students engaging with material that facilitates collaboration with other disciplinary backgrounds
+td_interactive,Not Likely,not_likely,TRUE,No or serendipitous engagement with interactive skills
+td_context,Highly Likely,highly_likely,TRUE,"Students engage with ‘wicked’, messy, disputed problems, with multiple stakeholders and multiple perspectives, and consider the social, technical, political, historical, cultural and other big-picture circumstances. Respects and is sensitive to different knowledge systems and cultural perspectives"
+td_context,Likely,likely,TRUE,Students navigate big-picture problems or ideas from multiple perspectives relevant to broad and interconnected disciplines. Respects and is sensitive to different knowledge systems and cultural perspectives
+td_context,Somewhat Likely,somewhat_likely,TRUE,"Students explore big-picture problems, ideas and broader contexts in relation to a discipline/area. Respects and is sensitive to different knowledge systems and cultural perspectives"
+td_context,Not Likely,not_likely,TRUE,No or serendipitous engagement with transdisciplinary contexts
+td_integrative,Highly Likely,highly_likely,TRUE,"Students draw connections and between different ways of understanding problems, and synthesises various forms of evidence to define and act on problems and prepare for unexpected results"
+td_integrative,Likely,likely,TRUE,Students are exposed to multiple disciplinary perspectives and compare and contrast different information and approaches to understand and act on problems 
+td_integrative,Somewhat Likely,somewhat_likely,TRUE,Students are exposed to fields at the intersection of relevant paradigms and employ a shared approach to respond to problems 
+td_pluralistic,Highly Likely,highly_likely,TRUE,"Students can empathise between different ways of knowing and understanding the world, and can draw on this understanding to navigate complex problems"
+td_pluralistic,Likely,likely,TRUE,"Students engage effectively in comparing, contrasting and accepting different perspectives on a common problem"
+td_pluralistic,Somewhat Likely,somewhat_likely,TRUE,Students are situated in disciplinary diverse environments and engage in understanding various facets of problems
+td_change,Highly Likely,highly_likely,TRUE,Students are empowered to create change and intentionally explore the processes that support building effective change to real-world problems
+td_change,Likely,likely,TRUE,Students explore how to navigate how change happens including proposing how different paths of change can lead to different and unexpected outcomes
+td_change,Somewhat Likely,somewhat_likely,TRUE,"Students study how change has manifested over time, including various factors that contribute understanding past, present and future states"
+td_systemic,Highly Likely,highly_likely,TRUE,"Students explore the dynamic and interdependent nature of problems, and can propose how to change behaviour by identifying places to intervene within the paradigms and structures"
+td_systemic,Likely,likely,TRUE,"Students engage with the relationships between connected and intertwined problems and issues, including how these may effect change over time"
+td_systemic,Somewhat Likely,somewhat_likely,TRUE,"Students explore the interactions of various parts of a system, and how these factors that can be used to describe resulting behaviour"

@@ -8,19 +8,32 @@
     <ol>
     {% for row in variables %}
         {% if stream['stream_title'] == row['category'] %}
-        <li>{{ row['title'] }} ({{ row['type'] }})</li>
+            <li><span class="strong">{{ row['title_currinda'] }}</span><br />
+                <span class="text-blue">{{ row['type'] }}</span><br />
+                <em>{{ row['authors'] }}</em></li>
         {% endif %}
     {% endfor %}
+    </ol>
 
     {% for row in variables %}
         {% if stream['stream_title'] == row['category'] %}
-            <h2 class="break-before">{{ row['id'] }} {{ row['title'] }}</h2>
-            <p class="text-grey"><em>{{ row['authors'] }}</em></p>
-            <p class="text-blue">Keywords: {{ row['keywords'] }}</p>
-            <p>Type: {{ row['type'] }}<br />
-                Stream submitted: {{ row['category_submitted'] }}</p>
-            <p>{{ row['abstract'] }}</p>
-            <hr />
+            <h2>{{ row['id'] }} {{ row['title_currinda'] }}</h2>
+            <dl>
+                <dt class="text-grey">Authors</dt>
+                <dd class="text-blue"><em>{{ row['authors'] }}</em></dd>
+                <dt class="text-grey">Provided Keywords</dt>
+                <dd class="text-blue"><em>{{ row['keywords'] }}</em></dd>
+                <dt class="text-grey">Natural Language Keywords</dt>
+                <dd class="text-blue"><em>{{ row['nltk_keywords'] }}</em></dd>
+                <dt class="text-grey">Presentation format decision</dt>
+                <dd class="text-ochre">{{ row['format'] }}</dd>
+                <dt class="text-grey">Stream submitted</dt>
+                <dd class="text-gold">{{ row['category_submitted'] }}</dd>
+                <dt class="text-grey">Stream proposed</dt>
+                <dd class="text-gold">{{ row['category'] }}</dd>
+            </dl>
+            <h4>Abstract</h4>
+            <p>{{ row['abstract'] | replace('\n', '<br/><br />')}}</p>
         {% endif %}
     {% endfor %}
 {% endblock %}
